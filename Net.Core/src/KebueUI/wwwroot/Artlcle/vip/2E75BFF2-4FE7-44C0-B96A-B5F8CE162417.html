@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=Oracle返回Databale类型>
+    <meta name="keywords" content=CREATE OR REPLACE Function Fun_Get_Splitstr(P_Input   in varchar2, --拆分字符串                      P_Delimiter in varchar2, --拆分定义符                      P_BZ    in number --0 输入获取表 1 直接获取                >
+    <title>Oracle返回Databale类型</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/0D8667FF-B247-4368-A163-B9D7274FE236.html' title='Oracle'>Oracle</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>Oracle返回Databale类型</h1>
+                        <pre>
+                        <code>
+                            <p><span style="font-family: 微软雅黑; font-size: 14px; line-height: 21px;  widows: auto; background-color: rgb(255, 255, 255);">CREATE OR REPLACE Function Fun_Get_Splitstr(P_Input &nbsp; &nbsp; in varchar2, --拆分字符串</span></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; P_Delimiter in varchar2, --拆分定义符</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; P_BZ &nbsp; &nbsp; &nbsp; &nbsp;in number --0 输入获取表 1 直接获取</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ) return str_split_m --返回数据表</p><p>&nbsp; pipelined as</p><p>&nbsp; --管道函数</p><p>&nbsp; --------------------------------------------------------------------</p><p>&nbsp; --功能：根据拆分定义符拆分字符串</p><p>&nbsp; --创建时间：2015-1-9 15:45:58</p><p>&nbsp; --创建人：</p><p>&nbsp; --表结构多个参数</p><p>&nbsp; /*---------------------------------------</p><p>&nbsp; --创建类型方法</p><p>&nbsp; create or replace type obj_table as object</p><p>&nbsp; (</p><p>&nbsp; &nbsp; id &nbsp; &nbsp; &nbsp; &nbsp;varchar2(50),</p><p>&nbsp; &nbsp; merge_erp varchar2(200),</p><p>&nbsp; &nbsp; erpcode &nbsp; varchar2(50)</p><p>&nbsp; );</p><p>&nbsp; create or replace type str_split_m is table of obj_table;</p><p>&nbsp; --查询语句：</p><p>&nbsp; P_BZ = 0</p><p>&nbsp; select * from table(Fun_Get_Splitstr(&#39;25468,24325,425234,456,5464&#39;,&#39;,&#39;,0)) t</p><p>&nbsp; P_BZ = 1</p><p>&nbsp; select * from table(Fun_Get_Splitstr) t</p><p>&nbsp; -----------------------------------------*/</p><p>&nbsp; --------------------------------------------------------------------</p><p>&nbsp; v_length number;</p><p>&nbsp; v_start &nbsp;number;</p><p>&nbsp; v_index &nbsp;number;</p><p>&nbsp; P_String varchar2(200); --拆分字符串</p><p>&nbsp; -- P_Delimiter varchar2(200); --拆分定义符</p><p>&nbsp; v_obj_table obj_table;</p><p>begin</p><p>&nbsp; if (P_BZ = 0) then</p><p>&nbsp; &nbsp; --输入字符串，拆分定义符，获取数据表</p><p>&nbsp; &nbsp; if (1 = 1) then</p><p>&nbsp; &nbsp; &nbsp; P_String := P_Input;</p><p>&nbsp; &nbsp; &nbsp; v_length := length(P_String);</p><p>&nbsp; &nbsp; &nbsp; v_start &nbsp;:= 1;</p><p>&nbsp; &nbsp; &nbsp; --当开始的位置小于等于长度</p><p>&nbsp; &nbsp; &nbsp; while (v_start &lt;= v_length) loop</p><p>&nbsp; &nbsp; &nbsp; &nbsp; --返回拆分定义符的位置</p><p>&nbsp; &nbsp; &nbsp; &nbsp; v_index := instr(P_String, P_Delimiter, v_start);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; if v_index = 0 then</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --返回集合的单个元素（截取开始位置之后的所有字符串）</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; v_obj_table := obj_table(null, null, substr(P_String, v_start));</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pipe row(v_obj_table);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; v_start := v_length + 1;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; else</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --返回集合的单个元素（截取开始位置之后的 固定长度（开始至）字符串）</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; v_obj_table := obj_table(null,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;null,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;substr(P_String,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; v_start,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; v_index - v_start));</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pipe row(v_obj_table);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; v_start := v_index + 1;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; end if;</p><p>&nbsp; &nbsp; &nbsp; end loop;</p><p>&nbsp; &nbsp; end if;</p><p>&nbsp; elsif (P_BZ = 1) then</p><p>&nbsp; --获取合并超发回调单中的数据表</p><p>&nbsp; &nbsp; if (1 = 1) then</p><p>&nbsp; &nbsp; &nbsp; for ii in (select te.id, te.merge_erp</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;from allocate te</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; where te.special = 1</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and te.is_merge = 1) loop</p><p>&nbsp; &nbsp; &nbsp; &nbsp; p_string := ii.merge_erp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; -- P_Delimiter := &#39;,&#39;;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; v_length := length(p_string);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; v_start &nbsp;:= 1;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; --当开始的位置小于等于长度</p><p>&nbsp; &nbsp; &nbsp; &nbsp; while (v_start &lt;= v_length) loop</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --返回拆分定义符的位置</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; v_index := instr(P_String, P_Delimiter, v_start);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if v_index = 0 then</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --返回集合的单个元素（截取开始位置之后的所有字符??/p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; v_obj_table := obj_table(ii.id,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ii.merge_erp,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;substr(P_String, v_start));</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pipe row(v_obj_table);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; v_start := v_length + 1;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --返回集合的单个元素（截取开始位置之后的 固定长度（开始至）字符串）</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; v_obj_table := obj_table(ii.id,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ii.merge_erp,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;substr(P_String,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; v_start,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; v_index - v_start));</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pipe row(v_obj_table);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; v_start := v_index + 1;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end if;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; end loop;</p><p>&nbsp; &nbsp; &nbsp; end loop;</p><p>&nbsp; &nbsp; end if;</p><p>&nbsp; end if;</p><p>&nbsp; return;</p><p>end Fun_Get_Splitstr;</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

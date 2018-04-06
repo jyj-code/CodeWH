@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=GridView列链接操作>
+    <meta name="keywords" content=前台代码asp:SGridView ID=sgvList AllowSorting=true UseOtherPager=true runat=server SkinID=skin_grid_b            AutoGenerateColumns=False EmptyDataText=%$Resources:Message,SearchNoData %            OnRow>
+    <title>GridView列链接操作</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/B8C0509A-82D4-4BD7-A1BB-5BAF70ED1C60.html' title='.NET'>.NET</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>GridView列链接操作</h1>
+                        <pre>
+                        <code>
+                            <p><strong style="background-color: orange;"><strong>前台代码</strong></strong></p><p>&lt;asp:SGridView ID=&quot;sgvList&quot; AllowSorting=&quot;true&quot; UseOtherPager=&quot;true&quot; runat=&quot;server&quot; SkinID=&quot;skin_grid_b&quot;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AutoGenerateColumns=&quot;False&quot; EmptyDataText=&quot;&lt;%$Resources:Message,SearchNoData %&gt;&quot;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; OnRowDataBound=&quot;sgvList_RowDataBound&quot; OnRowCommand=&quot;sgvList_RowCommand&quot;&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;Columns&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;asp:BoundField DataField=&quot;TestDate&quot; HeaderText=&quot;异常日期&quot; HtmlEncode=&quot;false&quot;&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ItemStyle Wrap=&quot;true&quot; /&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/asp:BoundField&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;asp:BoundField DataField=&quot;TestName&quot; HeaderText=&quot;异常来源&quot; HtmlEncode=&quot;false&quot;&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ItemStyle Wrap=&quot;true&quot; /&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/asp:BoundField&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;asp:BoundField DataField=&quot;FactoryName&quot; HeaderText=&quot;电厂&quot; HtmlEncode=&quot;false&quot;&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ItemStyle Wrap=&quot;true&quot; /&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/asp:BoundField&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;asp:BoundField DataField=&quot;ObjectName&quot; HeaderText=&quot;名称&quot; HtmlEncode=&quot;false&quot;&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ItemStyle Wrap=&quot;true&quot; /&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/asp:BoundField&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;asp:BoundField DataField=&quot;TestResult&quot; HeaderText=&quot;异常情况&quot; HtmlEncode=&quot;false&quot;&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;HeaderStyle Wrap=&quot;False&quot;&gt;&lt;/HeaderStyle&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ItemStyle Wrap=&quot;true&quot; /&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/asp:BoundField&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;asp:BoundField DataField=&quot;IsFinished&quot; HeaderText=&quot;是否已处理&quot; HtmlEncode=&quot;false&quot;&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;HeaderStyle Wrap=&quot;False&quot;&gt;&lt;/HeaderStyle&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ItemStyle Wrap=&quot;true&quot; /&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/asp:BoundField&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;asp:TemplateField HeaderText=&quot;&lt;%$Resources:Message,Operation %&gt;&quot; HeaderStyle-Width=&quot;200px&quot;&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ItemTemplate&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;asp:LinkButton ID=&quot;lnkView&quot; runat=&quot;server&quot; CommandName=&quot;DataView&quot; Text=&quot;查看&quot;&gt;&lt;/asp:LinkButton&gt;&amp;nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;asp:LinkButton ID=&quot;lnkEdit&quot; runat=&quot;server&quot; CommandName=&quot;DataEdit&quot; Text=&quot;编辑&quot;&gt;&lt;/asp:LinkButton&gt;&amp;nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;asp:LinkButton ID=&quot;lnkDelete&quot; runat=&quot;server&quot; CommandName=&quot;DataDelete&quot; Text=&quot;删除&quot;&gt;&lt;/asp:LinkButton&gt;&amp;nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ItemTemplate&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ItemStyle HorizontalAlign=&quot;Center&quot;&gt;&lt;/ItemStyle&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/asp:TemplateField&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/Columns&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/asp:SGridView&gt;</p><p><strong style="background-color: orange;">后台代码&nbsp;</strong></p><p>&nbsp;&nbsp;protected void sgvList_RowCommand(object sender, GridViewCommandEventArgs e)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (e.CommandName == &quot;DataView&quot;)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ShowDialog(&quot;RS_RuningExceptionEdit.aspx?opt=view&quot;, &quot;查看&quot;, &quot;850&quot;, &quot;650&quot;);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (e.CommandName == &quot;DataEdit&quot;)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ShowDialog(&quot;RS_RuningExceptionEdit.aspx?opt=edit&quot;, &quot;编辑&quot;, &quot;850&quot;, &quot;650&quot;);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

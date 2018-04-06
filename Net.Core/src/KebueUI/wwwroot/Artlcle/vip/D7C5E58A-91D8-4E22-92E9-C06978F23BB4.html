@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=SQL Server 自动化运维系列>
+    <meta name="keywords" content=本系列为SQL SERVER自动化运维的一些操作技巧点，所有内容都是根据日常运维过程中最经常遇到的问题，并为此形成了一些自动化运维的方式，皆为原创....供部分DBA和开发人员浏览借鉴，所应用平台基于微软server平台，所利用技术为Power Shell，所关注的点为SQL Server.1、SQL Server需要监控哪些计数器2、SQL Server自动化运维系列——监控性能指标脚本（Pow>
+    <title>SQL Server 自动化运维系列</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/A6B67D7C-1B75-4AF4-AF00-7D4EF126AFA9.html' title='SQLServer'>SQLServer</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>SQL Server 自动化运维系列</h1>
+                        <pre>
+                        <code>
+                            <p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">本系列为SQL SERVER自动化运维的一些操作技巧点，所有内容都是根据日常运维过程中最经常遇到的问题，并为此形成了一些自动化运维的方式，皆为原创....</p><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">供部分DBA和开发人员浏览借鉴，所应用平台基于微软server平台，所利用技术为Power Shell，所关注的点为SQL Server.</p><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;</p><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">1、<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/zhijianliutang/p/4174697.html" target="_blank" style="margin: 0px; padding: 0px; color: black;">SQL Server需要监控哪些计数器</a></p><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">2、<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/zhijianliutang/p/4170488.html" target="_blank" style="margin: 0px; padding: 0px; color: black;">SQL Server自动化运维系列——监控性能指标脚本（Power Shell）</a></p><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">3、<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/zhijianliutang/p/4371928.html" target="_blank" style="margin: 0px; padding: 0px; color: black;">SQL Server自动化运维系列——监控磁盘剩余空间及SQL Server错误日志（Power Shell）</a></p><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">4、<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/zhijianliutang/p/4421556.html" style="margin: 0px; padding: 0px; color: black;">SQL Server自动化运维系列——关于邮件通知那点事（.Net开发人员的福利）</a></p><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">5、<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/zhijianliutang/p/4428018.html" target="_blank" style="margin: 0px; padding: 0px; color: black;">SQL Server自动化运维系列——监控跑批Job运行状态（Power Shell）</a></p><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">6、<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/zhijianliutang/p/4476403.html" target="_blank" style="margin: 0px; padding: 0px; color: black;">SQL Server自动化运维系列——关于数据收集（多服务器数据收集和性能监控）</a></p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

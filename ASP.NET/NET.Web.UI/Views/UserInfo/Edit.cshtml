@@ -1,0 +1,82 @@
+﻿@model NET.Architect.Model.CustomerUserInfo
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>修改用户信息</h2>
+
+<p>
+    @Html.ActionLink("用户日志记录列表", "Index", "TruingLog")
+    @Html.ActionLink("进入知识列表", "NewKnowList", "Home")
+    @Html.ActionLink("进入用户页面", "Index", "UserInfo")
+    @Html.ActionLink("进入聊天页面", "Chat", "Home")
+</p>
+<hr />
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>修改图片序列号和状态。0为黑名单</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+        <div class="form-group">
+            @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @id = "txtStatus", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.IMG, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.IMG, new { htmlAttributes = new { @id = "txtIMG", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.IMG, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="button" value="Save" id="btnSave"  class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="hidId" value=@Model.Id   />
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+<script>
+    function Alert(result) {
+        layer.alert(result, {
+            skin: 'layui-layer-lan'
+                   , closeBtn: 0
+                   , shift: 4
+        });
+    }
+    $(document).ready(function () {
+        $("#btnSave").click(function () {
+            var Status = $("#txtStatus").val().trim();
+            var IMG = $("#txtIMG").val().trim();
+            if (Status != null && IMG != null) {
+                $.ajax({
+                    type: "POST", url: "/UserInfo/UpdateData/", data: { Status: Status, IMG: IMG, Id: $("#hidId").val() }, success: function (result) {
+                        if (result.status > 0) {
+                            location.href = "../Index";
+                        } else
+                            Alert(result.result);
+                    }
+                });
+            } else
+                Alert("修改值不可为空");
+        })
+    })
+
+</script>

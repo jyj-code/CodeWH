@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=DataGirdView控件实现快捷键Ctrl+V粘贴 鼠标右键删除粘贴>
+    <meta name="keywords" content=using System;using System.Collections.Generic;using System.ComponentModel;using System.Data;using System.Drawing;using System.Linq;using System.Text;using System.Threading;using System.Threading.Tasks>
+    <title>DataGirdView控件实现快捷键Ctrl+V粘贴 鼠标右键删除粘贴</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/B8C0509A-82D4-4BD7-A1BB-5BAF70ED1C60.html' title='.NET'>.NET</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>DataGirdView控件实现快捷键Ctrl+V粘贴 鼠标右键删除粘贴</h1>
+                        <pre>
+                        <code>
+                            <p>using System;</p><p>using System.Collections.Generic;</p><p>using System.ComponentModel;</p><p>using System.Data;</p><p>using System.Drawing;</p><p>using System.Linq;</p><p>using System.Text;</p><p>using System.Threading;</p><p>using System.Threading.Tasks;</p><p>using System.Windows.Forms;</p><p><br/></p><p>namespace WindowsFormsApplication3</p><p>{</p><p>&nbsp; &nbsp; public partial class Form1 : Form</p><p>&nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; public Form1()</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; InitializeComponent();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; private void test()</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for (int i = 0; i &lt; 10000; i++)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.Windows.Forms.Application.DoEvents();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; label1.Text = i.ToString();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; label1.Text = &quot;执行完成&quot;;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pictureBox1.Visible = false;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; private void button1_Click(object sender, EventArgs e)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Thread t = new Thread(new ThreadStart(test));</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; t.Start();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; private void button1_MouseDown(object sender, MouseEventArgs e)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pictureBox1.Visible = true;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; private void Form1_Load(object sender, EventArgs e)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DataTable tblDatas = new DataTable();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tblDatas.Columns.Add(&quot;Product&quot;, Type.GetType(&quot;System.String&quot;));</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tblDatas.Rows.Add(new object[] { &quot;a1&quot; });</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tblDatas.Rows.Add(new object[] { &quot;a2&quot; });</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tblDatas.Rows.Add(new object[] { &quot;a3&quot; });</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tblDatas.Rows.Add(new object[] { &quot;a4&quot; });</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tblDatas.Rows.Add(new object[] { &quot;a5&quot; });</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DataGridViewComboBoxColumn combox = (DataGridViewComboBoxColumn)dataGridView1.Columns[&quot;Column3&quot;];</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; combox.ValueMember = &quot;Product&quot;;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; combox.DisplayMember = &quot;Product&quot;;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; combox.DataSource = tblDatas;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; public void DataGridViewEnableCopy(DataGridView p_Data)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Clipboard.SetData(DataFormats.Text, p_Data.GetClipboardContent());</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; public void DataGridViewEnablePaste(DataGridView p_Data)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (p_Data == null)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; p_Data.KeyDown += new KeyEventHandler(tolCopy_Click);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; p_Data.KeyDown += new KeyEventHandler(dataGridView1_KeyDown);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// 剪切板处理,粘贴第一列，第二文本框默认值，第三列下拉框也是默认值</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;p_Data&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; public void DataGirdViewCellPaste(DataGridView p_Data)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; try</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; StringBuilder str = new StringBuilder();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; string[] PublicArray = null;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; string[] PublicArrayInsert = null;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; string CopyValue = string.Empty;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CopyValue = Clipboard.GetText().Trim();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (string.IsNullOrEmpty(CopyValue))</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PublicArray = CopyValue.Split(&#39;\r&#39;);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; foreach (string line in PublicArray)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CopyValue = line.Trim();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (string.IsNullOrEmpty(CopyValue))</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; str.Append(CopyValue);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; str.Append(&quot;ъ停售&quot;);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; str.Append(&quot;ъa3&quot;);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CopyValue = str.ToString();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PublicArrayInsert = CopyValue.Split(&#39;ъ&#39;);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; p_Data.Rows.Add(PublicArrayInsert);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; str.Length = 0;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; catch (Exception)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// Ctrl+V快捷键粘贴</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;sender&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;e&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; private void dataGridView1_KeyDown(object sender, KeyEventArgs e)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (Control.ModifierKeys == Keys.Control &amp;&amp; e.KeyCode == Keys.V)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (sender != null &amp;&amp; sender.GetType() == typeof(DataGridView))</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DataGirdViewCellPaste((DataGridView)sender);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// 鼠标右键删除选中的全部行</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;sender&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;e&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; private void ToolStripMenuItemDelete_Click(object sender, EventArgs e)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ///删除选中的行</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; foreach (DataGridViewRow r in dataGridView1.SelectedRows)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (!r.IsNewRow)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dataGridView1.Rows.Remove(r);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// 鼠标右键粘贴</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;sender&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;e&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; private void tolCopy_Click(object sender, EventArgs e)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DataGirdViewCellPaste(dataGridView1);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; }</p><p>}</p><p><img src="../../Upload/Image1602/42366136-f236-4e68-b0aa-d62942a5121a.jpg" title="QQ截图20160225232917.jpg"/></p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

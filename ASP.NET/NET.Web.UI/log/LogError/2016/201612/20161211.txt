@@ -1,0 +1,378 @@
+
+ 
+记录时间：2016-12-11 18:16:02,724 
+线程ID:[5] 
+日志级别：  ERROR 
+错误描述：HomeController
+跳到主页
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.Web.UI.Controllers.HomeController.Chat(String ip) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\NET.Web.UI\Controllers\HomeController.cs:行号 43
+{"Key":null,"UserInfo":null,"UserInfoDetail":null}
+ 
+
+ 
+记录时间：2016-12-11 19:28:40,275 
+线程ID:[8] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.6.153,Type=PC
+{"content":{"Pois":null,"address_component":{"admin_area_code":"320506","city":"苏州市","country":"中国","district":"吴中区","province":"江苏省","street":"星华街","street_number":""},"confidence":"0.2","formatted_address":"江苏省苏州市吴中区星华街","location":{"lat":"3653351.0","lng":"13444779.0"},"locid":"5f56cfc59981b96fe61ba983b7cd47c9","radius":"71274"},"result":{"error":"161","loc_time":"2016-12-11 19:28:32"}}
+ 
+
+ 
+记录时间：2016-12-11 19:33:29,837 
+线程ID:[12] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.134.15Type=PC
+{"content":{"Pois":null,"address_component":{"admin_area_code":"320506","city":"苏州市","country":"中国","district":"吴中区","province":"江苏省","street":"长阳街","street_number":""},"confidence":"0.2","formatted_address":"江苏省苏州市吴中区长阳街","location":{"lat":"3655622.0","lng":"13446450.0"},"locid":"3c60798102bc383a9b6da5fb37a08538","radius":"67575"},"result":{"error":"161","loc_time":"2016-12-11 19:33:23"}}
+ 
+
+ 
+记录时间：2016-12-11 19:33:29,837 
+线程ID:[5] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.6.153Type=PC
+{"content":{"Pois":null,"address_component":{"admin_area_code":"320506","city":"苏州市","country":"中国","district":"吴中区","province":"江苏省","street":"星华街","street_number":""},"confidence":"0.2","formatted_address":"江苏省苏州市吴中区星华街","location":{"lat":"3653351.0","lng":"13444779.0"},"locid":"7c6b4dc6ac87d5a809ea1c6435330673","radius":"71274"},"result":{"error":"161","loc_time":"2016-12-11 19:33:23"}}
+ 
+
+ 
+记录时间：2016-12-11 19:35:26,306 
+线程ID:[12] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.134.15Type=PC
+{"content":{"Pois":null,"address_component":{"admin_area_code":"320506","city":"苏州市","country":"中国","district":"吴中区","province":"江苏省","street":"长阳街","street_number":""},"confidence":"0.2","formatted_address":"江苏省苏州市吴中区长阳街","location":{"lat":"3655622.0","lng":"13446450.0"},"locid":"3c60798102bc383a9b6da5fb37a08538","radius":"67575"},"result":{"error":"161","loc_time":"2016-12-11 19:33:23"}}
+ 
+
+ 
+记录时间：2016-12-11 19:35:37,376 
+线程ID:[5] 
+日志级别：  ERROR 
+错误描述：HomeController
+跳到主页
+发生时间2016-12-11 19:35:37
+异常讯息：System.Data.SQLite.SQLiteException (0x80004005): constraint failed
+NOT NULL constraint failed: UserInfo.Isp
+   在 System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)
+   在 System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   在 NET.DataAccessLayer.Common.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 607
+   在 NET.DataAccessLayer.Common.DBHelper.SaveCollection[T](String sql, IList`1 collection) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 187
+   在 NET.DataAccessLayer.Base`1.Add(List`1 entity) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 36
+   在 NET.DataAccessLayer.Base`1.Add(T entity) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 45
+   在 NET.BusinessRule.Base`1.Add(T obj) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 16
+   在 NET.Web.UI.Controllers.HomeController.Chat() 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\NET.Web.UI\Controllers\HomeController.cs:行号 102
+UserInfo：{"Admin_Area_Code":null,"City":"","Confidence":null,"Country":"","District":null,"Id":"8ee9478624804d89aa1e84c3935b5f19","Img":0,"InCount":1,"Ip":"36.149.6.153","Isp":"","Lat":"null","Lng":"null","Locid":null,"OperationTime":"2016-12-11 19:33:20","Province":"","Remarks":"{\"data\":{\"city\":\"\",\"country\":\"\",\"ip\":\"36.149.6.153\",\"lat\":\"null\",\"lng\":\"null\",\"province\":\"\"},\"error\":0,\"msg\":\"succeed\"}","Status":1,"Street":null,"Street_Number":null,"radius":null}
+UserInfoDetail：{"Browser":"Chrome 53.0","Id":"38dfb70fff22401dbb030ec6351bbeb4","Ip":"36.149.6.153","ModelType":"PC","OS":"Windows 8","OperationTime":"2016-12-11 19:33:20","Remarks":"Mozilla\/5.0 (Windows NT 6.2; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.116 Safari\/537.36"}
+UserInfoUnDeteil：{"Key":null,"UserInfo":null,"UserInfoDetail":null}
+ 
+
+ 
+记录时间：2016-12-11 19:54:00,084 
+线程ID:[7] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.134.15Type=PC
+{"content":{"Pois":null,"address_component":{"admin_area_code":"320506","city":"苏州市","country":"中国","district":"吴中区","province":"江苏省","street":"长阳街","street_number":""},"confidence":"0.2","formatted_address":"江苏省苏州市吴中区长阳街","location":{"lat":"3655622.0","lng":"13446450.0"},"locid":"b78b10e2a73f1673bfac3e6d3c7ba021","radius":"67575"},"result":{"error":"161","loc_time":"2016-12-11 19:53:53"}}
+ 
+
+ 
+记录时间：2016-12-11 20:22:09,056 
+线程ID:[9] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.6.153Type=PC
+{"content":{"Pois":null,"address_component":{"admin_area_code":"320506","city":"苏州市","country":"中国","district":"吴中区","province":"江苏省","street":"星华街","street_number":""},"confidence":"0.2","formatted_address":"江苏省苏州市吴中区星华街","location":{"lat":"3653351.0","lng":"13444779.0"},"locid":"835e879b026d48a11e28ab51c2aaa9f1","radius":"71274"},"result":{"error":"161","loc_time":"2016-12-11 20:22:05"}}
+ 
+
+ 
+记录时间：2016-12-11 20:44:38,258 
+线程ID:[5] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[Chat] 时产生异常
+ 
+System.InvalidOperationException: 未找到视图“e534e95fd44c40ae9dbc5562619b65b2”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/Home/e534e95fd44c40ae9dbc5562619b65b2.aspx
+~/Views/Home/e534e95fd44c40ae9dbc5562619b65b2.ascx
+~/Views/Shared/e534e95fd44c40ae9dbc5562619b65b2.aspx
+~/Views/Shared/e534e95fd44c40ae9dbc5562619b65b2.ascx
+~/Views/Home/e534e95fd44c40ae9dbc5562619b65b2.cshtml
+~/Views/Home/e534e95fd44c40ae9dbc5562619b65b2.vbhtml
+~/Views/Shared/e534e95fd44c40ae9dbc5562619b65b2.cshtml
+~/Views/Shared/e534e95fd44c40ae9dbc5562619b65b2.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+ 
+记录时间：2016-12-11 20:53:05,038 
+线程ID:[5] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[Chat] 时产生异常
+ 
+System.InvalidOperationException: 未找到视图“83612ca6ad9b4751afe123e322bd2b93”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/Home/83612ca6ad9b4751afe123e322bd2b93.aspx
+~/Views/Home/83612ca6ad9b4751afe123e322bd2b93.ascx
+~/Views/Shared/83612ca6ad9b4751afe123e322bd2b93.aspx
+~/Views/Shared/83612ca6ad9b4751afe123e322bd2b93.ascx
+~/Views/Home/83612ca6ad9b4751afe123e322bd2b93.cshtml
+~/Views/Home/83612ca6ad9b4751afe123e322bd2b93.vbhtml
+~/Views/Shared/83612ca6ad9b4751afe123e322bd2b93.cshtml
+~/Views/Shared/83612ca6ad9b4751afe123e322bd2b93.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+ 
+记录时间：2016-12-11 20:53:12,163 
+线程ID:[6] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[Chat] 时产生异常
+ 
+System.InvalidOperationException: 未找到视图“83738ae7595644daa8e011f848543efc”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/Home/83738ae7595644daa8e011f848543efc.aspx
+~/Views/Home/83738ae7595644daa8e011f848543efc.ascx
+~/Views/Shared/83738ae7595644daa8e011f848543efc.aspx
+~/Views/Shared/83738ae7595644daa8e011f848543efc.ascx
+~/Views/Home/83738ae7595644daa8e011f848543efc.cshtml
+~/Views/Home/83738ae7595644daa8e011f848543efc.vbhtml
+~/Views/Shared/83738ae7595644daa8e011f848543efc.cshtml
+~/Views/Shared/83738ae7595644daa8e011f848543efc.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+ 
+记录时间：2016-12-11 20:55:50,443 
+线程ID:[6] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[Chat] 时产生异常
+ 
+System.InvalidOperationException: 未找到视图“201b55f5a318414782cd0382ef95ba4f”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/Home/201b55f5a318414782cd0382ef95ba4f.aspx
+~/Views/Home/201b55f5a318414782cd0382ef95ba4f.ascx
+~/Views/Shared/201b55f5a318414782cd0382ef95ba4f.aspx
+~/Views/Shared/201b55f5a318414782cd0382ef95ba4f.ascx
+~/Views/Home/201b55f5a318414782cd0382ef95ba4f.cshtml
+~/Views/Home/201b55f5a318414782cd0382ef95ba4f.vbhtml
+~/Views/Shared/201b55f5a318414782cd0382ef95ba4f.cshtml
+~/Views/Shared/201b55f5a318414782cd0382ef95ba4f.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+ 
+记录时间：2016-12-11 20:56:12,042 
+线程ID:[6] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[Chat] 时产生异常
+ 
+System.InvalidOperationException: 未找到视图“51fb9de3787a4e7c999d667d21e1f754”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/Home/51fb9de3787a4e7c999d667d21e1f754.aspx
+~/Views/Home/51fb9de3787a4e7c999d667d21e1f754.ascx
+~/Views/Shared/51fb9de3787a4e7c999d667d21e1f754.aspx
+~/Views/Shared/51fb9de3787a4e7c999d667d21e1f754.ascx
+~/Views/Home/51fb9de3787a4e7c999d667d21e1f754.cshtml
+~/Views/Home/51fb9de3787a4e7c999d667d21e1f754.vbhtml
+~/Views/Shared/51fb9de3787a4e7c999d667d21e1f754.cshtml
+~/Views/Shared/51fb9de3787a4e7c999d667d21e1f754.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+ 
+记录时间：2016-12-11 20:56:26,487 
+线程ID:[7] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[Chat] 时产生异常
+ 
+System.InvalidOperationException: 未找到视图“672dc23a6ab3461ab7695db4a6cc54cd”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/Home/672dc23a6ab3461ab7695db4a6cc54cd.aspx
+~/Views/Home/672dc23a6ab3461ab7695db4a6cc54cd.ascx
+~/Views/Shared/672dc23a6ab3461ab7695db4a6cc54cd.aspx
+~/Views/Shared/672dc23a6ab3461ab7695db4a6cc54cd.ascx
+~/Views/Home/672dc23a6ab3461ab7695db4a6cc54cd.cshtml
+~/Views/Home/672dc23a6ab3461ab7695db4a6cc54cd.vbhtml
+~/Views/Shared/672dc23a6ab3461ab7695db4a6cc54cd.cshtml
+~/Views/Shared/672dc23a6ab3461ab7695db4a6cc54cd.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+ 
+记录时间：2016-12-11 20:57:12,972 
+线程ID:[8] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[Chat] 时产生异常
+ 
+System.InvalidOperationException: 未找到视图“cd025f55cbc242e8902acb0811e7ca50”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/Home/cd025f55cbc242e8902acb0811e7ca50.aspx
+~/Views/Home/cd025f55cbc242e8902acb0811e7ca50.ascx
+~/Views/Shared/cd025f55cbc242e8902acb0811e7ca50.aspx
+~/Views/Shared/cd025f55cbc242e8902acb0811e7ca50.ascx
+~/Views/Home/cd025f55cbc242e8902acb0811e7ca50.cshtml
+~/Views/Home/cd025f55cbc242e8902acb0811e7ca50.vbhtml
+~/Views/Shared/cd025f55cbc242e8902acb0811e7ca50.cshtml
+~/Views/Shared/cd025f55cbc242e8902acb0811e7ca50.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+ 
+记录时间：2016-12-11 21:00:29,586 
+线程ID:[7] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[ChatVerification] 时产生异常
+ 
+System.InvalidOperationException: 未找到视图“eb73a205db3347928603e464f7893847”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/Home/eb73a205db3347928603e464f7893847.aspx
+~/Views/Home/eb73a205db3347928603e464f7893847.ascx
+~/Views/Shared/eb73a205db3347928603e464f7893847.aspx
+~/Views/Shared/eb73a205db3347928603e464f7893847.ascx
+~/Views/Home/eb73a205db3347928603e464f7893847.cshtml
+~/Views/Home/eb73a205db3347928603e464f7893847.vbhtml
+~/Views/Shared/eb73a205db3347928603e464f7893847.cshtml
+~/Views/Shared/eb73a205db3347928603e464f7893847.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+ 
+记录时间：2016-12-11 21:00:38,294 
+线程ID:[8] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[ChatVerification] 时产生异常
+ 
+System.InvalidOperationException: 未找到视图“1f73e41e9c5d4ca289fd4f2b768e8613”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/Home/1f73e41e9c5d4ca289fd4f2b768e8613.aspx
+~/Views/Home/1f73e41e9c5d4ca289fd4f2b768e8613.ascx
+~/Views/Shared/1f73e41e9c5d4ca289fd4f2b768e8613.aspx
+~/Views/Shared/1f73e41e9c5d4ca289fd4f2b768e8613.ascx
+~/Views/Home/1f73e41e9c5d4ca289fd4f2b768e8613.cshtml
+~/Views/Home/1f73e41e9c5d4ca289fd4f2b768e8613.vbhtml
+~/Views/Shared/1f73e41e9c5d4ca289fd4f2b768e8613.cshtml
+~/Views/Shared/1f73e41e9c5d4ca289fd4f2b768e8613.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+ 
+记录时间：2016-12-11 21:01:29,482 
+线程ID:[8] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[ChatVerification] 时产生异常
+ 
+System.InvalidOperationException: 未找到视图“bb17b0f020c04c79b3ba9494b3ed59d8”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/Home/bb17b0f020c04c79b3ba9494b3ed59d8.aspx
+~/Views/Home/bb17b0f020c04c79b3ba9494b3ed59d8.ascx
+~/Views/Shared/bb17b0f020c04c79b3ba9494b3ed59d8.aspx
+~/Views/Shared/bb17b0f020c04c79b3ba9494b3ed59d8.ascx
+~/Views/Home/bb17b0f020c04c79b3ba9494b3ed59d8.cshtml
+~/Views/Home/bb17b0f020c04c79b3ba9494b3ed59d8.vbhtml
+~/Views/Shared/bb17b0f020c04c79b3ba9494b3ed59d8.cshtml
+~/Views/Shared/bb17b0f020c04c79b3ba9494b3ed59d8.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+ 
+记录时间：2016-12-11 21:05:37,587 
+线程ID:[6] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[ChatVerification] 时产生异常
+ 
+System.InvalidOperationException: 未找到视图“eec1c9998a444306969df85307840f71”或其母版视图，或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/Home/eec1c9998a444306969df85307840f71.aspx
+~/Views/Home/eec1c9998a444306969df85307840f71.ascx
+~/Views/Shared/eec1c9998a444306969df85307840f71.aspx
+~/Views/Shared/eec1c9998a444306969df85307840f71.ascx
+~/Views/Home/eec1c9998a444306969df85307840f71.cshtml
+~/Views/Home/eec1c9998a444306969df85307840f71.vbhtml
+~/Views/Shared/eec1c9998a444306969df85307840f71.cshtml
+~/Views/Shared/eec1c9998a444306969df85307840f71.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)

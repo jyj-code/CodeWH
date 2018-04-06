@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=Unity 3D本地发布WebPlayer版时Failed to download data fil>
+    <meta name="keywords" content=遇到这个问题就是指Web服务器并没有支持这种*.unity3d文件类型。需要做的是在Web服务器中添加MIME类型：IIS 7及以上版本：在功能视图的IIS选项卡中：双击打开MIME，选择添加：.unity3dapplication/octet-stream如果是IIS6，则右击计算机名，选择属性，找到MIME类型新建就OK啦！>
+    <title>Unity 3D本地发布WebPlayer版时Failed to download data fil</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/B8C0509A-82D4-4BD7-A1BB-5BAF70ED1C60.html' title='.NET'>.NET</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>Unity 3D本地发布WebPlayer版时Failed to download data fil</h1>
+                        <pre>
+                        <code>
+                            <p style="line-height: 28px; margin-top: 0px; margin-bottom: 10px; padding: 0px; color: rgb(102, 102, 102); font-family: &#39;Hiragino Sans GB W3&#39;, &#39;Hiragino Sans GB&#39;, Arial, Helvetica, simsun, u5b8bu4f53; white-space: normal; text-align: center; background-color: rgb(255, 255, 255);"><span lang="ZH-CN" style="font-family: SimSun;"><img alt="Unity 3D本地发布WebPlayer版时Failed to download data file解决方案(IIS 6/7) - Neo - 生命，本是修行" src="http://img0.ph.126.net/lCS1LRLeu2gYSqa6LtGD2Q==/1905585592431225132.png" style="line-height: 22px; border: 0px; max-width: 100%; height: auto; margin: 0px 10px 0px 0px;"/></span></p><p style="line-height: 28px; margin-top: 0px; margin-bottom: 10px; padding: 0px; color: rgb(102, 102, 102); font-family: &#39;Hiragino Sans GB W3&#39;, &#39;Hiragino Sans GB&#39;, Arial, Helvetica, simsun, u5b8bu4f53; white-space: normal; background-color: rgb(255, 255, 255);"><span lang="ZH-CN" style="font-family: SimSun;">遇到这个问题就是指</span>Web<span lang="ZH-CN" style="font-family: SimSun;">服务器并没有支持这种</span>*.unity3d<span lang="ZH-CN" style="font-family: SimSun;">文件类型。需要做的是在</span>Web<span lang="ZH-CN" style="font-family: SimSun;">服务器中添加</span>MIME<span lang="ZH-CN" style="font-family: SimSun;">类型：</span></p><p style="line-height: 28px; margin-top: 0px; margin-bottom: 10px; padding: 0px; color: rgb(102, 102, 102); font-family: &#39;Hiragino Sans GB W3&#39;, &#39;Hiragino Sans GB&#39;, Arial, Helvetica, simsun, u5b8bu4f53; white-space: normal; background-color: rgb(255, 255, 255);">IIS 7&nbsp;<span lang="ZH-CN" style="font-family: SimSun;">及以上版本：</span></p><p style="line-height: 28px; margin-top: 0px; margin-bottom: 10px; padding: 0px; color: rgb(102, 102, 102); font-family: &#39;Hiragino Sans GB W3&#39;, &#39;Hiragino Sans GB&#39;, Arial, Helvetica, simsun, u5b8bu4f53; white-space: normal; background-color: rgb(255, 255, 255);"><span lang="ZH-CN" style="font-family: SimSun;">在功能视图的</span>IIS<span lang="ZH-CN" style="font-family: SimSun;">选项卡中：</span><span style="line-height: 22px; font-family: SimSun;">&nbsp;</span></p><p style="line-height: 28px; margin-top: 0px; margin-bottom: 10px; padding: 0px; color: rgb(102, 102, 102); font-family: &#39;Hiragino Sans GB W3&#39;, &#39;Hiragino Sans GB&#39;, Arial, Helvetica, simsun, u5b8bu4f53; white-space: normal; background-color: rgb(255, 255, 255);"><span lang="ZH-CN" style="font-family: SimSun;"></span></p><p><img alt="Unity 3D本地发布WebPlayer版时Failed to download data file解决方案(IIS 6/7) - Neo - 生命，本是修行" src="http://img0.ph.126.net/Q1GyY2Ie_MizMCe4n5qn6w==/3249347131247872785.png" style="border: 0px; max-width: 100%; height: auto; margin: 0px 10px 0px 0px;"/></p><p><span style="color: rgb(102, 102, 102); font-family: &#39;Hiragino Sans GB W3&#39;, &#39;Hiragino Sans GB&#39;, Arial, Helvetica, simsun, u5b8bu4f53; line-height: 28px;  background-color: rgb(255, 255, 255);">&nbsp;</span></p><p style="line-height: 28px; margin-top: 0px; margin-bottom: 10px; padding: 0px; color: rgb(102, 102, 102); font-family: &#39;Hiragino Sans GB W3&#39;, &#39;Hiragino Sans GB&#39;, Arial, Helvetica, simsun, u5b8bu4f53; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="line-height: 28px; margin-top: 0px; margin-bottom: 10px; padding: 0px; color: rgb(102, 102, 102); font-family: &#39;Hiragino Sans GB W3&#39;, &#39;Hiragino Sans GB&#39;, Arial, Helvetica, simsun, u5b8bu4f53; white-space: normal; background-color: rgb(255, 255, 255);"><v shape="" id="图片_x0020_3" ospid="_x0000_i1027" type="#_x0000_t75" style="width: 415.5pt; height: 62.25pt; visibility: visible;"></v></p><p style="line-height: 28px; margin-top: 0px; margin-bottom: 10px; padding: 0px; color: rgb(102, 102, 102); font-family: &#39;Hiragino Sans GB W3&#39;, &#39;Hiragino Sans GB&#39;, Arial, Helvetica, simsun, u5b8bu4f53; white-space: normal; background-color: rgb(255, 255, 255);"><span lang="ZH-CN" style="font-family: SimSun;">双击打开</span>MIME<span lang="ZH-CN" style="font-family: SimSun;">，选择添加：</span></p><p style="line-height: 28px; margin-top: 0px; margin-bottom: 10px; padding: 0px; color: rgb(102, 102, 102); font-family: &#39;Hiragino Sans GB W3&#39;, &#39;Hiragino Sans GB&#39;, Arial, Helvetica, simsun, u5b8bu4f53; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 22px; font-family: Arial, sans-serif; background-color: rgb(255, 252, 246);"><strong style="line-height: 28px;">.unity3d</strong></span></p><p style="text-align:left;line-height: 16.5pt; margin-top: 0px; margin-bottom: 7.5pt; padding: 0px; color: rgb(102, 102, 102); font-family: &#39;Hiragino Sans GB W3&#39;, &#39;Hiragino Sans GB&#39;, Arial, Helvetica, simsun, u5b8bu4f53; white-space: normal; background-color: rgb(255, 252, 246);"><span style="line-height: 28px; font-family: Arial, sans-serif;"><strong>application/octet-stream</strong></span></p><p style="line-height: 28px; margin-top: 0px; margin-bottom: 10px; padding: 0px; color: rgb(102, 102, 102); font-family: &#39;Hiragino Sans GB W3&#39;, &#39;Hiragino Sans GB&#39;, Arial, Helvetica, simsun, u5b8bu4f53; white-space: normal; text-align: center; background-color: rgb(255, 255, 255);">&nbsp;<img alt="Unity 3D本地发布WebPlayer版时Failed to download data file解决方案(IIS 6/7) - Neo - 生命，本是修行" src="http://img2.ph.126.net/4tNY3xRf9ZU9jUuP4xCAug==/1973702536795206248.png" style="line-height: 22px; border: 0px; max-width: 100%; height: auto; font-family: SimSun; margin: 0px 10px 0px 0px;"/></p><p style="line-height: 28px; margin-top: 0px; margin-bottom: 10px; padding: 0px; color: rgb(102, 102, 102); font-family: &#39;Hiragino Sans GB W3&#39;, &#39;Hiragino Sans GB&#39;, Arial, Helvetica, simsun, u5b8bu4f53; white-space: normal; background-color: rgb(255, 255, 255);"><span lang="ZH-CN" style="font-family: SimSun;">如果是</span>IIS6<span lang="ZH-CN" style="font-family: SimSun;">，则右击计算机名，选择属性，找到</span>MIME<span lang="ZH-CN" style="font-family: SimSun;">类型</span></p><p style="line-height: 28px; margin-top: 0px; margin-bottom: 10px; padding: 0px; color: rgb(102, 102, 102); font-family: &#39;Hiragino Sans GB W3&#39;, &#39;Hiragino Sans GB&#39;, Arial, Helvetica, simsun, u5b8bu4f53; white-space: normal; background-color: rgb(255, 255, 255);"><span lang="ZH-CN" style="font-family: SimSun;"><img alt="Unity 3D本地发布WebPlayer版时Failed to download data file解决方案(IIS 6/7) - Neo - 生命，本是修行" src="http://img2.ph.126.net/aK7A4oyt6knuZpvtoZiPog==/1969198937167835207.png" style="line-height: 22px; border: 0px; max-width: 100%; height: auto; margin: 0px 10px 0px 0px;"/></span></p><p style="line-height: 28px; margin-top: 0px; margin-bottom: 10px; padding: 0px; color: rgb(102, 102, 102); font-family: &#39;Hiragino Sans GB W3&#39;, &#39;Hiragino Sans GB&#39;, Arial, Helvetica, simsun, u5b8bu4f53; white-space: normal; background-color: rgb(255, 255, 255);"><v shape="" id="图片_x0020_5" ospid="_x0000_i1025" type="#_x0000_t75" style="width: 414.75pt; height: 242.25pt; visibility: visible;"></v></p><p style="line-height: 28px; margin-top: 0px; margin-bottom: 10px; padding: 0px; color: rgb(102, 102, 102); font-family: &#39;Hiragino Sans GB W3&#39;, &#39;Hiragino Sans GB&#39;, Arial, Helvetica, simsun, u5b8bu4f53; white-space: normal; background-color: rgb(255, 255, 255);"><span lang="ZH-CN" style="font-family: SimSun;">新建就</span>OK<span lang="ZH-CN" style="font-family: SimSun;">啦！</span></p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

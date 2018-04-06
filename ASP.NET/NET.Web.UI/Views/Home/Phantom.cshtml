@@ -1,0 +1,96 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/kebue.ico">
+    <link rel="icon" href="/images/kebue.ico">
+    <meta name="Title" content="科布尔，科技社区,科布尔是一个面向开发者的知识分享社区">
+    <title>网页爬虫，并截图 - 科布尔</title>
+    <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row"><div class="col-xs-3"></div><div class="col-xs-6"><div style="margin:0 auto"><h2>科布尔，网页爬虫，截图神器</h2><br /><div class="col-xs-3">   <a href="http://so.kebue.com/" class="btn-link" target="_blank" title="科布尔，科技社区,科布尔是一个面向开发者的知识分享社区">科布尔</a></div></div></div></div>
+                <div class="row">
+                    <div class="form-group">
+                        <hr />
+                        <div class="col-sm-5">
+                            <input type="url" class="form-control" id="txtAddress" placeholder="请输入爬取网址">
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" class="form-control btn btn-primary" id="BtnHtmlrun">抓取</button>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="http://kebue.com/" class="btn-link" id="txtImage" target="_blank" title="科布尔，科技社区,科布尔是一个面向开发者的知识分享社区">打开截图</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <br /><br />
+                        <textarea id="htmlContent" style="height:500px;width:100%"></textarea>
+                    </div>
+                </div>
+                <script src="/js/jquery-1.9.1.js"></script>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $("#txtImage").hide();
+                        $("#BtnHtmlrun").click(function () {
+                            try {
+                                if ($("#txtAddress").val() == null || $("#txtAddress").val().length < 1) {
+                                    alert("网址地址不可为空");
+                                    return;
+                                }
+                                disabled(true);
+                                $.ajax({
+                                    type: "POST", url: "/Home/Crawler/", data: { url: $("#txtAddress").val() },
+                                    success:
+                                    function (result) {
+                                        disabled(false);
+                                        if (result != null && result.href != null && result.content) {
+                                            $("#htmlContent").val(result.content);
+                                            $("#txtImage").show();
+                                            $("#txtAddress").val('')
+                                            $("#txtImage").attr("href", result.href);
+                                        }
+                                    },
+                                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                        disabled(false);
+                                        console.log(XMLHttpRequest.status);
+                                        console.log(XMLHttpRequest.readyState);
+                                        console.log(textStatus);
+                                    }
+                                });
+                            } catch (e) {
+                                disabled(false);
+                            }
+                        })
+                    });
+                    function disabled(obj) {
+                        if (obj) {
+                            var index = layer.load(0, { shade: false }); //0代表加载的风格，支持0-2
+                            //loading层
+                            //var index = layer.load(1, {
+                            //    shade: [0.1, '#fff'] //0.1透明度的白色背景
+                            //});
+                        } else {
+                            setTimeout(function () {
+                                layer.closeAll('loading');
+                            }, 2000);
+                        }
+                        $("#txtAddress").attr('disabled', obj);
+                        $("#BtnHtmlrun").attr('disabled', obj);
+                    }
+                </script>
+            </div> <!-- 类容主题 -->
+        </div>
+    </div>
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/Plug/layer-v2.4/layer/layer.js?v=AcHaxDUPEu4UmUkaT1kAjgTxfkFMLhWhZpDzs_4LH1U"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=奇妙的并行问题>
+    <meta name="keywords" content=人名模糊查找，是一个非常寻常的功能。然而用起来发现了一个问题比方说我有一个人员Table 数据量大概300W。人名那列有索引--这个是背景故事然后看下以下这两句，是不是并没有什么卵区别DECLARE@NameNVARCHAR(50)=黄小ASELECT*  FROMdbo.tb_personsWHEREpess_fullnameLIKE%+@Name+%SELECT*  FROMdbo.tb_pe>
+    <title>奇妙的并行问题</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/A6B67D7C-1B75-4AF4-AF00-7D4EF126AFA9.html' title='SQLServer'>SQLServer</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>奇妙的并行问题</h1>
+                        <pre>
+                        <code>
+                            <p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);">人名模糊查找，是一个非常寻常的功能。然而用起来发现了一个问题</p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);">比方说我有一个人员Table 数据量大概300W。人名那列有索引--这个是背景故事</p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);">然后看下以下这两句，是不是并没有什么卵区别</p><p><span class="cnblogs_code_copy" style="padding-right: 5px; line-height: 1.5 !important;"><a title="复制代码" style="color: rgb(0, 102, 255); border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="border: none !important;"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">DECLARE&nbsp;@Name&nbsp;NVARCHAR(50)=&#39;黄小A&#39;SELECT&nbsp;&nbsp;*  &nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;dbo.tb_persons&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHERE&nbsp;pess_fullname&nbsp;LIKE&nbsp;&#39;%&#39;+@Name+&#39;%&#39;SELECT&nbsp;&nbsp;*  &nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;dbo.tb_persons&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHERE&nbsp;pess_fullname&nbsp;LIKE&nbsp;&#39;%黄小A%&#39;</pre><p><span class="cnblogs_code_copy" style="padding-right: 5px; line-height: 1.5 !important;"><a title="复制代码" style="color: rgb(0, 102, 255); border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="border: none !important;"/></a></span></p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);">是的！在平时执行的时候，确实没有区别，在300W的数据里面直接秒出结果。然而在存储过程里面就不一样了~</p><p><span class="cnblogs_code_copy" style="padding-right: 5px; line-height: 1.5 !important;"><a title="复制代码" style="color: rgb(0, 102, 255); border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="border: none !important;"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">CREATE&nbsp;PROC&nbsp;Tmp_Proc  (&nbsp;&nbsp;&nbsp;&nbsp;@Name&nbsp;NVARCHAR(50)  )ASSET&nbsp;NOCOUNT&nbsp;ON;SET&nbsp;TRANSACTION&nbsp;ISOLATION&nbsp;LEVEL&nbsp;READ&nbsp;UNCOMMITTED;SELECT&nbsp;&nbsp;pess_id,pess_fullname&nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;dbo.tb_persons&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHERE&nbsp;pess_fullname&nbsp;LIKE&nbsp;&#39;%&#39;+@Name+&#39;%&#39;GOCREATE&nbsp;PROC&nbsp;Tmp_Proc2ASSET&nbsp;NOCOUNT&nbsp;ON;SET&nbsp;TRANSACTION&nbsp;ISOLATION&nbsp;LEVEL&nbsp;READ&nbsp;UNCOMMITTED;SELECT&nbsp;&nbsp;pess_id,pess_fullname&nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;dbo.tb_persons&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHERE&nbsp;pess_fullname&nbsp;LIKE&nbsp;&#39;%黄小变%&#39;GO</pre><p><span class="cnblogs_code_copy" style="padding-right: 5px; line-height: 1.5 !important;"><a title="复制代码" style="color: rgb(0, 102, 255); border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="border: none !important;"/></a></span></p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);">执行起来是不是一样？？ NO !</p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);">上图，存储过程1执行了接近5S，存储过程2确实正常的50毫秒，怎么会这样呢？</p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);"><img src="http://images2015.cnblogs.com/blog/675244/201511/675244-20151127174958609-1143931783.png" alt="" width="279" height="383" style="border: 0px;"/></p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);">&nbsp;</p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);">然后我开启了Profile ,终于发现问题，存储过程1里面Parallel里面的并行全部是0，没有启用并行</p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);"><img src="http://images2015.cnblogs.com/blog/675244/201511/675244-20151127175734781-514459430.png" alt="" style="border: 0px; width: 655px;"/></p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);">存储过程2就还是简单明了，并行运行。╮(╯_╰)╭原来还有这一套</p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);"><img src="http://images2015.cnblogs.com/blog/675244/201511/675244-20151127175833812-1298485421.png" alt="" style="border: 0px;"/></p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);">&nbsp;</p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);">&nbsp;</p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);">要解决这个问题。可以在存储过程里面使用动态语句进行拼接，就可以还是使用并行了yeah~</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

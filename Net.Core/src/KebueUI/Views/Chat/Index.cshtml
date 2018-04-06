@@ -1,0 +1,254 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="//cdn.bootcss.com/bootstrap/4.0.0-alpha.2/css/bootstrap.css" rel="stylesheet">
+    <link rel="shortcut icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="icon" href="http://www.kebue.com//images/kebue.ico">
+    <script src="~/js/jquery-1.9.1.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/Home/js/angular.js"></script>
+    <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <meta name="Title" content="科布尔，科小智,机器人,智能机器人，科技社区,科布尔是一个面向开发者的知识分享社区">
+    <meta name="Keywords" content="科布尔，科小智,机器人,智能机器人，科技社区,科布尔是一个面向开发者的知识分享社区" />
+    <title>机器人 科布尔</title>
+    <link href="~/css/turing.css" rel="stylesheet" />
+
+    <style>
+        #discussions {
+            max-height: 500px;
+            overflow: auto;
+            height: 500px;
+            /*width: 500px;*/
+        }
+
+        .chat-left {
+            margin-top: 40px;
+        }
+
+        #sendmessage {
+            width: 100%;
+        }
+
+        #chat-robot-context {
+            background: #FFFF99;
+            color: #000000;
+            word-wrap: break-word;
+            white-space: normal;
+            max-height: 100px;
+            overflow: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body class="gradient">
+    <div class="container">
+        <div class="text-header">
+            <p>
+                <hr />
+                <span><b>机器人-科小智</b></span>&nbsp;&nbsp;
+                <span>
+                    <a href="http://kebue.com/" style="color:#080808" title="kebue.com 科布尔，科技社区,知识分享">
+                        <i class="glyphicon glyphicon-home text-primary"></i>
+                    </a>
+                </span>&nbsp;&nbsp;
+                <span><<b id="countTol">@{@ViewBag.countTool}</b>/>人在线</span>
+            </p>
+        </div>
+        <div id="container" ng-controller="TaskCtrl-1">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="list-group" id="discussions">
+                        <li ng-repeat="item in tasks track by $index">
+                            <div class="row">
+                                <div class="chat-left col-xs-6">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <dl>
+                                                <dt style="white-space:nowrap">科小智</dt>
+                                                <dd>
+                                                    <img src="~/images/im.jpg" title="我是科布尔--科小智--机器人" width="35" height="35">
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <div id="chat-robot-context">
+                                                {{item.info}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6" style="border:1px solid 1px red">
+                                    <div class='row'>
+                                        <div class='col-xs-6'>
+                                            <div class='chat-context chat-right-context'>
+                                                {{item.message}}
+                                            </div>
+                                        </div>
+                                        <div class='col-xs-6'>
+                                            <dl class='chat-right-title'>
+                                                <dt>
+                                                    <span class='fll'>
+                                                        <i class='glyphicon glyphicon-user'>
+                                                        </i>
+                                                        &nbsp;{{item.address}}
+                                                    </span>
+                                                    <span class='flr'>
+                                                        <img class='chat-right-title-img' src='~/images/user/0.jpg' title='{{item.modelType}} {{item.ip}}   科布尔-机器人-科小智' width='35' height='35'>
+                                                    </span>
+                                                </dt>
+                                                <dd>
+                                                    <span class='fll'></span><span class='flr'>{{item.date}}&nbsp;</span>
+                                                </dd>
+                                                <dd>
+                                                    <span class='fll'>
+                                                        {{item.os}}
+                                                    </span>
+                                                    <span class='clear'>
+                                                    </span>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-xs-10">
+                    <div class="input-group">
+                        <input ng-model="task" ng-keyup="myKeyup($event)" type="text" class="form-control" maxlength="30" min="1" max="30" placeholder="请键入你要提问的关键字,(限长30个字符)，如：苏州今天天气" required="required" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-danger" ng-click="add()">&nbsp;发送 / Enter &nbsp;</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="input-group">
+                        @*<div class="btn-group dropup">
+                                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                                    设置 <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="ISScraper">开启刷屏</a></li>
+                                    <li class="divider"></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../Home/NewKnow" target="_blank">新建知识库</a></li>
+                                    <li class="divider"></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../Home/NewKnowList" target="_blank">机器人控制中心</a></li>
+                                    <li class="divider"></li>
+                                </ul>
+                            </div>*@
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <br />
+                    <strong class="text-white"><a>键入关键词（ help     或  帮助 )获取帮助</a></strong><br /><br />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8">
+                    <footer id="zan-footer">
+
+                        <!-- 版权信息 -->
+                        <div class="col-xs-4" style="padding-left: 0;">
+                            <h4 style="font-weight: bold; border-bottom: solid 1px #999; padding-bottom: 5px;">关于本站</h4>
+                            <p>Copyright © 2016-2116 <a href="http://www.kebue.com">科布尔</a></p>
+                            <p><a href="http://www.miibeian.gov.cn" target="_blank" title="陕ICP备15014626号-2" _href="http://www.miibeian.gov.cn">陕ICP备15014626号-2</a></p>
+                            <p>Power by <a href="http://icp.chinaz.com/info?q=%E9%99%95ICP%E5%A4%8715014626%E5%8F%B7" target="_blank">科布尔</a></p>
+                        </div>
+                        <div class="col-xs-4" style="padding-left: 0px; text-align: center; min-height: 165px; position: relative;">
+                            <p style="width: 170px; height: 50px; overflow: hidden; position: absolute; top: 50%; left: 50%; margin: -25px 0 0 -85px;"></p>
+                        </div>
+                        <div class="col-xs-4" style="padding-left: 0px;">
+                            <h4 style="font-weight: bold; border-bottom: solid 1px #999; padding-bottom: 5px;">联系我们</h4>
+                            <p>
+                                C#.NET,Net Core技术群：<a href="http://jq.qq.com/?_wv=1027&k=2DMzHE6" target="_blank" _href="http://jq.qq.com/?_wv=1027&k=2DMzHE6">428549376</a>
+                                <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=6132f5422023914b0c3a0c7cb83484f07b233b337ff2d31004acf3afdd4fef52"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt=".Net Core 研究院" title=".Net Core 研究院"></a>
+                            </p>
+                            <p>邮箱：admin@kebue.com</p>
+                        </div>
+                        <!-- 版权信息结束 -->
+
+                        <div class="margin-center">
+                            <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1260373153'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1260373153%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
+                        </div>
+                        <hr />
+                        <h6>友情链接</h6>
+                        <a href="http://www.itsvse.com/" target="_blank">架构师</a>
+                    </footer>
+                </div>
+                <div class="col-xs-2"></div>
+            </div>
+        </div>
+
+    </div>
+    <input type="hidden" id="hidcip" />
+    <input type="hidden" id="hidaddress" />
+    <input type="hidden" id="hidmodelType" />
+    <input type="hidden" id="hidos" />
+</body>
+</html>
+<script type="text/javascript">
+    angular.module('app', [])
+   .controller('TaskCtrl-1', function ($scope) {
+       $scope.task = "";
+       $scope.tasks = [];
+       $scope.myKeyup = function (e) {
+           var keycode = window.event ? e.keyCode : e.which;
+           if (keycode == 13) {
+               taskFunction();
+           }
+       };
+       $scope.add = function () {
+           taskFunction();
+       }
+       function taskFunction() {
+           if ($scope.task.length > 0) {
+               var info;
+               var now = new Date();
+               var month = now.getMonth() + 1;
+               var day = now.getDate();
+               var hours = now.getHours();
+               var minutes = now.getMinutes();
+               var seconds = now.getSeconds();
+               $.ajax({
+                   type: "POST",
+                   url: "../Chat/ChartSend",
+                   async: false,
+                   data: { info: $scope.task },
+                   success: function (result) {
+                       $scope.tasks.push({ info: result, message: $scope.task, ip: $("#hidcip").val(), address: $("#hidaddress").val(), modelType: $("#hidmodelType").val(), os: $("#hidos").val(), date: month + "/" + day + " " + hours + ":" + minutes + ":" + seconds + "" });
+                       $scope.task = "";
+                   }
+               });
+           }
+       }
+   });
+    function CallFunction() {
+        document.getElementById('discussions').scrollTop = Math.max(0, document.getElementById('discussions').scrollHeight - document.getElementById('discussions').offsetHeight);
+    }
+    setInterval("CallFunction()", "1000");
+    $(document).ready(function () {
+        var cip = returnCitySN["cip"];
+        $("#hidcip").val(cip);
+        $.post("../Chat/ChatVerification",
+            {
+                UserAgent: navigator.userAgent, cip: cip, Token: $("#hidToken").val()
+            }, function (result) {
+                $("#hidaddress").val(result.mapEntity.content.formatted_address);
+                $("#hidmodelType").val(result.modelType);
+                $("#hidos").val(result.os);
+            })
+    })
+</script>

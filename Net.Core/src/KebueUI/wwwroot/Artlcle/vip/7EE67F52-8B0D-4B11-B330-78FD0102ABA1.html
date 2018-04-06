@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=用div和css样式控制页面布局>
+    <meta name="keywords" content=1!DOCTYPEhtml2htmlxmlns=http://www.w3.org/1999/xhtml3head4metahttp-equiv=Content-Typecontent=text/html;charset=utf-8/5title网页布局练习/title67linkhref=../EX_Asp_Net/css/div.cssrel=stylesheet/8/head9body10h>
+    <title>用div和css样式控制页面布局</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/B8C0509A-82D4-4BD7-A1BB-5BAF70ED1C60.html' title='.NET'>.NET</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>用div和css样式控制页面布局</h1>
+                        <pre>
+                        <code>
+                            <p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代?? style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">&nbsp;1&nbsp;&lt;!DOCTYPE&nbsp;html&gt;&nbsp;2&nbsp;&lt;html&nbsp;xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&nbsp;3&nbsp;&lt;head&gt;&nbsp;4&nbsp;&lt;meta&nbsp;http-equiv=&quot;Content-Type&quot;&nbsp;content=&quot;text/html;&nbsp;charset=utf-8&quot;/&gt;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;网页布局练习&lt;/title&gt;&nbsp;6&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link&nbsp;href=&quot;../EX_Asp_Net/css/div.css&quot;&nbsp;rel=&quot;stylesheet&quot;&nbsp;/&gt;&nbsp;8&nbsp;&lt;/head&gt;&nbsp;9&nbsp;&lt;body&gt;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&nbsp;align=&quot;center&quot;&gt;利用div和css对页面的布局进行调整&lt;/h1&gt;&lt;hr&nbsp;/&gt;11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;d1&quot;&gt;12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;窗口1&lt;/h3&gt;13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;d2&quot;&gt;&lt;h3&gt;窗口2&lt;/h3&gt;&lt;/div&gt;15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;d3&quot;&gt;&lt;h3&gt;窗口3&lt;/h3&gt;&lt;/div&gt;16&nbsp;&lt;/body&gt;17&nbsp;&lt;/html&gt;</pre><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">css代码：</p><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">&nbsp;1&nbsp;bod&nbsp;{&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin:100%;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding:100%;&nbsp;4&nbsp;&nbsp;5&nbsp;}&nbsp;6&nbsp;.d1{&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:200px;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height:600px;&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color:red;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin-left:20px;11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin-top:20px;12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position:absolute;13&nbsp;}14&nbsp;.d2{15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:800px;16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height:150px;17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color:greenyellow;18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position:absolute;19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left:235px;20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin-top:20px;21&nbsp;&nbsp;&nbsp;&nbsp;22&nbsp;}23&nbsp;.d3{24&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:800px;25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height:420px;26&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position:absolute;27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left:235px;28&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color:#19a1f8&nbsp;;29&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin-top:200px;30&nbsp;31&nbsp;}</pre><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);"><img src="http://images2015.cnblogs.com/blog/833762/201511/833762-20151123171317420-1954513233.png" alt="" style="margin: 0px; padding: 0px; border: 0px;"/></p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

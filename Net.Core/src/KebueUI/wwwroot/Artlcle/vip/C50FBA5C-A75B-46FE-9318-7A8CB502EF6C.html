@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=js 验证电话号 座机及手机号>
+    <meta name="keywords" content=functionCheckTel(){/*验证电话号码  验证规则：区号+号码，区号以0开头??位或4位号码由7位或8位数字组成  区号与号码之间可以无连接符，也可以“-”连接  如01088888888,010-88888888,0955-7777777*/  varisPhone=/^0\d{2,3}-?\d{7,8}$/;/*验证手机号码  移动：134(1349除外）13513613713>
+    <title>js 验证电话号 座机及手机号</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/9D69FD3D-028F-4239-89F1-BAC91B1DFF4A.html' title='JavaScript'>JavaScript</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>js 验证电话号 座机及手机号</h1>
+                        <pre>
+                        <code>
+                            <pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-size: 12px; line-height: 21.6px; font-family: &#39;Courier New&#39; !important;">function&nbsp;CheckTel()&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;/*验证电话号码&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;验证规则：区号+号码，区号以0开头??位或4位号码由7位或8位数字组成&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;区号与号码之间可以无连接符，也可以“-”连接&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;如01088888888,010-88888888,0955-7777777&nbsp;*/  &nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;isPhone&nbsp;=&nbsp;/^0\d{2,3}-?\d{7,8}$/;&nbsp;&nbsp;&nbsp;&nbsp;/*验证手机号码  &nbsp;&nbsp;&nbsp;&nbsp;移动：134(1349除外）135&nbsp;136&nbsp;137&nbsp;138&nbsp;139&nbsp;147&nbsp;150&nbsp;151&nbsp;152&nbsp;157&nbsp;158&nbsp;159&nbsp;182&nbsp;183&nbsp;184&nbsp;187&nbsp;188  &nbsp;&nbsp;&nbsp;&nbsp;联通：130&nbsp;131&nbsp;132&nbsp;155&nbsp;156&nbsp;185&nbsp;186&nbsp;145  &nbsp;&nbsp;&nbsp;&nbsp;电信：133&nbsp;153&nbsp;177&nbsp;180&nbsp;181&nbsp;189*/  &nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;isMob&nbsp;=&nbsp;/^((\+?86)|(\(\+86\)))?(13[012356789][0-9]{8}|15[012356789][0-9]{8}|18[02356789][0-9]{8}|147[0-9]{8}|1349[0-9]{7})$/;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;value&nbsp;=&nbsp;$(&quot;#telphone&quot;).val();&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(isMob.test(value)&nbsp;||&nbsp;isPhone.test(value))&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;true;  &nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;false;  &nbsp;&nbsp;&nbsp;&nbsp;}  }</pre><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

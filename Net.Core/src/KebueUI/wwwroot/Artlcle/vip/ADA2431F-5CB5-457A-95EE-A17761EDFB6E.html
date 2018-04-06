@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=Oracle生日提醒sql语句写法>
+    <meta name="keywords" content=Oracle生日提醒sql语句写法今天想做个员工生日提醒的模块，突然发现语句还不好写，于是百度总结了一下，呵呵。SELECT * from 表名 where HUMANSTATE=正常在职 AND(TO_NUMBER(TO_CHAR((DATEOFBIRTH),MM)) = TO_NUMBER(TO_CHAR((sysdate),MM))) AND (TO_NUMBER(TO_CHAR((DATE>
+    <title>Oracle生日提醒sql语句写法</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/0D8667FF-B247-4368-A163-B9D7274FE236.html' title='Oracle'>Oracle</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>Oracle生日提醒sql语句写法</h1>
+                        <pre>
+                        <code>
+                            <h1 style="background-color: inherit;">Oracle生日提醒sql语句写法</h1><p style="font-family: verdana, Arial, Helvetica, sans-serif;"><span style="background-color: inherit; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">今天想做个员工生日提醒的模块，突然发现语句还不好写，于是百度总结了一下，呵呵。</span></p><p style="font-family: verdana, Arial, Helvetica, sans-serif;"><span style="background-color: inherit; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">SELECT * from 表名 where HUMANSTATE=&#39;正常在职&#39; AND&nbsp;<span style="color: rgb(255, 0, 0); background-color: inherit;">(TO_NUMBER(TO_CHAR((DATEOFBIRTH),&#39;MM&#39;)) = TO_NUMBER(TO_CHAR((sysdate),&#39;MM&#39;))) AND (TO_NUMBER(TO_CHAR((DATEOFBIRTH),&#39;DD&#39;)) BETWEEN TO_NUMBER(TO_CHAR((sysdate),&#39;DD&#39;)) AND TO_NUMBER(TO_CHAR((sysdate),&#39;DD&#39;))+7)</span></span></p><p style="font-family: verdana, Arial, Helvetica, sans-serif;"><span style="background-color: inherit; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">红色部分为提醒条件，最后一个7是提前7天提醒，你可以随便改。</span></p><p><span style="background-color: inherit; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;"><br/></span></p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

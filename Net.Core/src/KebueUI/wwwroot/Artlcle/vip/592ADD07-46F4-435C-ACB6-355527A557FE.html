@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=关于自定义表类型遇到的问题~>
+    <meta name="keywords" content=有时候存储过程使用自定义表类型，就一个字~方便，类似于整个table直接传入到存储过程里面去玩，比起万能的xml~ 还不用解析，直接能用~多方便。但是！！！使用自定义表变量，并不一定是一帆风顺的~比如说和如果调用的参数不是有数据库这边来组装，由程序去控制传入的时候，我目前发现的就有以下2个地方十分的需要注意1、字段顺序！  在我们看来，自定义表变量，就当时一个普通的表进行使用，赋值，写插入，直接i>
+    <title>关于自定义表类型遇到的问题~</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/A6B67D7C-1B75-4AF4-AF00-7D4EF126AFA9.html' title='SQLServer'>SQLServer</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>关于自定义表类型遇到的问题~</h1>
+                        <pre>
+                        <code>
+                            <p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);">有时候存储过程使用自定义表类型，就一个字~方便，类似于整个table直接传入到存储过程里面去玩，比起&quot;万能&quot;的xml~ 还不用解析，直接能用~多方便。</p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);"><span style="line-height: 1.8 !important; font-size: 14pt;"><strong>但是！！！</strong></span></p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);"><span style="line-height: 1.8 !important; font-size: 13px;">使用自定义表变量，并不一定是一帆风顺的~比如说和如果调用的参数不是有数据库这边来组装，由程序去控制传入的时候，我目前发现的就有以下2个地方十分的需要注意</span></p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);"><span style="line-height: 1.8 !important; font-size: 13px;">1、字段顺序！</span></p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);"><span style="line-height: 1.8 !important; font-size: 13px;">&nbsp; &nbsp; 在我们看来，自定义表变量，就当时一个普通的表进行使用，赋值，写插入，直接insert select 就完事了~但是，如果写在存储过程的传入参数里面，确不一定这样看，程序传入，生成的表变量，是严格按照表的字段顺序去插入的。其实也就是 insert into biao变量 values () 这样的语句。所以，有时候数据库调试没问题，但是程序调用的时候直接报错，有可能就是这个问题了，这个最直接的例子就是，在建自定义表类型中间的字段有个默认值，程序传的时候没赋值……然后一调用，直接就报插入字段数目不对了</span></p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);"><span style="line-height: 1.8 !important; font-size: 13px;">2、标识列！</span></p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);"><span style="line-height: 1.8 !important; font-size: 13px;">&nbsp; &nbsp; 同理，标识列并不能在程序里面直接Insert进来，所以直接报错╮(╯_╰)╭。</span></p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);">&nbsp;</p><p style="margin: 10px auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, sans-serif, &#39;Lucida Grande&#39;; font-size: 13.3333px; line-height: 24px; white-space: normal; background-color: rgb(214, 211, 214);"><span style="line-height: 1.8 !important; font-size: 13px;">应该来说，这2方面的问题可大可小，发现起来也不难，只是日常发现了~就跟大家分享一下</span></p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

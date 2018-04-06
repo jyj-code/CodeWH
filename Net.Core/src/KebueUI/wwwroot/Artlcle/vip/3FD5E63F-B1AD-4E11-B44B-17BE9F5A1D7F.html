@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=加密/解密方法>
+    <meta name="keywords" content= #region ========加密========    /// summary    /// 加密    /// /summary    /// param name=Text/param    /// returns/returns  public static string Encrypt(string Text)  {   return Encrypt(Text,MATICSOFT);>
+    <title>加密/解密方法</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/B8C0509A-82D4-4BD7-A1BB-5BAF70ED1C60.html' title='.NET'>.NET</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>加密/解密方法</h1>
+                        <pre>
+                        <code>
+                            <p><span class="Apple-tab-span" style="white-space: pre;"> </span>#region ========加密========&nbsp;</p><p>&nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// 加密</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;Text&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;returns&gt;&lt;/returns&gt;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>public static string Encrypt(string Text)&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>{</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>return Encrypt(Text,&quot;MATICSOFT&quot;);</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>}</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;summary&gt;&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// 加密数据&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;/summary&gt;&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;param name=&quot;Text&quot;&gt;&lt;/param&gt;&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;param name=&quot;sKey&quot;&gt;&lt;/param&gt;&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;returns&gt;&lt;/returns&gt;&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>public static string Encrypt(string Text,string sKey)&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>{&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>DESCryptoServiceProvider des = new DESCryptoServiceProvider();&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>byte[] inputByteArray;&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>inputByteArray=Encoding.Default.GetBytes(Text);&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>des.Key = ASCIIEncoding.ASCII.GetBytes(System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(sKey, &quot;md5&quot;).Substring(0, 8));&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>des.IV = ASCIIEncoding.ASCII.GetBytes(System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(sKey, &quot;md5&quot;).Substring(0, 8));&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>System.IO.MemoryStream ms=new System.IO.MemoryStream();&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>CryptoStream cs=new CryptoStream(ms,des.CreateEncryptor(),CryptoStreamMode.Write);&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>cs.Write(inputByteArray,0,inputByteArray.Length);&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>cs.FlushFinalBlock();&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>StringBuilder ret=new StringBuilder();&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>foreach( byte b in ms.ToArray())&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>{&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">    </span>ret.AppendFormat(&quot;{0:X2}&quot;,b);&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>}&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>return ret.ToString();&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>}&nbsp;</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">  </span>#endregion</p><p><span class="Apple-tab-span" style="white-space:pre">  </span></p><p><span class="Apple-tab-span" style="white-space:pre">  </span>#region ========解密========&nbsp;</p><p>&nbsp; &nbsp;</p><p>&nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// 解密</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;Text&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;returns&gt;&lt;/returns&gt;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>public static string Decrypt(string Text)&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>{</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>return Decrypt(Text,&quot;MATICSOFT&quot;);</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>}</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;summary&gt;&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// 解密数据&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;/summary&gt;&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;param name=&quot;Text&quot;&gt;&lt;/param&gt;&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;param name=&quot;sKey&quot;&gt;&lt;/param&gt;&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;returns&gt;&lt;/returns&gt;&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>public static string Decrypt(string Text,string sKey)&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>{&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>DESCryptoServiceProvider des = new DESCryptoServiceProvider();&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>int len;&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>len=Text.Length/2;&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>byte[] inputByteArray = new byte[len];&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>int x,i;&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>for(x=0;x&lt;len;x++)&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>{&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">    </span>i = Convert.ToInt32(Text.Substring(x * 2, 2), 16);&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">    </span>inputByteArray[x]=(byte)i;&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>}&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>des.Key = ASCIIEncoding.ASCII.GetBytes(System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(sKey, &quot;md5&quot;).Substring(0, 8));&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>des.IV = ASCIIEncoding.ASCII.GetBytes(System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(sKey, &quot;md5&quot;).Substring(0, 8));&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>System.IO.MemoryStream ms=new System.IO.MemoryStream();&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>CryptoStream cs=new CryptoStream(ms,des.CreateDecryptor(),CryptoStreamMode.Write);&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>cs.Write(inputByteArray,0,inputByteArray.Length);&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>cs.FlushFinalBlock();&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>return Encoding.Default.GetString(ms.ToArray());&nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>}&nbsp;</p><p>&nbsp;</p><p><span class="Apple-tab-span" style="white-space: pre;">  </span>#endregion&nbsp;</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

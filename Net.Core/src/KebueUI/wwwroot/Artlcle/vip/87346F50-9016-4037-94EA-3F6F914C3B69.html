@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=DataTable转换成List>
+    <meta name="keywords" content=在用C#作开发的时候经常要把DataTable转换成IList；操作DataTable比较麻烦，把DataTable转换成IList，以对象实体作为IList的元素，操作起来就非常方便。注意：实体的属性必须和数据库中的字段必须一一对应，或者数据库字段名.ToLower().Contains(实体属性名.ToLower())数据类型暂时至支持int、string、DateTime、float、dou>
+    <title>DataTable转换成List</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/B8C0509A-82D4-4BD7-A1BB-5BAF70ED1C60.html' title='.NET'>.NET</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>DataTable转换成List</h1>
+                        <pre>
+                        <code>
+                            <p>在用C#作开发的时候经常要把DataTable转换成IList；操作DataTable比较麻烦，把DataTable转换成IList，以对象实体作为IList的元素，操作起来就非常方便。</p><p>注意：实体的属性必须和数据库中的字段必须一一对应，或者数据库字段名.ToLower().Contains(实体属性名.ToLower())</p><p>数据类型暂时至支持int、string、DateTime、float、double</p><p><br/></p><p>using System;</p><p>using System.Collections;</p><p>using System.Collections.Generic;</p><p>using System.Data;</p><p>using System.Reflection;</p><p>namespace TBToListTest</p><p>{</p><p>&nbsp; public class TBToList&lt;T&gt; where T : new()</p><p>&nbsp; {</p><p>&nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; /// 获取列名集合</p><p>&nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; private IList&lt;string&gt; GetColumnNames(DataColumnCollection dcc)</p><p>&nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; IList&lt;string&gt; list = new List&lt;string&gt;();</p><p>&nbsp; &nbsp; &nbsp; foreach (DataColumn dc in dcc)</p><p>&nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; list.Add(dc.ColumnName);</p><p>&nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; return list;</p><p>&nbsp; &nbsp; }</p><p>&nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; ///属性名称和类型名的键值对集合</p><p>&nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; private Hashtable GetColumnType(DataColumnCollection dcc)</p><p>&nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; if (dcc == null || dcc.Count == 0)</p><p>&nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; return null;</p><p>&nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; IList&lt;string&gt; colNameList = GetColumnNames(dcc);</p><p>&nbsp; &nbsp; &nbsp; Type t = typeof(T);</p><p>&nbsp; &nbsp; &nbsp; PropertyInfo[] properties = t.GetProperties();</p><p>&nbsp; &nbsp; &nbsp; Hashtable hashtable = new Hashtable();</p><p>&nbsp; &nbsp; &nbsp; int i = 0;</p><p>&nbsp; &nbsp; &nbsp; foreach (PropertyInfo p in properties)</p><p>&nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; foreach (string col in colNameList)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (col.ToLower().Contains(p.Name.ToLower()))</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hashtable.Add(col, p.PropertyType.ToString() + i++);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; return hashtable;</p><p>&nbsp; &nbsp; }</p><p>&nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; /// DataTable转换成IList</p><p>&nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; /// &lt;param name=&quot;dt&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; /// &lt;returns&gt;&lt;/returns&gt;</p><p>&nbsp; &nbsp; public IList&lt;T&gt; ToList(DataTable dt)</p><p>&nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; if (dt == null || dt.Rows.Count == 0)</p><p>&nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; return null;</p><p>&nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; PropertyInfo[] properties = typeof(T).GetProperties();//获取实体类型的属性集合</p><p>&nbsp; &nbsp; &nbsp; Hashtable hh = GetColumnType(dt.Columns);//属性名称和类型名的键值对集合</p><p>&nbsp; &nbsp; &nbsp; IList&lt;string&gt; colNames = GetColumnNames(hh);//按照属性顺序的列名集合</p><p>&nbsp; &nbsp; &nbsp; List&lt;T&gt; list = new List&lt;T&gt;();</p><p>&nbsp; &nbsp; &nbsp; T model = default(T);</p><p>&nbsp; &nbsp; &nbsp; foreach (DataRow dr in dt.Rows)</p><p>&nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; model = new T();//创建实体</p><p>&nbsp; &nbsp; &nbsp; &nbsp; int i = 0;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; foreach (PropertyInfo p in properties)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (p.PropertyType == typeof(string))</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; p.SetValue(model, dr[colNames[i++]], null);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else if (p.PropertyType == typeof(int))</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; p.SetValue(model, int.Parse(dr[colNames[i++]].ToString()), null);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else if (p.PropertyType == typeof(DateTime))</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; p.SetValue(model, DateTime.Parse(dr[colNames[i++]].ToString()), null);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else if (p.PropertyType == typeof(float))</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; p.SetValue(model, float.Parse(dr[colNames[i++]].ToString()), null);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else if (p.PropertyType == typeof(double))</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; p.SetValue(model, double.Parse(dr[colNames[i++]].ToString()), null);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; list.Add(model);</p><p>&nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; return list;</p><p>&nbsp; &nbsp; }</p><p>&nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; /// 按照属性顺序的列名集合</p><p>&nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; private IList&lt;string&gt; GetColumnNames(Hashtable hh)</p><p>&nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; PropertyInfo[] properties = typeof(T).GetProperties();//获取实体类型的属性集合</p><p>&nbsp; &nbsp; &nbsp; IList&lt;string&gt; ilist = new List&lt;string&gt;();</p><p>&nbsp; &nbsp; &nbsp; int i = 0;</p><p>&nbsp; &nbsp; &nbsp; foreach (PropertyInfo p in properties)</p><p>&nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; ilist.Add(GetKey(p.PropertyType.ToString() + i++, hh));</p><p>&nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; return ilist;</p><p>&nbsp; &nbsp; }</p><p>&nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; /// 根据Value查找Key</p><p>&nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; private string GetKey(string val, Hashtable tb)</p><p>&nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; foreach (DictionaryEntry de in tb)</p><p>&nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; if (de.Value.ToString() == val)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return de.Key.ToString();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; return null;</p><p>&nbsp; &nbsp; }</p><p>&nbsp; }</p><p>}</p><p>?</p><p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p><p>11</p><p>12</p><p>13</p><p>14</p><p>15</p><p>16</p><p>17</p><p>18</p><p>19</p><p>20</p><p>21</p><p>22</p><p>23</p><p>24</p><p>25</p><p>26</p><p>27</p><p>namespace TBToListTest</p><p>{</p><p>&nbsp; //实体</p><p>&nbsp; public class Person</p><p>&nbsp; {</p><p>&nbsp; &nbsp; public int ID</p><p>&nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; set;</p><p>&nbsp; &nbsp; &nbsp; get;</p><p>&nbsp; &nbsp; }</p><p>&nbsp; &nbsp; public string Name</p><p>&nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; set;</p><p>&nbsp; &nbsp; &nbsp; get;</p><p>&nbsp; &nbsp; }</p><p>&nbsp; &nbsp; public string Age</p><p>&nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; set;</p><p>&nbsp; &nbsp; &nbsp; get;</p><p>&nbsp; &nbsp; }</p><p>&nbsp; &nbsp; public string Lover</p><p>&nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; set;</p><p>&nbsp; &nbsp; &nbsp; get;</p><p>&nbsp; &nbsp; }</p><p>&nbsp; }</p><p>}</p><p>?</p><p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p><p>11</p><p>12</p><p>13</p><p>14</p><p>15</p><p>16</p><p>17</p><p>18</p><p>19</p><p>20</p><p>21</p><p>22</p><p>23</p><p>24</p><p>25</p><p>26</p><p>27</p><p>28</p><p>29</p><p>30</p><p>31</p><p>32</p><p>33</p><p>34</p><p>35</p><p>36</p><p>37</p><p>using System;</p><p>using System.Data;</p><p>namespace TBToListTest</p><p>{</p><p>&nbsp; class Program</p><p>&nbsp; {</p><p>&nbsp; &nbsp; static void Main(string[] args)</p><p>&nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; TBToList&lt;Person&gt; tol = new TBToList&lt;Person&gt;();</p><p>&nbsp; &nbsp; &nbsp; Console.WriteLine();</p><p>&nbsp; &nbsp; &nbsp; DataTable dt = GetTable();</p><p>&nbsp; &nbsp; &nbsp; tol.ToList(dt);</p><p>&nbsp; &nbsp; &nbsp; Console.Read();</p><p>&nbsp; &nbsp; }</p><p>&nbsp; &nbsp; public static DataTable GetTable()</p><p>&nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; DataTable dt = new DataTable();</p><p>&nbsp; &nbsp; &nbsp; dt.Columns.Add(&quot;ID&quot;);</p><p>&nbsp; &nbsp; &nbsp; dt.Columns.Add(&quot;Age&quot;);</p><p>&nbsp; &nbsp; &nbsp; dt.Columns.Add(&quot;Lover&quot;);</p><p>&nbsp; &nbsp; &nbsp; dt.Columns.Add(&quot;Name&quot;);</p><p>&nbsp; &nbsp; &nbsp; DataRow dr = dt.NewRow();</p><p>&nbsp; &nbsp; &nbsp; dr[&quot;ID&quot;] = 1;</p><p>&nbsp; &nbsp; &nbsp; dr[&quot;Age&quot;] = &quot;Age1&quot;;</p><p>&nbsp; &nbsp; &nbsp; dr[&quot;Lover&quot;] = &quot;Lover1&quot;;</p><p>&nbsp; &nbsp; &nbsp; dr[&quot;Name&quot;] = &quot;Name1&quot;;</p><p>&nbsp; &nbsp; &nbsp; dt.Rows.Add(dr);</p><p>&nbsp; &nbsp; &nbsp; DataRow dr1 = dt.NewRow();</p><p>&nbsp; &nbsp; &nbsp; dr1[&quot;ID&quot;] = 2;</p><p>&nbsp; &nbsp; &nbsp; dr1[&quot;Age&quot;] = &quot;Age2&quot;;</p><p>&nbsp; &nbsp; &nbsp; dr1[&quot;Lover&quot;] = &quot;Lover2&quot;;</p><p>&nbsp; &nbsp; &nbsp; dr1[&quot;Name&quot;] = &quot;Name2&quot;;</p><p>&nbsp; &nbsp; &nbsp; dt.Rows.Add(dr1);</p><p>&nbsp; &nbsp; &nbsp; return dt;</p><p>&nbsp; &nbsp; }</p><p>&nbsp; }</p><p>}</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

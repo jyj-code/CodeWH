@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="http://www.kebue.com//images/kebue.ico" />
+    <link rel="icon" href="http://www.kebue.com//images/kebue.ico" />
+    <meta name="Title" content="科布尔，科小智,机器人,智能机器人，科技社区,科布尔是一个面向开发者的知识分享社区" />
+    <title>
+        爱的记忆
+    </title>
+    <link href="../Resources/css/default.css" rel="stylesheet" />
+    <link href="../Resources/css/love.css" rel="stylesheet" />
+    <script src="../Resources/js/jquery1.9.1.min.js"></script>
+    <script src="../Resources/js/love.js"></script>
+</head>
+<body>
+    <div>
+        <div id="mainDiv">
+            <div id="content">
+                <div id="code">
+                    <span class="comments">
+                        衣带渐宽终不悔，为伊消得人憔悴。
+                    </span>
+                    <hr />
+                    <span class="keyword">
+                        只愿卿心似我心，定不负相思意。
+                    </span>
+                    <hr />
+                    <span class="comments">
+                        曾经沧海难为水，除却巫山不是云。
+                    </span>
+                    <hr />
+                    山有木兮木有枝，心悦卿兮卿不知
+                    <hr />
+                    <span class="comments">
+                        有美人兮，见之不忘，一日不见兮，思之如狂。
+                    </span>
+                    <hr />
+                    长相思，在长安。
+                    <hr />
+                    络纬秋啼金井阑，微霜凄凄簟色寒。
+                    <hr />
+                    孤灯不明思欲绝，卷帷望月空长叹，美人如花隔云端。
+                    <hr />
+                    上有青冥之长天，下有渌水之波澜。
+                    <hr />
+                    天长地远魂飞苦，梦魂不到关山难。
+                    <hr />
+                    长相思，摧心肝
+                    <hr />
+                    <span class="keyword">
+                        夜夜相思更漏残，伤心明月凭栏干，想卿思我锦衾寒。
+                    </span>;
+                    <hr />
+                    <span class="keyword">
+                        咫尺画堂深似海，忆来唯把旧书看，几时携手入长安？
+                    </span>;
+                    <hr />
+                    <span class="placeholder" />
+                    <span class="comments">
+                        卿住长江头，我住长江尾；日日思卿不见卿，共饮长江水，
+                    </span>
+                    <hr />
+                    <span class="placeholder" /> 
+                    <span class="comments">
+                      此水几时休？此恨何时已？只愿卿心似我心，定不负相思意。
+                    </span>
+                    <hr />
+                    <h4> <a href="LoveTree.html" title="爱我就点点我">我愿是空气中的一缕尘埃，死生契阔，与子成说,执子之手，与子偕老。</a></h4>
+                </div>
+                <div id="loveHeart">
+                    <canvas id="garden"></canvas>
+                    <div id="words">
+                        <div id="messages">
+                           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 我们相识时光
+                            <div id="elapseClock">
+                            </div>
+                        </div>
+                        <div id="loveu">
+                            <a href="LoveTree.html" title="诺爱我就点点我吧">希望直到永永远远</a>
+                            <div class="signature">
+                                - 姜先生
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <script type="text/javascript">
+          var offsetX = $("#loveHeart").width() / 2;
+          var offsetY = $("#loveHeart").height() / 2 - 55;
+          var str = '2016-11-07 19:33:00';
+          var together = new Date(str);
+          if (!document.createElement('canvas').getContext) {
+              var msg = document.createElement("div");
+              msg.id = "errorMsg";
+              msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+              document.body.appendChild(msg);
+              $("#code").css("display", "none")
+              $("#copyright").css("position", "absolute");
+              $("#copyright").css("bottom", "10px");
+              document.execCommand("stop");
+          }
+          else {
+              setTimeout(function () {
+                  startHeartAnimation();
+              }
+              , 5000);
+              timeElapse(together);
+              setInterval(function () {
+                  timeElapse(together);
+              }
+              , 500);
+              adjustCodePosition();
+              $("#code").typewriter();
+          }
+      </script>
+    </div>
+</body>
+</html>

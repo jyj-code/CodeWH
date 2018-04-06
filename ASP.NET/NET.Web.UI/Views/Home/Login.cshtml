@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "登录";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="icon" href="http://www.kebue.com//images/kebue.ico">
+    <meta name="Title" content="科布尔，科技社区,知识分享">
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/layer-v3.0.1/layer/layer.js"></script>
+    <title>机器人 科布尔</title>
+    <base target="_blank" />
+    <link href="~/Content/login.css" rel="stylesheet" />
+    <script>
+        function Alert(result) {
+            layer.alert(result, {
+                skin: 'layui-layer-lan'
+                       , closeBtn: 0
+                       , shift: 4
+            });
+        }
+        $(document).ready(function () {
+            $("#btnLogin").click(function () {
+                var username = $("#username").val().trim();
+                var password = $("#password").val().trim();
+                if (username != null && password != null) {
+                    $.ajax({
+                        type: "POST", url: "/Home/LoginData/", data: { username: username, password: password }, success: function (result) {
+                            if (result.status > 0) {
+                                $("#username").val("");
+                                $("#password").val("");
+                                location.href = "NewKnowList";
+                            }else
+                                Alert(result.result);
+                        }
+                    });
+                } else
+                    Alert("用户或密码不可为空");
+            })
+        })
+
+    </script>
+</head>
+
+<body>
+    <div class="lg">
+        <form action="#" method="POST">
+            <div class="lg_top"></div>
+            <div class="lg_main">
+                <div class="lg_m_1">
+                    <input id="username" class="ur" />
+                    <input id="password" type="password" class="pw" />
+                </div>
+            </div>
+            <div class="lg_foot">
+                <input type="button" value="点这里登录" id="btnLogin" class="bn" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

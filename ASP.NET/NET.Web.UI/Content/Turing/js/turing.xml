@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Customize>
+  <TurindDb info="able" text="有能力的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="accept" text="接受" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="access" text="访问，存取" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="account" text="帐户" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="activate" text="使活动，使激活" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="activated" text="被激活的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="active" text="活动的，积极的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="administer" text="管理" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="administration" text="管理" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="administrator" text="管理员" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="activex data objects" text="微软公司的 ADO (ActiveX Data Objects) 是一个用于存取数据源的 COM 组件。" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="ado" text="微软公司的 ADO (ActiveX Data Objects) 是一个用于存取数据源的 COM 组件。" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="album" text="相册" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="align" text="对齐" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="all" text="全部的，所有" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="alpha" text="透明度" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="amount" text="总额，数量" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="apartment" text="一套房间，公寓房间" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="append" text="附加" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="application" text="应用程序，申请" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="apply" text="应用，申请" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="argument" text="参数 " code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="array" text="数组，排列" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="ascend" text="上升" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="ascending" text="上升的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="ascending order" text="升序" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="asp" text="活动服务器网页" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="active server page" text="活动服务器网页" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="assemble" text="收集，集合，汇编" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="assembler" text="汇编程序" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="assembly" text="汇编" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="assign" text="指定，分配" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="at" text="在（……位置、地方）" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="attribute" text="属性，特征" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="author" text="作者" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="auto" text="自动的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="back" text="上一步" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="balance" text="天平，平衡，余额" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="bar" text="酒巴，条，棒" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="basic" text="基本的，基础的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="beta" text="测试版，试用版" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="bill" text="帐单，钞票" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="bit" text="位" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="bitmap" text="位图" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="book" text="书籍" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="boolean" text="布尔" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="brush" text="刷，刷子" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="buffer" text="缓冲，缓冲器，缓冲区" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="buffered" text="被缓冲的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="business" text="生意，商业" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="byte" text="字节" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="call" text="调用，访问" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="cancel" text="取消，撤消" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="capacity" text="容量，才能" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="caption" text="标题" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="cash" text="现金" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="change" text="改变" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="clear" text="清除" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="click" text="单击" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="closed" text="被关闭的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="closing" text="正在关闭的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="common language runtime" text="公共语言运行时" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="common language specification" text="通用语言规范" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="clr" text="公共语言运行时" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="cls" text="通用语言规范" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="code" text="编码，代码" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="coefficient" text="系数" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="collection" text="集合" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="combination" text="组合，合并" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="combobox" text="组合框" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="common" text="通用的，公共的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="compile" text="编译" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="compiler" text="编译器" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="complex" text="复合的，复杂的，复数，复合物" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="component" text="组件" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="condition" text="条件，状态" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="connectivity " text="连接性" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="constant                       " text="常数，常量" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="construct" text="建造" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="constructor" text="构造函数，构造器" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="consumer" text="消费者" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="container" text="容器" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="content" text="内容，容量" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="control" text="控制" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="convert" text="转换" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="converter" text="转换器" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="copyto" text="Copy 到……" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="corporation" text="公司，总公司，股份公司" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="counter" text="计数器" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="center processor unit" text="中央处理器单元" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="cpu" text="中央处理器单元" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="cs" text="是在 C# 中类的扩展名，cs 就代表 CSharp。" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="csdn             " text="中国软件开发者网络" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="current" text="当前的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="cursor" text="光标，指针" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="custom" text="自定义的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="customer" text="顾客" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="cut" text="剪切" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="debug" text="调试" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="decimal" text="十进制的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="declaration" text="宣布，宣称，声明" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="declare" text="宣布，宣称，声明" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="delegate" text="委托" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="delimiter" text="分隔符" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="demo" text="演示，示范" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="department" text="部门，（学校的）系" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="descend" text="下降，降落" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="descending order" text="降序" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="design" text="设计" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="destination" text="目的地" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="detail" text="细节，详情" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="develop" text="发展，开发" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="developer" text="开发者" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="dialog" text="对话框" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="dictionary" text="字典，词典" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="dispose" text="处理" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="divide" text="除以" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="dividebyzeroexcepiton" text="除数为零异常" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="dividend" text="被除数" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="divisor" text="除数" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="dll" text="动态链接程序库" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="do" text="执行" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="done" text="完成" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="dot" text="点" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="down" text="向下" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="draw" text="画" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="drawing" text="绘画" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="each" text="每个" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="earn" text="赚，挣" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="edit" text="编辑" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="editor" text="（报社、杂志社等）的编辑" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="employee" text="雇员" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="encode" text="编码" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="encoding" text="编码" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="english" text="英语" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="enter" text="进入" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="entry" text="进入，入口" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="enumerate" text="列举，枚举" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="enumerator" text="计数器" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="event" text="事件" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="example" text="例子，示例" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="excel" text="擅长" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="exception" text="异常" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="exercise" text="练习" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="exit" text="退出" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="experience" text="经历，经验" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="extensible" text="可扩展的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="extension" text="扩充，扩展" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="fcl" text="框架类库" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="framework class library" text="框架类库" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="feedback" text="应答，反馈" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="female" text="女性" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="find" text="查找" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="first" text="第一" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="first name" text="名" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="fix" text="固定，修理" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="fixed" text="固定的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="flow" text="流动" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="flush" text="清空缓冲区" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="focus" text="焦点" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="font" text="字体" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="fore" text="前部" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="form" text="窗体" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="format" text="格式，格式化" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="fraction" text="分数" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="fractional" text="分数的，部分的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="framework" text="骨架，构架，框架" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="fresh" text="刷新" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="friday" text="星期五" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="friend" text="朋友" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="function" text="功能，函数" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="gender" text="社会性别" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="general" text="一般的，普通的，普遍的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="global" text="全球的，全世界的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="goto" text="去到（某一个地方）" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="graduate" text="毕业，大学毕业生，研究生" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="graphical" text="图形的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="gravity" text="重力" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="great" text="大的，伟大的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="greatest" text="最大的，最伟大的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="greet" text="问候，祝贺" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="greeting" text="问候，祝贺" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="hardware" text="硬件" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="hash" text="混杂，乱七八糟" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="height" text="高度" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="hide" text="隐藏" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="high" text="高的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="highest" text="最高的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="holiday" text="假期" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="horizontal" text="水平的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="icon" text="图标" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="ignore" text="忽略，忽视" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="image" text="图像" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="imaginary" text="想像的，虚构的，虚数的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="imagine" text="想像" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="in time" text="及时" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="increment" text="增量" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="indexer" text="指示器，索引器" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="initial" text="最初的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="initialize" text="初始化" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="inner" text="内部的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="interest" text="兴趣，利润，利息" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="interest rate" text="利率" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="interface" text="界面，接口" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="intermediate" text="居于中间的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="invalid" text="无效的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="io" text="输入输出" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="item" text="项目，条款" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="jit" text="及时处理" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="just in time" text="及时处理" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="label" text="标签" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="language" text="语言" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="last" text="最后的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="last name" text="姓氏" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="length" text="长度" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="library" text="库，图书馆" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="line" text="行，直线" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="list" text="列表" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="listbox" text="列表框" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="lock" text="锁" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="logo" text="标识，商标" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="low" text="低的，矮的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="lower" text="较低的（指位置）" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="lowest" text="最低的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="main" text="主要的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="male" text="男性" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="man" text="男人，人类" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="manager" text="经理，管理者" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="mark" text="记号，痕迹，分数" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="master" text="主人，硕士，精通，主要的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="maximize" text="使……达到最大程度" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="maximized" text="最大化的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="maximum" text="最大量" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="mba" text="工商管理学硕士" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="me" text="我" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="memory" text="内存" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="menu" text="菜单" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="method" text="方法" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="micro" text="微型" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="mileage" text="行车里程" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="minimize" text="使……缩小到最小" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="minimized" text="最小化的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="minimum" text="最小量" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="minus" text="减去" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="miscellaneous" text="杂项的，混杂的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="modal" text="模式的（指窗口、对话框等）" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="mode" text="模式" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="model" text="模型，模特" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="monday" text="星期一" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="monitor" text="监视器，显示器" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="mouse" text="老鼠" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="msdn" text="微软开发者网络" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="msil" text="微软中间语言" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="microsoft intermediate language" text="微软中间语言" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="multiline" text="多行" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="multiple" text="多项的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="multiplication" text="乘法" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="multiplier" text="因子，乘积放大倍数。" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="multiply" text="乘" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="my" text="我的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="net" text="网" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="new" text="新的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="next" text="下一步" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="none" text="一个也没有，毫无" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="normal" text="正常的，正规的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="note" text="笔记" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="notepad" text="记事本" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="null" text="零，空的，无效的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="number" text="号码，数字" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="odbc" text="开放式数据库连接" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="of" text="……的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="office" text="办公室" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="offset" text="补偿，偏移量" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="old" text="老的，旧的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="ole" text="对象链接与嵌入" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="oledb" text="对象链接与嵌入数据库" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="only" text="仅仅，只有" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="open" text="开着的，敝开的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="operate" text="操作" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="orange" text="橘子,桔子，橙子,橙色的" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="order" text="顺序" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="os" text="操作系统" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="override" text="重写" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="pad" text="填充,垫" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="page" text="页面" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="parameter" text="参数" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="parse" text="（对句子）做语法分析，解析（句子）" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="password" text="口令，密码" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="paste" text="粘贴" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="path" text="路径" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="pay" text="付款" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="payment" text="支付，付款" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="pen" text="钢笔" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="pendulum" text="摆动的，钟摆" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="percentage" text="百分比，百分率" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="perform" text="执行" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="period" text="时期，周期" code="555001" userid="admin" DateTime="2016-10-17 10:16:45" />
+  <TurindDb info="person" text="人（强调个体，某一个人）" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="personal" text="个人的" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="phone" text="电话" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="photo" text="照片" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="picture" text="图片" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="pocket" text="口袋" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="pocket pc" text="掌上电脑" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="point" text="指针，点" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="population" text="人口" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="position" text="位置" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="press" text="按，压" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="pressure" text="压力" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="preview" text="预览" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="process" text="处理" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="processor" text="处理器" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="professinal" text="专业的，职业的" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="properties" text="属性" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="property" text="属性" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="punctuation" text="标点符号" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="qualification" text="学历，资历，资格" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="quotation" text="引用，引述" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="quotient" text="商" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="radius" text="半径" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="range" text="范围" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="rank" text="排序" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="rate" text="比例，比率" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="rating" text="等级" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="read" text="读" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="reader" text="阅读器" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="real" text="真的，实的，实数" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="rectangle" text="矩形" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="reflection" text="反射" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="region" text="地区，区域" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="register" text="注册，寄存器" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="release" text="发布" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="remove" text="移除" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="result" text="结果" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="retry" text="重试" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="reverse" text="翻转" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="root" text="根" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="rotate" text="旋转，转动（某物）" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="run" text="运行" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="runtime" text="运行时" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="salary" text="薪水" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="sample" text="样品，采样，抽样" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="saturday" text="星期六" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="save" text="保存" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="saving" text="存款" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="school" text="学校" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="science" text="科学" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="scroll" text="卷轴，滚动" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="scrollable" text="可滚动的" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="search" text="搜索，搜寻" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="second" text="第二" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="selected" text="被选择的。" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="send" text="发送" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="sender" text="发送人，发送器" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="sex" text="自然性别" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="share" text="共享，分享" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="sharp" text="尖端的，锋利的。" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="show" text="显示，表现" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="sign" text="签名，符号，记号" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="signed" text="有符号的" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="simple" text="简单的" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="single" text="单个的" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="sizable" text="可改变大小的" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="size" text="尺寸" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="sleep" text="睡觉" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="smart" text="灵敏的，聪明的，潇洒的" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="smartphone" text="智能电话" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="software" text="软件" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="some" text="一些" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="sort" text="排序" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="source" text="源，源头" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="specification" text="规范" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="split" text="分隔，分开" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="square" text="平方，广场，正方形" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="square root" text="平方根（简写：sqrt）" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="stack" text="堆栈" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="stathread" text="单线程套间" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="static" text="静态的" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="status" text="状态" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="stock" text="库存，股票，股份" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="stream" text="流" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="stretch" text="按比例缩放" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="struct" text="structure的缩写" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="structure" text="结构" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="studio" text="工作室" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="sub" text="替代，作替身，前缀：下面，在……之下" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="subject" text="主题，题目" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="summary" text="摘要，概要" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="sunday" text="星期日" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="switch" text="开关，转换" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="tablet" text="碑，牌匾，药片" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="tablet pc" text="平板电脑" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="target" text="目标" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="task" text="任务" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="taskbar" text="任务条，任务栏" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="telephone" text="电话" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="television" text="电视" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="temperature" text="温度" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="temporary" text="临时的，暂时的" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="hello" text="你好" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="third" text="第三" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="this" text="这个" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="thread" text="线程" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="throw" text="扔，抛" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="thursday" text="星期四" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="tick" text="滴答声，给……做记号" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="tip" text="提示" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="to" text="到" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="total" text="总数，总计总的" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="transform" text="转换" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="transformation" text="转换，变形" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="trim" text="修剪、整理（使某物整齐或光滑）" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="truncate" text="切除，截断" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="try" text="尝试" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="tuesday" text="星期二" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="unsigned" text="无符号的" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="upper" text="较高的（指位置、地位）" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="use" text="使用" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="user" text="用户，使用者" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="valid" text="有效的" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="vertical" text="垂直的" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="virtual" text="虚的，虚拟" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="visual" text="可见的" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="void" text="表示此方法/函数无返回值。" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="walk" text="走步" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="warning" text="警报，警告" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="wednesday" text="星期三" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="weekday" text="平日，工作日" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="weekend" text="周末" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="whole" text="全部的，整个的" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="width" text="宽度" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="word" text="单词" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="workshop" text="车间，工作间" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="write" text="写" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="writer" text="作者，记者，作家" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="xml" text="可扩展标记语言" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="extensible markup language" text="可扩展标记语言" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="zero" text="零，就是指阿拉伯数字 0 。" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="public" text="C#中public 修饰符为 公有访问。不受任何限制" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="private" text="C#中private 修饰符为 私有访问。只限于本类成员访问，子类，实例都不能访问" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="protected" text="C#中protected 修饰符为 保护访问。只限于本类和子类访问，实例不能访问。" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="internal" text="C#中internal 修饰符为 内部访问。只限于本项目内访问，其他不能访问。" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="访问修饰符" text="在C#语言中，共有五种访问修饰符：public、private、protected、internal、protected internal。" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="姜言俊" text="男 出生于陕西省 安康 富硒之乡紫阳县， 英文名叫：Tony.Jinag " code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="寇玉珍" text="女 出生于陕西省 安康 富硒之乡紫阳县， 就读于 西安财经学院 天下之佳人，莫若楚国；楚国之丽者，莫若臣里；臣里之美者，莫若臣东家之子。东家之子，增之一分则太长，减之一分则太短，著粉则太白，施朱则太赤。眉如翠羽，肌如白雪，腰如束素，齿如编贝。嫣然一笑，惑阳城，迷下蔡。然此女登墙窥臣三年，至今未许也" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="马苗苗" text="女 天下之佳人，莫若楚国；楚国之丽者，莫若臣里；臣里之美者，莫若臣东家之子。东家之子，增之一分则太长，减之一分则太短，著粉则太白，施朱则太赤。眉如翠羽，肌如白雪，腰如束素，齿如编贝。嫣然一笑，惑阳城，迷下蔡。然此女登墙窥臣三年，至今未许也" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="韦娟" text="女 出生于陕西省， 天下之佳人，莫若楚国；楚国之丽者，莫若臣里；臣里之美者，莫若臣东家之子。东家之子，增之一分则太长，减之一分则太短，著粉则太白，施朱则太赤。眉如翠羽，肌如白雪，腰如束素，齿如编贝。嫣然一笑，惑阳城，迷下蔡。然此女登墙窥臣三年，至今未许也" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="吕江燕" text="女 出生于河南省， 天下之佳人，莫若楚国；楚国之丽者，莫若臣里；臣里之美者，莫若臣东家之子。东家之子，增之一分则太长，减之一分则太短，著粉则太白，施朱则太赤。眉如翠羽，肌如白雪，腰如束素，齿如编贝。嫣然一笑，惑阳城，迷下蔡。然此女登墙窥臣三年，至今未许也" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="陈爽" text="女 出生于中国 江苏 淮安， 天下之佳人，莫若楚国；楚国之丽者，莫若臣里；臣里之美者，莫若臣东家之子。东家之子，增之一分则太长，减之一分则太短，著粉则太白，施朱则太赤。眉如翠羽，肌如白雪，腰如束素，齿如编贝。嫣然一笑，惑阳城，迷下蔡。然此女登墙窥臣三年，至今未许也" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="罗艳" text="女 出生于中国 陕西 安康下面的富硒之乡紫阳县 专业护理， 天下之佳人，莫若楚国；楚国之丽者，莫若臣里；臣里之美者，莫若臣东家之子。东家之子，增之一分则太长，减之一分则太短，著粉则太白，施朱则太赤。眉如翠羽，肌如白雪，腰如束素，齿如编贝。嫣然一笑，惑阳城，迷下蔡。然此女登墙窥臣三年，至今未许也" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="朱彩云" text="女 ， 天下之佳人，莫若楚国；楚国之丽者，莫若臣里；臣里之美者，莫若臣东家之子。东家之子，增之一分则太长，减之一分则太短，著粉则太白，施朱则太赤。眉如翠羽，肌如白雪，腰如束素，齿如编贝。嫣然一笑，惑阳城，迷下蔡。然此女登墙窥臣三年，至今未许也" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="陈晓" text="女 出生于中国 江苏 苏州 人 外号依依， 天下之佳人，莫若楚国；楚国之丽者，莫若臣里；臣里之美者，莫若臣东家之子。东家之子，增之一分则太长，减之一分则太短，著粉则太白，施朱则太赤。眉如翠羽，肌如白雪，腰如束素，齿如编贝。嫣然一笑，惑阳城，迷下蔡。然此女登墙窥臣三年，至今未许也" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="陆佳容" text="女 出生于中国 江苏 苏州，就读于 苏州工艺学院 天下之佳人，莫若楚国；楚国之丽者，莫若臣里；臣里之美者，莫若臣东家之子。东家之子，增之一分则太长，减之一分则太短，著粉则太白，施朱则太赤。眉如翠羽，肌如白雪，腰如束素，齿如编贝。嫣然一笑，惑阳城，迷下蔡。然此女登墙窥臣三年，至今未许也" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="马慧" text="女 出生于中国 江苏 昆山 籍贯 山东， 仿佛兮若轻云之蔽月，飘飘兮若流风之回雪。远而望之，皎若太阳升朝霞；迫而察之，灼若芙蕖出渌波" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="裔送霞" text="女 出生于安徽省， 大学学历，天下之佳人，莫若楚国；楚国之丽者，莫若臣里；臣里之美者，莫若臣东家之子。东家之子，增之一分则太长，减之一分则太短，著粉则太白，施朱则太赤。眉如翠羽，肌如白雪，腰如束素，齿如编贝。嫣然一笑，惑阳城，迷下蔡。然此女登墙窥臣三年，至今未许也" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="c#" text="C#是微软公司发布的一种面向对象的、运行于.NET Framework之上的高级程序设计语言。并定于在微软职业开发者论坛(PDC)上登台亮相。C#是微软公司研究员Anders Hejlsberg的最新成果。C#看起来与Java有着惊人的相似；它包括了诸如单一继承、接口、与Java几乎同样的语法和编译成中间代码再运行的过程。但是C#与Java有着明显的不同，它借鉴了Delphi的一个特点，与COM（组件对象模型）是直接集成的，而且它是微软公司 .NET windows网络框架的主角。,C#是一种安全的、稳定的、简单的、优雅的，由C和C++衍生出来的面向对象的编程语言。它在继承C和C++强大功能的同时去掉了一些它们的复杂特性（例如没有宏以及不允许多重继承）。C#综合了VB简单的可视化操作和C++的高运行效率，以其强大的操作能力、优雅的语法风格、创新的语言特性和便捷的面向组件编程的支持成为.NET开发的首选语言。 [ 1 ],C#是面向对象的编程语言。它使得程序员可以快速地编写各种基于MICROSOFT.NET平台的应用程序，MICROSOFT,.NET提供了一系列的工具和服务来最大程度地开发利用计算与通讯领域。 C#使得C++程序员可以高效的开发程序，且因可调用由,C/C++ 编写的本机原生函数，因此绝不损失C/C++原有的强大的功能。因为这种继承关系，C#与C/C++具有极大的相似性，熟悉类似语言的开发者可以很快的转向C#。" code="555001" userid="admin" DateTime="2016-10-17 10:16:46" />
+  <TurindDb info="c#写txt" text="       public static void WriteLog(string ip, string message, string session)&#xA;        {&#xA;            try&#xA;            {&#xA;                string DateTimeToTxt = DateTime.Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.txt&quot;;&#xA;                string strPath = string.Empty;&#xA;                strPath = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase + @&quot;log&quot;;&#xA;                if (!Directory.Exists(strPath))&#xA;                {&#xA;                    Directory.CreateDirectory(strPath);&#xA;                }&#xA;                strPath = strPath + &quot;\\&quot; + DateTimeToTxt;&#xA;                FileStream fs = new FileStream(strPath, FileMode.OpenOrCreate, FileAccess.Write);&#xA;                StreamWriter thisStreamWriter = new StreamWriter(fs);&#xA;                thisStreamWriter.BaseStream.Seek(0, SeekOrigin.End);&#xA;                StringBuilder str = new StringBuilder();&#xA;                str.Append(&quot;[&quot;+ ip + &quot;]&quot;);&#xA;                str.Append(&quot;——[&quot; + DateTime.Now.ToString(&quot;yy-MM-dd HH:mm:ss:ffff&quot;) + &quot;]&quot;);&#xA;                str.Append(&quot;——[&quot;+ message + &quot;]&quot;);&#xA;                str.Append(&quot;——[&quot;+ session + &quot;]&quot;);&#xA;                thisStreamWriter.WriteLine(str.ToString());&#xA;                thisStreamWriter.Flush();&#xA;                thisStreamWriter.Close();&#xA;                fs.Close();&#xA;            }&#xA;            catch (Exception)&#xA;            {&#xA;            }&#xA;        }" code="555002" userid="153.34.238.126" DateTime="2016-10:18 00:12:17" address="中国 江苏 苏州 " />
+  <TurindDb info="  oracle 添加列" text="    示例： alter table MST_BC add last_modified_time date;&#xA;     语法：alter table 表名 add 添加的列名字 列名数据类型;" code="555001" userid="58.211.245.237" DateTime="2016-10:18 12:11:20" address="中国 江苏 苏州 " />
+</Customize>

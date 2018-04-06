@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=ASP.NET Core 开发 - Entity Framework (EF) Core>
+    <meta name="keywords" content=ASP.NET Core 开发 - Entity Framework (EF) Core,ASP.NET Core 操作数据库。Entity Framework (EF) Core RC2 也发布了，可以适用于.NET Core 及ASP.NET Core 。EntityFrameworkCore SQLite 本篇文章以SQLite数据库作为介绍。目前 EF Core 支持的数据库：Micros>
+    <title>ASP.NET Core 开发 - Entity Framework (EF) Core</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/B8C0509A-82D4-4BD7-A1BB-5BAF70ED1C60.html' title='.NET'>.NET</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>ASP.NET Core 开发 - Entity Framework (EF) Core</h1>
+                        <pre>
+                        <code>
+                            <p style="margin: 10px auto; padding: 0px;">ASP.NET Core 开发 - Entity Framework (EF) Core,ASP.NET Core 操作数据库。</p><p style="margin: 10px auto; padding: 0px;">Entity Framework (EF) Core RC2 也发布了，可以适用于&nbsp;.NET Core 及ASP.NET Core 。</p><p style="margin: 10px auto; padding: 0px;">EntityFrameworkCore SQLite 本篇文章以SQLite&nbsp;数据库<span style="margin: 0px; padding: 0px; line-height: 1.5;">作为</span><span style="margin: 0px; padding: 0px; line-height: 1.5;">介绍。</span></p><p style="margin: 10px auto; padding: 0px;"><span style="margin: 0px; padding: 0px; line-height: 1.5;">目前 EF Core 支持的数据库：</span></p><ul style="margin-left: 30px; padding: 0px; word-break: break-all;" class=" list-paddingleft-2"><li><p>Microsoft SQL Server</p></li><li><p>SQLite</p></li><li><p>Postgres (Npgsql)</p></li><li><p>SQL Server Compact Edition</p></li><li><p>InMemory (for testing purposes)</p></li></ul><p style="margin: 10px auto; padding: 0px;">后面将会增加：</p><ul style="margin-left: 30px; padding: 0px; word-break: break-all;" class=" list-paddingleft-2"><li><p>MySQL</p></li><li><p>IBM DB2</p></li></ul><p style="margin: 10px auto; padding: 0px;">&nbsp;</p><p style="margin: 10px auto; padding: 0px;">介绍完了，现在正式开始。</p><h2 style="margin: 15px auto 2px; padding: 0px; font-size: 21px;">新建项目</h2><p style="margin: 10px auto; padding: 0px;">这里我们选择&nbsp;&nbsp;<strong style="margin: 0px; padding: 0px;">ASP.NET Core Web Application (.NET Core)&nbsp;</strong></p><p style="margin: 10px auto; padding: 0px;"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J19111106-708.png" alt=""/></p><p style="margin: 10px auto; padding: 0px;">这里选择<strong style="margin: 0px; padding: 0px;">web 应用程序</strong>，然后更改身份验证 改为&nbsp;<strong style="margin: 0px; padding: 0px;">不进行身份验证</strong></p><p style="margin: 10px auto; padding: 0px;"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J19111106-883.png" alt=""/></p><p style="margin: 10px auto; padding: 0px;">&nbsp;</p><h2 style="margin: 15px auto 2px; padding: 0px; font-size: 21px;">引用Entity Framework (EF) Core</h2><p style="margin: 10px auto; padding: 0px;">NuGet官方源已经支持 .NET Core RC2 的相关引用。</p><p style="margin: 10px auto; padding: 0px;">然后在 NuGet命令行下安装 ,我们也可以使用NuGet包管理器安装。</p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &quot;Courier New&quot; !important;">Install-Package&nbsp;Microsoft.EntityFrameworkCore.Sqlite&nbsp;–Pre</pre><h2 style="margin: 15px auto 2px; padding: 0px; font-size: 21px;">创建实体</h2><p style="margin: 10px auto; padding: 0px;">我们在项目添加一个 Models 文件夹。</p><p style="margin: 10px auto; padding: 0px;">新建一个User.cs</p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &quot;Courier New&quot; !important;">&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;class&nbsp;User
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;int&nbsp;Id&nbsp;{&nbsp;get;&nbsp;set;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;string&nbsp;UserName&nbsp;{&nbsp;get;&nbsp;set;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;string&nbsp;Password&nbsp;{&nbsp;get;&nbsp;set;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;}</pre><p style="margin: 10px auto; padding: 0px;">这里我为了方便，继续新建 DataContext.cs</p><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J19111106-159.gif" alt="复制代码"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &quot;Courier New&quot; !important;">&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;class&nbsp;DataContext&nbsp;:&nbsp;DbContext
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;DataContext(DbContextOptions&lt;DataContext&gt;&nbsp;options)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;base(options)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;DbSet&lt;User&gt;&nbsp;Users&nbsp;{&nbsp;get;&nbsp;set;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;}</pre><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J19111106-159.gif" alt="复制代码"/></a></span></p><h2 style="margin: 15px auto 2px; padding: 0px; font-size: 21px;">创建数据库</h2><p style="margin: 10px auto; padding: 0px;">打开&nbsp;Startup.cs &nbsp;在&nbsp;ConfigureServices 下添加如下代码：</p><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J19111106-159.gif" alt="复制代码"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &quot;Courier New&quot; !important;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;void&nbsp;ConfigureServices(IServiceCollection&nbsp;services)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;connection&nbsp;=&nbsp;&quot;Filename=./efcoredemo.db&quot;;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;services.AddDbContext&lt;DataContext&gt;(options&nbsp;=&gt;&nbsp;options.UseSqlite(connection));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Add&nbsp;framework&nbsp;services.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;services.AddMvc();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</pre><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J19111106-159.gif" alt="复制代码"/></a></span></p><p style="margin: 10px auto; padding: 0px;">添加好以后，我们来安装&nbsp;Microsoft.EntityFrameworkCore.Tools&nbsp;</p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &quot;Courier New&quot; !important;">Install-Package&nbsp;Microsoft.EntityFrameworkCore.Tools&nbsp;–Pre</pre><p style="margin: 10px auto; padding: 0px;">安装好以后，我们在&nbsp;<strong style="margin: 0px; padding: 0px;">project.json tools 节点下</strong></p><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J19111106-159.gif" alt="复制代码"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &quot;Courier New&quot; !important;">&quot;tools&quot;:&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&quot;Microsoft.EntityFrameworkCore.Tools&quot;:&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;version&quot;:&nbsp;&quot;1.0.0-preview1-final&quot;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;imports&quot;:&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;portable-net45+win8+dnxcore50&quot;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;portable-net45+win8&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
+&nbsp;&nbsp;&nbsp;&nbsp;},</pre><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J19111106-159.gif" alt="复制代码"/></a></span></p><p style="margin: 10px auto; padding: 0px;">&nbsp;</p><p style="margin: 10px auto; padding: 0px;">开始创建数据库 使用&nbsp;<strong style="margin: 0px; padding: 0px;">dotnet ef</strong></p><p style="margin: 10px auto; padding: 0px;">打开文件夹的命令行，</p><p style="margin: 10px auto; padding: 0px;">输入<strong style="margin: 0px; padding: 0px;"><br/></strong></p><p style="margin: 10px auto; padding: 0px;"><strong style="margin: 0px; padding: 0px;">　　dotnet ef migrations add MyFirstMigration</strong></p><p style="margin: 10px auto; padding: 0px;"><strong style="margin: 0px; padding: 0px;">　　</strong><strong style="margin: 0px; padding: 0px;">dotnet ef database update</strong></p><p style="margin: 10px auto; padding: 0px;">这样我们就创建好了数据库。更多命令请&nbsp;<strong style="margin: 0px; padding: 0px;">dotnet ef -h</strong></p><p style="margin: 10px auto; padding: 0px;"><strong style="margin: 0px; padding: 0px;"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J19111106-930.png" alt=""/></strong></p><h2 style="margin: 15px auto 2px; padding: 0px; font-size: 21px;">项目使用</h2><p style="margin: 10px auto; padding: 0px;">新建一个&nbsp;UserController</p><p style="margin: 10px auto; padding: 0px;">然后 在Views 添加一个 User 文件，然后添加对应的视图。</p><p style="margin: 10px auto; padding: 0px;">添加一个Register Action，再添加一个&nbsp;Register 视图</p><p>按 Ctrl+C 复制代码</p><p>按 Ctrl+C 复制代码</p><p style="margin: 10px auto; padding: 0px;">UserController.cs</p><p><img id="code_img_opened_1276ad09-b916-47a0-b031-28e86fd11d08" class="code_img_opened" src="/Content/Content/Content/Content/../../../../upload/image/201608/J19111106-206.gif" alt=""/></p><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J19111106-159.gif" alt="复制代码"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &quot;Courier New&quot; !important;">&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;class&nbsp;UserController&nbsp;:&nbsp;Controller
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;DataContext&nbsp;&nbsp;_context;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;UserController(DataContext&nbsp;context)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_context&nbsp;=&nbsp;context;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;GET:&nbsp;/&lt;controller&gt;/
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;IActionResult&nbsp;Index()
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;View(_context.Users.ToList());
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;IActionResult&nbsp;Register()
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;View();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[HttpPost]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ValidateAntiForgeryToken]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;IActionResult&nbsp;Register(User&nbsp;registeruser)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(ModelState.IsValid)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_context.Users.Add(registeruser);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_context.SaveChanges();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;RedirectToAction(&quot;Index&quot;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;View(registeruser);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;}</pre><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J19111106-159.gif" alt="复制代码"/></a></span></p><p style="margin: 10px auto; padding: 0px;">&nbsp;</p><p style="margin: 10px auto; padding: 0px;">程序运行起来：</p><p style="margin: 10px auto; padding: 0px;">http://localhost:5000/User/Register</p><p style="margin: 10px auto; padding: 0px;"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J19111107-303.png" alt=""/></p><p style="margin: 10px auto; padding: 0px;">列表展示&nbsp;</p><p style="margin: 10px auto; padding: 0px;">&nbsp;</p><p style="margin: 10px auto; padding: 0px;">http://localhost:5000/User</p><p style="margin: 10px auto; padding: 0px;"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J19111107-626.png" alt=""/></p><blockquote style="margin: 10px 0px; padding: 5px 10px; border: 2px solid rgb(239, 239, 239); line-height: 1.6; color: rgb(51, 51, 51); background: none;"><p style="margin: 10px auto; padding: 0px;">参考文档：https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html</p></blockquote><p>完整Demo下载&nbsp;https://pan.baidu.com/s/1bo0eTKr &nbsp;<a>https://pan.baidu.com/s/1bo0eTKr</a></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+
+ 
+记录时间：2016-12-14 22:15:16,082 
+线程ID:[28] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.6.17Type=PC
+{"content":null,"result":{"error":"302","loc_time":"1481724911"}}
+ 
+
+ 
+记录时间：2016-12-14 22:15:16,468 
+线程ID:[28] 
+日志级别：  ERROR 
+错误描述：HomeController
+ChatVerification
+发生异常
+发生时间2016-12-14 22:15:16
+本次共用时：00:00:02.3374538
+异常讯息：System.Data.SQLite.SQLiteException (0x80004005): constraint failed
+NOT NULL constraint failed: UserInfo.Isp
+   在 System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)
+   在 System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   在 NET.DataAccessLayer.Common.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 607
+   在 NET.DataAccessLayer.Common.DBHelper.SaveCollection[T](String sql, IList`1 collection) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 187
+   在 NET.DataAccessLayer.Base`1.Add(List`1 entity) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 36
+   在 NET.DataAccessLayer.Base`1.Add(T entity) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 45
+   在 NET.BusinessRule.Base`1.Add(T obj) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 16
+   在 NET.Web.UI.Controllers.HomeController.ChatVerification(String IP, String Token, String data) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\NET.Web.UI\Controllers\HomeController.cs:行号 151
+UserInfo：{"Admin_Area_Code":null,"City":"","Confidence":null,"Country":"","District":null,"Id":"8c3b93d1a2da4a91b0390b875abe0a26","Img":8,"InCount":1,"Ip":"36.149.6.17","Isp":"","Lat":"null","Lng":"null","Locid":null,"OperationTime":"2016-12-14 22:15:16","Province":"","Remarks":"普通定位请求：{\"data\":{\"City\":\"\",\"Country\":\"\",\"District\":null,\"Province\":\"\",\"Street\":null,\"Street_Number\":null,\"Ip\":\"36.149.6.17\",\"Lat\":\"null\",\"Lng\":\"null\"},\"error\":0,\"msg\":\"succeed\"}","Status":1,"Street":null,"Street_Number":null,"radius":null}
+UserInfoDetail：{"Browser":"Chrome 53.0","Id":"63832551ce3a45feacac90774f91d2d5","Ip":"36.149.6.17","ModelType":"PC","OS":"Windows 8","OperationTime":"2016-12-14 22:15:14","Remarks":"Mozilla\/5.0 (Windows NT 6.2; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.116 Safari\/537.36"}
+UserInfoUnDeteil：{"Key":null,"UserInfo":null,"UserInfoDetail":null}
+ 
+
+ 
+记录时间：2016-12-14 22:15:16,774 
+线程ID:[17] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.6.17Type=PC
+{"content":null,"result":{"error":"302","loc_time":"1481724912"}}
+ 
+
+ 
+记录时间：2016-12-14 22:15:17,131 
+线程ID:[17] 
+日志级别：  ERROR 
+错误描述：HomeController
+ChatVerification
+发生异常
+发生时间2016-12-14 22:15:17
+本次共用时：00:00:00.4445457
+异常讯息：System.Data.SQLite.SQLiteException (0x80004005): constraint failed
+NOT NULL constraint failed: UserInfo.Isp
+   在 System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)
+   在 System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   在 NET.DataAccessLayer.Common.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 607
+   在 NET.DataAccessLayer.Common.DBHelper.SaveCollection[T](String sql, IList`1 collection) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 187
+   在 NET.DataAccessLayer.Base`1.Add(List`1 entity) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 36
+   在 NET.DataAccessLayer.Base`1.Add(T entity) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 45
+   在 NET.BusinessRule.Base`1.Add(T obj) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 16
+   在 NET.Web.UI.Controllers.HomeController.ChatVerification(String IP, String Token, String data) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\NET.Web.UI\Controllers\HomeController.cs:行号 151
+UserInfo：{"Admin_Area_Code":null,"City":"","Confidence":null,"Country":"","District":null,"Id":"3f559751bdf6471c96682d0c55d8a036","Img":2,"InCount":1,"Ip":"36.149.6.17","Isp":"","Lat":"null","Lng":"null","Locid":null,"OperationTime":"2016-12-14 22:15:16","Province":"","Remarks":"普通定位请求：{\"data\":{\"City\":\"\",\"Country\":\"\",\"District\":null,\"Province\":\"\",\"Street\":null,\"Street_Number\":null,\"Ip\":\"36.149.6.17\",\"Lat\":\"null\",\"Lng\":\"null\"},\"error\":0,\"msg\":\"succeed\"}","Status":1,"Street":null,"Street_Number":null,"radius":null}
+UserInfoDetail：{"Browser":"Chrome 53.0","Id":"118f857c0e7945c49462ef49e70551b0","Ip":"36.149.6.17","ModelType":"PC","OS":"Windows 8","OperationTime":"2016-12-14 22:15:16","Remarks":"Mozilla\/5.0 (Windows NT 6.2; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.116 Safari\/537.36"}
+UserInfoUnDeteil：{"Key":null,"UserInfo":null,"UserInfoDetail":null}
+ 
+
+ 
+记录时间：2016-12-14 22:16:43,377 
+线程ID:[23] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.6.17Type=PC
+{"content":null,"result":{"error":"302","loc_time":"1481724998"}}
+ 
+
+ 
+记录时间：2016-12-14 22:17:11,732 
+线程ID:[23] 
+日志级别：  ERROR 
+错误描述：HomeController
+ChatVerification
+发生异常
+发生时间2016-12-14 22:17:11
+本次共用时：00:00:46.4570064
+异常讯息：System.Data.SQLite.SQLiteException (0x80004005): constraint failed
+NOT NULL constraint failed: UserInfo.Isp
+   在 System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)
+   在 System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   在 NET.DataAccessLayer.Common.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 607
+   在 NET.DataAccessLayer.Common.DBHelper.SaveCollection[T](String sql, IList`1 collection) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 187
+   在 NET.DataAccessLayer.Base`1.Add(List`1 entity) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 36
+   在 NET.DataAccessLayer.Base`1.Add(T entity) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 45
+   在 NET.BusinessRule.Base`1.Add(T obj) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 16
+   在 NET.Web.UI.Controllers.HomeController.ChatVerification(String IP, String Token, String data) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\NET.Web.UI\Controllers\HomeController.cs:行号 151
+UserInfo：{"Admin_Area_Code":null,"City":"","Confidence":null,"Country":"","District":null,"Id":"c7fba6c15b0f475ebdaf416bd7041092","Img":0,"InCount":1,"Ip":"36.149.6.17","Isp":"","Lat":"null","Lng":"null","Locid":null,"OperationTime":"2016-12-14 22:17:07","Province":"","Remarks":"普通定位请求：{\"data\":{\"City\":\"\",\"Country\":\"\",\"District\":null,\"Province\":\"\",\"Street\":null,\"Street_Number\":null,\"Ip\":\"36.149.6.17\",\"Lat\":\"null\",\"Lng\":\"null\"},\"error\":0,\"msg\":\"succeed\"}","Status":1,"Street":null,"Street_Number":null,"radius":null}
+UserInfoDetail：{"Browser":"Chrome 53.0","Id":"78240760cc374c2191e57adcc6c54f38","Ip":"36.149.6.17","ModelType":"PC","OS":"Windows 8","OperationTime":"2016-12-14 22:16:34","Remarks":"Mozilla\/5.0 (Windows NT 6.2; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.116 Safari\/537.36"}
+UserInfoUnDeteil：{"Key":null,"UserInfo":null,"UserInfoDetail":null}
+ 
+
+ 
+记录时间：2016-12-14 22:17:16,969 
+线程ID:[13] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.6.17Type=PC
+{"content":null,"result":{"error":"302","loc_time":"1481725033"}}
+ 
+
+ 
+记录时间：2016-12-14 22:17:17,249 
+线程ID:[13] 
+日志级别：  ERROR 
+错误描述：HomeController
+ChatVerification
+发生异常
+发生时间2016-12-14 22:17:17
+本次共用时：00:00:00.4458957
+异常讯息：System.Data.SQLite.SQLiteException (0x80004005): constraint failed
+NOT NULL constraint failed: UserInfo.Isp
+   在 System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)
+   在 System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   在 NET.DataAccessLayer.Common.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 607
+   在 NET.DataAccessLayer.Common.DBHelper.SaveCollection[T](String sql, IList`1 collection) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 187
+   在 NET.DataAccessLayer.Base`1.Add(List`1 entity) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 36
+   在 NET.DataAccessLayer.Base`1.Add(T entity) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 45
+   在 NET.BusinessRule.Base`1.Add(T obj) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 16
+   在 NET.Web.UI.Controllers.HomeController.ChatVerification(String IP, String Token, String data) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\NET.Web.UI\Controllers\HomeController.cs:行号 151
+UserInfo：{"Admin_Area_Code":null,"City":"","Confidence":null,"Country":"","District":null,"Id":"12f0b4d87cc144548dca59c13a286fd6","Img":2,"InCount":1,"Ip":"36.149.6.17","Isp":"","Lat":"null","Lng":"null","Locid":null,"OperationTime":"2016-12-14 22:17:17","Province":"","Remarks":"普通定位请求：{\"data\":{\"City\":\"\",\"Country\":\"\",\"District\":null,\"Province\":\"\",\"Street\":null,\"Street_Number\":null,\"Ip\":\"36.149.6.17\",\"Lat\":\"null\",\"Lng\":\"null\"},\"error\":0,\"msg\":\"succeed\"}","Status":1,"Street":null,"Street_Number":null,"radius":null}
+UserInfoDetail：{"Browser":"Chrome 53.0","Id":"8d539880d1cd4d6d9c6361f92702e329","Ip":"36.149.6.17","ModelType":"PC","OS":"Windows 8","OperationTime":"2016-12-14 22:17:16","Remarks":"Mozilla\/5.0 (Windows NT 6.2; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.116 Safari\/537.36"}
+UserInfoUnDeteil：{"Key":null,"UserInfo":null,"UserInfoDetail":null}
+ 
+
+ 
+记录时间：2016-12-14 22:19:04,231 
+线程ID:[29] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.6.17Type=PC
+{"content":null,"result":{"error":"302","loc_time":"1481725132"}}
+ 
+
+ 
+记录时间：2016-12-14 22:21:06,777 
+线程ID:[29] 
+日志级别：  ERROR 
+错误描述：HomeController
+ChatVerification
+发生异常
+发生时间2016-12-14 22:21:06
+本次共用时：00:02:55.5469685
+异常讯息：System.Data.SQLite.SQLiteException (0x80004005): constraint failed
+NOT NULL constraint failed: UserInfo.Isp
+   在 System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)
+   在 System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   在 NET.DataAccessLayer.Common.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 607
+   在 NET.DataAccessLayer.Common.DBHelper.SaveCollection[T](String sql, IList`1 collection) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 187
+   在 NET.DataAccessLayer.Base`1.Add(List`1 entity) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 36
+   在 NET.DataAccessLayer.Base`1.Add(T entity) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 45
+   在 NET.BusinessRule.Base`1.Add(T obj) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 16
+   在 NET.Web.UI.Controllers.HomeController.ChatVerification(String IP, String Token, String data) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\NET.Web.UI\Controllers\HomeController.cs:行号 151
+UserInfo：{"Admin_Area_Code":null,"City":"","Confidence":null,"Country":"","District":null,"Id":"5351544f7dee419f9d8476bd14841c6b","Img":2,"InCount":1,"Ip":"36.149.6.17","Isp":"","Lat":"null","Lng":"null","Locid":null,"OperationTime":"2016-12-14 22:21:02","Province":"","Remarks":"普通定位请求：{\"data\":{\"City\":\"\",\"Country\":\"\",\"District\":null,\"Province\":\"\",\"Street\":null,\"Street_Number\":null,\"Ip\":\"36.149.6.17\",\"Lat\":\"null\",\"Lng\":\"null\"},\"error\":0,\"msg\":\"succeed\"}","Status":1,"Street":null,"Street_Number":null,"radius":null}
+UserInfoDetail：{"Browser":"Chrome 53.0","Id":"e23a4cb2a23046e4b7681fdf92fe68c5","Ip":"36.149.6.17","ModelType":"PC","OS":"Windows 8","OperationTime":"2016-12-14 22:18:30","Remarks":"Mozilla\/5.0 (Windows NT 6.2; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.116 Safari\/537.36"}
+UserInfoUnDeteil：{"Key":null,"UserInfo":null,"UserInfoDetail":null}
+ 
+
+ 
+记录时间：2016-12-14 22:21:37,919 
+线程ID:[21] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.6.17Type=PC
+{"content":null,"result":{"error":"302","loc_time":"1481725292"}}
+ 
+
+ 
+记录时间：2016-12-14 22:24:47,448 
+线程ID:[5] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.6.17Type=PC
+{"content":null,"result":{"error":"302","loc_time":"1481725483"}}
+ 
+
+ 
+记录时间：2016-12-14 22:36:37,437 
+线程ID:[5] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.134.17Type=PC
+{"content":null,"result":{"error":"302","loc_time":"1481726193"}}
+ 
+
+ 
+记录时间：2016-12-14 22:36:37,437 
+线程ID:[8] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.134.17Type=PC
+{"content":null,"result":{"error":"302","loc_time":"1481726193"}}
+ 
+
+ 
+记录时间：2016-12-14 22:43:34,326 
+线程ID:[19] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.6.17Type=PC
+{"content":null,"result":{"error":"302","loc_time":"1481726610"}}
+ 
+
+ 
+记录时间：2016-12-14 22:43:34,918 
+线程ID:[19] 
+日志级别：  ERROR 
+错误描述：HomeController
+ChatVerification
+发生异常
+发生时间2016-12-14 22:43:34
+本次共用时：00:00:00.8750225
+异常讯息：System.Data.SQLite.SQLiteException (0x80004005): constraint failed
+NOT NULL constraint failed: UserInfo.Isp
+   在 System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)
+   在 System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   在 NET.DataAccessLayer.Common.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 607
+   在 NET.DataAccessLayer.Common.DBHelper.SaveCollection[T](String sql, IList`1 collection) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 187
+   在 NET.DataAccessLayer.Base`1.Add(List`1 entity) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 36
+   在 NET.DataAccessLayer.Base`1.Add(T entity) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 45
+   在 NET.BusinessRule.Base`1.Add(T obj) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 16
+   在 NET.Web.UI.Controllers.HomeController.ChatVerification(String IP, String Token, String data) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\NET.Web.UI\Controllers\HomeController.cs:行号 154
+UserInfo：{"Admin_Area_Code":null,"City":null,"Confidence":null,"Country":null,"District":null,"Id":"6fe20412db364901b593dedf501ad605","Img":5,"InCount":1,"Ip":"36.149.6.17","Isp":null,"Lat":null,"Lng":null,"Locid":null,"OperationTime":"2016-12-14 22:43:34","Province":null,"Remarks":null,"Status":1,"Street":null,"Street_Number":null,"radius":null}
+UserInfoDetail：{"Browser":"Chrome 53.0","Id":"c28b43faa6df496cbe617bc2ea217bae","Ip":"36.149.6.17","ModelType":"PC","OS":"Windows 8","OperationTime":"2016-12-14 22:43:34","Remarks":"Mozilla\/5.0 (Windows NT 6.2; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.116 Safari\/537.36"}
+UserInfoUnDeteil：{"Key":null,"UserInfo":null,"UserInfoDetail":null}
+ 
+
+ 
+记录时间：2016-12-14 22:43:35,244 
+线程ID:[21] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.6.17Type=PC
+{"content":null,"result":{"error":"302","loc_time":"1481726611"}}
+ 

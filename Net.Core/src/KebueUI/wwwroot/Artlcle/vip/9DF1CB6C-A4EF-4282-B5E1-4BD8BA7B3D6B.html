@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=MVC自定义ActionFilterAttribute  Filter>
+    <meta name="keywords" content=using System;using System.Web;using System.Web.Mvc;namespace MVCFilter{  [AttributeUsage(AttributeTargets.All, AllowMultiple = true)]//多次调用  public class CustomerFilterAttribute : ActionFilterAttribut>
+    <title>MVC自定义ActionFilterAttribute  Filter</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/B8C0509A-82D4-4BD7-A1BB-5BAF70ED1C60.html' title='.NET'>.NET</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>MVC自定义ActionFilterAttribute  Filter</h1>
+                        <pre>
+                        <code>
+                            <p>using System;</p><p>using System.Web;</p><p>using System.Web.Mvc;</p><p><br/></p><p>namespace MVCFilter</p><p>{</p><p>&nbsp; &nbsp; [AttributeUsage(AttributeTargets.All, AllowMultiple = true)]//多次调用</p><p>&nbsp; &nbsp; public class CustomerFilterAttribute : ActionFilterAttribute</p><p>&nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; public string Message { get; set; }</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// 执行顺序 &nbsp; &nbsp;1</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;filterContext&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; private void CheckMessage(ActionExecutingContext filterContext)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (string.IsNullOrEmpty(Message) || string.IsNullOrWhiteSpace(Message))</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Message = &quot;Controller：&quot; + filterContext.Controller.GetType().Name + &quot;\rAction：&quot; + filterContext.ActionDescriptor.ActionName;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// 执行顺序 &nbsp; &nbsp;2</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// 该方法在Action之前执行</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;filterContext&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; public override void OnActionExecuting(ActionExecutingContext filterContext)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; HttpSessionStateBase session = filterContext.HttpContext.Session; &nbsp; //取到Session</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //get the controller and result name and field value</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; string controllName = filterContext.ActionDescriptor.ControllerDescriptor.ControllerName; &nbsp; //取到当前访问的Controller和Result的名称</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; string actionName = filterContext.ActionDescriptor.ActionName;</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; session[&quot;controllName&quot;] = controllName;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; session[&quot;actionName&quot;] = actionName;</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; string fileName = filterContext.RouteData.Values[&quot;id&quot;] == null ? &quot;&quot; : filterContext.RouteData.Values[&quot;id&quot;].ToString();</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //可以取到URL中的传递参数的值</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; HttpRequestBase request = filterContext.HttpContext.Request;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; string fileNameString = request.QueryString[&quot;id&quot;];</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //判断是否登录，以及判断后的跳转</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; string user = (string)session[&quot;user&quot;];</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (null == user)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; filterContext.Result = new RedirectResult(&quot;/File/ListFiles&quot;); &nbsp;//没有登录的话跳转到指定页面</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else if (!&quot;admin&quot;.Equals(user))</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; filterContext.Result = new RedirectResult(&quot;/File/FieldTest2&quot;);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// 执行顺序 &nbsp; &nbsp;3</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// 该方法在Action?笾葱?/p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;filterContext&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; public override void OnActionExecuted(ActionExecutedContext filterContext)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; base.OnActionExecuted(filterContext);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; filterContext.HttpContext.Response.Write(string.Format(&quot;&lt;br/&gt; {0} Action finish Execute.....&quot;, Message));</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// 执行顺序 &nbsp; &nbsp;4</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;filterContext&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; public override void OnResultExecuting(ResultExecutingContext filterContext)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; filterContext.HttpContext.Response.Write(string.Format(&quot;&lt;br/&gt; {0} Action start Execute.....&quot;, Message));</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; base.OnResultExecuting(filterContext);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// 执行顺序 &nbsp; &nbsp;5</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;filterContext&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; public override void OnResultExecuted(ResultExecutedContext filterContext)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; filterContext.HttpContext.Response.Write(string.Format(&quot;&lt;br/&gt; {0} Action finish Result.....&quot;, Message));</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; base.OnResultExecuted(filterContext);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; }</p><p>}</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

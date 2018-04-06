@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=雪花飘落HTML5特效>
+    <meta name="keywords" content=查看效果：http://hovertree.com/texiao/js/snow.htm以下是完整源代码，保存到HTML文件也可以看效果：!DOCTYPEhtmlhtmlheadmetahttp-equiv=Content-Typecontent=text/html;charset=utf-8/title下雪了，我们去堆雪人好吗？-何问起/titlebasetarget=_blank/linkhr>
+    <title>雪花飘落HTML5特效</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/9D69FD3D-028F-4239-89F1-BAC91B1DFF4A.html' title='JavaScript'>JavaScript</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>雪花飘落HTML5特效</h1>
+                        <pre>
+                        <code>
+                            <p style="margin: 10px auto; color: rgb(123, 125, 98); font-family: verdana, Arial, helvetica, sans-seriff, ????; font-size: 13px; line-height: 19.5px; white-space: normal; background-color: rgb(255, 255, 255);">查看效果：<a href="http://hovertree.com/texiao/js/snow.htm" target="_blank" style="color: rgb(114, 151, 115); text-decoration: none;">http://hovertree.com/texiao/js/snow.htm</a><br/><br/><a href="http://hovertree.com/texiao/js/snow.htm" target="_blank" style="color: rgb(114, 151, 115); text-decoration: none;"><img src="http://hovertree.com/texiao/js/7/hovertreesnow.jpg" alt="" style="border: 0px;"/></a><br/><br/>以下是完整源代码，保存到HTML文件也可以看效果：</p><p><span class="cnblogs_code_copy" style="padding-right: 5px; line-height: 1.5 !important;"><a title="复制代码" style="color: rgb(114, 151, 115); border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="border: none !important;"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">&lt;!DOCTYPE&nbsp;html&gt;&lt;html&gt;&lt;head&gt;&lt;meta&nbsp;http-equiv=&quot;Content-Type&quot;&nbsp;content=&quot;text/html;&nbsp;charset=utf-8&quot;/&gt;&lt;title&gt;下雪了，我们去堆雪人好吗？&nbsp;-&nbsp;何问起&lt;/title&gt;&lt;base&nbsp;target=&quot;_blank&quot;&nbsp;/&gt;&lt;link&nbsp;href=&quot;http://hovertree.com/texiao/js/7/hovertreesnow.css&quot;&nbsp;type=&quot;text/css&quot;&nbsp;rel=&quot;stylesheet&quot;/&gt;&lt;meta&nbsp;charset=&quot;utf-8&quot;&nbsp;/&gt;&lt;/head&gt;&lt;body&gt;&lt;div&nbsp;id=&quot;hovertreesnow&quot;&gt;&lt;div&nbsp;class=&quot;hovertreehead&quot;&gt;&lt;br&nbsp;/&gt;&lt;br&nbsp;/&gt;下雪了，我们去堆雪人好吗？&lt;/div&gt;&lt;div&nbsp;class=&quot;hovertreesnow&quot;&gt;&lt;img&nbsp;id=&quot;hewenqi&quot;&nbsp;src=&quot;http://hovertree.com/texiao/js/7/hovertreesnow.jpg&quot;&nbsp;art=&quot;何问起雪人&quot;&nbsp;/&gt;&lt;/div&gt;&lt;div&nbsp;class=&quot;hovertreefoot&quot;&gt;&lt;audio&nbsp;src=&quot;http://cms.hovertree.com/hovertreesound/hovertreesnow.mp3&quot;&nbsp;autoplay=&quot;autoplay&quot;&nbsp;controls=&quot;controls&quot;&gt;&lt;br&nbsp;/&gt;您的浏览器不支持播放音乐。请用支持html5的浏览器打开,例如chrome或火狐或者新版IE等。&lt;br&nbsp;/&gt;何问起&nbsp;hovertree.com&lt;br&nbsp;/&gt;&lt;/audio&gt;&lt;br&nbsp;/&gt;&lt;a&nbsp;href=&quot;http://hovertree.com&quot;&gt;首页&lt;/a&gt;&nbsp;&lt;a&nbsp;href=&quot;http://hovertree.com/hvtart/bjae/79mtsd1t.htm&quot;&gt;原文&lt;/a&gt;&nbsp;&lt;a&nbsp;href=&quot;http://hovertree.com/texiao/&quot;&gt;特效&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&nbsp;type=&quot;text/javascript&quot;&nbsp;src=&quot;http://hovertree.com/texiao/js/7/hovertreesnow.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</pre><p><span class="cnblogs_code_copy" style="padding-right: 5px; line-height: 1.5 !important;"><a title="复制代码" style="color: rgb(114, 151, 115); border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="border: none !important;"/></a></span></p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

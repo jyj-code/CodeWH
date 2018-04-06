@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style type="text/css">
+        .br {
+            border: 0.2px solid #808080;
+        }
+
+        .h30 {
+            height: 30px;
+        }
+
+        .h50 {
+            height: 50px;
+        }
+
+        .h300 {
+            height: 300px;
+        }
+
+        .bg {
+            background-color: #F5F5F5;
+            border-radius: 15px;
+        }
+
+        .bgwhite {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="row bg">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="col-md-2">
+                                    <i class="glyphicon glyphicon-retweet"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <label id=""></label>
+                                </div>
+                                <div class="col-md-2">
+                                    <button><i class="glyphicon glyphicon-log-out" id="' + roomname + '" onclick="RemoveRoom(this)"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 h300 bgwhite" id="' + roomname + '">
+                                <ul></ul>
+                            </div>
+                        </div>
+                        <div class="row" id="聊天室1" roomname="聊天室1">
+                            <textarea class="manual-ueditor col-md-8 h50" id="ChatCore_write" placeholder="说个话呗"></textarea>
+                            <input type="button" class="btn-send col-md-4 h50 btn-primary" onclick="SendMessage(this)" value="发送">
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+            <div class="col-md-4">col-md-2</div>
+            <div class="col-md-4">col-md-3</div>
+        </div>
+    </div>
+
+    <div style="float:left;margin-left:360px; border:double;height:528px;width:493px" id="聊天室1"
+         roomname="聊天室1">
+        <button onclick="RemoveRoom(this)">退出</button>
+        聊天室1房间聊天记录如下:
+        <ul></ul>
+        <textarea class="ChatCore_write" id="ChatCore_write" style="width:400px"></textarea>
+        <button onclick="SendMessage(this)">发送</button>
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+

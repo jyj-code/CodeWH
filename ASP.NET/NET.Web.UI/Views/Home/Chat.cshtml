@@ -1,0 +1,130 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="ujianVerification" content="b273f969bcdb7d88b30eb85b22648bbb" />
+    <link rel="shortcut icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="icon" href="http://www.kebue.com//images/kebue.ico">
+    <meta name="Title" content="科布尔，科小智,机器人,智能机器人，科技社区,科布尔是一个面向开发者的知识分享社区">
+    <meta name="Keywords" content="科布尔，科小智,机器人,智能机器人，科技社区,科布尔是一个面向开发者的知识分享社区" />
+    <title>机器人 科布尔</title>
+    <base target="_blank" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/Chat")
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.2.1.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script src="~/Content/Turing/js/chat_V4.js"></script>
+    <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+</head>
+<body class="gradient">
+    <br />
+    <div class="container">
+        <div class="text-header">
+            <p>
+                <span><b>机器人-科小智</b></span>&nbsp;&nbsp;
+                <span>
+                    <a href="http://kebue.com/" style="color:#080808" title="kebue.com 科布尔，科技社区,知识分享">
+                        <i class="glyphicon glyphicon-home text-primary"></i>
+                    </a>
+                </span>&nbsp;&nbsp;
+                <span><<b id="countTol">@{@ViewBag.countTool}</b>/>人在线</span>
+            </p>
+        </div>
+        <div id="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <input type="hidden" id="displayname" />
+                    <ol id="discussions"></ol>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="chat-send">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <input id="message" type="text" class="form-control" maxlength="30" min="1" max="30" placeholder="请键入你要提问的关键字,(限长30个字符)，如：苏州今天天气" required="required" size="30" height="200" />
+                                <br />
+                                <input type="button" id="sendmessage" class="btn btn-primary" value="&nbsp;发送 / Enter &nbsp;" />
+                                <div class="btn-group dropup">
+                                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                                        设置 <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" id="ISScraper" class="btn btn-success" value="开启刷屏" />&nbsp;&nbsp;</li>
+                                        <li class="divider"></li>
+                                        <li><a href="../Home/NewKnow" target="_blank">新建知识库</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="../Home/NewKnowList" target="_blank">机器人控制中心</a></li>
+                                        <li class="divider"></li>
+                                    </ul>
+                                </div>
+                                <strong class="text-white">键入关键词（ help     或  帮助 )获取帮助</strong>
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                   @*<div style="max-height:350px;max-width:100%;padding:5px;overflow:auto;">
+                       <!-- UY BEGIN -->
+                       <div id="uyan_frame"></div>
+                       <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                       <!-- UY END -->
+                   </div>
+                    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260814227'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260814227%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>*@
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2"></div>
+                    <div class="col-xs-8">
+                        <footer id="zan-footer">
+            
+                                <!-- 版权信息 -->
+                                <div class="col-lg-4" style="padding-left: 0;">
+                                    <h4 style="font-weight: bold; border-bottom: solid 1px #999; padding-bottom: 5px;">关于本站</h4>
+                                    <p>Copyright © 2016-2116 <a href="http://www.kebue.com">科布尔</a></p>
+                                    <p><a href="http://www.miibeian.gov.cn" target="_blank" title="陕ICP备15014626号-2" _href="http://www.miibeian.gov.cn">陕ICP备15014626号-2</a></p>
+                                    <p>Power by <a href="http://icp.chinaz.com/info?q=%E9%99%95ICP%E5%A4%8715014626%E5%8F%B7" target="_blank">科布尔</a></p>
+                                </div>
+                                <div class="col-lg-4" style="padding-left: 0px; text-align: center; min-height: 165px; position: relative;">
+                                    <p style="width: 170px; height: 50px; overflow: hidden; position: absolute; top: 50%; left: 50%; margin: -25px 0 0 -85px;"></p>
+                                </div>
+                                <div class="col-lg-4" style="padding-left: 0px;">
+                                    <h4 style="font-weight: bold; border-bottom: solid 1px #999; padding-bottom: 5px;">联系我们</h4>
+                                    <p>
+                                        C#.NET,Net Core技术群：<a href="http://jq.qq.com/?_wv=1027&k=2DMzHE6" target="_blank" _href="http://jq.qq.com/?_wv=1027&k=2DMzHE6">428549376</a>
+                                        <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=6132f5422023914b0c3a0c7cb83484f07b233b337ff2d31004acf3afdd4fef52"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt=".Net Core 研究院" title=".Net Core 研究院"></a>
+                                    </p>
+                                    <p>邮箱：admin@kebue.com</p>
+                                </div>
+                                <!-- 版权信息结束 -->
+            
+                            <div class="margin-center">
+                                <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1260373153'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1260373153%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
+                            </div>
+                            <hr />
+                            <h6>友情链接</h6>
+                            <a href="http://www.itsvse.com/" target="_blank">架构师</a>
+                        </footer>
+                    </div>
+                <div class="col-xs-2"></div>
+                </div>
+        </div>
+    </div>
+
+    <input type="hidden" id="hidflage" />
+    <input type="hidden" value=@ViewBag.userinfomodel id="userToken" />
+    <input type="hidden" value=@ViewBag.FilterKey id="hidFilterKey" />
+    <input type="hidden" value=@ViewBag.message id="hidKey" />
+    <input type="hidden" value=@ViewBag.message id="hidCip" />
+    <br />
+    <br />
+    <hr />
+
+
+</body>
+</html>

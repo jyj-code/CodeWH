@@ -1,0 +1,108 @@
+﻿@model IEnumerable<NET.Architect.Model.TruingLog>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>用户日志列表（最新100条）</h2>
+
+<p>
+    @Html.ActionLink("进入知识列表", "NewKnowList","Home")
+    @Html.ActionLink("进入用户页面", "Index", "UserInfo")
+    @Html.ActionLink("进入聊天页面", "Chat", "Home")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Ip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Isp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Browser)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lng)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OperationTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IMG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SESSION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.INFO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LAST_MODIFIED_TIME)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Isp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Browser)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lng)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OperationTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IMG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SESSION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.INFO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LAST_MODIFIED_TIME)
+        </td>
+        @*<td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>*@
+    </tr>
+}
+
+</table>

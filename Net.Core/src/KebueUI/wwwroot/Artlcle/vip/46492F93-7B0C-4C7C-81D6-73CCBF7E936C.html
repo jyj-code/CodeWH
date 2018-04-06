@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=asp.net 显示消息提示对话框方法。>
+    <meta name="keywords" content= /// summary /// 显示消息提示对话框。  /// Copyright (C) Maticsoft /// /summary public class MessageBox {    private MessageBox()  {     }  /// summary  /// 显示消息提示对话框  /// /summary  /// param name=page当前页面指针，一般>
+    <title>asp.net 显示消息提示对话框方法。</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/B8C0509A-82D4-4BD7-A1BB-5BAF70ED1C60.html' title='.NET'>.NET</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>asp.net 显示消息提示对话框方法。</h1>
+                        <pre>
+                        <code>
+                            <p><span class="Apple-tab-span" style="white-space: pre;"> </span>/// &lt;summary&gt;</p><p><span class="Apple-tab-span" style="white-space:pre"> </span>/// 显示消息提示对话框。</p><p>&nbsp; &nbsp; /// Copyright (C) Maticsoft</p><p><span class="Apple-tab-span" style="white-space:pre"> </span>/// &lt;/summary&gt;</p><p><span class="Apple-tab-span" style="white-space:pre"> </span>public class MessageBox</p><p><span class="Apple-tab-span" style="white-space:pre"> </span>{<span class="Apple-tab-span" style="white-space:pre">  </span></p><p><span class="Apple-tab-span" style="white-space:pre">  </span>private &nbsp;MessageBox()</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>{<span class="Apple-tab-span" style="white-space:pre">   </span></p><p><span class="Apple-tab-span" style="white-space:pre">  </span>}</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;summary&gt;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// 显示消息提示对话框</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;/summary&gt;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;param name=&quot;page&quot;&gt;当前页面指针，一般为this&lt;/param&gt;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;param name=&quot;msg&quot;&gt;提示信息&lt;/param&gt;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>public static void &nbsp;Show(System.Web.UI.Page page,string msg)</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>{ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; page.ClientScript.RegisterStartupScript(page.GetType(),&quot;message&quot;, &quot;&lt;script language=&#39;javascript&#39; defer&gt;alert(&#39;&quot; + msg.ToString() + &quot;&#39;);&lt;/script&gt;&quot;);</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>}</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;summary&gt;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// 控件点击 消息确认提示框</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;/summary&gt;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;param name=&quot;page&quot;&gt;当前页面指针，一般为this&lt;/param&gt;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;param name=&quot;msg&quot;&gt;提示信息&lt;/param&gt;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>public static void &nbsp;ShowConfirm(System.Web.UI.WebControls.WebControl Control,string msg)</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>{</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>//Control.Attributes.Add(&quot;onClick&quot;,&quot;if (!window.confirm(&#39;&quot;+msg+&quot;&#39;)){return false;}&quot;);</p><p><span class="Apple-tab-span" style="white-space:pre">   </span>Control.Attributes.Add(&quot;onclick&quot;, &quot;return confirm(&#39;&quot; + msg + &quot;&#39;);&quot;) ;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>}</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;summary&gt;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// 显示消息提示对话框，并进行页面跳转</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;/summary&gt;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;param name=&quot;page&quot;&gt;当前页面指针，一般为this&lt;/param&gt;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;param name=&quot;msg&quot;&gt;提示信息&lt;/param&gt;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;param name=&quot;url&quot;&gt;跳转的目标URL&lt;/param&gt;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>public static void ShowAndRedirect(System.Web.UI.Page page,string msg,string url)</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>{<span class="Apple-tab-span" style="white-space:pre">   </span></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //Response.Write(&quot;&lt;script&gt;alert(&#39;帐户审核通过！现在去为企业充值。&#39;);window.location=\&quot;&quot; + pageurl + &quot;\&quot;&lt;/script&gt;&quot;);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; page.ClientScript.RegisterStartupScript(page.GetType(), &quot;message&quot;, &quot;&lt;script language=&#39;javascript&#39; defer&gt;alert(&#39;&quot; + msg + &quot;&#39;);window.location=\&quot;&quot; + url + &quot;\&quot;&lt;/script&gt;&quot;);</p><p><br/></p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">  </span>}</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// 显示消息提示对话框，并进行页面跳转</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;page&quot;&gt;当前页面指针，一般为this&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;msg&quot;&gt;提示信息&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;url&quot;&gt;跳转的目标URL&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; public static void ShowAndRedirects(System.Web.UI.Page page, string msg, string url)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; StringBuilder Builder = new StringBuilder();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Builder.Append(&quot;&lt;script language=&#39;javascript&#39; defer&gt;&quot;);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Builder.AppendFormat(&quot;alert(&#39;{0}&#39;);&quot;, msg);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Builder.AppendFormat(&quot;top.location.href=&#39;{0}&#39;&quot;, url);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Builder.Append(&quot;&lt;/script&gt;&quot;);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; page.ClientScript.RegisterStartupScript(page.GetType(), &quot;message&quot;, Builder.ToString());</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;summary&gt;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// 输出自定义脚本信息</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;/summary&gt;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;param name=&quot;page&quot;&gt;当前页面指针，一般为this&lt;/param&gt;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>/// &lt;param name=&quot;script&quot;&gt;输出脚本&lt;/param&gt;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>public static void ResponseScript(System.Web.UI.Page page,string script)</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>{</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; page.ClientScript.RegisterStartupScript(page.GetType(), &quot;message&quot;, &quot;&lt;script language=&#39;javascript&#39; defer&gt;&quot; + script + &quot;&lt;/script&gt;&quot;);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p><p><span class="Apple-tab-span" style="white-space:pre">  </span>}</p><p><br/></p><p><span class="Apple-tab-span" style="white-space: pre;"> </span>}</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

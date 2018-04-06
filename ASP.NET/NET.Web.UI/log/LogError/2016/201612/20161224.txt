@@ -1,0 +1,169 @@
+
+ 
+记录时间：2016-12-24 20:43:23,758 
+线程ID:[10] 
+日志级别：  ERROR 
+错误描述：
+RequestServices
+发生异常
+发生时间2016-12-24 20:43:23
+本次共用时：00:00:00.7493937
+异常讯息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices(Object obj) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 35
+UserInfo：{"Admin_Area_Code":null,"City":null,"Confidence":null,"Country":null,"District":null,"Id":null,"Img":0,"InCount":0,"Ip":null,"Isp":null,"Lat":null,"Lng":null,"Locid":null,"OperationTime":null,"Province":null,"Remarks":null,"Status":0,"Street":null,"Street_Number":null,"radius":null}
+UserInfoDetail：{"Browser":null,"Id":null,"Ip":null,"ModelType":null,"OS":null,"OperationTime":null,"Remarks":null}
+UserInfoUnDeteil：{"Key":null,"UserInfo":null,"UserInfoDetail":null}
+ 
+
+ 
+记录时间：2016-12-24 20:43:41,685 
+线程ID:[7] 
+日志级别：  ERROR 
+错误描述：
+RequestServices
+发生异常
+发生时间2016-12-24 20:43:41
+本次共用时：00:00:00.0354937
+异常讯息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices(Object obj) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 35
+UserInfo：{"Admin_Area_Code":null,"City":null,"Confidence":null,"Country":null,"District":null,"Id":null,"Img":0,"InCount":0,"Ip":null,"Isp":null,"Lat":null,"Lng":null,"Locid":null,"OperationTime":null,"Province":null,"Remarks":null,"Status":0,"Street":null,"Street_Number":null,"radius":null}
+UserInfoDetail：{"Browser":null,"Id":null,"Ip":null,"ModelType":null,"OS":null,"OperationTime":null,"Remarks":null}
+UserInfoUnDeteil：{"Key":null,"UserInfo":null,"UserInfoDetail":null}
+ 
+
+ 
+记录时间：2016-12-24 20:46:10,874 
+线程ID:[5] 
+日志级别：  ERROR 
+错误描述：
+RequestServices
+发生异常
+发生时间2016-12-24 20:46:10
+本次共用时：00:00:00.0648800
+异常讯息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices(Object obj) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 35
+UserInfo：{"Admin_Area_Code":null,"City":null,"Confidence":null,"Country":null,"District":null,"Id":null,"Img":0,"InCount":0,"Ip":null,"Isp":null,"Lat":null,"Lng":null,"Locid":null,"OperationTime":null,"Province":null,"Remarks":null,"Status":0,"Street":null,"Street_Number":null,"radius":null}
+UserInfoDetail：{"Browser":null,"Id":null,"Ip":null,"ModelType":null,"OS":null,"OperationTime":null,"Remarks":null}
+UserInfoUnDeteil：{"Key":null,"UserInfo":null,"UserInfoDetail":null}
+ 
+
+ 
+记录时间：2016-12-24 20:47:51,119 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：
+RequestServices
+发生异常
+发生时间2016-12-24 20:47:51
+本次共用时：00:00:00.0289004
+异常讯息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices(Object obj) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 35
+UserInfo：{"Admin_Area_Code":null,"City":null,"Confidence":null,"Country":null,"District":null,"Id":null,"Img":0,"InCount":0,"Ip":null,"Isp":null,"Lat":null,"Lng":null,"Locid":null,"OperationTime":null,"Province":null,"Remarks":null,"Status":0,"Street":null,"Street_Number":null,"radius":null}
+UserInfoDetail：{"Browser":null,"Id":null,"Ip":null,"ModelType":null,"OS":null,"OperationTime":null,"Remarks":null}
+UserInfoUnDeteil：{"Key":null,"UserInfo":null,"UserInfoDetail":null}
+ 
+
+ 
+记录时间：2016-12-24 20:51:15,104 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：
+RequestServices
+发生异常
+发生时间2016-12-24 20:51:15
+本次共用时：00:00:00.0347650
+异常讯息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices(Object obj) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 35
+UserInfo：{"Admin_Area_Code":null,"City":null,"Confidence":null,"Country":null,"District":null,"Id":null,"Img":0,"InCount":0,"Ip":null,"Isp":null,"Lat":null,"Lng":null,"Locid":null,"OperationTime":null,"Province":null,"Remarks":null,"Status":0,"Street":null,"Street_Number":null,"radius":null}
+UserInfoDetail：{"Browser":null,"Id":null,"Ip":null,"ModelType":null,"OS":null,"OperationTime":null,"Remarks":null}
+UserInfoUnDeteil：{"Key":null,"UserInfo":null,"UserInfoDetail":null}
+ 
+
+ 
+记录时间：2016-12-24 20:51:44,300 
+线程ID:[13] 
+日志级别：  ERROR 
+错误描述：
+RequestServices
+发生异常
+发生时间2016-12-24 20:51:44
+本次共用时：00:00:00.0318526
+异常讯息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices(Object obj) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 35
+UserInfo：{"Admin_Area_Code":null,"City":null,"Confidence":null,"Country":null,"District":null,"Id":null,"Img":0,"InCount":0,"Ip":null,"Isp":null,"Lat":null,"Lng":null,"Locid":null,"OperationTime":null,"Province":null,"Remarks":null,"Status":0,"Street":null,"Street_Number":null,"radius":null}
+UserInfoDetail：{"Browser":null,"Id":null,"Ip":null,"ModelType":null,"OS":null,"OperationTime":null,"Remarks":null}
+UserInfoUnDeteil：{"Key":null,"UserInfo":null,"UserInfoDetail":null}
+ 
+
+ 
+记录时间：2016-12-24 21:00:15,313 
+线程ID:[8] 
+日志级别：  ERROR 
+错误描述：
+RequestServices
+发生异常
+发生时间2016-12-24 21:00:15
+本次共用时：00:00:00.1881885
+异常讯息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices(Object obj) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 37
+UserInfo：{"Admin_Area_Code":null,"City":null,"Confidence":null,"Country":null,"District":null,"Id":null,"Img":0,"InCount":0,"Ip":null,"Isp":null,"Lat":null,"Lng":null,"Locid":null,"OperationTime":null,"Province":null,"Remarks":null,"Status":0,"Street":null,"Street_Number":null,"radius":null}
+UserInfoDetail：{"Browser":null,"Id":null,"Ip":null,"ModelType":null,"OS":null,"OperationTime":null,"Remarks":null}
+UserInfoUnDeteil：{"Key":null,"UserInfo":null,"UserInfoDetail":null}
+ 
+
+ 
+记录时间：2016-12-24 21:02:57,751 
+线程ID:[5] 
+日志级别：  ERROR 
+错误描述：
+RequestServices
+发生异常
+发生时间2016-12-24 21:02:57
+本次共用时：00:00:00.0450760
+异常讯息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices(Object obj) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 37
+UserInfo：{"Admin_Area_Code":null,"City":null,"Confidence":null,"Country":null,"District":null,"Id":null,"Img":0,"InCount":0,"Ip":null,"Isp":null,"Lat":null,"Lng":null,"Locid":null,"OperationTime":null,"Province":null,"Remarks":null,"Status":0,"Street":null,"Street_Number":null,"radius":null}
+UserInfoDetail：{"Browser":null,"Id":null,"Ip":null,"ModelType":null,"OS":null,"OperationTime":null,"Remarks":null}
+UserInfoUnDeteil：{"Key":null,"UserInfo":null,"UserInfoDetail":null}
+ 
+
+ 
+记录时间：2016-12-24 21:06:11,830 
+线程ID:[5] 
+日志级别：  ERROR 
+错误描述：
+RequestServices
+发生异常
+发生时间2016-12-24 21:06:11
+本次共用时：00:00:00.0328509
+异常讯息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices(Object obj) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 37
+UserInfo：{"Admin_Area_Code":null,"City":null,"Confidence":null,"Country":null,"District":null,"Id":null,"Img":0,"InCount":0,"Ip":null,"Isp":null,"Lat":null,"Lng":null,"Locid":null,"OperationTime":null,"Province":null,"Remarks":null,"Status":0,"Street":null,"Street_Number":null,"radius":null}
+UserInfoDetail：{"Browser":null,"Id":null,"Ip":null,"ModelType":null,"OS":null,"OperationTime":null,"Remarks":null}
+UserInfoUnDeteil：{"Key":null,"UserInfo":null,"UserInfoDetail":null}
+ 
+
+ 
+记录时间：2016-12-24 21:07:00,809 
+线程ID:[8] 
+日志级别：  ERROR 
+错误描述：
+RequestServices
+发生异常
+发生时间2016-12-24 21:06:58
+本次共用时：00:00:00.0563268
+异常讯息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices(Object obj) 位置 C:\Users\JiangYanJun\Desktop\Project Code\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 37
+UserInfo：{"Admin_Area_Code":null,"City":null,"Confidence":null,"Country":null,"District":null,"Id":null,"Img":0,"InCount":0,"Ip":null,"Isp":null,"Lat":null,"Lng":null,"Locid":null,"OperationTime":null,"Province":null,"Remarks":null,"Status":0,"Street":null,"Street_Number":null,"radius":null}
+UserInfoDetail：{"Browser":null,"Id":null,"Ip":null,"ModelType":null,"OS":null,"OperationTime":null,"Remarks":null}
+UserInfoUnDeteil：{"Key":null,"UserInfo":null,"UserInfoDetail":null}
+ 
+
+ 
+记录时间：2016-12-24 21:14:27,546 
+线程ID:[7] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=112.22.234.12Type=PC
+{"content":{"Pois":null,"address_component":{"City":"苏州市","Country":"中国","District":"吴中区","Province":"江苏省","Street":"钟南街","Street_Number":"","admin_area_code":"320506"},"confidence":"0.2","formatted_address":"江苏省苏州市吴中区钟南街","location":{"City":null,"Country":null,"District":null,"Province":null,"Street":null,"Street_Number":null,"Ip":null,"Lat":"3650826.0","Lng":"13443183.0"},"locid":"9afa8f24a2357608f4d8005a24591d1f","radius":"12033"},"result":{"error":"161","loc_time":"2016-12-24 21:14:20"}}
+ 

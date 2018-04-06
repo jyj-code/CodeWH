@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=欲练 CSS ，必先宫 IE>
+    <meta name="keywords" content=“Win国天下，欲练CSS之人不在少数，大多不得要领，又或是走火入魔，全为IE所累。故曰：欲练CSS，必先功IE。”曾经，我也属于为IE所累的行列，如今见到很多人仍然不愿意对自己的宝贝IE下手，所以决定特异写篇文章说说此事，以明辨IE到底是宝贝还是累赘。好了，funny部分结束，按回我的习惯直入正题。之所以说IE不好，是因为IE会误导了你对CSS模型的理解，让你以为IE的理解是对的，之后无论如何你>
+    <title>欲练 CSS ，必先宫 IE</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/A632AFCE-5A51-4B23-8983-921172870D0C.html' title='CSS'>CSS</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>欲练 CSS ，必先宫 IE</h1>
+                        <pre>
+                        <code>
+                            <p><strong>“Win国天下，欲练CSS之人不在少数，大多不得要领，又或是走火入魔，全为IE所累。故曰：欲练CSS，必先功IE。”</strong></p><p>曾经，我也属于为IE所累的行列，如今见到很多人仍然不愿意对自己的宝贝IE下手，所以决定特异写篇文章说说此事，以明辨IE到底是宝贝还是累赘。</p><p>好了，funny部分结束，按回我的习惯直入正题。之所以说IE不好，是因为IE会误导了你对CSS模型的理解，让你以为IE的理解是对的，之后无论如何你都无法用你的IE模型理论去为你那个无法在FF正常显示的CSS提供fix。更加坏的事情是，即使你仅仅针对IE设计，不考虑其它浏览器，由于IE模型绝对可以说是一只让人难以捉摸其脾气的怪物，所以你单纯为IE设计也会遇到众多难题，发现很多的效果总是绕来绕去都难以实现。</p><p>我们都知道，XHTML+CSS的目标就是实现内容与表现分离，理论上对于任何特定一份内容，我们都可以通过CSS实现任何我们想要的表现形式，或者细致地说是布局形式。虽然现实与这个目标有一定差距，但是CSS已经能够满足大多数常见的布局需求，这有<a href="http://www.csszengarden.com/" target="_blank">CSS Zen Garden</a>为证。然而如果你用的是IE，因为它难以捉摸，所以如果你想用一种简单优雅的CSS去让IE能够实现“任何你想要的布局形式”，那是不可能的，只有复杂繁缛的CSS才能够在IE上满足你的需求。我曾经提到过一种理论，“一个人对一个研究方向是否感兴趣很可能是完全靠偶然事件决定的，这就好?袢说谝淮未蛴鹈颍绻阌思概棠憔突岣行巳ぃ绻阋恢倍加涣四憔突崦恍巳ぁ薄E在需要复杂繁缛的CSS这一点上，就足以令大多数的入门者却步。你总感觉到不得要领，你自然没兴趣学下去。</p><p>举一个例子说明这个问题，例如你不知道IE有hasLayout这回事，一个元素是否hasLayout对它的布局方式有重大影响，于是你肯定用最简单的思维去思考CSS，认为不同的CSS规则之间应该是松耦合的。“CSS应该被设计为简单优雅的”，你肯定会这样想，没错，它确实被设计为这样，不过IE不是这样去实现CSS罢了。我们用下面的代码去证明IE在quirks mode与standards mode之间的区别：<br/><strong>&lt;div style=&quot;background-color: red; height: 30px&quot;&gt;<br/>&nbsp; &lt;div&gt;Hello&lt;/div&gt;<br/>&nbsp; &lt;img style=&quot;float: left; width: 200px; height: 160px&quot; src=&quot;blank.gif&quot; /&gt;<br/>&nbsp; &lt;div&gt;Hello&lt;/div&gt;<br/>&lt;/div&gt;</strong></p><p>首先，我们用quirks mode看看结果如何，并且一个初学者看到这样的结果会去如何理解CSS规则。在quirks mode中，我们可以看到背景为红色的&lt;div /&gt;包含了上面1行的文本，以及下面向左浮动的&lt;img /&gt;（自然也就包括在浮动块右边的文本），在这里，我们可以建立两种认识：</p><ol class=" list-paddingleft-2"><li><p>容器是完整包含内容的，当内容的总高度比容器大的时候，容器就会自然伸展以确保容纳内容。</p></li><li><p>浮动块也属于上述条件所要求通过伸展以确保容纳内容。</p></li></ol><p>以上规则是完全错误的，一个懂得标准CSS以及理解quirks mode的设计师将会如此解释他的理解：</p><ol class=" list-paddingleft-2"><li><p>因为IE在quirks mode中会将height理解为min-height，所以它认为&lt;div /&gt;的高度不小于height指定的30px即可。而根据CSS标准，当height设置为30px时，高度就一定是30px，超出部分如何处理则由专门的CSS规则决定。</p></li><li><p>因为&lt;div /&gt;被设置了height属性，在IE中这就让它<a href="http://www.satzansatz.de/cssd/onhavinglayout.html" target="_blank">hasLayout</a>了，这就导致它一定要包含所有的内容，包括浮动块。而根据CSS标准，浮动块是无需被完全包含的，它就浮动在那里，除非遇到设置了clear属性的元素，否则后继内容只会侧移避让。</p></li></ol><p>好了，相信这个对比足以说明问题的严重性了，通过IE的效果去理解CSS，最终只会让你的理解与真实的CSS相差甚远。详细的standards mode与quirks mode带来的标准执行差别，可以参考这篇文章：<a href="http://www.quirksmode.org/css/quirksmode.html" target="_blank">CSS Quirks mode and strict mode</a>。</p><p>然后肯定有人要问我，如果通过doctype确保使用的是standards mode，那是不是就没问题了呢？standards mode确实会让IE对CSS的解释合理很多，但事情并没有那么简单，这你可以通过实践去慢慢体会。你可以尝试在standards mode中设计CSS，并且尽力保持它们在IE/FF/Opera/Safari这4大主流浏览器中显示一致，随着设计的进行，你会发现这不是那么容易做到的。或许你不乐意花时间去fix其中的一些小问题，宁愿任由其中一些浏览器的用户看到比较丑陋的布局，但至少你已经了解到一个和上面例子类似的道理：不同浏览器即使同样在standards mode，其对CSS的理解仍然有所差异，而差异当中最多只可能有一个是正确的，甚至可能全部都是错误的。这篇<a href="http://www.quirksmode.org/css/contents.html" target="_blank">CSS contents and browser compatibility</a>就列举了众多浏览器对CSS支持的差异，一份CSS总会因为其中有一些规则在某些浏览器上是不支持的或者是buggy的，而导致你难以保持它们在不同浏览器上显示一致。</p><p>接下来可能还有人会问我，既然IE的市场份额最大（特别是在入门级的用户当中），又或者说我的客户指定使用IE作为客户端，仅仅针对IE设计CSS不好吗？为什么要针对FF之类的标准浏览器设计CSS然后再为IE进行fix？因为IE难以捉摸的脾气，让你无法将它的行为理解为一种简单优雅的规则，然后让你陷入CSS规则高度耦合的困境中。请看下面的例子：<br/><strong>&lt;div style=&quot;background-color: red; border: 2px black solid&quot;&gt;<br/>&nbsp; &lt;img style=&quot;float: left; width: 200px; height: 160px&quot; src=&quot;blank.gif&quot; /&gt;<br/>&nbsp; &lt;div&gt;Hello&lt;/div&gt;<br/>&lt;/div&gt;<br/>&lt;div&gt;Hello&lt;/div&gt;</strong></p><p>现在，你在IE中看到的效果应该是左边出现&lt;img /&gt;，然后两个&lt;div /&gt;内的Hello都向右偏移以避让&lt;img /&gt;这个浮动块了，其中上面的&lt;div /&gt;仅仅占用移行的高度，因为它没有声明高度，所以就是自然高度，也就是一样，这些都很好理解，所有规则都是解耦的。然后向例子中增加对第一个&lt;div /&gt;的width属性复制，看看结果会如何：<br/><strong>&lt;div style=&quot;background-color: red; border: 2px black solid; width: 600px&quot;&gt;<br/>&nbsp; &lt;img style=&quot;float: left; width: 200px; height: 160px&quot; src=&quot;blank.gif&quot; /&gt;<br/>&nbsp; &lt;div&gt;Hello&lt;/div&gt;<br/>&lt;/div&gt;<br/>&lt;div&gt;Hello&lt;/div&gt;</strong></p><p>这时候第一个&lt;div /&gt;完全容纳了&lt;img /&gt;，把第二个&lt;div /&gt;挤到下面了。这该怎么解释呢？我们可没有设置它的height属性哦，难道又犯之前例子所说的因为hasLayout而必须容纳所有内容？正解，这就是IE难以驯服的地方，一个应该是完全独立的width属性，设置之后引起了高度以外的其它影响，这让人无法尝试以一种简单优雅的方式去理解IE的行为。这就证明了，如果你要学习如何为IE设计CSS，就先要学习标准CSS，再加上对IE怪异行为的理解，比仅仅学习如何为一个标准浏览器设计要难多了。这时候你是不是想说，“如果客户愿意放弃IE，甚至全世界都愿意放弃IE，那就实在太美好了”，没错，这才是正确的想法，一心想着仅针对IE设计以求方便只会让你走火入魔。</p><p>最后，如果你已经有了一定的CSS基础，对CSS规则都理解无偏差，却缺乏组合CSS规则的想象力，无法做到所谓的“实现任何你想要的布局效果”，这也就是说，你的内功已练成，仅仅差一些表面的套路，这时候我推荐你去看《<a href="http://www.cssmastery.com/" target="_blank">CSS Mastery</a>/<a href="http://www.douban.com/subject/1898098/" target="_blank">精通CSS</a>》。看完这本书，相信你只会觉得自己缺乏布局的创造能力，而不会有布局却不知道如何实现。另外，如果你关注CSS方面的内容，可以考虑订阅我的blog：</p><ul class=" list-paddingleft-2"><li><p><a href="http://catinchinese.blogspot.com/" target="_blank">Cat in Chinese</a> (feed: <a href="http://feeds.feedburner.com/CatChen/Chinese" target="_blank">http://feeds.feedburner.com/CatChen/Chinese</a>)</p></li><li><p><a href="http://cathsfz.cnblogs.com/" target="_blank">Cat in dotNET</a> (feed: <a href="http://feeds.feedburner.com/CatChen/dotNET" target="_blank">http://feeds.feedburner.com/CatChen/dotNET</a>)</p></li></ul><p>过年之后，我可能会写一些与ASP.NET+CSS有关的文章，因为现在ASP.NET+CSS的开发并不方便，即使用了<a href="http://www.asp.net/cssadapters/" target="_blank">ASP.NET 2.0 CSS Friendly Control Adapters</a>也如此，因此需要根据自己的实际情况定制配对的Control Adapter才能解决问题，这就是我接下来要研究的事情</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

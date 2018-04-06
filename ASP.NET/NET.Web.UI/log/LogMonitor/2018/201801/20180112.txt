@@ -1,0 +1,2784 @@
+
+ 
+记录时间：2018-01-12 16:46:49,778 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：18-1-12 下午 04:46:49
+			结束时间：18-1-12 下午 04:46:49
+			总 时 间：0.1031329秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 16:46:53,245 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：18-1-12 下午 04:46:49
+			结束时间：18-1-12 下午 04:46:53
+			总 时 间：3.4602961秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 16:46:54,549 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：18-1-12 下午 04:46:54
+			结束时间：18-1-12 下午 04:46:54
+			总 时 间：0.00401秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=180.107.93.214&Token=4f0cba91926445c6bae17326ec40d090&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 16:46:54,559 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：18-1-12 下午 04:46:54
+			结束时间：18-1-12 下午 04:46:54
+			总 时 间：0.0110065秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=180.107.93.214&Token=4f0cba91926445c6bae17326ec40d090&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:11:37,626 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：18-1-12 下午 05:11:37
+			结束时间：18-1-12 下午 05:11:37
+			总 时 间：0.0901571秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:11:43,395 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：18-1-12 下午 05:11:37
+			结束时间：18-1-12 下午 05:11:43
+			总 时 间：5.7680772秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:11:45,576 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：18-1-12 下午 05:11:45
+			结束时间：18-1-12 下午 05:11:45
+			总 时 间：0.0080791秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=180.107.93.214&Token=43ef4c8f8d3b492098b1ec7e18624acd&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:11:45,576 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：18-1-12 下午 05:11:45
+			结束时间：18-1-12 下午 05:11:45
+			总 时 间：0.0230141秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=180.107.93.214&Token=43ef4c8f8d3b492098b1ec7e18624acd&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:12:10,191 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 05:12:10
+			结束时间：18-1-12 下午 05:12:10
+			总 时 间：0.0340853秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:12:16,172 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 05:12:10
+			结束时间：18-1-12 下午 05:12:16
+			总 时 间：5.9809724秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:14:00,743 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 05:14:00
+			结束时间：18-1-12 下午 05:14:00
+			总 时 间：5.23E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:14:07,234 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 05:14:00
+			结束时间：18-1-12 下午 05:14:07
+			总 时 间：6.4909859秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:14:09,083 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 05:14:09
+			结束时间：18-1-12 下午 05:14:09
+			总 时 间：8.86E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:14:09,103 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 05:14:09
+			结束时间：18-1-12 下午 05:14:09
+			总 时 间：0.0020037秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:14:09,579 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 05:14:09
+			结束时间：18-1-12 下午 05:14:09
+			总 时 间：1.85E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:14:09,580 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 05:14:09
+			结束时间：18-1-12 下午 05:14:09
+			总 时 间：0.0010007秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:14:36,848 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 05:14:36
+			结束时间：18-1-12 下午 05:14:36
+			总 时 间：1.25E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:14:47,051 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 05:14:36
+			结束时间：18-1-12 下午 05:14:47
+			总 时 间：10.1907653秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:14:47,098 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 05:14:47
+			结束时间：18-1-12 下午 05:14:47
+			总 时 间：1.31E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:14:47,098 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 05:14:47
+			结束时间：18-1-12 下午 05:14:47
+			总 时 间：0.0010018秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:14:47,451 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 05:14:47
+			结束时间：18-1-12 下午 05:14:47
+			总 时 间：5.19E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:14:47,465 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 05:14:47
+			结束时间：18-1-12 下午 05:14:47
+			总 时 间：0.0010002秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:14:47,562 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 05:14:47
+			结束时间：18-1-12 下午 05:14:47
+			总 时 间：0.0009983秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:14:47,562 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 05:14:47
+			结束时间：18-1-12 下午 05:14:47
+			总 时 间：1.7E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:15:14,485 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 05:15:14
+			结束时间：18-1-12 下午 05:15:14
+			总 时 间：3.29E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:15:14,501 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 05:15:14
+			结束时间：18-1-12 下午 05:15:14
+			总 时 间：0.0020005秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:15:22,063 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 05:15:22
+			结束时间：18-1-12 下午 05:15:22
+			总 时 间：6.2E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:15:22,068 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 05:15:22
+			结束时间：18-1-12 下午 05:15:22
+			总 时 间：0.0020017秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:30:36,089 
+线程ID:[24] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 05:30:36
+			结束时间：18-1-12 下午 05:30:36
+			总 时 间：4.39E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:30:36,118 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 05:30:36
+			结束时间：18-1-12 下午 05:30:36
+			总 时 间：0.013009秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:45:25,813 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 05:45:25
+			结束时间：18-1-12 下午 05:45:25
+			总 时 间：0.0300519秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:45:27,596 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 05:45:25
+			结束时间：18-1-12 下午 05:45:27
+			总 时 间：1.7871842秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:59:30,375 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 05:59:30
+			结束时间：18-1-12 下午 05:59:30
+			总 时 间：3.88E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 17:59:30,413 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 05:59:30
+			结束时间：18-1-12 下午 05:59:30
+			总 时 间：0.0260177秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:03:52,588 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:03:52
+			结束时间：18-1-12 下午 06:03:52
+			总 时 间：8E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:04:00,292 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:03:52
+			结束时间：18-1-12 下午 06:04:00
+			总 时 间：7.7041145秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:15:22,203 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:15:22
+			结束时间：18-1-12 下午 06:15:22
+			总 时 间：0.0671442秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:15:30,701 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:15:22
+			结束时间：18-1-12 下午 06:15:30
+			总 时 间：8.5016451秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:15:31,808 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：18-1-12 下午 06:15:31
+			结束时间：18-1-12 下午 06:15:31
+			总 时 间：0.0020533秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=180.107.93.214&Token=a55875a5e3234ddcba6caf55d3baacd1&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:15:31,814 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：18-1-12 下午 06:15:31
+			结束时间：18-1-12 下午 06:15:31
+			总 时 间：0.006002秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=180.107.93.214&Token=a55875a5e3234ddcba6caf55d3baacd1&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:16:42,883 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:16:42
+			结束时间：18-1-12 下午 06:16:42
+			总 时 间：0.0170722秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:16:44,647 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:16:42
+			结束时间：18-1-12 下午 06:16:44
+			总 时 间：1.7631706秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:17:32,921 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:17:32
+			结束时间：18-1-12 下午 06:17:32
+			总 时 间：1.87E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:17:32,934 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:17:32
+			结束时间：18-1-12 下午 06:17:32
+			总 时 间：0.0080033秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:20:19,063 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:20:19
+			结束时间：18-1-12 下午 06:20:19
+			总 时 间：5.74E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:20:27,129 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:20:19
+			结束时间：18-1-12 下午 06:20:27
+			总 时 间：8.0663557秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:20:27,148 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:20:27
+			结束时间：18-1-12 下午 06:20:27
+			总 时 间：2.57E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:20:27,149 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:20:27
+			结束时间：18-1-12 下午 06:20:27
+			总 时 间：0.0010003秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:20:34,620 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:20:34
+			结束时间：18-1-12 下午 06:20:34
+			总 时 间：8.64E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:20:34,621 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:20:34
+			结束时间：18-1-12 下午 06:20:34
+			总 时 间：0.0010003秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:20:39,620 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:20:39
+			结束时间：18-1-12 下午 06:20:39
+			总 时 间：0.0010051秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:20:39,622 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:20:39
+			结束时间：18-1-12 下午 06:20:39
+			总 时 间：0.0010034秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:20:42,100 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:20:42
+			结束时间：18-1-12 下午 06:20:42
+			总 时 间：0.0010532秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:20:42,105 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:20:42
+			结束时间：18-1-12 下午 06:20:42
+			总 时 间：0.0009999秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:20:52,629 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:20:52
+			结束时间：18-1-12 下午 06:20:52
+			总 时 间：4.32E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:20:52,650 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:20:52
+			结束时间：18-1-12 下午 06:20:52
+			总 时 间：0.0020017秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:31:33,145 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:31:33
+			结束时间：18-1-12 下午 06:31:33
+			总 时 间：0.0541139秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:31:40,866 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:31:33
+			结束时间：18-1-12 下午 06:31:40
+			总 时 间：7.7221248秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:31:59,028 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:31:59
+			结束时间：18-1-12 下午 06:31:59
+			总 时 间：1.09E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:31:59,048 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:31:59
+			结束时间：18-1-12 下午 06:31:59
+			总 时 间：0.0190126秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:36:41,503 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:36:41
+			结束时间：18-1-12 下午 06:36:41
+			总 时 间：0.0911249秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:36:41,872 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:36:41
+			结束时间：18-1-12 下午 06:36:41
+			总 时 间：0.3782512秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:37:07,753 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:37:07
+			结束时间：18-1-12 下午 06:37:07
+			总 时 间：3.97E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:37:07,760 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:37:07
+			结束时间：18-1-12 下午 06:37:07
+			总 时 间：0.0040067秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:40:29,121 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:40:28
+			结束时间：18-1-12 下午 06:40:28
+			总 时 间：0.0680743秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:40:30,281 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:40:29
+			结束时间：18-1-12 下午 06:40:30
+			总 时 间：1.18579秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:47:13,243 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:47:13
+			结束时间：18-1-12 下午 06:47:13
+			总 时 间：0.0370429秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:47:13,677 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:47:13
+			结束时间：18-1-12 下午 06:47:13
+			总 时 间：0.444295秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:48:12,833 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:48:12
+			结束时间：18-1-12 下午 06:48:12
+			总 时 间：0.0660812秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:48:13,481 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:48:12
+			结束时间：18-1-12 下午 06:48:13
+			总 时 间：0.7074705秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:49:00,041 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:48:59
+			结束时间：18-1-12 下午 06:48:59
+			总 时 间：0.0691032秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:49:07,902 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:48:59
+			结束时间：18-1-12 下午 06:49:07
+			总 时 间：7.9493194秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:52:09,349 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:52:06
+			结束时间：18-1-12 下午 06:52:06
+			总 时 间：0.0510332秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:52:21,346 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:52:06
+			结束时间：18-1-12 下午 06:52:21
+			总 时 间：14.7157707秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:58:15,203 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 06:58:15
+			结束时间：18-1-12 下午 06:58:15
+			总 时 间：0.0461108秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 18:58:23,905 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 06:58:15
+			结束时间：18-1-12 下午 06:58:23
+			总 时 间：8.7047803秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:00:48,845 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:00:48
+			结束时间：18-1-12 下午 07:00:48
+			总 时 间：0.2131984秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:01:04,006 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:00:48
+			结束时间：18-1-12 下午 07:01:04
+			总 时 间：15.1917687秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:03:42,008 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:03:20
+			结束时间：18-1-12 下午 07:03:41
+			总 时 间：21.2281734秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:03:42,824 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:03:42
+			结束时间：18-1-12 下午 07:03:42
+			总 时 间：0.8155414秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:05:08,640 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:05:08
+			结束时间：18-1-12 下午 07:05:08
+			总 时 间：0.0290443秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:05:10,549 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:05:08
+			结束时间：18-1-12 下午 07:05:10
+			总 时 间：1.9082665秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:06:18,881 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:06:18
+			结束时间：18-1-12 下午 07:06:18
+			总 时 间：0.001087秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:06:18,934 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:06:18
+			结束时间：18-1-12 下午 07:06:18
+			总 时 间：0.0360243秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:10:53,734 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:10:53
+			结束时间：18-1-12 下午 07:10:53
+			总 时 间：0.0361016秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:11:02,068 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:10:53
+			结束时间：18-1-12 下午 07:11:02
+			总 时 间：8.3345325秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:11:13,746 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:11:13
+			结束时间：18-1-12 下午 07:11:13
+			总 时 间：9.49E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:11:13,754 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:11:13
+			结束时间：18-1-12 下午 07:11:13
+			总 时 间：0.0050022秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:12:06,366 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:12:06
+			结束时间：18-1-12 下午 07:12:06
+			总 时 间：0.0520654秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:12:16,126 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:12:06
+			结束时间：18-1-12 下午 07:12:16
+			总 时 间：9.8185185秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:12:25,164 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:12:25
+			结束时间：18-1-12 下午 07:12:25
+			总 时 间：0.0010096秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:12:25,188 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:12:25
+			结束时间：18-1-12 下午 07:12:25
+			总 时 间：0.001001秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:12:42,129 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:12:42
+			结束时间：18-1-12 下午 07:12:42
+			总 时 间：7.18E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:12:42,130 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:12:42
+			结束时间：18-1-12 下午 07:12:42
+			总 时 间：0.0010003秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:12:57,766 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:12:57
+			结束时间：18-1-12 下午 07:12:57
+			总 时 间：5.4E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:12:57,766 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:12:57
+			结束时间：18-1-12 下午 07:12:57
+			总 时 间：0秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:13:15,984 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:13:15
+			结束时间：18-1-12 下午 07:13:15
+			总 时 间：7.35E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:13:15,985 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:13:15
+			结束时间：18-1-12 下午 07:13:15
+			总 时 间：0.0010007秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:18:49,449 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:18:49
+			结束时间：18-1-12 下午 07:18:49
+			总 时 间：0.0490675秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:18:57,136 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:18:49
+			结束时间：18-1-12 下午 07:18:57
+			总 时 间：7.7291326秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:25:01,026 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:25:00
+			结束时间：18-1-12 下午 07:25:01
+			总 时 间：0.0611051秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:25:10,576 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:25:01
+			结束时间：18-1-12 下午 07:25:10
+			总 时 间：9.5508964秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:25:33,424 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:25:33
+			结束时间：18-1-12 下午 07:25:33
+			总 时 间：0.0010775秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:25:33,430 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:25:33
+			结束时间：18-1-12 下午 07:25:33
+			总 时 间：0.0020022秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:28:50,980 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:28:49
+			结束时间：18-1-12 下午 07:28:49
+			总 时 间：0.0890603秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:28:51,039 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:28:51
+			结束时间：18-1-12 下午 07:28:51
+			总 时 间：0秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:28:51,039 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:28:51
+			结束时间：18-1-12 下午 07:28:51
+			总 时 间：8.42E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:28:51,039 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:28:49
+			结束时间：18-1-12 下午 07:28:50
+			总 时 间：0.6314188秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:28:51,341 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:28:51
+			结束时间：18-1-12 下午 07:28:51
+			总 时 间：0秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:28:51,341 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:28:51
+			结束时间：18-1-12 下午 07:28:51
+			总 时 间：3.6E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:29:05,073 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:29:05
+			结束时间：18-1-12 下午 07:29:05
+			总 时 间：1.16E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:29:05,074 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:29:05
+			结束时间：18-1-12 下午 07:29:05
+			总 时 间：0.0010011秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:29:06,088 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:29:06
+			结束时间：18-1-12 下午 07:29:06
+			总 时 间：8.46E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:29:06,097 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:29:06
+			结束时间：18-1-12 下午 07:29:06
+			总 时 间：0.0010007秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:34:27,070 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:34:26
+			结束时间：18-1-12 下午 07:34:27
+			总 时 间：0.033063秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:34:27,410 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:34:27
+			结束时间：18-1-12 下午 07:34:27
+			总 时 间：0.3412269秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:34:51,602 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:34:51
+			结束时间：18-1-12 下午 07:34:51
+			总 时 间：2.25E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:34:51,622 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:34:51
+			结束时间：18-1-12 下午 07:34:51
+			总 时 间：0.0020009秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:36:37,517 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:36:37
+			结束时间：18-1-12 下午 07:36:37
+			总 时 间：0.0921603秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:36:45,605 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:36:37
+			结束时间：18-1-12 下午 07:36:45
+			总 时 间：8.2134521秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:38:39,270 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:38:39
+			结束时间：18-1-12 下午 07:38:39
+			总 时 间：0.043037秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:38:39,696 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:38:39
+			结束时间：18-1-12 下午 07:38:39
+			总 时 间：0.4262834秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:38:48,767 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:38:48
+			结束时间：18-1-12 下午 07:38:48
+			总 时 间：5.91E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:38:48,770 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:38:48
+			结束时间：18-1-12 下午 07:38:48
+			总 时 间：0.0030039秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:39:53,281 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:39:53
+			结束时间：18-1-12 下午 07:39:53
+			总 时 间：7.1E-06秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:39:53,291 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:39:53
+			结束时间：18-1-12 下午 07:39:53
+			总 时 间：0.0070051秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:40:14,663 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:40:14
+			结束时间：18-1-12 下午 07:40:14
+			总 时 间：1.4E-06秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:40:14,664 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:40:14
+			结束时间：18-1-12 下午 07:40:14
+			总 时 间：0.0010007秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:40:59,562 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:40:59
+			结束时间：18-1-12 下午 07:40:59
+			总 时 间：6.14E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:40:59,564 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:40:59
+			结束时间：18-1-12 下午 07:40:59
+			总 时 间：0.0010011秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:41:24,996 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:41:24
+			结束时间：18-1-12 下午 07:41:24
+			总 时 间：4.67E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:41:24,998 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:41:24
+			结束时间：18-1-12 下午 07:41:24
+			总 时 间：0.0020014秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:41:39,209 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:41:39
+			结束时间：18-1-12 下午 07:41:39
+			总 时 间：8.4E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:41:39,236 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:41:39
+			结束时间：18-1-12 下午 07:41:39
+			总 时 间：0.0020017秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:50:09,521 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:50:09
+			结束时间：18-1-12 下午 07:50:09
+			总 时 间：0.0361184秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:50:10,040 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:50:09
+			结束时间：18-1-12 下午 07:50:10
+			总 时 间：0.5363557秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:51:19,513 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:51:19
+			结束时间：18-1-12 下午 07:51:19
+			总 时 间：0.0460924秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:51:35,431 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:51:19
+			结束时间：18-1-12 下午 07:51:35
+			总 时 间：16.0653578秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:51:56,944 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:51:56
+			结束时间：18-1-12 下午 07:51:56
+			总 时 间：4.59E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:51:56,945 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:51:56
+			结束时间：18-1-12 下午 07:51:56
+			总 时 间：0.0010002秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:54:12,758 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:54:12
+			结束时间：18-1-12 下午 07:54:12
+			总 时 间：0.0260465秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:54:15,216 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:54:12
+			结束时间：18-1-12 下午 07:54:15
+			总 时 间：2.4576328秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:54:44,906 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:54:44
+			结束时间：18-1-12 下午 07:54:44
+			总 时 间：2.8E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:54:44,915 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:54:44
+			结束时间：18-1-12 下午 07:54:44
+			总 时 间：0.0030035秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:57:39,626 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 07:57:39
+			结束时间：18-1-12 下午 07:57:39
+			总 时 间：0.0500725秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 19:57:42,811 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 07:57:39
+			结束时间：18-1-12 下午 07:57:42
+			总 时 间：3.1851158秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:04:12,932 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 08:04:12
+			结束时间：18-1-12 下午 08:04:12
+			总 时 间：0.0800555秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:04:25,623 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 08:04:12
+			结束时间：18-1-12 下午 08:04:25
+			总 时 间：12.739457秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:04:42,220 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 08:04:42
+			结束时间：18-1-12 下午 08:04:42
+			总 时 间：0.0010809秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:04:42,221 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 08:04:42
+			结束时间：18-1-12 下午 08:04:42
+			总 时 间：0.0010007秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:05:01,673 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 08:05:01
+			结束时间：18-1-12 下午 08:05:01
+			总 时 间：6.84E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:05:01,674 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 08:05:01
+			结束时间：18-1-12 下午 08:05:01
+			总 时 间：0.0010014秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:08:24,543 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 08:08:24
+			结束时间：18-1-12 下午 08:08:24
+			总 时 间：0.0450747秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:08:24,968 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 08:08:24
+			结束时间：18-1-12 下午 08:08:24
+			总 时 间：0.425282秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:13:14,529 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 08:13:14
+			结束时间：18-1-12 下午 08:13:14
+			总 时 间：0.0351001秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:13:14,847 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 08:13:14
+			结束时间：18-1-12 下午 08:13:14
+			总 时 间：0.3712492秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:13:54,613 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 08:13:54
+			结束时间：18-1-12 下午 08:13:54
+			总 时 间：0.083116秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:13:55,668 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 08:13:54
+			结束时间：18-1-12 下午 08:13:55
+			总 时 间：1.1827861秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:15:09,081 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 08:15:08
+			结束时间：18-1-12 下午 08:15:08
+			总 时 间：0.038092秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:15:09,374 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 08:15:09
+			结束时间：18-1-12 下午 08:15:09
+			总 时 间：0.3672438秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:23:41,383 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 08:23:41
+			结束时间：18-1-12 下午 08:23:41
+			总 时 间：0.0360758秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:23:49,962 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 08:23:41
+			结束时间：18-1-12 下午 08:23:49
+			总 时 间：8.572691秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:26:16,241 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 08:26:16
+			结束时间：18-1-12 下午 08:26:16
+			总 时 间：0.0701秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:26:16,582 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 08:26:16
+			结束时间：18-1-12 下午 08:26:16
+			总 时 间：0.3422276秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:30:42,292 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 08:30:42
+			结束时间：18-1-12 下午 08:30:42
+			总 时 间：0.0801491秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:30:46,142 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 08:30:42
+			结束时间：18-1-12 下午 08:30:46
+			总 时 间：3.8175337秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:30:59,881 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 08:30:59
+			结束时间：18-1-12 下午 08:30:59
+			总 时 间：3.5E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:30:59,890 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 08:30:59
+			结束时间：18-1-12 下午 08:30:59
+			总 时 间：0.0040023秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:34:26,346 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 08:34:26
+			结束时间：18-1-12 下午 08:34:26
+			总 时 间：0.0200162秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:34:27,984 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 08:34:26
+			结束时间：18-1-12 下午 08:34:27
+			总 时 间：1.6380867秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:40:13,824 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 08:40:13
+			结束时间：18-1-12 下午 08:40:13
+			总 时 间：0.0380322秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:40:16,088 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 08:40:13
+			结束时间：18-1-12 下午 08:40:16
+			总 时 间：2.2645042秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:42:06,150 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：ChatController
+			ActionName:Index
+			开始时间：18-1-12 下午 08:42:06
+			结束时间：18-1-12 下午 08:42:06
+			总 时 间：1.84E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-01-12 20:42:16,964 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：ChatController
+			ViewName:Index
+			开始时间：18-1-12 下午 08:42:06
+			结束时间：18-1-12 下午 08:42:16
+			总 时 间：10.8141784秒
+			Form表单数据：
+			URL参数：
+					
+ 

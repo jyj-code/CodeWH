@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=创建DBLink方法  Oracle中创建dblink的方法发布时间>
+    <meta name="keywords" content=create public database link DBLINK2315 connect to 用户 identified by 密码 using DB源服务名;Oracle中创建dblink的方法发布时间　　当用户要跨本地数据库，访问另外一个数据库表中的数据时，本地数据库中必须创建了远程数据库的dblink,通过dblink本地数据库可以像访问本地数据库一样访问远程数据库表中的数据。下面讲介>
+    <title>创建DBLink方法  Oracle中创建dblink的方法发布时间</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/0D8667FF-B247-4368-A163-B9D7274FE236.html' title='Oracle'>Oracle</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>创建DBLink方法  Oracle中创建dblink的方法发布时间</h1>
+                        <pre>
+                        <code>
+                            <p>create public database link DBLINK2315 connect to 用户 identified by 密码 using &#39;DB源服务名&#39;;</p><p>Oracle中创建dblink的方法发布时间<br style="background-color: inherit;"/>　　当用户要跨本地数据库，访问另外一个数据库表中的数据时，本地数据库中必须创建了远程数据库的dblink,通过dblink本地数据库可以像访问本地数据库一样访问远程数据库表中的数据。下面讲介绍如何在本地数据库中创建dblink.<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　创建dblink一般有两种方式，不过在创建dblink之前用户必须有创建dblink的权限。想知道有关dblink的权限，以sys用户登录到本地数据库：<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　select&nbsp;*&nbsp;from&nbsp;user_sys_privs&nbsp;t<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　where&nbsp;t.privilege&nbsp;like&nbsp;upper(&#39;%link%&#39;);<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　1&nbsp;SYS&nbsp;CREATE&nbsp;DATABASE&nbsp;LINK&nbsp;NO<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　2&nbsp;SYS&nbsp;DROP&nbsp;PUBLIC&nbsp;DATABASE&nbsp;LINK&nbsp;NO<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　3&nbsp;SYS&nbsp;CREATE&nbsp;PUBLIC&nbsp;DATABASE&nbsp;LINK&nbsp;NO<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　可以看出在数据库中dblink有三种权限CREATE&nbsp;DATABASE&nbsp;LINK(所创建的dblink只能是创建者能使用，别?挠没褂貌涣?，CREATE&nbsp;PUBLIC&nbsp;DATABASE&nbsp;LINK(public表示所创建的dblink所有用户都可以使用)，DROP&nbsp;PUBLIC&nbsp;DATABASE&nbsp;LINK。<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　在sys用户下，把CREATE&nbsp;PUBLIC&nbsp;DATABASE&nbsp;LINK，DROP&nbsp;PUBLIC&nbsp;DATABASE&nbsp;LINK权限授予给你的用户<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　grant&nbsp;CREATE&nbsp;PUBLIC&nbsp;DATABASE&nbsp;LINK，DROP&nbsp;PUBLIC&nbsp;DATABASE&nbsp;LINK&nbsp;to&nbsp;scott;<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　然后以scott用户登录本地数据库<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　1.创建dblink的第一种方式，是在本地数据库tnsnames.ora文件中配置了要远程访问的数据库。<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　create&nbsp;public&nbsp;database&nbsp;link<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　to_bylw&nbsp;connect&nbsp;to&nbsp;scott&nbsp;identified&nbsp;by&nbsp;tiger&nbsp;using&nbsp;&#39;bylw&#39;;<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　其中to_bylw是你创建的dblink名字，bylw是远程数据库的实例名，scott/tiger是登录到远程数据库的用户/密码。然后在本地数据库中通过dblink访问远程数据库&#39;bylw&#39;中scott.tb_test表，sql语句如下所示<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　select&nbsp;*&nbsp;from&nbsp;<a href="mailto:scott.tb_test@to_bylw" style="background-color: inherit; cursor: pointer;">scott.tb_test@to_bylw</a>;<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　2.创建dblink的第二种方式，是在本地数据库tnsnames.ora文件中没有配置要访问的远程数据库，<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　create&nbsp;database&nbsp;link&nbsp;to_test<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　connect&nbsp;to&nbsp;scott&nbsp;identified&nbsp;by&nbsp;tiger<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　using&nbsp;&#39;(DESCRIPTION&nbsp;=<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　(ADDRESS_LIST&nbsp;=<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　(ADDRESS&nbsp;=&nbsp;(PROTOCOL&nbsp;=&nbsp;TCP)(HOST&nbsp;=&nbsp;192.168.1.5)(PORT&nbsp;=&nbsp;1521))<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　)<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　(CONNECT_DATA&nbsp;=<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　(SERVER&nbsp;=&nbsp;DEDICATED)<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　(SERVICE_NAME&nbsp;=&nbsp;bylw)<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　)<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　)&#39;;<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　第二种是把第一种配置在tnsnames.ora文件中的信息，直接放在创建dblink语句后面。第一种情况tnsnames.ora文件中信息如下：<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　bylw&nbsp;=<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　(DESCRIPTION&nbsp;=<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　(ADDRESS_LIST&nbsp;=<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　(ADDRESS&nbsp;=&nbsp;(PROTOCOL&nbsp;=&nbsp;TCP)(HOST&nbsp;=&nbsp;192.168.1.5)(PORT&nbsp;=&nbsp;1521))<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　)<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　(CONNECT_DATA&nbsp;=<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　(SERVER&nbsp;=&nbsp;DEDICATED)<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　(SERVICE_NAME&nbsp;=&nbsp;bylw)<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　)<br style="background-color: inherit;"/><br style="background-color: inherit;"/>　　)<br style="background-color: inherit;"/><br style="background-color: inherit;"/>原文出自【比特网】，转载请保留原文链接：<a href="http://soft.chinabyte.com/database/290/12218290.shtml" style="background-color: inherit; cursor: pointer;">http://soft.chinabyte.com/database/290/12218290.shtml</a></p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

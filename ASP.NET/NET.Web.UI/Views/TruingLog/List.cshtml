@@ -1,0 +1,62 @@
+﻿@model IEnumerable<NET.Architect.Model.TruingLog>
+
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>访问记录列表</h2>
+<p>
+    @Html.ActionLink("用户日志记录列表", "Index", "TruingLog")
+    @Html.ActionLink("进入知识列表", "NewKnowList", "Home")
+    @Html.ActionLink("进入用户页面", "Index", "UserInfo")
+    @Html.ActionLink("进入聊天页面", "Chat", "Home")
+</p>
+<hr />
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+<table class="table">
+    <tr class="row">
+        <th class="col-sm-3 col-md-3">
+            @Html.DisplayNameFor(model => model.LAST_MODIFIED_TIME)
+        </th>
+        <th class="col-sm-3 col-md-3">
+            @Html.DisplayNameFor(model => model.IP)
+        </th>
+        <th class="col-sm-3 col-md-3">
+            @Html.DisplayNameFor(model => model.INFO)
+        </th>
+        <th class="col-sm-3 col-md-3">
+            @Html.DisplayNameFor(model => model.SESSION)
+        </th>
+        @*<th  class="col-sm-3 col-md-3"></th>*@
+    </tr>
+
+@foreach (var item in Model) {
+    <tr class="row">
+        <td class="col-sm-3 col-md-3">
+            @Html.DisplayFor(modelItem => item.LAST_MODIFIED_TIME)
+        </td>
+        <td class="col-sm-3 col-md-3">
+            @Html.DisplayFor(modelItem => item.IP)
+        </td>
+        <td class="col-sm-3 col-md-3">
+            @Html.DisplayFor(modelItem => item.INFO)
+        </td>
+        <td class="col-sm-3 col-md-3">
+            @Html.DisplayFor(modelItem => item.SESSION)
+        </td>
+
+        @*<td class="col-sm-3 col-md-3">
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>*@
+    </tr>
+}
+
+</table>
+<div>
+    @Html.ActionLink("Back to List", "NewKnowList", "Home")
+</div>

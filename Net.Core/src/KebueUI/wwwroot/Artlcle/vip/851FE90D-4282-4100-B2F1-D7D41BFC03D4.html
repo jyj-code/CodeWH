@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=oracle使用dblink跨库查询的例子>
+    <meta name="keywords" content=oracle使用dblink跨库查询的例子发表于10个月前(2014-11-07 14:12) 阅读（1161）|评论（0）0人收藏此文章,我要收藏赞09月19日成都 OSC 源创会正在报名，送机械键盘和开源无码内裤本文介绍了oracle数据库使用dblink进行跨库查询的方法，oracle dblink跨库查询教程，需要的朋友参考下。oracle dblink跨库查询方法一：首先，创建数据库链接>
+    <title>oracle使用dblink跨库查询的例子</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/0D8667FF-B247-4368-A163-B9D7274FE236.html' title='Oracle'>Oracle</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>oracle使用dblink跨库查询的例子</h1>
+                        <pre>
+                        <code>
+                            <h1 style="background-color: inherit;">oracle使用dblink跨库查询的例子</h1><p>发表于10个月前(2014-11-07 14:12)&nbsp;&nbsp; 阅读（<span style="background-color: inherit;">1161</span>）&nbsp;|&nbsp;评论（<a href="file:///C:/Users/Tony.Jiang/AppData/Local/Youdao/YNote/editor/web/editor.html#comments" style="background-color: inherit; cursor: pointer;"><span style="background-color: inherit;">0</span></a>）&nbsp;<span style="background-color: inherit;"><em style="background-color: inherit;">0</em>人收藏此文章,&nbsp;<span style="background-color: inherit;">我要收藏</span></span></p><p><em style="background-color: inherit;">赞</em><em style="background-color: inherit;">0</em></p><p style="background-color: inherit;"><a href="http://city.oschina.net/chengdu/event/248043?channel=blog" target="_blank" style="background-color: inherit; cursor: pointer; color: rgb(170, 0, 0); font-weight: bold;">9月19日成都 OSC 源创会正在报名，送机械键盘和开源无码内裤</a>&nbsp;&nbsp;<img src="http://mmmxa.com/ueditor/themes/default/images/spacer.gif" data-media-type="image" style="background:url(http://mmmxa.com/ueditor/lang/zh-cn/images/localimage.png) no-repeat center center;border:1px solid #ddd" word_img="file:///C:/img/hot3.png?t=1435877996000"/></p><p style="background-color: inherit;">本文介绍了oracle数据库使用dblink进行跨库查询的方法，oracle dblink跨库查询教程，需要的朋友参考下。</p><p style="background-color: inherit;"><strong style="background-color: inherit;">oracle dblink跨库查询</strong><br style="background-color: inherit;"/>&nbsp;<br style="background-color: inherit;"/>方法一：<br style="background-color: inherit;"/>首先，创建<a href="http://www.jbxue.com/db/" target="_blank" style="background-color: inherit; cursor: pointer;">数据库</a>链接:<br style="background-color: inherit;"/>&nbsp;</p><p style="background-color: inherit;"><span style="background-color: inherit;">复制代码</span>代码示例:</p><p style="background-color: inherit;">CREATE PUBLIC DATABASE LINK 数据链名称 CONNECT TO 登陆用户名 IDENTIFIED BY 密码 USING &#39;(DESCRIPTION =<br style="background-color: inherit;"/>&nbsp;&nbsp;&nbsp;&nbsp; (ADDRESS_LIST =<br style="background-color: inherit;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (ADDRESS = (PROTOCOL = TCP)(HOST = 对方Oracle服务器的<a href="http://www.jbxue.com/tags/IPdizhichangshi.html" target="_blank" style="background-color: inherit; cursor: pointer;">IP地址</a>)(PORT = 端口号))<br style="background-color: inherit;"/>&nbsp;&nbsp;&nbsp;&nbsp; )<br style="background-color: inherit;"/>&nbsp;&nbsp;&nbsp;&nbsp; (CONNECT_DATA =<br style="background-color: inherit;"/>(SERVICE_NAME = 对方Oracle<a href="http://www.jbxue.com/server/" target="_blank" style="background-color: inherit; cursor: pointer;">服务器</a>服务名)<br style="background-color: inherit;"/>&nbsp;&nbsp;&nbsp;&nbsp; )<br style="background-color: inherit;"/>)&#39;&nbsp;<br style="background-color: inherit;"/>&nbsp;</p><p style="background-color: inherit;">其中 数据链名称 为添加到本地Oracle数据库控制台(Oracle Enterprise Manager Console)树节点的服务名<br style="background-color: inherit;"/>要查询对方数据库的表TableName语句如下:<br style="background-color: inherit;"/>&nbsp;</p><p style="background-color: inherit;"><span style="background-color: inherit;">复制代码</span>代码示例:</p><p style="background-color: inherit;">SELECT 字段名 FROM TableName@数据链名称;</p><p style="background-color: inherit;">方法二：<br style="background-color: inherit;"/>在目前绝大部分数据库有分布式查询的需要。下面简单的介绍如何在oracle中配置实现跨库访问。<br style="background-color: inherit;"/>比如现在有2个数据库服务器，安装了2个数据库。数据库server A和B。现在来实现在A库中访问B的数据库。<br style="background-color: inherit;"/>第一步、配置A服务器端的tnsnames.ora文件（TNSNAMES.ORA Network Configuration File），该文件存放的位置为：<br style="background-color: inherit;"/>$ORACLE_HOME/network/admin/tnsnames.ora<br style="background-color: inherit;"/>需要在该文件中增加对B库的配置项，格式如下<br style="background-color: inherit;"/>&nbsp;</p><p style="background-color: inherit;"><span style="background-color: inherit;">复制代码</span>代码示例:</p><p style="background-color: inherit;">ZBCDB3 =<br style="background-color: inherit;"/>(DESCRIPTION =<br style="background-color: inherit;"/>&nbsp;&nbsp;&nbsp; (ADDRESS_LIST =<br style="background-color: inherit;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (ADDRESS = (PROTOCOL = TCP)(HOST = 10.1.50.6)(PORT = 1523))<br style="background-color: inherit;"/>&nbsp;&nbsp;&nbsp; )<br style="background-color: inherit;"/>&nbsp;&nbsp;&nbsp; (CONNECT_DATA =<br style="background-color: inherit;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (SERVICE_NAME = zbcdb3)<br style="background-color: inherit;"/>&nbsp;&nbsp;&nbsp; )<br style="background-color: inherit;"/>)<br style="background-color: inherit;"/>&nbsp;</p><p style="background-color: inherit;">若在A库的另外一台客户端来访问B的数据库的话，同时也应该修改客户端的相应的文件。</p><p style="background-color: inherit;">第二步、在A服务器的一个库中建立B的一个数据的DBLINK。语法如下：（www.jbxue.com&nbsp;<a href="http://www.jbxue.com/jb/" target="_blank" style="background-color: inherit; cursor: pointer;">脚本</a>学堂）<br style="background-color: inherit;"/>create database link dcmdb connect to dcmdb identified by dcmoptr using &#39;zbcdb3&#39; ;<br style="background-color: inherit;"/>然后可以实现分布式查询：<br style="background-color: inherit;"/>select * from tabname@dcmdb where 1=1;<br style="background-color: inherit;"/>&nbsp;<br style="background-color: inherit;"/>（可以为tabname@dcmdb创建同义词）<br style="background-color: inherit;"/>&nbsp;<br style="background-color: inherit;"/>复制表数据：<br style="background-color: inherit;"/>&nbsp;</p><p style="background-color: inherit;"><span style="background-color: inherit;">复制代码</span>代码示例:</p><p style="background-color: inherit;">insert into 表名（字段名） （SELECT 字段名 FROM TableName@数据链名称）;<br style="background-color: inherit;"/>--------------------------------------------------------<br style="background-color: inherit;"/>select * from user_db_links; --用户 DB Link&nbsp;<br style="background-color: inherit;"/>select * from dba_db_links;&nbsp; --dba DB Link&nbsp;<br style="background-color: inherit;"/>select * from v$dblink;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --当前DB Link<br style="background-color: inherit;"/>Drop database link MYDBLINK1;<br style="background-color: inherit;"/>&nbsp;</p><p style="background-color: inherit;">如果是相同实例，不同用户，可以用如下方法查询：<br style="background-color: inherit;"/>&nbsp;</p><p style="background-color: inherit;"><span style="background-color: inherit;">复制代码</span>代码示例:</p><p style="background-color: inherit;">select * from 用户名.表名</p><p style="background-color: inherit;">以上就是oracle中使用dblink跨库查询的实例介绍，希望对大家有所帮助。</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

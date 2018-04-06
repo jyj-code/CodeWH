@@ -1,0 +1,64 @@
+
+ 
+记录时间：2016-11-21 16:25:33,935 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-11-21 下午 04:25:28
+			结束时间：16-11-21 下午 04:25:33
+			总 时 间：4.9523667秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-21 16:25:37,900 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-11-21 下午 04:25:34
+			结束时间：16-11-21 下午 04:25:37
+			总 时 间：3.8865752秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-21 16:26:09,873 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserlegitimacyVerification
+			开始时间：16-11-21 下午 04:26:09
+			结束时间：16-11-21 下午 04:26:09
+			总 时 间：0.4913421秒
+			Form表单数据：Ip=36.149.132.85&Isp=北京市 移动&Browser=Google Chrome 53.0.2785.116&OS=Windows NT&QueryResult=1
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-21 16:26:09,883 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserlegitimacyVerification
+			开始时间：16-11-21 下午 04:26:09
+			结束时间：16-11-21 下午 04:26:09
+			总 时 间：0.0100067秒
+			Form表单数据：Ip=36.149.132.85&Isp=北京市 移动&Browser=Google Chrome 53.0.2785.116&OS=Windows NT&QueryResult=1
+			URL参数：
+					
+ 

@@ -1,0 +1,27 @@
+
+ 
+记录时间：2016-12-12 20:08:22,811 
+线程ID:[14] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.6.2Type=PC
+{"content":{"Pois":null,"address_component":{"admin_area_code":"320506","city":"苏州市","country":"中国","district":"吴中区","province":"江苏省","street":"星华街","street_number":""},"confidence":"0.2","formatted_address":"江苏省苏州市吴中区星华街","location":{"lat":"3654569.0","lng":"13444958.0"},"locid":"c9e6ab3bf94e30ca15d57300f6ba294c","radius":"68670"},"result":{"error":"161","loc_time":"2016-12-12 20:08:19"}}
+ 
+
+ 
+记录时间：2016-12-12 20:46:59,156 
+线程ID:[8] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.134.2Type=PC
+{"content":{"Pois":null,"address_component":{"admin_area_code":"320506","city":"苏州市","country":"中国","district":"吴中区","province":"江苏省","street":"钟园路","street_number":""},"confidence":"0.2","formatted_address":"江苏省苏州市吴中区钟园路","location":{"lat":"3653020.0","lng":"13446554.0"},"locid":"ef45e31967da8cec202e3d819ae05436","radius":"68055"},"result":{"error":"161","loc_time":"2016-12-12 20:46:55"}}
+ 
+
+ 
+记录时间：2016-12-12 22:38:58,900 
+线程ID:[8] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.134.2Type=PC
+{"content":{"Pois":null,"address_component":{"City":"苏州市","Country":"中国","District":"吴中区","Province":"江苏省","Street":"钟园路","Street_Number":"","admin_area_code":"320506"},"confidence":"0.2","formatted_address":"江苏省苏州市吴中区钟园路","location":{"City":null,"Country":null,"District":null,"Province":null,"Street":null,"Street_Number":null,"Ip":null,"Lat":"3653020.0","Lng":"13446554.0"},"locid":"e3618440ce02da93a8505d5d77e606dd","radius":"68055"},"result":{"error":"161","loc_time":"2016-12-12 22:38:42"}}
+ 

@@ -1,0 +1,9 @@
+
+ 
+记录时间：2016-12-26 22:18:42,936 
+线程ID:[9] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=112.22.234.21Type=PC
+{"content":{"Pois":null,"address_component":{"City":"苏州市","Country":"中国","District":"吴中区","Province":"江苏省","Street":"港田路","Street_Number":"","admin_area_code":"320506"},"confidence":"0.2","formatted_address":"江苏省苏州市吴中区港田路","location":{"City":null,"Country":null,"District":null,"Province":null,"Street":null,"Street_Number":null,"Ip":null,"Lat":"3650512.0","Lng":"13443098.0"},"locid":"9876139b3a0fc98cbdd680643579be63","radius":"10530"},"result":{"error":"161","loc_time":"2016-12-26 22:18:41"}}
+ 

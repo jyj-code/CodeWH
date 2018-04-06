@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=Winform 按钮背景透明，多线程 ，进度条显示关闭>
+    <meta name="keywords" content=using System;using System.Windows.Forms;using BLL;using System.Collections.Generic;using System.Drawing;using System.Threading;namespace DCScrapTool{  public partial class ScrapFormImport : UserContro>
+    <title>Winform 按钮背景透明，多线程 ，进度条显示关闭</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/B8C0509A-82D4-4BD7-A1BB-5BAF70ED1C60.html' title='.NET'>.NET</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>Winform 按钮背景透明，多线程 ，进度条显示关闭</h1>
+                        <pre>
+                        <code>
+                            <p>using System;</p><p>using System.Windows.Forms;</p><p>using BLL;</p><p>using System.Collections.Generic;</p><p>using System.Drawing;</p><p>using System.Threading;</p><p><br/></p><p>namespace DCScrapTool</p><p>{</p><p>&nbsp; &nbsp; public partial class ScrapFormImport : UserControl</p><p>&nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; List&lt;string&gt; list = new List&lt;string&gt;();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; TabControl tabControlMain;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; StatusStrip sspStatusBar;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; public ScrapFormImport(TabControl tabControlMain)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; InitializeComponent();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DataGridView.CheckForIllegalCrossThreadCalls = false;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; this.tabControlMain = tabControlMain;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; this.Dock = DockStyle.Fill;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Control[] ctrl = tabControlMain.Parent.Controls.Find(&quot;sspStatusBar&quot;, true);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (ctrl.Length &gt; 1 &amp;&amp; ctrl[0].GetType().Name == &quot;StatusStrip&quot;)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sspStatusBar = (StatusStrip)ctrl[0];</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dataGridView.DataSource = BLL_DCScrapSource.GetDataTableAll();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; private List&lt;string&gt; GetPath()</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; OpenFileDialog dlg = new OpenFileDialog();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dlg.Filter = &quot;Excel files(*.xlsm)|*.xlsm&quot;;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dlg.Multiselect = true;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (dlg.ShowDialog() == DialogResult.OK)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; foreach (string FilePath in dlg.FileNames)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (System.IO.Path.GetExtension(FilePath).ToLower() == &quot;.xlsm&quot; &amp;&amp; !System.IO.Path.GetFileName(FilePath).ToLower().StartsWith(&quot;~$&quot;))</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; list.Add(FilePath);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return list;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; private void Method(object sender)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; StaticTool.Open(sender, pnStatus, ptrStatus, lbStatus);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BLL_DCScrapSource.ImportExcel(list);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dataGridView.DataSource = BLL_DCScrapSource.GetDataTableAll();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; StaticTool.Close(pnStatus, ptrStatus, lbStatus);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// 关闭进度条</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;pnStatus&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;ptrStatus&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;lbStatus&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; public void Close(Panel pnStatus, PictureBox ptrStatus, Label lbStatus)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; try</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pnStatus.Visible = false;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ptrStatus.Visible = false;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lbStatus.Visible = false;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; catch (Exception)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// 打开进度条</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;sender&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;pnStatus&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;ptrStatus&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;lbStatus&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; public void Open(object sender, Panel pnStatus, PictureBox ptrStatus, Label lbStatus)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; try</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pnStatus.Visible = true;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ptrStatus.Visible = true;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lbStatus.Visible = true;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; var Item = sender as Button;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //lbStatus.Text = Item.Text + &quot; &nbsp;Loading...........&quot;;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lbStatus.Text = &quot; &nbsp;Loading...&quot;;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lbStatus.ForeColor = Color.Blue;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; catch (Exception)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// 发生异常显示异常</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;Erro&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;pnStatus&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;ptrStatus&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;lbStatus&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; public void Error(Exception Erro, Panel pnStatus, PictureBox ptrStatus, Label lbStatus)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; try</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pnStatus.Visible = true;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ptrStatus.Visible = false;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lbStatus.Visible = true;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lbStatus.Text = &quot; Error Message:&quot; + Erro.Message;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lbStatus.ForeColor = Color.Blue;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; catch (Exception)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; private void btnImport_Click(object sender, EventArgs e)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; try</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; list = new List&lt;string&gt;();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; list = GetPath();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (list.Count &lt;= 0)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Thread thread = new Thread(Method);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; thread.IsBackground = true;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; thread.Start(sender);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; catch (Exception es)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; StaticTool.Error(es, pnStatus, ptrStatus, lbStatus);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; private void dataGridView_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; var dgv = sender as DataGridView;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (dgv != null)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Rectangle rect = new Rectangle(e.RowBounds.Location.X, e.RowBounds.Location.Y, dgv.RowHeadersWidth - 4, e.RowBounds.Height);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TextRenderer.DrawText(e.Graphics, (e.RowIndex + 1).ToString(), dgv.RowHeadersDefaultCellStyle.Font, rect, dgv.RowHeadersDefaultCellStyle.ForeColor, TextFormatFlags.VerticalCenter | TextFormatFlags.Right);</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// 按钮去背景透明</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;/summary&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; /// &lt;param name=&quot;btn&quot;&gt;&lt;/param&gt;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; private void SetBtnStyle(Button btn)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; btn.FlatStyle = FlatStyle.Flat;//样式 &nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; btn.ForeColor = Color.Blue;//前景 &nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; btn.BackColor = Color.Transparent;//去背景 &nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; btn.FlatAppearance.BorderSize = 0;//去边线 &nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; btn.FlatAppearance.MouseOverBackColor = Color.Transparent;//鼠标经过 &nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; btn.FlatAppearance.MouseDownBackColor = Color.Transparent;//鼠标按下 &nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; btn.FlatAppearance.BorderSize = 1;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; private void ScrapFormImport_Load(object sender, EventArgs e)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SetBtnStyle(btnImport); StaticTool.Close(pnStatus, ptrStatus, lbStatus);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;&nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; }</p><p>}</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

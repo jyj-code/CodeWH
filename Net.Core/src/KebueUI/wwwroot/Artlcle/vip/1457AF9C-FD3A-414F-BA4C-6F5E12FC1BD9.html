@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=MVC5 css&JS合并绑定 BundleConfig>
+    <meta name="keywords" content=BundleConfig绑定需要注意只能引用非min.*未压缩文件，不然需要在发布到服务器时webconfig文件的增加如下节点，或者申明BundleTable.EnableOptimizations =true;关闭压缩功能，因为服务器默认是需要压缩的system.web  compilation targetFramework=4.6 debug=true//system.webusing S>
+    <title>MVC5 css&JS合并绑定 BundleConfig</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/B8C0509A-82D4-4BD7-A1BB-5BAF70ED1C60.html' title='.NET'>.NET</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>MVC5 css&JS合并绑定 BundleConfig</h1>
+                        <pre>
+                        <code>
+                            <p><br/></p><p>BundleConfig绑定需要注意只能引用<strong><span style="color: rgb(255, 0, 0);">非min.*未压缩文件</span></strong>，不然需要在发布到服务器时webconfig文件的增加如下节点，或者申明&nbsp;BundleTable.EnableOptimizations =true;关闭压缩功能，因为服务器默认是需要压缩的</p><p><br/></p><p>&nbsp;&lt;system.web&gt;</p><p>&nbsp; &nbsp; &lt;compilation targetFramework=&quot;4.6&quot; debug=&quot;true&quot;/&gt;</p><p><br/></p><p>&nbsp;&lt;/system.web&gt;</p><p><br/></p><p>using System.Web;</p><p>using System.Web.Optimization;</p><p><br/></p><p>namespace Wafxw</p><p>{</p><p>&nbsp; &nbsp; public class BundleConfig</p><p>&nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; // 有关绑定的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkId=301862</p><p>&nbsp; &nbsp; &nbsp; &nbsp; public static void RegisterBundles(BundleCollection bundles)</p><p>&nbsp; &nbsp; &nbsp; &nbsp; {</p><p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: rgb(255, 0, 0);"> BundleTable.EnableOptimizations =StaticTool.GetWebConfig(&quot;EnableOptimizations&quot;).ToLower().Trim().ToString()== &quot;true&quot; ? true : false;</span></strong></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bundles.Add(new StyleBundle(&quot;~/Content/css&quot;).Include(</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;~/Content/Plug/charismas/charisma-app.css&quot;,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;~/Content/Plug/Boostrap/css/bootstrap-slider.css&quot;,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;~/Content/Plug/Boostrap/css/bootstrap-select.css&quot;,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;~/Content/Plug/Boostrap/css/bootstrap-switch.css&quot;,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;~/Content/Plug/layer/skin/layer.css&quot;,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;~/Content/Plug/Boostrap/bootstrap-3.3.5-dist/css/bootstrap.css&quot;,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;~/Content/css/themesStyle.css&quot;));</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bundles.Add(new ScriptBundle(&quot;~/Content/js&quot;).Include(</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;~/Content/Plug/jquery/jquery-1.9.1.js&quot;,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;~/Content/Plug/Boostrap/bootstrap-3.3.5-dist/js/bootstrap.js&quot;,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;~/Content/Plug/charismas/jquery.cookie.js&quot;,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;~/Content/Plug/Boostrap/js/bootstrap-select.js&quot;,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;~/Content/Plug/Boostrap/js/bootstrap-switch.js&quot;,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;~/Content/Plug/Boostrap/js/bootstrap-slider.js&quot;,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;~/Content/Plug/layer/layer.js&quot;,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;~/Content/Plug/ueditor1_4_3_3-utf8-net/ueditor.config.js&quot;,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;~/Content/Plug/ueditor1_4_3_3-utf8-net/ueditor.all.js&quot;,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;~/Content/Plug/ueditor1_4_3_3-utf8-net/lang/zh-cn/zh-cn.js&quot;,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;~/Content/js/layout.js&quot;,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;~/Content/Plug/laydate/laydate.js&quot;));</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; }</p><p>}</p><p>在Layout页引用如下方法<br/></p><p><span style="color: rgb(255, 0, 0);"><strong>&nbsp; &nbsp; @Styles.Render(&quot;~/Content/css&quot;)&nbsp;</strong></span></p><p><span style="color: rgb(255, 0, 0);"><strong>&nbsp; &nbsp; @Scripts.Render(&quot;~/Content/js&quot;)</strong></span></p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

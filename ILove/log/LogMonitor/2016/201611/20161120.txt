@@ -1,0 +1,1760 @@
+
+ 
+记录时间：2016-11-20 15:23:58,311 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Menu
+			开始时间：16-11-20 下午 03:23:58
+			结束时间：16-11-20 下午 03:23:58
+			总 时 间：0.0470573秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 15:24:03,042 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Menu
+			开始时间：16-11-20 下午 03:23:58
+			结束时间：16-11-20 下午 03:24:03
+			总 时 间：4.7191286秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 15:24:37,521 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Stars
+			开始时间：16-11-20 下午 03:24:37
+			结束时间：16-11-20 下午 03:24:37
+			总 时 间：0.0010425秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 15:24:37,978 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Stars
+			开始时间：16-11-20 下午 03:24:37
+			结束时间：16-11-20 下午 03:24:37
+			总 时 间：0.4572981秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 15:25:22,116 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 03:25:09
+			结束时间：16-11-20 下午 03:25:22
+			总 时 间：13.0206572秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.132.85
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 15:25:22,119 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 03:25:22
+			结束时间：16-11-20 下午 03:25:22
+			总 时 间：0.002001秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.132.85
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 16:09:33,558 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Menu
+			开始时间：16-11-20 下午 04:09:33
+			结束时间：16-11-20 下午 04:09:33
+			总 时 间：0.0681054秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 16:09:39,711 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Menu
+			开始时间：16-11-20 下午 04:09:33
+			结束时间：16-11-20 下午 04:09:39
+			总 时 间：6.117056秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 16:22:30,284 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Menu
+			开始时间：16-11-20 下午 04:22:30
+			结束时间：16-11-20 下午 04:22:30
+			总 时 间：0.0801294秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 16:22:36,815 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Menu
+			开始时间：16-11-20 下午 04:22:30
+			结束时间：16-11-20 下午 04:22:36
+			总 时 间：6.4933062秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 16:31:56,757 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Menu
+			开始时间：16-11-20 下午 04:31:56
+			结束时间：16-11-20 下午 04:31:56
+			总 时 间：0.0650904秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 16:32:03,219 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Menu
+			开始时间：16-11-20 下午 04:31:56
+			结束时间：16-11-20 下午 04:32:03
+			总 时 间：6.4352665秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 16:47:14,020 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Menu
+			开始时间：16-11-20 下午 04:47:13
+			结束时间：16-11-20 下午 04:47:14
+			总 时 间：0.0850595秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 16:47:21,544 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Menu
+			开始时间：16-11-20 下午 04:47:14
+			结束时间：16-11-20 下午 04:47:21
+			总 时 间：7.49497秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 16:52:20,654 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Menu
+			开始时间：16-11-20 下午 04:52:20
+			结束时间：16-11-20 下午 04:52:20
+			总 时 间：0.0481148秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 16:52:25,860 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Menu
+			开始时间：16-11-20 下午 04:52:20
+			结束时间：16-11-20 下午 04:52:25
+			总 时 间：5.1624233秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:03:38,051 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Menu
+			开始时间：16-11-20 下午 05:03:37
+			结束时间：16-11-20 下午 05:03:38
+			总 时 间：0.0671344秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:03:45,561 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Menu
+			开始时间：16-11-20 下午 05:03:38
+			结束时间：16-11-20 下午 05:03:45
+			总 时 间：7.4819618秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:22:06,667 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 05:03:47
+			结束时间：16-11-20 下午 05:22:06
+			总 时 间：1099.2870198秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:22:06,670 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 05:22:06
+			结束时间：16-11-20 下午 05:22:06
+			总 时 间：0.0030012秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:26:20,645 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Menu
+			开始时间：16-11-20 下午 05:26:20
+			结束时间：16-11-20 下午 05:26:20
+			总 时 间：0.0360772秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:26:27,033 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Menu
+			开始时间：16-11-20 下午 05:26:20
+			结束时间：16-11-20 下午 05:26:27
+			总 时 间：6.3672229秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:26:29,725 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 05:26:29
+			结束时间：16-11-20 下午 05:26:29
+			总 时 间：0.006006秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:26:29,728 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 05:26:29
+			结束时间：16-11-20 下午 05:26:29
+			总 时 间：0.003002秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:27:58,487 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Stars
+			开始时间：16-11-20 下午 05:27:58
+			结束时间：16-11-20 下午 05:27:58
+			总 时 间：0.0010336秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:27:58,992 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Stars
+			开始时间：16-11-20 下午 05:27:58
+			结束时间：16-11-20 下午 05:27:58
+			总 时 间：0.5053343秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:28:00,124 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 05:28:00
+			结束时间：16-11-20 下午 05:28:00
+			总 时 间：0.0010192秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:28:00,124 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 05:28:00
+			结束时间：16-11-20 下午 05:28:00
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:28:28,930 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-20 下午 05:28:28
+			结束时间：16-11-20 下午 05:28:28
+			总 时 间：0.3202595秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:28:29,537 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-20 下午 05:28:28
+			结束时间：16-11-20 下午 05:28:29
+			总 时 间：0.6074072秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:28:31,309 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 05:28:31
+			结束时间：16-11-20 下午 05:28:31
+			总 时 间：3.83E-05秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:28:31,309 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 05:28:31
+			结束时间：16-11-20 下午 05:28:31
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:28:52,251 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:LoveTree
+			开始时间：16-11-20 下午 05:28:52
+			结束时间：16-11-20 下午 05:28:52
+			总 时 间：0.0050049秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:28:52,947 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:LoveTree
+			开始时间：16-11-20 下午 05:28:52
+			结束时间：16-11-20 下午 05:28:52
+			总 时 间：0.6954647秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:28:57,671 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 05:28:57
+			结束时间：16-11-20 下午 05:28:57
+			总 时 间：9.87E-05秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:28:57,671 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 05:28:57
+			结束时间：16-11-20 下午 05:28:57
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:29:11,510 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:LoveTree
+			开始时间：16-11-20 下午 05:29:11
+			结束时间：16-11-20 下午 05:29:11
+			总 时 间：9.15E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:29:11,516 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:LoveTree
+			开始时间：16-11-20 下午 05:29:11
+			结束时间：16-11-20 下午 05:29:11
+			总 时 间：0.0060036秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:29:20,479 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 05:29:20
+			结束时间：16-11-20 下午 05:29:20
+			总 时 间：7.71E-05秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:29:20,479 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 05:29:20
+			结束时间：16-11-20 下午 05:29:20
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:29:26,400 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:LoveTree
+			开始时间：16-11-20 下午 05:29:26
+			结束时间：16-11-20 下午 05:29:26
+			总 时 间：2.6E-06秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:29:26,417 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:LoveTree
+			开始时间：16-11-20 下午 05:29:26
+			结束时间：16-11-20 下午 05:29:26
+			总 时 间：0.0160118秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:29:27,925 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 05:29:27
+			结束时间：16-11-20 下午 05:29:27
+			总 时 间：1.39E-05秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:29:27,926 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 05:29:27
+			结束时间：16-11-20 下午 05:29:27
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:29:54,273 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:LoveTree
+			开始时间：16-11-20 下午 05:29:54
+			结束时间：16-11-20 下午 05:29:54
+			总 时 间：3.74E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:29:54,275 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:LoveTree
+			开始时间：16-11-20 下午 05:29:54
+			结束时间：16-11-20 下午 05:29:54
+			总 时 间：0.0020005秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:30:20,369 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 05:29:56
+			结束时间：16-11-20 下午 05:30:20
+			总 时 间：24.3054348秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:30:20,369 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 05:30:20
+			结束时间：16-11-20 下午 05:30:20
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:30:24,114 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:LoveTree
+			开始时间：16-11-20 下午 05:30:24
+			结束时间：16-11-20 下午 05:30:24
+			总 时 间：1.72E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:30:24,121 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:LoveTree
+			开始时间：16-11-20 下午 05:30:24
+			结束时间：16-11-20 下午 05:30:24
+			总 时 间：0.0060044秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:32:18,073 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 05:30:25
+			结束时间：16-11-20 下午 05:32:18
+			总 时 间：112.3168436秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.132.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:32:18,073 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 05:32:18
+			结束时间：16-11-20 下午 05:32:18
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.132.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:32:20,965 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:LoveTree
+			开始时间：16-11-20 下午 05:32:20
+			结束时间：16-11-20 下午 05:32:20
+			总 时 间：2.8E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:32:20,978 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:LoveTree
+			开始时间：16-11-20 下午 05:32:20
+			结束时间：16-11-20 下午 05:32:20
+			总 时 间：0.0130083秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:33:46,659 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 05:32:22
+			结束时间：16-11-20 下午 05:33:46
+			总 时 间：84.0074804秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:33:46,659 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 05:33:46
+			结束时间：16-11-20 下午 05:33:46
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:33:49,301 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:LoveTree
+			开始时间：16-11-20 下午 05:33:49
+			结束时间：16-11-20 下午 05:33:49
+			总 时 间：3.32E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:33:49,319 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:LoveTree
+			开始时间：16-11-20 下午 05:33:49
+			结束时间：16-11-20 下午 05:33:49
+			总 时 间：0.0170113秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:34:18,161 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:LoveTree
+			开始时间：16-11-20 下午 05:34:18
+			结束时间：16-11-20 下午 05:34:18
+			总 时 间：9.93E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:34:18,164 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:LoveTree
+			开始时间：16-11-20 下午 05:34:18
+			结束时间：16-11-20 下午 05:34:18
+			总 时 间：0.0030055秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:40:06,984 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 05:34:51
+			结束时间：16-11-20 下午 05:40:06
+			总 时 间：315.4351181秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:40:06,984 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 05:40:06
+			结束时间：16-11-20 下午 05:40:06
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:40:43,516 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:LoveTree
+			开始时间：16-11-20 下午 05:40:43
+			结束时间：16-11-20 下午 05:40:43
+			总 时 间：9E-06秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:40:43,525 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:LoveTree
+			开始时间：16-11-20 下午 05:40:43
+			结束时间：16-11-20 下午 05:40:43
+			总 时 间：0.0090052秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:43:15,439 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 05:41:14
+			结束时间：16-11-20 下午 05:43:15
+			总 时 间：120.8292248秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 17:43:15,439 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 05:43:15
+			结束时间：16-11-20 下午 05:43:15
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:45:23,231 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Menu
+			开始时间：16-11-20 下午 07:45:23
+			结束时间：16-11-20 下午 07:45:23
+			总 时 间：0.0681266秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:45:29,974 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Menu
+			开始时间：16-11-20 下午 07:45:23
+			结束时间：16-11-20 下午 07:45:29
+			总 时 间：6.7214536秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:46:14,225 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 07:46:02
+			结束时间：16-11-20 下午 07:46:14
+			总 时 间：11.2692132秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:46:14,229 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 07:46:14
+			结束时间：16-11-20 下午 07:46:14
+			总 时 间：0.0020013秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:47:36,804 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Menu
+			开始时间：16-11-20 下午 07:47:36
+			结束时间：16-11-20 下午 07:47:36
+			总 时 间：0.0590999秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:47:41,501 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Menu
+			开始时间：16-11-20 下午 07:47:36
+			结束时间：16-11-20 下午 07:47:41
+			总 时 间：4.6550865秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:47:45,165 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 07:47:45
+			结束时间：16-11-20 下午 07:47:45
+			总 时 间：0.0060582秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:47:45,167 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 07:47:45
+			结束时间：16-11-20 下午 07:47:45
+			总 时 间：0.002001秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:49:32,578 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Menu
+			开始时间：16-11-20 下午 07:49:32
+			结束时间：16-11-20 下午 07:49:32
+			总 时 间：1.89E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:49:32,584 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Menu
+			开始时间：16-11-20 下午 07:49:32
+			结束时间：16-11-20 下午 07:49:32
+			总 时 间：0.0050037秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:50:13,427 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 07:50:03
+			结束时间：16-11-20 下午 07:50:13
+			总 时 间：10.0424591秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:50:13,427 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 07:50:13
+			结束时间：16-11-20 下午 07:50:13
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:55:05,673 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Menu
+			开始时间：16-11-20 下午 07:55:05
+			结束时间：16-11-20 下午 07:55:05
+			总 时 间：0.0010319秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:55:05,684 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Menu
+			开始时间：16-11-20 下午 07:55:05
+			结束时间：16-11-20 下午 07:55:05
+			总 时 间：0.0110037秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:55:06,927 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 07:55:06
+			结束时间：16-11-20 下午 07:55:06
+			总 时 间：6.33E-05秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:55:06,927 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 07:55:06
+			结束时间：16-11-20 下午 07:55:06
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:55:48,246 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Menu
+			开始时间：16-11-20 下午 07:55:48
+			结束时间：16-11-20 下午 07:55:48
+			总 时 间：0.0430436秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:55:51,778 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Menu
+			开始时间：16-11-20 下午 07:55:48
+			结束时间：16-11-20 下午 07:55:51
+			总 时 间：3.5073293秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:56:02,840 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 07:55:54
+			结束时间：16-11-20 下午 07:56:02
+			总 时 间：8.2630274秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 19:56:02,842 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 07:56:02
+			结束时间：16-11-20 下午 07:56:02
+			总 时 间：0.0020018秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:05:17,396 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Menu
+			开始时间：16-11-20 下午 08:05:17
+			结束时间：16-11-20 下午 08:05:17
+			总 时 间：0.0361178秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:05:21,136 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Menu
+			开始时间：16-11-20 下午 08:05:17
+			结束时间：16-11-20 下午 08:05:21
+			总 时 间：3.7214725秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:05:55,764 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 08:05:55
+			结束时间：16-11-20 下午 08:05:55
+			总 时 间：0.0080771秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:05:55,768 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 08:05:55
+			结束时间：16-11-20 下午 08:05:55
+			总 时 间：0.0030012秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:06:24,113 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Menu
+			开始时间：16-11-20 下午 08:06:24
+			结束时间：16-11-20 下午 08:06:24
+			总 时 间：1.24E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:06:24,125 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Menu
+			开始时间：16-11-20 下午 08:06:24
+			结束时间：16-11-20 下午 08:06:24
+			总 时 间：0.0110066秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:07:32,904 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 08:07:24
+			结束时间：16-11-20 下午 08:07:32
+			总 时 间：8.7411067秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:07:32,905 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 08:07:32
+			结束时间：16-11-20 下午 08:07:32
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:10:16,751 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Menu
+			开始时间：16-11-20 下午 08:10:16
+			结束时间：16-11-20 下午 08:10:16
+			总 时 间：1.43E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:10:16,761 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Menu
+			开始时间：16-11-20 下午 08:10:16
+			结束时间：16-11-20 下午 08:10:16
+			总 时 间：0.0100066秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:10:47,053 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 08:10:47
+			结束时间：16-11-20 下午 08:10:47
+			总 时 间：5.81E-05秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:10:47,053 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 08:10:47
+			结束时间：16-11-20 下午 08:10:47
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:11:04,508 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Menu
+			开始时间：16-11-20 下午 08:11:04
+			结束时间：16-11-20 下午 08:11:04
+			总 时 间：9.11E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:11:04,517 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Menu
+			开始时间：16-11-20 下午 08:11:04
+			结束时间：16-11-20 下午 08:11:04
+			总 时 间：0.0080089秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:11:27,323 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 08:11:05
+			结束时间：16-11-20 下午 08:11:27
+			总 时 间：21.5684899秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:11:27,323 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 08:11:27
+			结束时间：16-11-20 下午 08:11:27
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:12:20,694 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Menu
+			开始时间：16-11-20 下午 08:12:20
+			结束时间：16-11-20 下午 08:12:20
+			总 时 间：3.2E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:12:20,703 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Menu
+			开始时间：16-11-20 下午 08:12:20
+			结束时间：16-11-20 下午 08:12:20
+			总 时 间：0.0090068秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:12:51,960 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 08:12:51
+			结束时间：16-11-20 下午 08:12:51
+			总 时 间：3.2E-06秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:12:51,961 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 08:12:51
+			结束时间：16-11-20 下午 08:12:51
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:12:57,597 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Menu
+			开始时间：16-11-20 下午 08:12:57
+			结束时间：16-11-20 下午 08:12:57
+			总 时 间：7.21E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:12:57,599 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Menu
+			开始时间：16-11-20 下午 08:12:57
+			结束时间：16-11-20 下午 08:12:57
+			总 时 间：0.0020065秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:13:12,843 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-20 下午 08:12:58
+			结束时间：16-11-20 下午 08:13:12
+			总 时 间：14.0444931秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-20 20:13:12,843 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-20 下午 08:13:12
+			结束时间：16-11-20 下午 08:13:12
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 

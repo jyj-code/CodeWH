@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=javascript的return语句简单介绍>
+    <meta name="keywords" content=javascript的return语句简单介绍:return语句在js中非常的重要，不仅仅具有返回函数值的功能，还具有一些特殊的用法，有个清晰的把握是非常有必要的。下面就结合实例简单介绍一下return语句的作用。一.用来返回控制和函数结果:通常情况，return语句对于一个函数是很有必要的，因为往往需要函数在一系列的代码执行后会得到一个期望的返回值，而此值就是通过return语句返回，并且将控制>
+    <title>javascript的return语句简单介绍</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/9D69FD3D-028F-4239-89F1-BAC91B1DFF4A.html' title='JavaScript'>JavaScript</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>javascript的return语句简单介绍</h1>
+                        <pre>
+                        <code>
+                            <p style="margin: 10px auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25.2px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: small;">javascript的return语句简单介绍:</span><br/><span style="font-size: small;">return语句在js中非常的重要，不仅仅具有返回函数值的功能，还具有一些特殊的用法，有个清晰的把握是非常有必要的。下面就结合实例简单介绍一下return语句的作用。</span><br/><span style="font-size: small;">一.用来返回控制和函数结果:</span><br/><span style="font-size: small;">通常情况，return语句对于一个函数是很有必要的，因为往往需要函数在一系列的代码执行后会得到一个期望的返回值，而此值就是通过return语句返回，并且将控制权返回给主调函数。<br/>语法格式:</span></p><p style="margin: 10px auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25.2px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;</p><pre style="margin-top: 0px; margin-bottom: 0px; margin-left: 22px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">return&nbsp;表达式</pre><p style="margin: 10px auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25.2px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;</p><p style="margin: 10px auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25.2px; white-space: normal; background-color: rgb(255, 255, 255);">代码实例如下:</p><p><span class="cnblogs_code_copy" style="padding-right: 5px; line-height: 1.5 !important;"><a title="复制代码" style="color: rgb(29, 88, 209); border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="border: none !important;"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; margin-left: 22px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">function&nbsp;add(){&nbsp;&nbsp;var&nbsp;a=1;&nbsp;&nbsp;var&nbsp;b=2;&nbsp;&nbsp;return&nbsp;a+b;  }function&nbsp;func(){  &nbsp;&nbsp;console.log(add())  }  func();</pre><p><span class="cnblogs_code_copy" style="padding-right: 5px; line-height: 1.5 !important;"><a title="复制代码" style="color: rgb(29, 88, 209); border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="border: none !important;"/></a></span></p><p style="margin: 10px auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25.2px; white-space: normal; background-color: rgb(255, 255, 255);">以上代码中，当调用func()函数的时候，控制权由func函数掌握，当再调用add函数的时候，控制权交付给add函数，然后返回一个值并将控制权再交付给func函数。<br/>通常情况下return后面跟有表达式，但是并不是绝对的，例如:</p><pre style="margin-top: 0px; margin-bottom: 0px; margin-left: 22px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">return;</pre><p style="margin: 10px auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25.2px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: small;">此情况就是单纯的将控制权转交给主调函数继续执行。<br/><span style="color: red;">扩展说明:</span><br/>return语句的普通应用并没有特殊之处，最需要注意的是return false的使用。事件处理函数返回false可以组织默认事件的发生。</span><br/><span style="font-size: small;">代码实例如下:</span></p><p style="margin: 10px auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25.2px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;</p><p><span class="cnblogs_code_copy" style="padding-right: 5px; line-height: 1.5 !important;"><a title="复制代码" style="color: rgb(29, 88, 209); border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="border: none !important;"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; margin-left: 22px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">&lt;!DOCTYPE&nbsp;html&gt;&nbsp;&lt;html&gt;&nbsp;&lt;head&gt;&nbsp;&lt;meta&nbsp;charset=&quot;&nbsp;utf-8&quot;&gt;&nbsp;&lt;meta&nbsp;name=&quot;author&quot;&nbsp;content=&quot;http://www.softwhy.com/&quot;&nbsp;/&gt;&nbsp;&lt;title&gt;蚂蚁部落&lt;/title&gt;&nbsp;&lt;script&nbsp;type=&quot;text/javascript&quot;&gt;&nbsp;window.onload=function(){&nbsp;  &nbsp;&nbsp;var&nbsp;olink=document.getElementById(&quot;thelink&quot;);&nbsp;  &nbsp;&nbsp;olink.onclick=function(){&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;false  &nbsp;&nbsp;}&nbsp;  }&nbsp;  &lt;/script&gt;&nbsp;&lt;/head&gt;&nbsp;&lt;body&gt;&nbsp;&lt;a&nbsp;href=&quot;http://www.softwhy.com&quot;&nbsp;id=&quot;thelink&quot;&gt;蚂蚁部落&lt;/a&gt;&nbsp;&nbsp;&lt;/body&gt;&nbsp;&lt;/html&gt;</pre><p><span class="cnblogs_code_copy" style="padding-right: 5px; line-height: 1.5 !important;"><a title="复制代码" style="color: rgb(29, 88, 209); border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="border: none !important;"/></a></span></p><p style="margin: 10px auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25.2px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;</p><p style="margin: 10px auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25.2px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: small;">点击一个链接就会发生onclick事件，它的默认动作是链接指向href属性规定的链接，但是如果事件处理函数使用了return false，那么就会阻止默认事件的发生。</span><br/><span style="font-size: small;">return false也可以组织事件冒泡现象的发生，具体内容可以参阅</span><a href="http://www.softwhy.com/forum.php?mod=viewthread&amp;tid=6180" target="_blank" style="color: rgb(29, 88, 209); text-decoration: none;"><span style="font-size: small;"><span style="color: blue;">JavaScript中return false的作用是什么</span></span></a><span style="font-size: small;">一章节。</span></p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

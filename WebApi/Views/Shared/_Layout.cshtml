@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("应用程序名称", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("主页", "Index", "Home", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <br /> <br />
+        <footer>
+            <div style="margin:0 auto; width:800px;">
+                <!-- 版权信息 -->
+                <h4 style="font-weight: bold; border-bottom: solid 1px #999; padding-bottom: 5px;">关于本站</h4>
+                <br />
+                <p>
+                    Copyright © 2016-2116
+                    Power by
+                    <a href="http://www.miibeian.gov.cn" target="_blank" title="陕ICP备15014626号-2" _href="http://www.miibeian.gov.cn">陕ICP备15014626号-2</a>
+                    <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=6132f5422023914b0c3a0c7cb83484f07b233b337ff2d31004acf3afdd4fef52"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt=".Net Core 研究院" title=".Net Core 研究院"></a>
+                    <a href="mailto:admin@kebue.com" title="admin@kebue.com">我的邮箱</a>
+                </p>
+                <!-- 版权信息结束 -->
+            </div>
+            <br /> <br /> <br />
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

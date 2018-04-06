@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=存储过程中使用参数和变量作为查询条件对性能的影响？>
+    <meta name="keywords" content=今日匆忙中写了2各存储过程，查询的表，查询的结构，返回的值基本一样，就是对参数的使用有点不同。晚上到家想着优化下，看看能不能合并了。在几次重写后，拿着几个版本查看执行计划时，发现个以前没注意的问题。第一个SP传入的2个时间参数直接用于里面的查询条件。第二个SP传入的2个时间参数，在SP内又定义了2个时间变量，将参数通过简单计算后Set给了2个变量，然后在查询中使用这2个变量作为条件。这2个SP，在>
+    <title>存储过程中使用参数和变量作为查询条件对性能的影响？</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/A6B67D7C-1B75-4AF4-AF00-7D4EF126AFA9.html' title='SQLServer'>SQLServer</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>存储过程中使用参数和变量作为查询条件对性能的影响？</h1>
+                        <pre>
+                        <code>
+                            <p style="margin: 10px auto; font-family: verdana, sans-serif; font-size: 13px; line-height: 19.5px; white-space: normal; background-color: rgb(255, 255, 255);">今日匆忙中写了2各存储过程，查询的表，查询的结构，返回的值基本一样，就是对参数的使用有点不同。</p><p style="margin: 10px auto; font-family: verdana, sans-serif; font-size: 13px; line-height: 19.5px; white-space: normal; background-color: rgb(255, 255, 255);">晚上到家想着优化下，看看能不能合并了。在几次重写后，拿着几个版本查看执行计划时，发现个以前没注意的问题。</p><p style="margin: 10px auto; font-family: verdana, sans-serif; font-size: 13px; line-height: 19.5px; white-space: normal; background-color: rgb(255, 255, 255);">第一个SP传入的2个时间参数直接用于里面的查询条件。</p><p style="margin: 10px auto; font-family: verdana, sans-serif; font-size: 13px; line-height: 19.5px; white-space: normal; background-color: rgb(255, 255, 255);">第二个SP传入的2个时间参数，在SP内又定义了2个时间变量，将参数通过简单计算后Set给了2个变量，然后在查询中使用这2个变量作为条件。</p><p style="margin: 10px auto; font-family: verdana, sans-serif; font-size: 13px; line-height: 19.5px; white-space: normal; background-color: rgb(255, 255, 255);">这2个SP，在执行开销上相差数倍。</p><p style="margin: 10px auto; font-family: verdana, sans-serif; font-size: 13px; line-height: 19.5px; white-space: normal; background-color: rgb(255, 255, 255);">在外面套一层SP，把时间算好了再当参数传给第二个SP，修改SP直接使用参数作为查询的条件，2个SP的开销就一样了。</p><p style="margin: 10px auto; font-family: verdana, sans-serif; font-size: 13px; line-height: 19.5px; white-space: normal; background-color: rgb(255, 255, 255);">这是怎么回事呢，SP里面对参数和变量的使用会对性能有多大的影响呢？</p><p style="margin: 10px auto; font-family: verdana, sans-serif; font-size: 13px; line-height: 19.5px; white-space: normal; background-color: rgb(255, 255, 255);">暂时没时间去仔细了解和分析。</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

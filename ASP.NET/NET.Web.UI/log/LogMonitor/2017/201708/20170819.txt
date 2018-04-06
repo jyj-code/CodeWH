@@ -1,0 +1,7936 @@
+
+ 
+记录时间：2017-08-19 11:18:32,360 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:18:31
+			结束时间：17-8-19 上午 11:18:32
+			总 时 间：1.2698548秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:18:56,849 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:18:32
+			结束时间：17-8-19 上午 11:18:56
+			总 时 间：24.5073238秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:18:58,785 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:18:58
+			结束时间：17-8-19 上午 11:18:58
+			总 时 间：0.0040854秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=922401b12cbb4dedb8eb4d862f61c312&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:18:58,791 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:18:58
+			结束时间：17-8-19 上午 11:18:58
+			总 时 间：0.0100059秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=922401b12cbb4dedb8eb4d862f61c312&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:19:13,787 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 上午 11:19:12
+			结束时间：17-8-19 上午 11:19:13
+			总 时 间：1.5653589秒
+			Form表单数据：message=请问&key=922401b12cbb4dedb8eb4d862f61c312&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:19:13,803 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 上午 11:19:13
+			结束时间：17-8-19 上午 11:19:13
+			总 时 间：0.015627秒
+			Form表单数据：message=请问&key=922401b12cbb4dedb8eb4d862f61c312&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:19:19,857 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 上午 11:19:19
+			结束时间：17-8-19 上午 11:19:19
+			总 时 间：0秒
+			Form表单数据：message=你是？&key=922401b12cbb4dedb8eb4d862f61c312&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:19:19,857 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 上午 11:19:19
+			结束时间：17-8-19 上午 11:19:19
+			总 时 间：0.7267337秒
+			Form表单数据：message=你是？&key=922401b12cbb4dedb8eb4d862f61c312&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:19:36,211 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 上午 11:19:36
+			结束时间：17-8-19 上午 11:19:36
+			总 时 间：0秒
+			Form表单数据：message=你爸爸是？&key=922401b12cbb4dedb8eb4d862f61c312&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:19:36,258 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 上午 11:19:35
+			结束时间：17-8-19 上午 11:19:36
+			总 时 间：1.0898246秒
+			Form表单数据：message=你爸爸是？&key=922401b12cbb4dedb8eb4d862f61c312&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:19:44,393 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 上午 11:19:43
+			结束时间：17-8-19 上午 11:19:44
+			总 时 间：1.0940887秒
+			Form表单数据：message=你叫？&key=922401b12cbb4dedb8eb4d862f61c312&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:19:44,518 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 上午 11:19:44
+			结束时间：17-8-19 上午 11:19:44
+			总 时 间：0秒
+			Form表单数据：message=你叫？&key=922401b12cbb4dedb8eb4d862f61c312&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:19:50,720 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 上午 11:19:50
+			结束时间：17-8-19 上午 11:19:50
+			总 时 间：0秒
+			Form表单数据：message=你是谁&key=922401b12cbb4dedb8eb4d862f61c312&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:19:50,720 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 上午 11:19:50
+			结束时间：17-8-19 上午 11:19:50
+			总 时 间：0.2344007秒
+			Form表单数据：message=你是谁&key=922401b12cbb4dedb8eb4d862f61c312&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:20:31,966 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 上午 11:20:31
+			结束时间：17-8-19 上午 11:20:31
+			总 时 间：0.1957317秒
+			Form表单数据：message=姜言俊&key=922401b12cbb4dedb8eb4d862f61c312&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:20:31,966 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 上午 11:20:31
+			结束时间：17-8-19 上午 11:20:31
+			总 时 间：0秒
+			Form表单数据：message=姜言俊&key=922401b12cbb4dedb8eb4d862f61c312&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:26:40,471 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:26:40
+			结束时间：17-8-19 上午 11:26:40
+			总 时 间：4.53E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:26:57,373 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:26:40
+			结束时间：17-8-19 上午 11:26:57
+			总 时 间：16.9302798秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:26:58,343 
+线程ID:[3] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:26:58
+			结束时间：17-8-19 上午 11:26:58
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=b43fe3b5cecb429eb262465264464c47&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:26:58,344 
+线程ID:[3] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:26:58
+			结束时间：17-8-19 上午 11:26:58
+			总 时 间：1.97E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=b43fe3b5cecb429eb262465264464c47&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:27:02,690 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 上午 11:27:01
+			结束时间：17-8-19 上午 11:27:02
+			总 时 间：0.8843668秒
+			Form表单数据：message=2323&key=b43fe3b5cecb429eb262465264464c47&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:27:02,690 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 上午 11:27:02
+			结束时间：17-8-19 上午 11:27:02
+			总 时 间：0秒
+			Form表单数据：message=2323&key=b43fe3b5cecb429eb262465264464c47&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:27:05,763 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 上午 11:27:05
+			结束时间：17-8-19 上午 11:27:05
+			总 时 间：0秒
+			Form表单数据：message=23er2r23&key=b43fe3b5cecb429eb262465264464c47&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:27:05,763 
+线程ID:[24] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 上午 11:27:04
+			结束时间：17-8-19 上午 11:27:05
+			总 时 间：0.9416541秒
+			Form表单数据：message=23er2r23&key=b43fe3b5cecb429eb262465264464c47&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:27:07,289 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 上午 11:27:06
+			结束时间：17-8-19 上午 11:27:07
+			总 时 间：0.8656401秒
+			Form表单数据：message=23r23r23e23&key=b43fe3b5cecb429eb262465264464c47&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:27:07,289 
+线程ID:[3] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 上午 11:27:07
+			结束时间：17-8-19 上午 11:27:07
+			总 时 间：0秒
+			Form表单数据：message=23r23r23e23&key=b43fe3b5cecb429eb262465264464c47&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:28:55,851 
+线程ID:[3] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:28:55
+			结束时间：17-8-19 上午 11:28:55
+			总 时 间：8.18E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:29:07,871 
+线程ID:[3] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:28:55
+			结束时间：17-8-19 上午 11:29:07
+			总 时 间：12.0200114秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:29:09,021 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:29:09
+			结束时间：17-8-19 上午 11:29:09
+			总 时 间：5.64E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=612a19ea7fd6456e96a6be7e74db7bd1&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:29:09,021 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:29:09
+			结束时间：17-8-19 上午 11:29:09
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=612a19ea7fd6456e96a6be7e74db7bd1&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:29:37,348 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:29:37
+			结束时间：17-8-19 上午 11:29:37
+			总 时 间：2.98E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:29:53,337 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:29:37
+			结束时间：17-8-19 上午 11:29:53
+			总 时 间：15.9886528秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:29:56,224 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:29:56
+			结束时间：17-8-19 上午 11:29:56
+			总 时 间：0.0040061秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=39c8b05b36a249ad81f6dddc1d4175a0&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:29:56,224 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:29:56
+			结束时间：17-8-19 上午 11:29:56
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=39c8b05b36a249ad81f6dddc1d4175a0&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:30:26,193 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:30:26
+			结束时间：17-8-19 上午 11:30:26
+			总 时 间：9.45E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:30:41,480 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:30:26
+			结束时间：17-8-19 上午 11:30:41
+			总 时 间：15.2871854秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:30:42,176 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:30:42
+			结束时间：17-8-19 上午 11:30:42
+			总 时 间：0.001039秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=75d59f02634f4259ba3dc9bbe02a85c3&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:30:42,176 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:30:42
+			结束时间：17-8-19 上午 11:30:42
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=75d59f02634f4259ba3dc9bbe02a85c3&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:30:52,256 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 上午 11:30:51
+			结束时间：17-8-19 上午 11:30:52
+			总 时 间：0.7205599秒
+			Form表单数据：message=21323323&key=75d59f02634f4259ba3dc9bbe02a85c3&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:30:52,256 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 上午 11:30:52
+			结束时间：17-8-19 上午 11:30:52
+			总 时 间：0秒
+			Form表单数据：message=21323323&key=75d59f02634f4259ba3dc9bbe02a85c3&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:31:14,348 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:31:14
+			结束时间：17-8-19 上午 11:31:14
+			总 时 间：8.32E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:31:32,358 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:31:14
+			结束时间：17-8-19 上午 11:31:32
+			总 时 间：18.0099984秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:31:32,998 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:31:32
+			结束时间：17-8-19 上午 11:31:32
+			总 时 间：8.7E-06秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=34347586a01f48c7ad86bb36fc94d904&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:31:32,998 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:31:32
+			结束时间：17-8-19 上午 11:31:32
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=34347586a01f48c7ad86bb36fc94d904&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:32:43,366 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:32:43
+			结束时间：17-8-19 上午 11:32:43
+			总 时 间：7.86E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:32:43,366 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:32:43
+			结束时间：17-8-19 上午 11:32:43
+			总 时 间：0.0120084秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:32:48,381 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:32:48
+			结束时间：17-8-19 上午 11:32:48
+			总 时 间：3.37E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=c64969562c18431aa63f2d3e5d6146ef&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:32:48,381 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:32:48
+			结束时间：17-8-19 上午 11:32:48
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=c64969562c18431aa63f2d3e5d6146ef&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:33:37,356 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:33:37
+			结束时间：17-8-19 上午 11:33:37
+			总 时 间：8.83E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:33:54,270 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:33:37
+			结束时间：17-8-19 上午 11:33:54
+			总 时 间：16.8962579秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:33:54,958 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:33:54
+			结束时间：17-8-19 上午 11:33:54
+			总 时 间：1.58E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=5e5b28f8e17c4d72a7c5e9f0ac0be0f0&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:33:54,958 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:33:54
+			结束时间：17-8-19 上午 11:33:54
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=5e5b28f8e17c4d72a7c5e9f0ac0be0f0&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:34:13,822 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:34:13
+			结束时间：17-8-19 上午 11:34:13
+			总 时 间：8.4E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:34:29,761 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:34:13
+			结束时间：17-8-19 上午 11:34:29
+			总 时 间：15.9386198秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:34:30,433 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:34:30
+			结束时间：17-8-19 上午 11:34:30
+			总 时 间：5.17E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=666c0c692b57411c90494d09c0e3a83b&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:34:30,433 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:34:30
+			结束时间：17-8-19 上午 11:34:30
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=666c0c692b57411c90494d09c0e3a83b&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:34:44,004 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:34:44
+			结束时间：17-8-19 上午 11:34:44
+			总 时 间：9.4E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:35:04,557 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:34:44
+			结束时间：17-8-19 上午 11:35:04
+			总 时 间：20.5536939秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:35:05,035 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:35:05
+			结束时间：17-8-19 上午 11:35:05
+			总 时 间：0.014106秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=0dd018abe0ed4f5ca55b84891f3c198c&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:35:05,036 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:35:05
+			结束时间：17-8-19 上午 11:35:05
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=0dd018abe0ed4f5ca55b84891f3c198c&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:35:21,810 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:35:21
+			结束时间：17-8-19 上午 11:35:21
+			总 时 间：8.24E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:35:47,146 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:35:21
+			结束时间：17-8-19 上午 11:35:47
+			总 时 间：25.3258751秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:35:48,675 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:35:48
+			结束时间：17-8-19 上午 11:35:48
+			总 时 间：8.26E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=c8eb2d128b6142ed8027096e494644bd&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:35:48,675 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:35:48
+			结束时间：17-8-19 上午 11:35:48
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=c8eb2d128b6142ed8027096e494644bd&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:35:55,962 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 上午 11:35:54
+			结束时间：17-8-19 上午 11:35:55
+			总 时 间：1.8262379秒
+			Form表单数据：message=2323&key=c8eb2d128b6142ed8027096e494644bd&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:35:55,976 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 上午 11:35:55
+			结束时间：17-8-19 上午 11:35:55
+			总 时 间：0秒
+			Form表单数据：message=2323&key=c8eb2d128b6142ed8027096e494644bd&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:36:50,514 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:36:50
+			结束时间：17-8-19 上午 11:36:50
+			总 时 间：0.00101秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:37:03,712 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:36:50
+			结束时间：17-8-19 上午 11:37:03
+			总 时 间：13.1967927秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:37:04,563 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:37:04
+			结束时间：17-8-19 上午 11:37:04
+			总 时 间：4.74E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=39c4d9ecd7b9493d9f95cad46ac41ce1&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:37:04,563 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:37:04
+			结束时间：17-8-19 上午 11:37:04
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=39c4d9ecd7b9493d9f95cad46ac41ce1&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:37:14,192 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:37:14
+			结束时间：17-8-19 上午 11:37:14
+			总 时 间：8.87E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:37:30,494 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:37:14
+			结束时间：17-8-19 上午 11:37:30
+			总 时 间：16.3022092秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:37:31,095 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:37:31
+			结束时间：17-8-19 上午 11:37:31
+			总 时 间：9.66E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=9b593cedbd14496284981ba6b650c702&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:37:31,095 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:37:31
+			结束时间：17-8-19 上午 11:37:31
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=9b593cedbd14496284981ba6b650c702&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:37:36,988 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 上午 11:37:35
+			结束时间：17-8-19 上午 11:37:36
+			总 时 间：1.339925秒
+			Form表单数据：message=23&key=9b593cedbd14496284981ba6b650c702&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:37:36,991 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 上午 11:37:36
+			结束时间：17-8-19 上午 11:37:36
+			总 时 间：0秒
+			Form表单数据：message=23&key=9b593cedbd14496284981ba6b650c702&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:38:38,254 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:38:38
+			结束时间：17-8-19 上午 11:38:38
+			总 时 间：4.47E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:38:48,827 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:38:38
+			结束时间：17-8-19 上午 11:38:48
+			总 时 间：10.5720438秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:38:49,425 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:38:49
+			结束时间：17-8-19 上午 11:38:49
+			总 时 间：0.0090875秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=4f8bc27e896f45bba469dde47f8208b9&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:38:49,425 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:38:49
+			结束时间：17-8-19 上午 11:38:49
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=4f8bc27e896f45bba469dde47f8208b9&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:39:52,973 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:39:52
+			结束时间：17-8-19 上午 11:39:52
+			总 时 间：9.3E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:39:52,978 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:39:52
+			结束时间：17-8-19 上午 11:39:52
+			总 时 间：0.0050026秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:39:53,611 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:39:53
+			结束时间：17-8-19 上午 11:39:53
+			总 时 间：8.7E-06秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=bb093d27d1224f04859eadeeb6702ca8&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:39:53,612 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:39:53
+			结束时间：17-8-19 上午 11:39:53
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=bb093d27d1224f04859eadeeb6702ca8&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:02,505 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:40:02
+			结束时间：17-8-19 上午 11:40:02
+			总 时 间：4.27E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:02,509 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:40:02
+			结束时间：17-8-19 上午 11:40:02
+			总 时 间：0.0010007秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:03,243 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:40:03
+			结束时间：17-8-19 上午 11:40:03
+			总 时 间：3.8E-06秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=6e494ffa3202434ba8cc2f6442e1004c&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:03,243 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:40:03
+			结束时间：17-8-19 上午 11:40:03
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=6e494ffa3202434ba8cc2f6442e1004c&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:31,974 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:40:31
+			结束时间：17-8-19 上午 11:40:31
+			总 时 间：7.75E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:31,986 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:40:31
+			结束时间：17-8-19 上午 11:40:31
+			总 时 间：0.0010011秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:32,545 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:40:32
+			结束时间：17-8-19 上午 11:40:32
+			总 时 间：5.95E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=80b904f27c9a41f5913551f4dcc58280&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:32,549 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:40:32
+			结束时间：17-8-19 上午 11:40:32
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=80b904f27c9a41f5913551f4dcc58280&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:35,001 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:40:34
+			结束时间：17-8-19 上午 11:40:34
+			总 时 间：0.0020014秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:35,001 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:40:34
+			结束时间：17-8-19 上午 11:40:34
+			总 时 间：8.07E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:35,804 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:40:35
+			结束时间：17-8-19 上午 11:40:35
+			总 时 间：2.14E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:35,805 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:40:35
+			结束时间：17-8-19 上午 11:40:35
+			总 时 间：0.0020014秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:36,847 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:40:36
+			结束时间：17-8-19 上午 11:40:36
+			总 时 间：2.05E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:36,847 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:40:36
+			结束时间：17-8-19 上午 11:40:36
+			总 时 间：0.0010003秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:37,977 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:40:37
+			结束时间：17-8-19 上午 11:40:37
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=848aa9735d394a059db6641f7f309131&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:37,977 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:40:37
+			结束时间：17-8-19 上午 11:40:37
+			总 时 间：0.0010631秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=848aa9735d394a059db6641f7f309131&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:54,600 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:40:54
+			结束时间：17-8-19 上午 11:40:54
+			总 时 间：5.28E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:54,602 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:40:54
+			结束时间：17-8-19 上午 11:40:54
+			总 时 间：0.0020009秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:55,823 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:40:55
+			结束时间：17-8-19 上午 11:40:55
+			总 时 间：6.71E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; MALCJS; rv:11.0) like Gecko&Ip=112.0.148.188&Token=4f30fc280e3246f9a2af1cdaa97aa844&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:40:55,823 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:40:55
+			结束时间：17-8-19 上午 11:40:55
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; MALCJS; rv:11.0) like Gecko&Ip=112.0.148.188&Token=4f30fc280e3246f9a2af1cdaa97aa844&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:41:10,310 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:41:10
+			结束时间：17-8-19 上午 11:41:10
+			总 时 间：1.9E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:41:10,321 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:41:10
+			结束时间：17-8-19 上午 11:41:10
+			总 时 间：0.0010015秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:41:10,870 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:41:10
+			结束时间：17-8-19 上午 11:41:10
+			总 时 间：9.09E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; MALCJS; rv:11.0) like Gecko&Ip=112.0.148.188&Token=e78160d3370a4cdc9d9449bdc13901d3&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:41:10,870 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:41:10
+			结束时间：17-8-19 上午 11:41:10
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; MALCJS; rv:11.0) like Gecko&Ip=112.0.148.188&Token=e78160d3370a4cdc9d9449bdc13901d3&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:43:55,207 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:43:55
+			结束时间：17-8-19 上午 11:43:55
+			总 时 间：2.34E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:43:55,212 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:43:55
+			结束时间：17-8-19 上午 11:43:55
+			总 时 间：0.0050025秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:43:55,693 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:43:55
+			结束时间：17-8-19 上午 11:43:55
+			总 时 间：0.0080467秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=8f0cbf414834482ba4f664ef8abe4ef7&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:43:55,693 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:43:55
+			结束时间：17-8-19 上午 11:43:55
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=8f0cbf414834482ba4f664ef8abe4ef7&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:44:24,070 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 上午 11:44:23
+			结束时间：17-8-19 上午 11:44:24
+			总 时 间：0.7276895秒
+			Form表单数据：message=sacs&key=8f0cbf414834482ba4f664ef8abe4ef7&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:44:24,070 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 上午 11:44:24
+			结束时间：17-8-19 上午 11:44:24
+			总 时 间：0秒
+			Form表单数据：message=sacs&key=8f0cbf414834482ba4f664ef8abe4ef7&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:46:09,004 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:46:09
+			结束时间：17-8-19 上午 11:46:09
+			总 时 间：2.62E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:46:09,011 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:46:09
+			结束时间：17-8-19 上午 11:46:09
+			总 时 间：0.0040023秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:46:09,851 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:46:09
+			结束时间：17-8-19 上午 11:46:09
+			总 时 间：9.13E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=45cccf3764bb442e8a2fdac2518e7940&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:46:09,851 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:46:09
+			结束时间：17-8-19 上午 11:46:09
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=45cccf3764bb442e8a2fdac2518e7940&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:48:29,601 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:48:29
+			结束时间：17-8-19 上午 11:48:29
+			总 时 间：3.28E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:48:43,115 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:48:29
+			结束时间：17-8-19 上午 11:48:43
+			总 时 间：13.5140032秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:48:43,747 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:48:43
+			结束时间：17-8-19 上午 11:48:43
+			总 时 间：0.0160575秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=06640798be1e417f99f6738ec1d664b6&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:48:43,747 
+线程ID:[43] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:48:43
+			结束时间：17-8-19 上午 11:48:43
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=06640798be1e417f99f6738ec1d664b6&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:49:43,953 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:49:43
+			结束时间：17-8-19 上午 11:49:43
+			总 时 间：7.07E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:49:54,214 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:49:43
+			结束时间：17-8-19 上午 11:49:54
+			总 时 间：10.2608369秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:49:54,574 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:49:54
+			结束时间：17-8-19 上午 11:49:54
+			总 时 间：0.0010466秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=93db609301cb4256b63ebcd8f3d3acf7&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:49:54,574 
+线程ID:[43] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:49:54
+			结束时间：17-8-19 上午 11:49:54
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=93db609301cb4256b63ebcd8f3d3acf7&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:50:36,597 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:50:36
+			结束时间：17-8-19 上午 11:50:36
+			总 时 间：0.110136秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:50:46,829 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:50:36
+			结束时间：17-8-19 上午 11:50:46
+			总 时 间：10.229817秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:50:47,411 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:50:47
+			结束时间：17-8-19 上午 11:50:47
+			总 时 间：0.0100453秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=cf8524df3aae4a85aaf04460351cba80&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:50:47,411 
+线程ID:[43] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:50:47
+			结束时间：17-8-19 上午 11:50:47
+			总 时 间：0.0100059秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=cf8524df3aae4a85aaf04460351cba80&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:51:38,129 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:51:38
+			结束时间：17-8-19 上午 11:51:38
+			总 时 间：6.57E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:51:48,823 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:51:38
+			结束时间：17-8-19 上午 11:51:48
+			总 时 间：10.6941232秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:51:49,366 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:51:49
+			结束时间：17-8-19 上午 11:51:49
+			总 时 间：0.02305秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=179e9aeeabce4c37b13e3387ab8ceb10&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:51:49,366 
+线程ID:[43] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:51:49
+			结束时间：17-8-19 上午 11:51:49
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=179e9aeeabce4c37b13e3387ab8ceb10&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:52:45,027 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:52:45
+			结束时间：17-8-19 上午 11:52:45
+			总 时 间：8.57E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:53:01,069 
+线程ID:[48] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:52:45
+			结束时间：17-8-19 上午 11:53:01
+			总 时 间：16.0336828秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:53:01,909 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:53:01
+			结束时间：17-8-19 上午 11:53:01
+			总 时 间：3.39E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=a3114458986e46a0b3d8fead181982da&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:53:01,909 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:53:01
+			结束时间：17-8-19 上午 11:53:01
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=a3114458986e46a0b3d8fead181982da&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:53:10,096 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 上午 11:53:08
+			结束时间：17-8-19 上午 11:53:10
+			总 时 间：1.525085秒
+			Form表单数据：message=2223&key=a3114458986e46a0b3d8fead181982da&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:53:10,097 
+线程ID:[43] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 上午 11:53:10
+			结束时间：17-8-19 上午 11:53:10
+			总 时 间：0.0050033秒
+			Form表单数据：message=2223&key=a3114458986e46a0b3d8fead181982da&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:54:00,223 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:54:00
+			结束时间：17-8-19 上午 11:54:00
+			总 时 间：1.09E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:54:14,707 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:54:00
+			结束时间：17-8-19 上午 11:54:14
+			总 时 间：14.4836508秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:54:15,512 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:54:15
+			结束时间：17-8-19 上午 11:54:15
+			总 时 间：9.84E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=da1a7b43978f4b63823353a42f3b2e1c&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:54:15,512 
+线程ID:[43] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:54:15
+			结束时间：17-8-19 上午 11:54:15
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=da1a7b43978f4b63823353a42f3b2e1c&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:54:38,762 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:54:38
+			结束时间：17-8-19 上午 11:54:38
+			总 时 间：2.7E-06秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:54:51,146 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:54:38
+			结束时间：17-8-19 上午 11:54:51
+			总 时 间：12.3822508秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:54:51,618 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:54:51
+			结束时间：17-8-19 上午 11:54:51
+			总 时 间：6.87E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=02e9d3004d4f4df2b460e0912b4c59f7&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:54:51,618 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:54:51
+			结束时间：17-8-19 上午 11:54:51
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=02e9d3004d4f4df2b460e0912b4c59f7&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:56:46,872 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:56:46
+			结束时间：17-8-19 上午 11:56:46
+			总 时 间：4E-06秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:56:57,747 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:56:46
+			结束时间：17-8-19 上午 11:56:57
+			总 时 间：10.8742444秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:56:58,637 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:56:58
+			结束时间：17-8-19 上午 11:56:58
+			总 时 间：4.15E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=1fcc8bce2e584d16922f70b3cb86e088&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:56:58,729 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:56:58
+			结束时间：17-8-19 上午 11:56:58
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=1fcc8bce2e584d16922f70b3cb86e088&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:57:12,531 
+线程ID:[36] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:57:12
+			结束时间：17-8-19 上午 11:57:12
+			总 时 间：8.31E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:57:24,451 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:57:12
+			结束时间：17-8-19 上午 11:57:24
+			总 时 间：11.9199431秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:57:25,052 
+线程ID:[46] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:57:25
+			结束时间：17-8-19 上午 11:57:25
+			总 时 间：2.61E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=da54eed2c26f46428f6fe0a0de890e58&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:57:25,052 
+线程ID:[46] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:57:25
+			结束时间：17-8-19 上午 11:57:25
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=da54eed2c26f46428f6fe0a0de890e58&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:58:11,946 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:58:11
+			结束时间：17-8-19 上午 11:58:11
+			总 时 间：3.03E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:58:24,195 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:58:11
+			结束时间：17-8-19 上午 11:58:24
+			总 时 间：12.2481606秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:58:24,987 
+线程ID:[46] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:58:24
+			结束时间：17-8-19 上午 11:58:24
+			总 时 间：1.94E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=75990187b4ab4dc8ab9a886930b69063&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:58:24,987 
+线程ID:[46] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:58:24
+			结束时间：17-8-19 上午 11:58:24
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=75990187b4ab4dc8ab9a886930b69063&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:58:44,183 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 上午 11:58:44
+			结束时间：17-8-19 上午 11:58:44
+			总 时 间：0.0010735秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:58:54,219 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:NewKnowList
+			开始时间：17-8-19 上午 11:58:54
+			结束时间：17-8-19 上午 11:58:54
+			总 时 间：0.00406秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:58:55,494 
+线程ID:[39] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:NewKnowList
+			开始时间：17-8-19 上午 11:58:54
+			结束时间：17-8-19 上午 11:58:54
+			总 时 间：0.6034021秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:58:56,131 
+线程ID:[39] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Login
+			开始时间：17-8-19 上午 11:58:56
+			结束时间：17-8-19 上午 11:58:56
+			总 时 间：0.0010892秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:58:58,859 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Login
+			开始时间：17-8-19 上午 11:58:56
+			结束时间：17-8-19 上午 11:58:58
+			总 时 间：2.7938607秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:58:59,097 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 上午 11:58:44
+			结束时间：17-8-19 上午 11:58:59
+			总 时 间：14.8959244秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:58:59,635 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 上午 11:58:59
+			结束时间：17-8-19 上午 11:58:59
+			总 时 间：0.0010683秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=27ef968950d545589915f1660d5d2d8b&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 11:58:59,635 
+线程ID:[46] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 上午 11:58:59
+			结束时间：17-8-19 上午 11:58:59
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=27ef968950d545589915f1660d5d2d8b&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:00:06,750 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 12:00:06
+			结束时间：17-8-19 下午 12:00:06
+			总 时 间：2.76E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:00:22,745 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 12:00:06
+			结束时间：17-8-19 下午 12:00:22
+			总 时 间：15.9906541秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:00:23,534 
+线程ID:[39] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 12:00:23
+			结束时间：17-8-19 下午 12:00:23
+			总 时 间：9.5E-06秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=d93f3b91909649d592195a84b0e49d4f&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:00:23,534 
+线程ID:[39] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 12:00:23
+			结束时间：17-8-19 下午 12:00:23
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=d93f3b91909649d592195a84b0e49d4f&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:02:11,326 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 12:02:11
+			结束时间：17-8-19 下午 12:02:11
+			总 时 间：8.2E-06秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:02:24,246 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 12:02:11
+			结束时间：17-8-19 下午 12:02:24
+			总 时 间：12.919608秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:02:24,626 
+线程ID:[39] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 12:02:24
+			结束时间：17-8-19 下午 12:02:24
+			总 时 间：0.0250699秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=41834500c04a4767a547a761732f85ea&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:02:24,626 
+线程ID:[39] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 12:02:24
+			结束时间：17-8-19 下午 12:02:24
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=41834500c04a4767a547a761732f85ea&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:03:02,743 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 12:03:02
+			结束时间：17-8-19 下午 12:03:02
+			总 时 间：6.61E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:03:16,081 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 12:03:02
+			结束时间：17-8-19 下午 12:03:16
+			总 时 间：13.3378875秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:03:22,520 
+线程ID:[39] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 12:03:22
+			结束时间：17-8-19 下午 12:03:22
+			总 时 间：0.015042秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=32fc5a639f6b457094882707dd8b6795&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:03:22,520 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 12:03:22
+			结束时间：17-8-19 下午 12:03:22
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=32fc5a639f6b457094882707dd8b6795&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:03:39,430 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:03:39
+			结束时间：17-8-19 下午 12:03:39
+			总 时 间：0秒
+			Form表单数据：message=xv x&key=32fc5a639f6b457094882707dd8b6795&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:03:39,430 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:03:38
+			结束时间：17-8-19 下午 12:03:39
+			总 时 间：0.9196256秒
+			Form表单数据：message=xv x&key=32fc5a639f6b457094882707dd8b6795&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:06:37,902 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 12:06:37
+			结束时间：17-8-19 下午 12:06:37
+			总 时 间：7.62E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:06:49,595 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 12:06:37
+			结束时间：17-8-19 下午 12:06:49
+			总 时 间：11.6917892秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:06:50,034 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 12:06:50
+			结束时间：17-8-19 下午 12:06:50
+			总 时 间：5.92E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=ac4b286d6f8d45ab91da60ddf752dfec&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:06:50,034 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 12:06:50
+			结束时间：17-8-19 下午 12:06:50
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=ac4b286d6f8d45ab91da60ddf752dfec&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:06:54,943 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:06:54
+			结束时间：17-8-19 下午 12:06:54
+			总 时 间：0.5824277秒
+			Form表单数据：message=3434&key=ac4b286d6f8d45ab91da60ddf752dfec&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:06:54,944 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:06:54
+			结束时间：17-8-19 下午 12:06:54
+			总 时 间：0.0010007秒
+			Form表单数据：message=3434&key=ac4b286d6f8d45ab91da60ddf752dfec&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:07:19,340 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 12:07:19
+			结束时间：17-8-19 下午 12:07:19
+			总 时 间：7.04E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:07:19,349 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 12:07:19
+			结束时间：17-8-19 下午 12:07:19
+			总 时 间：0.0010015秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:07:22,680 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 12:07:22
+			结束时间：17-8-19 下午 12:07:22
+			总 时 间：0.0010343秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=2a9a241a787e432a8dfb26ecba817bd2&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:07:22,717 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 12:07:22
+			结束时间：17-8-19 下午 12:07:22
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=2a9a241a787e432a8dfb26ecba817bd2&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:07:32,598 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:07:32
+			结束时间：17-8-19 下午 12:07:32
+			总 时 间：0秒
+			Form表单数据：message=scsd&key=2a9a241a787e432a8dfb26ecba817bd2&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:07:32,599 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:07:31
+			结束时间：17-8-19 下午 12:07:32
+			总 时 间：0.8856022秒
+			Form表单数据：message=scsd&key=2a9a241a787e432a8dfb26ecba817bd2&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:10:32,305 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:10:32
+			结束时间：17-8-19 下午 12:10:32
+			总 时 间：0秒
+			Form表单数据：message=sd&key=2a9a241a787e432a8dfb26ecba817bd2&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:10:32,305 
+线程ID:[24] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:10:30
+			结束时间：17-8-19 下午 12:10:32
+			总 时 间：1.4220173秒
+			Form表单数据：message=sd&key=2a9a241a787e432a8dfb26ecba817bd2&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:10:36,960 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:10:36
+			结束时间：17-8-19 下午 12:10:36
+			总 时 间：0.7445342秒
+			Form表单数据：message=2323&key=2a9a241a787e432a8dfb26ecba817bd2&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:10:36,960 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:10:36
+			结束时间：17-8-19 下午 12:10:36
+			总 时 间：0秒
+			Form表单数据：message=2323&key=2a9a241a787e432a8dfb26ecba817bd2&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:10:38,456 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:10:37
+			结束时间：17-8-19 下午 12:10:38
+			总 时 间：0.9146301秒
+			Form表单数据：message=23e23e&key=2a9a241a787e432a8dfb26ecba817bd2&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:10:38,466 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:10:38
+			结束时间：17-8-19 下午 12:10:38
+			总 时 间：0秒
+			Form表单数据：message=23e23e&key=2a9a241a787e432a8dfb26ecba817bd2&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:10:40,143 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:10:39
+			结束时间：17-8-19 下午 12:10:40
+			总 时 间：0.874651秒
+			Form表单数据：message=23e23e23&key=2a9a241a787e432a8dfb26ecba817bd2&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:10:40,143 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:10:40
+			结束时间：17-8-19 下午 12:10:40
+			总 时 间：0秒
+			Form表单数据：message=23e23e23&key=2a9a241a787e432a8dfb26ecba817bd2&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:10:40,694 
+线程ID:[24] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:10:40
+			结束时间：17-8-19 下午 12:10:40
+			总 时 间：0.4964197秒
+			Form表单数据：message=23e23e3&key=2a9a241a787e432a8dfb26ecba817bd2&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:10:40,694 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:10:40
+			结束时间：17-8-19 下午 12:10:40
+			总 时 间：0秒
+			Form表单数据：message=23e23e3&key=2a9a241a787e432a8dfb26ecba817bd2&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:13:49,582 
+线程ID:[34] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 12:13:49
+			结束时间：17-8-19 下午 12:13:49
+			总 时 间：7.94E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:13:51,604 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 12:13:51
+			结束时间：17-8-19 下午 12:13:51
+			总 时 间：2.75E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:14:00,864 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 12:13:51
+			结束时间：17-8-19 下午 12:14:00
+			总 时 间：9.2601706秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:14:00,870 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 12:13:49
+			结束时间：17-8-19 下午 12:14:00
+			总 时 间：11.2865188秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:14:02,259 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 12:14:02
+			结束时间：17-8-19 下午 12:14:02
+			总 时 间：2.63E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:14:02,262 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 12:14:02
+			结束时间：17-8-19 下午 12:14:02
+			总 时 间：0.0010007秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:14:02,872 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 12:14:02
+			结束时间：17-8-19 下午 12:14:02
+			总 时 间：0.0020333秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=c20562b673bb4b159cec591e9401d841&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:14:02,872 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 12:14:02
+			结束时间：17-8-19 下午 12:14:02
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=c20562b673bb4b159cec591e9401d841&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:14:05,565 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:14:04
+			结束时间：17-8-19 下午 12:14:05
+			总 时 间：0.6445285秒
+			Form表单数据：message=2323&key=c20562b673bb4b159cec591e9401d841&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:14:05,565 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:14:05
+			结束时间：17-8-19 下午 12:14:05
+			总 时 间：0秒
+			Form表单数据：message=2323&key=c20562b673bb4b159cec591e9401d841&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:14:45,277 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 12:14:45
+			结束时间：17-8-19 下午 12:14:45
+			总 时 间：8.8E-06秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:14:56,543 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 12:14:45
+			结束时间：17-8-19 下午 12:14:56
+			总 时 间：11.2655063秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:14:57,010 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 12:14:57
+			结束时间：17-8-19 下午 12:14:57
+			总 时 间：2.65E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=e72cc6d270444c848804a473141e33b6&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:14:57,010 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 12:14:57
+			结束时间：17-8-19 下午 12:14:57
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=e72cc6d270444c848804a473141e33b6&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:15:08,240 
+线程ID:[38] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:15:08
+			结束时间：17-8-19 下午 12:15:08
+			总 时 间：0.0010015秒
+			Form表单数据：message=23232&key=e72cc6d270444c848804a473141e33b6&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:15:08,242 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:15:07
+			结束时间：17-8-19 下午 12:15:08
+			总 时 间：1.059791秒
+			Form表单数据：message=23232&key=e72cc6d270444c848804a473141e33b6&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:01,757 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 12:16:01
+			结束时间：17-8-19 下午 12:16:01
+			总 时 间：0.1921927秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:16,066 
+线程ID:[34] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 12:16:01
+			结束时间：17-8-19 下午 12:16:16
+			总 时 间：14.3095348秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:16,916 
+线程ID:[38] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 12:16:16
+			结束时间：17-8-19 下午 12:16:16
+			总 时 间：0.0020908秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=9689af6a33df4c408dbc3e389bc7a1a7&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:16,916 
+线程ID:[38] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 12:16:16
+			结束时间：17-8-19 下午 12:16:16
+			总 时 间：0.0080065秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=9689af6a33df4c408dbc3e389bc7a1a7&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:27,963 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 12:16:27
+			结束时间：17-8-19 下午 12:16:27
+			总 时 间：5.56E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:27,965 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 12:16:27
+			结束时间：17-8-19 下午 12:16:27
+			总 时 间：0.0010011秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:28,410 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 12:16:28
+			结束时间：17-8-19 下午 12:16:28
+			总 时 间：6.17E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=0e0148866f5d44cda1b29efbef3b80b9&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:28,410 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 12:16:28
+			结束时间：17-8-19 下午 12:16:28
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=0e0148866f5d44cda1b29efbef3b80b9&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:32,198 
+线程ID:[38] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:16:30
+			结束时间：17-8-19 下午 12:16:32
+			总 时 间：1.4780736秒
+			Form表单数据：message=2323&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:32,198 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:16:32
+			结束时间：17-8-19 下午 12:16:32
+			总 时 间：0.0060036秒
+			Form表单数据：message=2323&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:33,689 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:16:33
+			结束时间：17-8-19 下午 12:16:33
+			总 时 间：0.631471秒
+			Form表单数据：message=2323&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:33,695 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:16:33
+			结束时间：17-8-19 下午 12:16:33
+			总 时 间：0秒
+			Form表单数据：message=2323&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:36,312 
+线程ID:[38] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:16:36
+			结束时间：17-8-19 下午 12:16:36
+			总 时 间：0秒
+			Form表单数据：message=2323&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:36,312 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:16:35
+			结束时间：17-8-19 下午 12:16:36
+			总 时 间：0.8406494秒
+			Form表单数据：message=2323&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:40,144 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:16:39
+			结束时间：17-8-19 下午 12:16:40
+			总 时 间：0.9666678秒
+			Form表单数据：message=23额3 &key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:40,145 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:16:40
+			结束时间：17-8-19 下午 12:16:40
+			总 时 间：0秒
+			Form表单数据：message=23额3 &key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:41,986 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:16:41
+			结束时间：17-8-19 下午 12:16:41
+			总 时 间：0秒
+			Form表单数据：message=223323&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:41,986 
+线程ID:[38] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:16:41
+			结束时间：17-8-19 下午 12:16:41
+			总 时 间：0.6064838秒
+			Form表单数据：message=223323&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:44,286 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:16:43
+			结束时间：17-8-19 下午 12:16:44
+			总 时 间：0.6364312秒
+			Form表单数据：message=232323&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:44,286 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:16:44
+			结束时间：17-8-19 下午 12:16:44
+			总 时 间：0.0010007秒
+			Form表单数据：message=232323&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:47,580 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:16:46
+			结束时间：17-8-19 下午 12:16:47
+			总 时 间：0.8066275秒
+			Form表单数据：message=23饿发&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:47,582 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:16:47
+			结束时间：17-8-19 下午 12:16:47
+			总 时 间：0秒
+			Form表单数据：message=23饿发&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:50,963 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:16:50
+			结束时间：17-8-19 下午 12:16:50
+			总 时 间：0.8085797秒
+			Form表单数据：message=3分3否2&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:16:50,963 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:16:50
+			结束时间：17-8-19 下午 12:16:50
+			总 时 间：0.0010042秒
+			Form表单数据：message=3分3否2&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:17:00,228 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:16:59
+			结束时间：17-8-19 下午 12:17:00
+			总 时 间：0.591452秒
+			Form表单数据：message=1211221&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:17:00,228 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:17:00
+			结束时间：17-8-19 下午 12:17:00
+			总 时 间：0秒
+			Form表单数据：message=1211221&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:17:04,120 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:17:04
+			结束时间：17-8-19 下午 12:17:04
+			总 时 间：0秒
+			Form表单数据：message=42233232&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:17:04,120 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:17:03
+			结束时间：17-8-19 下午 12:17:04
+			总 时 间：0.6244305秒
+			Form表单数据：message=42233232&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:17:08,883 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:17:08
+			结束时间：17-8-19 下午 12:17:08
+			总 时 间：0.6244201秒
+			Form表单数据：message=2323223&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:17:08,885 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:17:08
+			结束时间：17-8-19 下午 12:17:08
+			总 时 间：0秒
+			Form表单数据：message=2323223&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:17:17,905 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:17:17
+			结束时间：17-8-19 下午 12:17:17
+			总 时 间：0秒
+			Form表单数据：message=3333&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:17:17,905 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:17:17
+			结束时间：17-8-19 下午 12:17:17
+			总 时 间：0.856608秒
+			Form表单数据：message=3333&key=0e0148866f5d44cda1b29efbef3b80b9&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:54:45,671 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 12:54:45
+			结束时间：17-8-19 下午 12:54:45
+			总 时 间：0.600434秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:54:50,716 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 12:54:45
+			结束时间：17-8-19 下午 12:54:50
+			总 时 间：5.0474951秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:54:51,763 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 12:54:51
+			结束时间：17-8-19 下午 12:54:51
+			总 时 间：0.0020429秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=12cc0286e03946668739e3c07a6ad726&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:54:51,774 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 12:54:51
+			结束时间：17-8-19 下午 12:54:51
+			总 时 间：0.012008秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=12cc0286e03946668739e3c07a6ad726&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:59:08,845 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 12:59:08
+			结束时间：17-8-19 下午 12:59:08
+			总 时 间：0.3673199秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:59:12,557 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 12:59:08
+			结束时间：17-8-19 下午 12:59:12
+			总 时 间：3.7123886秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:59:13,675 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 12:59:13
+			结束时间：17-8-19 下午 12:59:13
+			总 时 间：0.0060617秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=1eb2857385224f6b9470b325808370cb&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:59:13,700 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 12:59:13
+			结束时间：17-8-19 下午 12:59:13
+			总 时 间：0.0260173秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=1eb2857385224f6b9470b325808370cb&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:59:21,489 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:59:20
+			结束时间：17-8-19 下午 12:59:21
+			总 时 间：0.8676691秒
+			Form表单数据：message=3232&key=1eb2857385224f6b9470b325808370cb&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:59:21,504 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:59:21
+			结束时间：17-8-19 下午 12:59:21
+			总 时 间：0.0110078秒
+			Form表单数据：message=3232&key=1eb2857385224f6b9470b325808370cb&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:59:22,307 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:59:21
+			结束时间：17-8-19 下午 12:59:22
+			总 时 间：0.868618秒
+			Form表单数据：message=2323&key=1eb2857385224f6b9470b325808370cb&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:59:22,307 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:59:22
+			结束时间：17-8-19 下午 12:59:22
+			总 时 间：0秒
+			Form表单数据：message=2323&key=1eb2857385224f6b9470b325808370cb&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:59:26,489 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:59:25
+			结束时间：17-8-19 下午 12:59:26
+			总 时 间：0.5964868秒
+			Form表单数据：message=今天天气&key=1eb2857385224f6b9470b325808370cb&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:59:26,489 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:59:26
+			结束时间：17-8-19 下午 12:59:26
+			总 时 间：0秒
+			Form表单数据：message=今天天气&key=1eb2857385224f6b9470b325808370cb&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:59:32,357 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:59:32
+			结束时间：17-8-19 下午 12:59:32
+			总 时 间：0秒
+			Form表单数据：message=苏州&key=1eb2857385224f6b9470b325808370cb&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:59:32,363 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:59:31
+			结束时间：17-8-19 下午 12:59:32
+			总 时 间：0.8476538秒
+			Form表单数据：message=苏州&key=1eb2857385224f6b9470b325808370cb&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:59:39,944 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:59:39
+			结束时间：17-8-19 下午 12:59:39
+			总 时 间：0.6337734秒
+			Form表单数据：message=二二&key=1eb2857385224f6b9470b325808370cb&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:59:39,944 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:59:39
+			结束时间：17-8-19 下午 12:59:39
+			总 时 间：0秒
+			Form表单数据：message=二二&key=1eb2857385224f6b9470b325808370cb&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:59:46,274 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 12:59:45
+			结束时间：17-8-19 下午 12:59:46
+			总 时 间：0.5343919秒
+			Form表单数据：message=让我&key=1eb2857385224f6b9470b325808370cb&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 12:59:46,274 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 12:59:46
+			结束时间：17-8-19 下午 12:59:46
+			总 时 间：0秒
+			Form表单数据：message=让我&key=1eb2857385224f6b9470b325808370cb&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:01:40,557 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:01:40
+			结束时间：17-8-19 下午 01:01:40
+			总 时 间：0秒
+			Form表单数据：message=232&key=1eb2857385224f6b9470b325808370cb&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:01:40,557 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:01:39
+			结束时间：17-8-19 下午 01:01:40
+			总 时 间：0.9576513秒
+			Form表单数据：message=232&key=1eb2857385224f6b9470b325808370cb&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:02:07,595 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 01:02:07
+			结束时间：17-8-19 下午 01:02:07
+			总 时 间：9.57E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:02:16,377 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 01:02:07
+			结束时间：17-8-19 下午 01:02:16
+			总 时 间：8.7802884秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:02:16,766 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 01:02:16
+			结束时间：17-8-19 下午 01:02:16
+			总 时 间：4.29E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=e7e1e8953ad6428db82a2a7fb68d9590&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:02:16,768 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 01:02:16
+			结束时间：17-8-19 下午 01:02:16
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=e7e1e8953ad6428db82a2a7fb68d9590&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:02:23,635 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:02:21
+			结束时间：17-8-19 下午 01:02:23
+			总 时 间：2.3095533秒
+			Form表单数据：message=2323&key=e7e1e8953ad6428db82a2a7fb68d9590&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:02:23,635 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:02:23
+			结束时间：17-8-19 下午 01:02:23
+			总 时 间：0秒
+			Form表单数据：message=2323&key=e7e1e8953ad6428db82a2a7fb68d9590&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:02:24,190 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:02:23
+			结束时间：17-8-19 下午 01:02:24
+			总 时 间：1.1348369秒
+			Form表单数据：message=23&key=e7e1e8953ad6428db82a2a7fb68d9590&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:02:24,190 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:02:24
+			结束时间：17-8-19 下午 01:02:24
+			总 时 间：0秒
+			Form表单数据：message=23&key=e7e1e8953ad6428db82a2a7fb68d9590&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:02:24,713 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:02:24
+			结束时间：17-8-19 下午 01:02:24
+			总 时 间：0.6834847秒
+			Form表单数据：message=23&key=e7e1e8953ad6428db82a2a7fb68d9590&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:02:24,713 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:02:24
+			结束时间：17-8-19 下午 01:02:24
+			总 时 间：0秒
+			Form表单数据：message=23&key=e7e1e8953ad6428db82a2a7fb68d9590&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:02:26,125 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:02:25
+			结束时间：17-8-19 下午 01:02:26
+			总 时 间：0.4723246秒
+			Form表单数据：message=23&key=e7e1e8953ad6428db82a2a7fb68d9590&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:02:26,125 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:02:26
+			结束时间：17-8-19 下午 01:02:26
+			总 时 间：0秒
+			Form表单数据：message=23&key=e7e1e8953ad6428db82a2a7fb68d9590&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:02:28,043 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:02:27
+			结束时间：17-8-19 下午 01:02:28
+			总 时 间：0.5844028秒
+			Form表单数据：message=23&key=e7e1e8953ad6428db82a2a7fb68d9590&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:02:28,043 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:02:28
+			结束时间：17-8-19 下午 01:02:28
+			总 时 间：0秒
+			Form表单数据：message=23&key=e7e1e8953ad6428db82a2a7fb68d9590&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:02:30,388 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:02:29
+			结束时间：17-8-19 下午 01:02:30
+			总 时 间：0.5194356秒
+			Form表单数据：message=23&key=e7e1e8953ad6428db82a2a7fb68d9590&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:02:30,416 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:02:30
+			结束时间：17-8-19 下午 01:02:30
+			总 时 间：0.0020014秒
+			Form表单数据：message=23&key=e7e1e8953ad6428db82a2a7fb68d9590&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:06:40,648 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 01:06:40
+			结束时间：17-8-19 下午 01:06:40
+			总 时 间：2.92E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:06:51,213 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 01:06:40
+			结束时间：17-8-19 下午 01:06:51
+			总 时 间：10.565044秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:06:51,572 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 01:06:51
+			结束时间：17-8-19 下午 01:06:51
+			总 时 间：0.0040071秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=8a21d9a30fc94c49a2a5b2338a29d09b&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:06:51,572 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 01:06:51
+			结束时间：17-8-19 下午 01:06:51
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=8a21d9a30fc94c49a2a5b2338a29d09b&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:01,464 
+线程ID:[24] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:06:59
+			结束时间：17-8-19 下午 01:07:01
+			总 时 间：1.5430987秒
+			Form表单数据：message=生存手册&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:01,464 
+线程ID:[24] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:07:01
+			结束时间：17-8-19 下午 01:07:01
+			总 时 间：0秒
+			Form表单数据：message=生存手册&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:02,474 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:07:02
+			结束时间：17-8-19 下午 01:07:02
+			总 时 间：0秒
+			Form表单数据：message=的&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:02,474 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:07:01
+			结束时间：17-8-19 下午 01:07:02
+			总 时 间：0.6244714秒
+			Form表单数据：message=的&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:03,937 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:07:03
+			结束时间：17-8-19 下午 01:07:03
+			总 时 间：0.4583458秒
+			Form表单数据：message=的&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:03,940 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:07:03
+			结束时间：17-8-19 下午 01:07:03
+			总 时 间：0.0009999秒
+			Form表单数据：message=的&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:05,981 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:07:05
+			结束时间：17-8-19 下午 01:07:05
+			总 时 间：0.4874082秒
+			Form表单数据：message=的&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:06,353 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:07:05
+			结束时间：17-8-19 下午 01:07:06
+			总 时 间：0.3042023秒
+			Form表单数据：message=的&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:08,723 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:07:08
+			结束时间：17-8-19 下午 01:07:08
+			总 时 间：0.5254342秒
+			Form表单数据：message=的&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:08,723 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:07:08
+			结束时间：17-8-19 下午 01:07:08
+			总 时 间：0秒
+			Form表单数据：message=的&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:12,500 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:07:12
+			结束时间：17-8-19 下午 01:07:12
+			总 时 间：0秒
+			Form表单数据：message=的&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:12,500 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:07:12
+			结束时间：17-8-19 下午 01:07:12
+			总 时 间：0.4563475秒
+			Form表单数据：message=的&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:16,478 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:07:15
+			结束时间：17-8-19 下午 01:07:16
+			总 时 间：0.5024025秒
+			Form表单数据：message=是的&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:16,478 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:07:16
+			结束时间：17-8-19 下午 01:07:16
+			总 时 间：0秒
+			Form表单数据：message=是的&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:20,621 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:07:20
+			结束时间：17-8-19 下午 01:07:20
+			总 时 间：0秒
+			Form表单数据：message=所得税&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:20,621 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:07:20
+			结束时间：17-8-19 下午 01:07:20
+			总 时 间：0.5904452秒
+			Form表单数据：message=所得税&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:29,199 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:07:25
+			结束时间：17-8-19 下午 01:07:29
+			总 时 间：3.551532秒
+			Form表单数据：message=都是&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:29,199 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:07:29
+			结束时间：17-8-19 下午 01:07:29
+			总 时 间：0.001001秒
+			Form表单数据：message=都是&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:33,834 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:07:30
+			结束时间：17-8-19 下午 01:07:33
+			总 时 间：3.5164314秒
+			Form表单数据：message=多岁的&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:33,834 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:07:33
+			结束时间：17-8-19 下午 01:07:33
+			总 时 间：0秒
+			Form表单数据：message=多岁的&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:36,025 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:07:36
+			结束时间：17-8-19 下午 01:07:36
+			总 时 间：0秒
+			Form表单数据：message=是&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:36,025 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:07:35
+			结束时间：17-8-19 下午 01:07:36
+			总 时 间：0.5273895秒
+			Form表单数据：message=是&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:38,412 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:07:37
+			结束时间：17-8-19 下午 01:07:38
+			总 时 间：0.4343824秒
+			Form表单数据：message=是的&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:07:38,413 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:07:38
+			结束时间：17-8-19 下午 01:07:38
+			总 时 间：0秒
+			Form表单数据：message=是的&key=8a21d9a30fc94c49a2a5b2338a29d09b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:08:54,950 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 01:08:54
+			结束时间：17-8-19 下午 01:08:54
+			总 时 间：2.27E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:05,756 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 01:08:54
+			结束时间：17-8-19 下午 01:09:05
+			总 时 间：10.8062918秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:06,058 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 01:09:06
+			结束时间：17-8-19 下午 01:09:06
+			总 时 间：0.0010171秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=7d52b22879ce43aea0545888caa53c97&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:06,058 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 01:09:06
+			结束时间：17-8-19 下午 01:09:06
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=7d52b22879ce43aea0545888caa53c97&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:13,427 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:09:11
+			结束时间：17-8-19 下午 01:09:13
+			总 时 间：1.8182097秒
+			Form表单数据：message=343434&key=7d52b22879ce43aea0545888caa53c97&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:13,427 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:09:13
+			结束时间：17-8-19 下午 01:09:13
+			总 时 间：0秒
+			Form表单数据：message=343434&key=7d52b22879ce43aea0545888caa53c97&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:13,984 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:09:13
+			结束时间：17-8-19 下午 01:09:13
+			总 时 间：0.966683秒
+			Form表单数据：message=34让4 &key=7d52b22879ce43aea0545888caa53c97&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:13,984 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:09:13
+			结束时间：17-8-19 下午 01:09:13
+			总 时 间：0秒
+			Form表单数据：message=34让4 &key=7d52b22879ce43aea0545888caa53c97&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:16,263 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:09:16
+			结束时间：17-8-19 下午 01:09:16
+			总 时 间：0.0010014秒
+			Form表单数据：message=34人&key=7d52b22879ce43aea0545888caa53c97&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:16,264 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:09:15
+			结束时间：17-8-19 下午 01:09:16
+			总 时 间：0.7325003秒
+			Form表单数据：message=34人&key=7d52b22879ce43aea0545888caa53c97&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:18,247 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:09:18
+			结束时间：17-8-19 下午 01:09:18
+			总 时 间：0秒
+			Form表单数据：message=34人&key=7d52b22879ce43aea0545888caa53c97&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:18,247 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:09:17
+			结束时间：17-8-19 下午 01:09:18
+			总 时 间：0.7305241秒
+			Form表单数据：message=34人&key=7d52b22879ce43aea0545888caa53c97&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:19,872 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:09:19
+			结束时间：17-8-19 下午 01:09:19
+			总 时 间：0.4874068秒
+			Form表单数据：message=34&key=7d52b22879ce43aea0545888caa53c97&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:19,872 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:09:19
+			结束时间：17-8-19 下午 01:09:19
+			总 时 间：0秒
+			Form表单数据：message=34&key=7d52b22879ce43aea0545888caa53c97&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:24,146 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:09:23
+			结束时间：17-8-19 下午 01:09:24
+			总 时 间：0.6381293秒
+			Form表单数据：message=34(。??)ノ &key=7d52b22879ce43aea0545888caa53c97&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:24,147 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:09:24
+			结束时间：17-8-19 下午 01:09:24
+			总 时 间：0秒
+			Form表单数据：message=34(。??)ノ &key=7d52b22879ce43aea0545888caa53c97&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:27,933 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 01:09:27
+			结束时间：17-8-19 下午 01:09:27
+			总 时 间：0.001054秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:27,944 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 01:09:27
+			结束时间：17-8-19 下午 01:09:27
+			总 时 间：0.0050021秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:29,029 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 01:09:29
+			结束时间：17-8-19 下午 01:09:29
+			总 时 间：8.28E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=35b2a9e6f27643cba25ed96597fa7504&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:29,029 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 01:09:29
+			结束时间：17-8-19 下午 01:09:29
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=35b2a9e6f27643cba25ed96597fa7504&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:40,539 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 01:09:40
+			结束时间：17-8-19 下午 01:09:40
+			总 时 间：9.01E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:40,543 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 01:09:40
+			结束时间：17-8-19 下午 01:09:40
+			总 时 间：0.0030016秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:41,656 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 01:09:41
+			结束时间：17-8-19 下午 01:09:41
+			总 时 间：3.33E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; MALCJS; rv:11.0) like Gecko&Ip=112.0.148.188&Token=8b031e47ddd74d8cb0fc374bb694b13d&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:41,656 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 01:09:41
+			结束时间：17-8-19 下午 01:09:41
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; MALCJS; rv:11.0) like Gecko&Ip=112.0.148.188&Token=8b031e47ddd74d8cb0fc374bb694b13d&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:48,868 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:09:47
+			结束时间：17-8-19 下午 01:09:48
+			总 时 间：0.8776402秒
+			Form表单数据：message=都是对的四v都是&key=8b031e47ddd74d8cb0fc374bb694b13d&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:48,868 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:09:48
+			结束时间：17-8-19 下午 01:09:48
+			总 时 间：0秒
+			Form表单数据：message=都是对的四v都是&key=8b031e47ddd74d8cb0fc374bb694b13d&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:50,239 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:09:49
+			结束时间：17-8-19 下午 01:09:50
+			总 时 间：0.5914533秒
+			Form表单数据：message=是的&key=8b031e47ddd74d8cb0fc374bb694b13d&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:09:50,239 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:09:50
+			结束时间：17-8-19 下午 01:09:50
+			总 时 间：0秒
+			Form表单数据：message=是的&key=8b031e47ddd74d8cb0fc374bb694b13d&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:10:30,783 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:10:29
+			结束时间：17-8-19 下午 01:10:30
+			总 时 间：0.9117681秒
+			Form表单数据：message=试试&key=35b2a9e6f27643cba25ed96597fa7504&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:10:30,783 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:10:30
+			结束时间：17-8-19 下午 01:10:30
+			总 时 间：0秒
+			Form表单数据：message=试试&key=35b2a9e6f27643cba25ed96597fa7504&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:10:31,869 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:10:31
+			结束时间：17-8-19 下午 01:10:31
+			总 时 间：0秒
+			Form表单数据：message=程序&key=35b2a9e6f27643cba25ed96597fa7504&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:10:31,869 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:10:31
+			结束时间：17-8-19 下午 01:10:31
+			总 时 间：0.1931905秒
+			Form表单数据：message=程序&key=35b2a9e6f27643cba25ed96597fa7504&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:10:34,146 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:10:33
+			结束时间：17-8-19 下午 01:10:34
+			总 时 间：0.4233082秒
+			Form表单数据：message=想&key=35b2a9e6f27643cba25ed96597fa7504&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:10:34,146 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:10:34
+			结束时间：17-8-19 下午 01:10:34
+			总 时 间：0秒
+			Form表单数据：message=想&key=35b2a9e6f27643cba25ed96597fa7504&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:10:36,665 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:10:36
+			结束时间：17-8-19 下午 01:10:36
+			总 时 间：0秒
+			Form表单数据：message=想程序&key=35b2a9e6f27643cba25ed96597fa7504&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:10:36,666 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:10:36
+			结束时间：17-8-19 下午 01:10:36
+			总 时 间：0.4713867秒
+			Form表单数据：message=想程序&key=35b2a9e6f27643cba25ed96597fa7504&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:11:09,375 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 01:11:09
+			结束时间：17-8-19 下午 01:11:09
+			总 时 间：3.13E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:11:19,034 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 01:11:09
+			结束时间：17-8-19 下午 01:11:19
+			总 时 间：9.6584347秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:11:19,422 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 01:11:19
+			结束时间：17-8-19 下午 01:11:19
+			总 时 间：2.68E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=77934002e4f943858d411744791f9aae&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:11:19,422 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 01:11:19
+			结束时间：17-8-19 下午 01:11:19
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=77934002e4f943858d411744791f9aae&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:11:23,341 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:11:22
+			结束时间：17-8-19 下午 01:11:23
+			总 时 间：0.7585364秒
+			Form表单数据：message=前雾灯&key=77934002e4f943858d411744791f9aae&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:11:23,341 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:11:23
+			结束时间：17-8-19 下午 01:11:23
+			总 时 间：0秒
+			Form表单数据：message=前雾灯&key=77934002e4f943858d411744791f9aae&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:11:27,491 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:11:24
+			结束时间：17-8-19 下午 01:11:27
+			总 时 间：2.9870872秒
+			Form表单数据：message=前雾灯&key=77934002e4f943858d411744791f9aae&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:11:27,491 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:11:27
+			结束时间：17-8-19 下午 01:11:27
+			总 时 间：0秒
+			Form表单数据：message=前雾灯&key=77934002e4f943858d411744791f9aae&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:11:27,960 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:11:26
+			结束时间：17-8-19 下午 01:11:27
+			总 时 间：1.4910143秒
+			Form表单数据：message=我确定&key=77934002e4f943858d411744791f9aae&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:11:27,960 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:11:27
+			结束时间：17-8-19 下午 01:11:27
+			总 时 间：0秒
+			Form表单数据：message=我确定&key=77934002e4f943858d411744791f9aae&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:11:30,047 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:11:29
+			结束时间：17-8-19 下午 01:11:30
+			总 时 间：0.4934043秒
+			Form表单数据：message=缺点钱无多&key=77934002e4f943858d411744791f9aae&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:11:30,047 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:11:30
+			结束时间：17-8-19 下午 01:11:30
+			总 时 间：0秒
+			Form表单数据：message=缺点钱无多&key=77934002e4f943858d411744791f9aae&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:12:07,824 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 01:12:07
+			结束时间：17-8-19 下午 01:12:07
+			总 时 间：3E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:12:17,213 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 01:12:07
+			结束时间：17-8-19 下午 01:12:17
+			总 时 间：9.3892554秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:12:17,473 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 01:12:17
+			结束时间：17-8-19 下午 01:12:17
+			总 时 间：0.0040585秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=16688a421d9d4a46bd61cd50c4c2b498&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:12:17,473 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 01:12:17
+			结束时间：17-8-19 下午 01:12:17
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=16688a421d9d4a46bd61cd50c4c2b498&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:12:20,574 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:12:19
+			结束时间：17-8-19 下午 01:12:20
+			总 时 间：0.7025229秒
+			Form表单数据：message=我单位群&key=16688a421d9d4a46bd61cd50c4c2b498&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:12:20,574 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:12:20
+			结束时间：17-8-19 下午 01:12:20
+			总 时 间：0秒
+			Form表单数据：message=我单位群&key=16688a421d9d4a46bd61cd50c4c2b498&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:12:22,828 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:12:22
+			结束时间：17-8-19 下午 01:12:22
+			总 时 间：0.5514267秒
+			Form表单数据：message=前雾灯&key=16688a421d9d4a46bd61cd50c4c2b498&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:12:22,828 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:12:22
+			结束时间：17-8-19 下午 01:12:22
+			总 时 间：0秒
+			Form表单数据：message=前雾灯&key=16688a421d9d4a46bd61cd50c4c2b498&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:12:24,356 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:12:23
+			结束时间：17-8-19 下午 01:12:24
+			总 时 间：0.4063399秒
+			Form表单数据：message=前雾灯&key=16688a421d9d4a46bd61cd50c4c2b498&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:12:24,356 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:12:24
+			结束时间：17-8-19 下午 01:12:24
+			总 时 间：0秒
+			Form表单数据：message=前雾灯&key=16688a421d9d4a46bd61cd50c4c2b498&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:12:26,540 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:12:26
+			结束时间：17-8-19 下午 01:12:26
+			总 时 间：0秒
+			Form表单数据：message=确定&key=16688a421d9d4a46bd61cd50c4c2b498&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:12:26,540 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:12:26
+			结束时间：17-8-19 下午 01:12:26
+			总 时 间：0.5003989秒
+			Form表单数据：message=确定&key=16688a421d9d4a46bd61cd50c4c2b498&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:12:29,640 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:12:29
+			结束时间：17-8-19 下午 01:12:29
+			总 时 间：0.6027501秒
+			Form表单数据：message=打球的&key=16688a421d9d4a46bd61cd50c4c2b498&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:12:29,641 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:12:29
+			结束时间：17-8-19 下午 01:12:29
+			总 时 间：0秒
+			Form表单数据：message=打球的&key=16688a421d9d4a46bd61cd50c4c2b498&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:12:35,526 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:12:35
+			结束时间：17-8-19 下午 01:12:35
+			总 时 间：0.2531705秒
+			Form表单数据：message=help&key=16688a421d9d4a46bd61cd50c4c2b498&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:12:35,527 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:12:35
+			结束时间：17-8-19 下午 01:12:35
+			总 时 间：0秒
+			Form表单数据：message=help&key=16688a421d9d4a46bd61cd50c4c2b498&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:14:34,205 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 01:14:34
+			结束时间：17-8-19 下午 01:14:34
+			总 时 间：8.9E-06秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:14:43,026 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 01:14:34
+			结束时间：17-8-19 下午 01:14:43
+			总 时 间：8.8215702秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:14:43,425 
+线程ID:[26] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 01:14:43
+			结束时间：17-8-19 下午 01:14:43
+			总 时 间：0.0070453秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=cefe7443851647c2bd4d05ed6a1750af&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:14:43,425 
+线程ID:[26] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 01:14:43
+			结束时间：17-8-19 下午 01:14:43
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=cefe7443851647c2bd4d05ed6a1750af&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:14:50,000 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 01:14:50
+			结束时间：17-8-19 下午 01:14:50
+			总 时 间：6.21E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:14:50,008 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 01:14:50
+			结束时间：17-8-19 下午 01:14:50
+			总 时 间：0.0010002秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:14:50,904 
+线程ID:[26] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 01:14:50
+			结束时间：17-8-19 下午 01:14:50
+			总 时 间：5.93E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=5ea0f9e7b8c84d7ea930978bdbcaa159&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:14:50,904 
+线程ID:[26] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 01:14:50
+			结束时间：17-8-19 下午 01:14:50
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=5ea0f9e7b8c84d7ea930978bdbcaa159&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:17:20,393 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 01:17:20
+			结束时间：17-8-19 下午 01:17:20
+			总 时 间：0.0010099秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:17:31,390 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 01:17:20
+			结束时间：17-8-19 下午 01:17:31
+			总 时 间：10.9954269秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:17:31,849 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 01:17:31
+			结束时间：17-8-19 下午 01:17:31
+			总 时 间：4.31E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=2c4e4192f9314e7f9ba7bc7109b56efb&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:17:31,850 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 01:17:31
+			结束时间：17-8-19 下午 01:17:31
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=2c4e4192f9314e7f9ba7bc7109b56efb&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:17:34,850 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 01:17:34
+			结束时间：17-8-19 下午 01:17:34
+			总 时 间：4.23E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:17:34,858 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 01:17:34
+			结束时间：17-8-19 下午 01:17:34
+			总 时 间：0.0009998秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:17:35,176 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 01:17:35
+			结束时间：17-8-19 下午 01:17:35
+			总 时 间：0.0100599秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=ae3ac816d30d42e6908d5e72ae034c27&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:17:35,176 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 01:17:35
+			结束时间：17-8-19 下午 01:17:35
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=ae3ac816d30d42e6908d5e72ae034c27&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:17:43,296 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:17:43
+			结束时间：17-8-19 下午 01:17:43
+			总 时 间：0.1831712秒
+			Form表单数据：message=help&key=ae3ac816d30d42e6908d5e72ae034c27&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:17:43,300 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:17:43
+			结束时间：17-8-19 下午 01:17:43
+			总 时 间：0秒
+			Form表单数据：message=help&key=ae3ac816d30d42e6908d5e72ae034c27&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:17:52,488 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 01:17:52
+			结束时间：17-8-19 下午 01:17:52
+			总 时 间：7.62E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:17:52,491 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 01:17:52
+			结束时间：17-8-19 下午 01:17:52
+			总 时 间：0.0010007秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:17:52,850 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 01:17:52
+			结束时间：17-8-19 下午 01:17:52
+			总 时 间：0.0110173秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=fb9841d6723f49249532e5b5cde2cd4e&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:17:52,850 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 01:17:52
+			结束时间：17-8-19 下午 01:17:52
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=fb9841d6723f49249532e5b5cde2cd4e&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:17:59,256 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 01:17:59
+			结束时间：17-8-19 下午 01:17:59
+			总 时 间：8.55E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:17:59,265 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 01:17:59
+			结束时间：17-8-19 下午 01:17:59
+			总 时 间：0.0020013秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:18:00,239 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 01:18:00
+			结束时间：17-8-19 下午 01:18:00
+			总 时 间：4.1E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=ec3a432c13dc4cbd944d033dab3f1ffa&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:18:00,239 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 01:18:00
+			结束时间：17-8-19 下午 01:18:00
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=ec3a432c13dc4cbd944d033dab3f1ffa&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:18:11,197 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:18:10
+			结束时间：17-8-19 下午 01:18:11
+			总 时 间：0.67151秒
+			Form表单数据：message=3232&key=ec3a432c13dc4cbd944d033dab3f1ffa&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:18:11,207 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:18:11
+			结束时间：17-8-19 下午 01:18:11
+			总 时 间：0.0010002秒
+			Form表单数据：message=3232&key=ec3a432c13dc4cbd944d033dab3f1ffa&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:18:13,292 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:18:13
+			结束时间：17-8-19 下午 01:18:13
+			总 时 间：0.0010003秒
+			Form表单数据：message=help&key=ec3a432c13dc4cbd944d033dab3f1ffa&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:18:13,292 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:18:13
+			结束时间：17-8-19 下午 01:18:13
+			总 时 间：0.1331037秒
+			Form表单数据：message=help&key=ec3a432c13dc4cbd944d033dab3f1ffa&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:18:24,020 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:18:22
+			结束时间：17-8-19 下午 01:18:24
+			总 时 间：1.2788942秒
+			Form表单数据：message=	租房信息	高尔夫花园附近租房&key=ec3a432c13dc4cbd944d033dab3f1ffa&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:18:24,020 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:18:24
+			结束时间：17-8-19 下午 01:18:24
+			总 时 间：0秒
+			Form表单数据：message=	租房信息	高尔夫花园附近租房&key=ec3a432c13dc4cbd944d033dab3f1ffa&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:19:35,523 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 01:19:35
+			结束时间：17-8-19 下午 01:19:35
+			总 时 间：2.84E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:19:46,114 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 01:19:35
+			结束时间：17-8-19 下午 01:19:46
+			总 时 间：10.5910573秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:19:46,551 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 01:19:46
+			结束时间：17-8-19 下午 01:19:46
+			总 时 间：7.62E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=4f9ceb361efe4450a6f6027a0f90417a&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:19:46,551 
+线程ID:[24] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 01:19:46
+			结束时间：17-8-19 下午 01:19:46
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=4f9ceb361efe4450a6f6027a0f90417a&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:19:53,384 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:19:53
+			结束时间：17-8-19 下午 01:19:53
+			总 时 间：0.1271296秒
+			Form表单数据：message=help&key=4f9ceb361efe4450a6f6027a0f90417a&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:19:53,386 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:19:53
+			结束时间：17-8-19 下午 01:19:53
+			总 时 间：0秒
+			Form表单数据：message=help&key=4f9ceb361efe4450a6f6027a0f90417a&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:19:53,611 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:19:53
+			结束时间：17-8-19 下午 01:19:53
+			总 时 间：0.146181秒
+			Form表单数据：message=help&key=4f9ceb361efe4450a6f6027a0f90417a&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:19:53,613 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:19:53
+			结束时间：17-8-19 下午 01:19:53
+			总 时 间：0.0010007秒
+			Form表单数据：message=help&key=4f9ceb361efe4450a6f6027a0f90417a&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:20:03,943 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:20:03
+			结束时间：17-8-19 下午 01:20:03
+			总 时 间：0.7195648秒
+			Form表单数据：message=334&key=4f9ceb361efe4450a6f6027a0f90417a&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:20:03,943 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:20:03
+			结束时间：17-8-19 下午 01:20:03
+			总 时 间：0秒
+			Form表单数据：message=334&key=4f9ceb361efe4450a6f6027a0f90417a&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:20:19,723 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:20:19
+			结束时间：17-8-19 下午 01:20:19
+			总 时 间：0.5463679秒
+			Form表单数据：message=科布尔&key=4f9ceb361efe4450a6f6027a0f90417a&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:20:19,725 
+线程ID:[24] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:20:19
+			结束时间：17-8-19 下午 01:20:19
+			总 时 间：0秒
+			Form表单数据：message=科布尔&key=4f9ceb361efe4450a6f6027a0f90417a&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:20:27,564 
+线程ID:[24] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:20:26
+			结束时间：17-8-19 下午 01:20:27
+			总 时 间：0.6285029秒
+			Form表单数据：message=小智&key=4f9ceb361efe4450a6f6027a0f90417a&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:20:27,564 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:20:27
+			结束时间：17-8-19 下午 01:20:27
+			总 时 间：0秒
+			Form表单数据：message=小智&key=4f9ceb361efe4450a6f6027a0f90417a&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:20:45,492 
+线程ID:[24] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 01:20:44
+			结束时间：17-8-19 下午 01:20:45
+			总 时 间：0.515351秒
+			Form表单数据：message=你妈妈&key=4f9ceb361efe4450a6f6027a0f90417a&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 13:20:45,492 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 01:20:45
+			结束时间：17-8-19 下午 01:20:45
+			总 时 间：0秒
+			Form表单数据：message=你妈妈&key=4f9ceb361efe4450a6f6027a0f90417a&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:24:31,538 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 02:24:31
+			结束时间：17-8-19 下午 02:24:31
+			总 时 间：0.2862686秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:24:34,386 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 02:24:31
+			结束时间：17-8-19 下午 02:24:34
+			总 时 间：2.8489031秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:24:36,207 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 02:24:36
+			结束时间：17-8-19 下午 02:24:36
+			总 时 间：0.0156754秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=ad0dfc2c11df484c88f237653eb85ab4&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:24:36,238 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 02:24:36
+			结束时间：17-8-19 下午 02:24:36
+			总 时 间：0.0156242秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=ad0dfc2c11df484c88f237653eb85ab4&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:30:24,349 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 02:30:24
+			结束时间：17-8-19 下午 02:30:24
+			总 时 间：5.94E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:30:31,841 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 02:30:24
+			结束时间：17-8-19 下午 02:30:31
+			总 时 间：7.4915851秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:30:32,280 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 02:30:32
+			结束时间：17-8-19 下午 02:30:32
+			总 时 间：3.87E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=c3a4221af9e740e691334ee33af9f833&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:30:32,280 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 02:30:32
+			结束时间：17-8-19 下午 02:30:32
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=c3a4221af9e740e691334ee33af9f833&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:31:00,809 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 02:31:00
+			结束时间：17-8-19 下午 02:31:00
+			总 时 间：0.001014秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=c3a4221af9e740e691334ee33af9f833&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:31:00,809 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 02:31:00
+			结束时间：17-8-19 下午 02:31:00
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=c3a4221af9e740e691334ee33af9f833&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:31:35,000 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 02:31:35
+			结束时间：17-8-19 下午 02:31:35
+			总 时 间：3.55E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:31:43,550 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 02:31:35
+			结束时间：17-8-19 下午 02:31:43
+			总 时 间：8.5492962秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:31:43,852 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 02:31:43
+			结束时间：17-8-19 下午 02:31:43
+			总 时 间：3.47E-05秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=cd75c86470af4c4684adc697ee587a60&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:31:43,853 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 02:31:43
+			结束时间：17-8-19 下午 02:31:43
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=cd75c86470af4c4684adc697ee587a60&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:36:32,430 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 02:36:32
+			结束时间：17-8-19 下午 02:36:32
+			总 时 间：0.2732794秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:36:35,653 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 02:36:32
+			结束时间：17-8-19 下午 02:36:35
+			总 时 间：3.2231526秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:36:36,605 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 02:36:36
+			结束时间：17-8-19 下午 02:36:36
+			总 时 间：0.0020774秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=c1ca5960628f42a2ac5cd4ac87301976&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:36:36,627 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 02:36:36
+			结束时间：17-8-19 下午 02:36:36
+			总 时 间：0.0160107秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=c1ca5960628f42a2ac5cd4ac87301976&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:36:38,578 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:NewKnowList
+			开始时间：17-8-19 下午 02:36:38
+			结束时间：17-8-19 下午 02:36:38
+			总 时 间：0.0030369秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:36:38,657 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:NewKnowList
+			开始时间：17-8-19 下午 02:36:38
+			结束时间：17-8-19 下午 02:36:38
+			总 时 间：0.079052秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:36:38,679 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Login
+			开始时间：17-8-19 下午 02:36:38
+			结束时间：17-8-19 下午 02:36:38
+			总 时 间：0.0010036秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:36:38,690 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Login
+			开始时间：17-8-19 下午 02:36:38
+			结束时间：17-8-19 下午 02:36:38
+			总 时 间：0.0110077秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:46:38,671 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 02:46:38
+			结束时间：17-8-19 下午 02:46:38
+			总 时 间：0.2411857秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:46:41,612 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 02:46:38
+			结束时间：17-8-19 下午 02:46:41
+			总 时 间：2.9429659秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:46:43,224 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 02:46:43
+			结束时间：17-8-19 下午 02:46:43
+			总 时 间：0.0260391秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=d0b85ce69cb54dd4b5696b73a59f3e62&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:46:43,240 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 02:46:43
+			结束时间：17-8-19 下午 02:46:43
+			总 时 间：0.0080042秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=d0b85ce69cb54dd4b5696b73a59f3e62&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:46:56,699 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:NewKnowList
+			开始时间：17-8-19 下午 02:46:56
+			结束时间：17-8-19 下午 02:46:56
+			总 时 间：0.0050113秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:46:56,888 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:NewKnowList
+			开始时间：17-8-19 下午 02:46:56
+			结束时间：17-8-19 下午 02:46:56
+			总 时 间：0.1881248秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:46:56,918 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Login
+			开始时间：17-8-19 下午 02:46:56
+			结束时间：17-8-19 下午 02:46:56
+			总 时 间：0.0010562秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:46:56,931 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Login
+			开始时间：17-8-19 下午 02:46:56
+			结束时间：17-8-19 下午 02:46:56
+			总 时 间：0.0130087秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:47:05,348 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:LoginData
+			开始时间：17-8-19 下午 02:47:05
+			结束时间：17-8-19 下午 02:47:05
+			总 时 间：0.01208秒
+			Form表单数据：username=admin&password=jiang@0915
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:47:05,354 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:LoginData
+			开始时间：17-8-19 下午 02:47:05
+			结束时间：17-8-19 下午 02:47:05
+			总 时 间：0.0060064秒
+			Form表单数据：username=admin&password=jiang@0915
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:47:12,119 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:LoginData
+			开始时间：17-8-19 下午 02:47:12
+			结束时间：17-8-19 下午 02:47:12
+			总 时 间：0.0030697秒
+			Form表单数据：username=admin&password=jiang0915
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:47:12,119 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:LoginData
+			开始时间：17-8-19 下午 02:47:12
+			结束时间：17-8-19 下午 02:47:12
+			总 时 间：0秒
+			Form表单数据：username=admin&password=jiang0915
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:47:12,182 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:NewKnowList
+			开始时间：17-8-19 下午 02:47:12
+			结束时间：17-8-19 下午 02:47:12
+			总 时 间：0.0171099秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:47:20,707 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:NewKnowList
+			开始时间：17-8-19 下午 02:47:12
+			结束时间：17-8-19 下午 02:47:20
+			总 时 间：8.5246921秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:47:33,697 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 02:47:33
+			结束时间：17-8-19 下午 02:47:33
+			总 时 间：0.2172184秒
+			Form表单数据：message=aaa&key=d0b85ce69cb54dd4b5696b73a59f3e62&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:47:33,698 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 02:47:33
+			结束时间：17-8-19 下午 02:47:33
+			总 时 间：0.0010002秒
+			Form表单数据：message=aaa&key=d0b85ce69cb54dd4b5696b73a59f3e62&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:47:46,154 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 02:47:46
+			结束时间：17-8-19 下午 02:47:46
+			总 时 间：0.1461208秒
+			Form表单数据：message=你好!&key=d0b85ce69cb54dd4b5696b73a59f3e62&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:47:46,154 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 02:47:46
+			结束时间：17-8-19 下午 02:47:46
+			总 时 间：0秒
+			Form表单数据：message=你好!&key=d0b85ce69cb54dd4b5696b73a59f3e62&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:47:56,471 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 02:47:56
+			结束时间：17-8-19 下午 02:47:56
+			总 时 间：0.1711233秒
+			Form表单数据：message=Sb&key=d0b85ce69cb54dd4b5696b73a59f3e62&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:47:56,471 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 02:47:56
+			结束时间：17-8-19 下午 02:47:56
+			总 时 间：0秒
+			Form表单数据：message=Sb&key=d0b85ce69cb54dd4b5696b73a59f3e62&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:48:10,111 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 02:48:10
+			结束时间：17-8-19 下午 02:48:10
+			总 时 间：0秒
+			Form表单数据：message=深圳天气&key=d0b85ce69cb54dd4b5696b73a59f3e62&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:48:10,111 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 02:48:09
+			结束时间：17-8-19 下午 02:48:10
+			总 时 间：0.14312秒
+			Form表单数据：message=深圳天气&key=d0b85ce69cb54dd4b5696b73a59f3e62&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:49:52,147 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 02:49:52
+			结束时间：17-8-19 下午 02:49:52
+			总 时 间：0秒
+			Form表单数据：message=时钟&key=d0b85ce69cb54dd4b5696b73a59f3e62&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:49:52,147 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 02:49:51
+			结束时间：17-8-19 下午 02:49:52
+			总 时 间：0.4458137秒
+			Form表单数据：message=时钟&key=d0b85ce69cb54dd4b5696b73a59f3e62&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:53:03,368 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 02:50:24
+			结束时间：17-8-19 下午 02:53:03
+			总 时 间：159.2224896秒
+			Form表单数据：message=zhangsan4&key=c1ca5960628f42a2ac5cd4ac87301976&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:53:03,368 
+线程ID:[4] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 02:53:03
+			结束时间：17-8-19 下午 02:53:03
+			总 时 间：0秒
+			Form表单数据：message=zhangsan4&key=c1ca5960628f42a2ac5cd4ac87301976&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:54:14,488 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 02:54:14
+			结束时间：17-8-19 下午 02:54:14
+			总 时 间：0秒
+			Form表单数据：message=zhangsan4&key=c1ca5960628f42a2ac5cd4ac87301976&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:54:14,495 
+线程ID:[37] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 02:53:24
+			结束时间：17-8-19 下午 02:54:14
+			总 时 间：50.2021445秒
+			Form表单数据：message=zhangsan4&key=c1ca5960628f42a2ac5cd4ac87301976&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:54:23,329 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 02:54:23
+			结束时间：17-8-19 下午 02:54:23
+			总 时 间：0.1825344秒
+			Form表单数据：message=zhangsan4&key=c1ca5960628f42a2ac5cd4ac87301976&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 14:54:23,329 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 02:54:23
+			结束时间：17-8-19 下午 02:54:23
+			总 时 间：0秒
+			Form表单数据：message=zhangsan4&key=c1ca5960628f42a2ac5cd4ac87301976&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 15:18:50,205 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：TruingLogController
+			ActionName:Index
+			开始时间：17-8-19 下午 03:18:50
+			结束时间：17-8-19 下午 03:18:50
+			总 时 间：0.0270616秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 15:18:50,334 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：TruingLogController
+			ViewName:Index
+			开始时间：17-8-19 下午 03:18:50
+			结束时间：17-8-19 下午 03:18:50
+			总 时 间：0.1260838秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 15:18:50,465 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 03:18:50
+			结束时间：17-8-19 下午 03:18:50
+			总 时 间：0.302245秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 15:18:50,535 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Login
+			开始时间：17-8-19 下午 03:18:50
+			结束时间：17-8-19 下午 03:18:50
+			总 时 间：9.09E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 15:18:53,647 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Login
+			开始时间：17-8-19 下午 03:18:50
+			结束时间：17-8-19 下午 03:18:53
+			总 时 间：3.1150796秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 15:18:53,732 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 03:18:50
+			结束时间：17-8-19 下午 03:18:53
+			总 时 间：3.2661813秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 15:21:07,378 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 03:21:07
+			结束时间：17-8-19 下午 03:21:07
+			总 时 间：7.58E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 15:21:07,386 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 03:21:07
+			结束时间：17-8-19 下午 03:21:07
+			总 时 间：0.0080026秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 15:21:29,089 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：17-8-19 下午 03:21:29
+			结束时间：17-8-19 下午 03:21:29
+			总 时 间：0.0070633秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=7ad1baee0d5047babe2b90a03bc1e19b&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 15:21:29,139 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：17-8-19 下午 03:21:29
+			结束时间：17-8-19 下午 03:21:29
+			总 时 间：0.041027秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36&Ip=112.0.148.188&Token=7ad1baee0d5047babe2b90a03bc1e19b&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 15:22:42,683 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:CharSession
+			开始时间：17-8-19 下午 03:21:46
+			结束时间：17-8-19 下午 03:22:42
+			总 时 间：55.9321446秒
+			Form表单数据：message=aaa&key=7ad1baee0d5047babe2b90a03bc1e19b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 15:22:42,694 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:CharSession
+			开始时间：17-8-19 下午 03:22:42
+			结束时间：17-8-19 下午 03:22:42
+			总 时 间：0.0210145秒
+			Form表单数据：message=aaa&key=7ad1baee0d5047babe2b90a03bc1e19b&s_ip=112.0.148.188
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 15:26:48,554 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：17-8-19 下午 03:26:48
+			结束时间：17-8-19 下午 03:26:48
+			总 时 间：8.55E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-08-19 15:26:48,566 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：17-8-19 下午 03:26:48
+			结束时间：17-8-19 下午 03:26:48
+			总 时 间：0.0120092秒
+			Form表单数据：
+			URL参数：
+					
+ 

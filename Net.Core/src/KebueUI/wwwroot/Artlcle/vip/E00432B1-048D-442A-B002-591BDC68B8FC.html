@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=getElementsByClassName()用法详解>
+    <meta name="keywords" content=getElementsByClassName()用法详解:在编程中，我们习惯于使用以下方式获取对象:getElementById(id)  getElementsByName(name)  getElementsByTagName(tag)第一个可以获取指定id值的对象，第二个可以获取具有指定name属性值的对象集合，第三个则是获取指定标签名称的对象集合。这三种方式在编写代码中非常的常用，当然也非>
+    <title>getElementsByClassName()用法详解</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/9D69FD3D-028F-4239-89F1-BAC91B1DFF4A.html' title='JavaScript'>JavaScript</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>getElementsByClassName()用法详解</h1>
+                        <pre>
+                        <code>
+                            <p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(245, 250, 254);">getElementsByClassName()用法详解:<br style="margin: 0px; padding: 0px;"/>在编程中，我们习惯于使用以下方式获取对象:</p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">getElementById(&#39;id&#39;)  getElementsByName(&#39;name&#39;)  getElementsByTagName(&#39;tag&#39;)</pre><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(245, 250, 254);">第一个可以获取指定id值的对象，第二个可以获取具有指定name属性值的对象集合，第三个则是获取指定标签名称的对象集合。这三种方式在编写代码中非常的常用，当然也非常的便利，这个时候可能很多朋友就有这样的以为，class属性作为标签的常用属性，有没有一个方法能够通过制定的class属性值获取对象，其实这样的方法并非没有：</p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">getElementsByTagName(&quot;class&quot;)</pre><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(245, 250, 254);">此方法实现了我们想要的功能，它可以获取具有指定class属性值的对象集合，但是令人遗憾的是具有浏览器兼容问题。<br style="margin: 0px; padding: 0px;"/>代码实例如下:</p><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">&lt;!DOCTYPE&nbsp;html&gt;&lt;html&gt;&lt;head&gt;&lt;meta&nbsp;charset=&quot;&nbsp;utf-8&quot;&gt;&lt;meta&nbsp;name=&quot;author&quot;&nbsp;content=&quot;http://www.softwhy.com/&quot;&nbsp;/&gt;&lt;title&gt;getElementsByClassName()用法详解-蚂蚁部落&lt;/title&gt;&lt;script&nbsp;type=&quot;text/javascript&quot;&gt;window.onload=function(){  &nbsp;&nbsp;document.getElementsByClassName(&quot;mytest&quot;)[0].style.color=&quot;#F00&quot;;  }&lt;/script&gt;&lt;/head&gt;  &nbsp;&lt;body&gt;  &nbsp;&nbsp;&lt;div&nbsp;class=&quot;mytest&quot;&gt;大家好&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</pre><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(245, 250, 254);">以上代码可以在谷歌、火狐和IE8以上的浏览器中完美运行，但是IE8和IE8以下的浏览器不支持此函数。虽然在将来低版本的IE浏览器退出市场之后，此函数肯定会意气风发，当前来说还是最好不要直接使用此函数，不过我们可以模拟实现此函数。<br style="margin: 0px; padding: 0px;"/>代码实例如下:</p><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">&lt;!DOCTYPE&nbsp;html&gt;&lt;html&gt;&lt;head&gt;&lt;meta&nbsp;charset=&quot;&nbsp;utf-8&quot;&gt;&lt;meta&nbsp;name=&quot;author&quot;&nbsp;content=&quot;http://www.softwhy.com/&quot;&nbsp;/&gt;&lt;title&gt;getElementsByClassName()用法详解-蚂蚁部落&lt;/title&gt;&lt;script&nbsp;type=&quot;text/javascript&quot;&gt;var&nbsp;getElementsByClass=function(searchClass,node,tag){&nbsp;&nbsp;var&nbsp;classElements=new&nbsp;Array();&nbsp;&nbsp;if(node==null){  &nbsp;&nbsp;&nbsp;&nbsp;node=document;  &nbsp;&nbsp;}&nbsp;&nbsp;if(tag==null){  &nbsp;&nbsp;&nbsp;&nbsp;tag=&#39;*&#39;;  &nbsp;&nbsp;}&nbsp;&nbsp;var&nbsp;els=node.getElementsByTagName(tag);&nbsp;&nbsp;var&nbsp;elsLen=els.length;&nbsp;&nbsp;var&nbsp;pattern=new&nbsp;RegExp(&quot;(^|\\s)&quot;+searchClass+&quot;(\\s|$)&quot;);&nbsp;&nbsp;for(i=0,j=0;i&lt;elsLen;i++)&nbsp;{&nbsp;&nbsp;&nbsp;if(pattern.test(els[i].className)){  &nbsp;&nbsp;&nbsp;&nbsp;classElements[j]=els[i];  &nbsp;&nbsp;&nbsp;&nbsp;j++;  &nbsp;&nbsp;&nbsp;}  &nbsp;&nbsp;}&nbsp;&nbsp;return&nbsp;classElements;  }  window.onload=function(){  &nbsp;&nbsp;getElementsByClass(&quot;haha&quot;)[0].style.color=&quot;#F00&quot;;  }&lt;/script&gt;&lt;/head&gt;&lt;body&gt;  &nbsp;&nbsp;&lt;div&nbsp;class=&quot;mytest&nbsp;haha&quot;&gt;大家好&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</pre><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(245, 250, 254);"><span style="margin: 0px; padding: 0px; line-height: 1.5; font-size: small;">以上代码模拟实现了getElementsByClassName()功能，下面简单介绍一下如何实现此功能:<br style="margin: 0px; padding: 0px;"/>一.实现原理:<br style="margin: 0px; padding: 0px;"/>通过getElementsByTagName()函数获取相应的对象集合，然后再使用for循环语句来遍历每一个对象，并使用pattern.test()检测对象的className属性值是否含有正则表达式所匹配的内容，如果有则说明对象的具有指定的class属性值，并将此对象存储在classElements数组中，最后返回此数组，此数组中的元素即是具有指定class属性值的对象。<br style="margin: 0px; padding: 0px;"/><span style="margin: 0px; padding: 0px; line-height: 1.5; color: rgb(255, 0, 0);">二.代码注释</span>:<br style="margin: 0px; padding: 0px;"/>1.var classElements=new Array()，创建一个数组用来存放具有指定class属性值的对象。<br style="margin: 0px; padding: 0px;"/>2.if(node==null)，判断是否指定了节点，如果没有则使用document作为默认节点。指定了getElementsByTagName()的查找范围。<br style="margin: 0px; padding: 0px;"/>3.if(tag==null)，判断是否指定了标签名称，如果没有则使用通配符（*），也就是获取所有的标签。<br style="margin: 0px; padding: 0px;"/>4.var els=node.getElementsByTagName(tag)，获取指定节点下具有指定标签名称的对象。<br style="margin: 0px; padding: 0px;"/>5.var elsLen=els.length，获取对象的数量。<br style="margin: 0px; padding: 0px;"/>6.var pattern=new RegExp(&quot;(^|\\s)&quot;+searchClass+&quot;(\\s|$)&quot;)，创建一个正则对象，规定如何检索具有给定class属性值的对象。这里需要具有一定的正则表达式知识。之所以使用以上规则就是为兼容class=&quot;mytest haha&quot;这种形式的class属性值和防止一个class属性值中包含有要检索的class属性值被匹配的情况，例如，一个class=&quot;haorenyisheng&quot; ，另一个class=&quot;hao&quot;，如果要检索&quot;hao&quot;，这样</span><span style="margin: 0px; padding: 0px; line-height: 1.5; font-size: small;">&quot;haorenyisheng&quot;就不会被匹配了。<br style="margin: 0px; padding: 0px;"/>7.for循环用来执行便利每一个对象的className属性值（即class属性值），并检测是否符合匹配规则，如果符合则将此对象存入classElements数组。<br style="margin: 0px; padding: 0px;"/>8.return classElements，返回数组对象，即具有指定class属性值的对象。<br style="margin: 0px; padding: 0px;"/>9.getElementsByClass(&quot;haha&quot;)[0].style.color=&quot;#F00&quot;，设置class属性值为&quot;haha&quot;的对象中字体颜色为#F00。</span></p><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(245, 250, 254);"><span style="margin: 0px; padding: 0px; line-height: 1.5; font-size: small;">原文地址是:http://www.softwhy.com/forum.php?mod=viewthread&amp;tid=6256</span></p><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(245, 250, 254);"><span style="margin: 0px; padding: 0px; line-height: 1.5; font-size: small;">更多内容可以参阅:http://www.softwhy.com/javascript/</span></p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

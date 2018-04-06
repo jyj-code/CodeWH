@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=Oracle CASE WHEN 用法介绍>
+    <meta name="keywords" content= SELECT  CASE CTYPE   WHEN 1 THEN 半成品   WHEN 2 THEN 成品   when 3 then 其他   when 0 then 原材料   ELSE 未知  end FROM BASE_PART GROUP BY CTYPE;select CTYPE,decode(CTYPE, 1, 成品, 2, 半成品, 3,原材料,0,其他)from  BASE_P>
+    <title>Oracle CASE WHEN 用法介绍</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/0D8667FF-B247-4368-A163-B9D7274FE236.html' title='Oracle'>Oracle</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>Oracle CASE WHEN 用法介绍</h1>
+                        <pre>
+                        <code>
+                            <p><img data-media-type="image" src="http://mmmxa.com/ueditor/themes/default/images/spacer.gif" data-attr-org-src-id="AF551190D94843F79448A5DBF58B9F8F" data-attr-org-img-file="file:///C:/Users/Tony.Jiang/AppData/Local/YNote/data/aaaaq@126.com/a610bd56a2444148938f4d27022d91b4/clipboard.png" style="background:url(http://mmmxa.com/ueditor/lang/zh-cn/images/localimage.png) no-repeat center center;border:1px solid #ddd" word_img="file:///C:/Users/Tony.Jiang/AppData/Local/YNote/data/aaaaq@126.com/a610bd56a2444148938f4d27022d91b4/clipboard.png"/></p><p>&nbsp; SELECT</p><p>&nbsp; &nbsp; CASE CTYPE</p><p>&nbsp; &nbsp; &nbsp; WHEN &#39;1&#39; THEN &#39;半成品&#39;</p><p>&nbsp; &nbsp; &nbsp; WHEN &#39;2&#39; THEN &#39;成品&#39;</p><p>&nbsp; &nbsp; &nbsp; when &#39;3&#39; then &#39;其他&#39;</p><p>&nbsp; &nbsp; &nbsp; when &#39;0&#39; then &#39;原材料&#39;</p><p>&nbsp; &nbsp; &nbsp; ELSE &#39;未知&#39;</p><p>&nbsp; &nbsp; end</p><p>&nbsp; FROM BASE_PART GROUP BY CTYPE;</p><p>select CTYPE,decode(CTYPE, &#39;1&#39;, &#39;成品&#39;, &#39;2&#39;, &#39;半成品&#39;, &#39;3&#39;,&#39;原材料&#39;,&#39;0&#39;,&#39;其他&#39;)</p><p>from &nbsp; BASE_PART group by CTYPE;</p><h1 style="background-color: inherit;"><a href="http://www.cnblogs.com/eshizhan/archive/2012/04/06/2435493.html" style="background-color: inherit; cursor: pointer;">Oracle CASE WHEN 用法介绍</a></h1><h3 style="background-color: inherit;"><strong style="background-color: inherit;">1. CASE WHEN 表达式有两种形式</strong></h3><p><span style="background-color: inherit;"><img src="http://mmmxa.com/ueditor/themes/default/images/spacer.gif" alt="复制代码" data-media-type="image" data-attr-org-src-id="131BA3AE66A4442A9191147A03D6E062" data-attr-org-img-file="file:///C:/Users/Tony.Jiang/AppData/Local/YNote/data/aaaaq@126.com/10e1ce411bc847b29d663598b85f76dc/copycode.gif" style="background:url(http://mmmxa.com/ueditor/lang/zh-cn/images/localimage.png) no-repeat center center;border:1px solid #ddd" word_img="file:///C:/Users/Tony.Jiang/AppData/Local/YNote/data/aaaaq@126.com/10e1ce411bc847b29d663598b85f76dc/copycode.gif"/></span></p><pre style="font-family: Monaco, Consolas, Courier, &#39;Lucida Console&#39;, monospace; background-color: inherit;">  &nbsp;sex&nbsp;&nbsp;              &nbsp;sex&nbsp;  &nbsp;sex</pre><p><span style="background-color: inherit;"><img src="http://mmmxa.com/ueditor/themes/default/images/spacer.gif" alt="复制代码" data-media-type="image" data-attr-org-src-id="131BA3AE66A4442A9191147A03D6E062" data-attr-org-img-file="file:///C:/Users/Tony.Jiang/AppData/Local/YNote/data/aaaaq@126.com/10e1ce411bc847b29d663598b85f76dc/copycode.gif" style="background:url(http://mmmxa.com/ueditor/lang/zh-cn/images/localimage.png) no-repeat center center;border:1px solid #ddd" word_img="file:///C:/Users/Tony.Jiang/AppData/Local/YNote/data/aaaaq@126.com/10e1ce411bc847b29d663598b85f76dc/copycode.gif"/></span></p><p style="background-color: inherit;">&nbsp;</p><h3 style="background-color: inherit;">2. CASE WHEN 在语句中不同位置的用法</h3><h4 style="background-color: inherit;"><strong style="background-color: inherit;">2.1&nbsp;<span style="background-color: inherit; color: rgb(0, 0, 255);">SELECT</span>&nbsp;CASE WHEN 用法</strong></h4><p><span style="background-color: inherit;"><img src="http://mmmxa.com/ueditor/themes/default/images/spacer.gif" alt="复制代码" data-media-type="image" data-attr-org-src-id="131BA3AE66A4442A9191147A03D6E062" data-attr-org-img-file="file:///C:/Users/Tony.Jiang/AppData/Local/YNote/data/aaaaq@126.com/10e1ce411bc847b29d663598b85f76dc/copycode.gif" style="background:url(http://mmmxa.com/ueditor/lang/zh-cn/images/localimage.png) no-repeat center center;border:1px solid #ddd" word_img="file:///C:/Users/Tony.Jiang/AppData/Local/YNote/data/aaaaq@126.com/10e1ce411bc847b29d663598b85f76dc/copycode.gif"/></span></p><pre style="font-family: Monaco, Consolas, Courier, &#39;Lucida Console&#39;, monospace; background-color: inherit;">&nbsp;&nbsp;&nbsp;grade,&nbsp;&nbsp;(&nbsp;sex&nbsp;    )&nbsp;男生数,  &nbsp;(&nbsp;sex&nbsp;    )&nbsp;女生数  &nbsp;students&nbsp;&nbsp;grade;</pre><p><span style="background-color: inherit;"><img src="http://mmmxa.com/ueditor/themes/default/images/spacer.gif" alt="复制代码" data-media-type="image" data-attr-org-src-id="131BA3AE66A4442A9191147A03D6E062" data-attr-org-img-file="file:///C:/Users/Tony.Jiang/AppData/Local/YNote/data/aaaaq@126.com/10e1ce411bc847b29d663598b85f76dc/copycode.gif" style="background:url(http://mmmxa.com/ueditor/lang/zh-cn/images/localimage.png) no-repeat center center;border:1px solid #ddd" word_img="file:///C:/Users/Tony.Jiang/AppData/Local/YNote/data/aaaaq@126.com/10e1ce411bc847b29d663598b85f76dc/copycode.gif"/></span></p><p style="background-color: inherit;">&nbsp;</p><h4 style="background-color: inherit;"><strong style="background-color: inherit;">2.3&nbsp;<span style="background-color: inherit; color: rgb(0, 0, 255);">WHERE</span>&nbsp;CASE WHEN 用法</strong></h4><p><span style="background-color: inherit;"><img src="http://mmmxa.com/ueditor/themes/default/images/spacer.gif" alt="复制代码" data-media-type="image" data-attr-org-src-id="131BA3AE66A4442A9191147A03D6E062" data-attr-org-img-file="file:///C:/Users/Tony.Jiang/AppData/Local/YNote/data/aaaaq@126.com/10e1ce411bc847b29d663598b85f76dc/copycode.gif" style="background:url(http://mmmxa.com/ueditor/lang/zh-cn/images/localimage.png) no-repeat center center;border:1px solid #ddd" word_img="file:///C:/Users/Tony.Jiang/AppData/Local/YNote/data/aaaaq@126.com/10e1ce411bc847b29d663598b85f76dc/copycode.gif"/></span></p><pre style="font-family: Monaco, Consolas, Courier, &#39;Lucida Console&#39;, monospace; background-color: inherit;">&nbsp;T2.,&nbsp;T1.  &nbsp;T1,&nbsp;T2  &nbsp;(&nbsp;T2.COMPARE_TYPE&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T1.SOME_TYPE&nbsp;    &nbsp;T2.COMPARE_TYPE&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T1.SOME_TYPE&nbsp;      )</pre><p><span style="background-color: inherit;"><img src="http://mmmxa.com/ueditor/themes/default/images/spacer.gif" alt="复制代码" data-media-type="image" data-attr-org-src-id="131BA3AE66A4442A9191147A03D6E062" data-attr-org-img-file="file:///C:/Users/Tony.Jiang/AppData/Local/YNote/data/aaaaq@126.com/10e1ce411bc847b29d663598b85f76dc/copycode.gif" style="background:url(http://mmmxa.com/ueditor/lang/zh-cn/images/localimage.png) no-repeat center center;border:1px solid #ddd" word_img="file:///C:/Users/Tony.Jiang/AppData/Local/YNote/data/aaaaq@126.com/10e1ce411bc847b29d663598b85f76dc/copycode.gif"/></span></p><p style="background-color: inherit;">&nbsp;</p><h4 style="background-color: inherit;"><strong style="background-color: inherit;">2.4&nbsp;<span style="background-color: inherit; color: rgb(0, 0, 255);">GROUP BY</span>&nbsp;CASE WHEN 用法</strong></h4><p><span style="background-color: inherit;"><img src="http://mmmxa.com/ueditor/themes/default/images/spacer.gif" alt="复制代码" data-media-type="image" data-attr-org-src-id="131BA3AE66A4442A9191147A03D6E062" data-attr-org-img-file="file:///C:/Users/Tony.Jiang/AppData/Local/YNote/data/aaaaq@126.com/10e1ce411bc847b29d663598b85f76dc/copycode.gif" style="background:url(http://mmmxa.com/ueditor/lang/zh-cn/images/localimage.png) no-repeat center center;border:1px solid #ddd" word_img="file:///C:/Users/Tony.Jiang/AppData/Local/YNote/data/aaaaq@126.com/10e1ce411bc847b29d663598b85f76dc/copycode.gif"/></span></p><pre style="font-family: Monaco, Consolas, Courier, &#39;Lucida Console&#39;, monospace; background-color: inherit;">  &nbsp;salary&nbsp;  &nbsp;salary&nbsp;&nbsp;salary&nbsp;  &nbsp;salary&nbsp;&nbsp;salary&nbsp;  &nbsp;salary&nbsp;&nbsp;salary&nbsp;  &nbsp;salary_class,&nbsp;()&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;Table_A&nbsp;&nbsp;    &nbsp;salary&nbsp;  &nbsp;salary&nbsp;&nbsp;salary&nbsp;  &nbsp;salary&nbsp;&nbsp;salary&nbsp;  &nbsp;salary&nbsp;&nbsp;salary&nbsp;  ;</pre><p><span style="background-color: inherit;"><img src="http://mmmxa.com/ueditor/themes/default/images/spacer.gif" alt="复制代码" data-media-type="image" data-attr-org-src-id="131BA3AE66A4442A9191147A03D6E062" data-attr-org-img-file="file:///C:/Users/Tony.Jiang/AppData/Local/YNote/data/aaaaq@126.com/10e1ce411bc847b29d663598b85f76dc/copycode.gif" style="background:url(http://mmmxa.com/ueditor/lang/zh-cn/images/localimage.png) no-repeat center center;border:1px solid #ddd" word_img="file:///C:/Users/Tony.Jiang/AppData/Local/YNote/data/aaaaq@126.com/10e1ce411bc847b29d663598b85f76dc/copycode.gif"/></span></p><p style="background-color: inherit;">&nbsp;</p><h3 style="background-color: inherit;">3.关于<span style="background-color: inherit;">IF-THEN-ELSE</span>的其他实现</h3><h4 style="background-color: inherit;">3.1 DECODE() 函数</h4><pre style="font-family: Monaco, Consolas, Courier, &#39;Lucida Console&#39;, monospace; background-color: inherit;">&nbsp;decode(sex,&nbsp;,&nbsp;,&nbsp;,&nbsp;,&nbsp;)  &nbsp;&nbsp;&nbsp;employees;</pre><p style="background-color: inherit;">貌似只有Oracle提供该函数，而且不支持ANSI SQL，语法上也没CASE WHEN清晰，个人不推荐使用。<br style="background-color: inherit;"/><br style="background-color: inherit;"/></p><h4 style="background-color: inherit;">3.2 在WHERE中特殊实现</h4><pre style="font-family: Monaco, Consolas, Courier, &#39;Lucida Console&#39;, monospace; background-color: inherit;">&nbsp;T2.,&nbsp;T1.  &nbsp;T1,&nbsp;T2  &nbsp;(T2.COMPARE_TYPE&nbsp;&nbsp;T1.SOME_TYPE&nbsp;)    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(T2.COMPARE_TYPE&nbsp;&nbsp;T1.SOME_TYPE&nbsp;)</pre><p><br style="background-color: inherit;"/></p><div style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);"></div><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=Highcharts JS去除Highcharts.com链接的方法>
+    <meta name="keywords" content=HighchartsJS去除Highcharts.com链接的方法1.Highcharts JS去除Highcharts.com链接的方法在js文件中找到Credits，然后把enable的属性从!0改为0。也可以更改为自己需要的：enabled:设置是否显示链接text：设置链接显示的名称href：设置链接的url2.去掉图片右上角的打印及导出按钮在js中设置以下代码：exporting:{en>
+    <title>Highcharts JS去除Highcharts.com链接的方法</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/9D69FD3D-028F-4239-89F1-BAC91B1DFF4A.html' title='JavaScript'>JavaScript</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>Highcharts JS去除Highcharts.com链接的方法</h1>
+                        <pre>
+                        <code>
+                            <h2 style="background-color: inherit;">Highcharts&nbsp;JS去除Highcharts.com链接的方法</h2><p><br style="background-color: inherit;"/></p><p><strong style="background-color: inherit;">1.Highcharts JS去除Highcharts.com链接的方法</strong></p><p>在js文件中找到Credits，然后把enable的属性从!0改为0。</p><p>也可以更改为自己需要的：</p><p>enabled:设置是否显示链接</p><p>text：设置链接显示的名称</p><p>href：设置链接的url</p><p><strong style="background-color: inherit;">2.去掉图片右上角的打印及导出按钮</strong></p><p>在js中设置以下代码：</p><p>exporting:{</p><p>enabled:true //用来设置是否显示‘打印’,&#39;导出&#39;等功能按钮，不设置时默认为显示</p><p>},</p><p><strong style="background-color: inherit;">3.Highcharts JS去除打印功能</strong></p><p>exporting.js 图表库去掉 以下代码</p><p>printButton : {<br style="background-color: inherit;"/>&nbsp;<wbr style="background-color: inherit;"/>symbol :&quot;printIcon&quot;,<br style="background-color: inherit;"/>&nbsp;<wbr style="background-color: inherit;"/>x :-36,<br style="background-color: inherit;"/>&nbsp;<wbr style="background-color: inherit;"/>symbolFill :&quot;#B5C9DF&quot;,<br style="background-color: inherit;"/>&nbsp;<wbr style="background-color: inherit;"/>hoverSymbolFill :&quot;#779ABF&quot;,<br style="background-color: inherit;"/>&nbsp;<wbr style="background-color: inherit;"/>_titleKey :&quot;printButtonTitle&quot;,<br style="background-color: inherit;"/>&nbsp;<wbr style="background-color: inherit;"/>onclick : function() {<br style="background-color: inherit;"/>&nbsp;<wbr style="background-color: inherit;"/>this.print()<br style="background-color: inherit;"/>&nbsp;<wbr style="background-color: inherit;"/>}<br style="background-color: inherit;"/></p><p>&nbsp;<wbr style="background-color: inherit;"/>}</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

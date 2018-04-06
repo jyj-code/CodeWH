@@ -1,0 +1,175 @@
+
+ 
+记录时间：2017-08-20 17:46:57,337 
+线程ID:[8] 
+日志级别：  ERROR 
+错误描述：
+RequestServices_Task
+发生异常
+发生时间2017-08-20 17:46:57
+本次共用时：0
+异常讯息：System.Data.SQLite.SQLiteException (0x80004005): SQL logic error or missing database
+no such table: UserInfo
+   在 System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   在 System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   在 System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NET.DataAccessLayer.Common.SqlMapper.<QueryInternal>d__31`1.MoveNext() 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 690
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 NET.DataAccessLayer.Common.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 647
+   在 DataBase.DBHelper.ReadCollection[T](String sql, DynamicParameters p) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 21
+   在 NET.DataAccessLayer.Base`1.Find(T entity, Int32 findId) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 189
+   在 NET.BusinessRule.Base`1.Find(T t, Int32 findId) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 47
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServeicesResponse(RequestParam param, UserInfoUnDeteil& userinfoundeteil) 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 59
+   在 NET.Web.UI.Models.RequestServicesBase.<>c__DisplayClass4_0.<RequestServicesRecording>b__0() 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch(Action input) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 166
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServicesRecording(RequestParam param) 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch[T1](Action`1 func, T1 t1) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 205
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices_Task(RequestParam param) 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 247
+请求参数是 ：{"Data":"{\"ret\":1,\"start\":-1,\"end\":-1,\"country\":\"中国\",\"province\":\"江苏\",\"city\":\"苏州\",\"district\":\"\",\"isp\":\"\",\"type\":\"\",\"desc\":\"\"}","Ip":"112.0.151.17","ModelType":null,"Token":"815e8d1b210c41ec935296028cdb9ecb","UserAgent":"Mozilla\/5.0 (Windows NT 6.3; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/58.0.3029.110 Safari\/537.36","WaitHandle":null}
+ 
+
+ 
+记录时间：2017-08-20 17:49:21,069 
+线程ID:[7] 
+日志级别：  ERROR 
+错误描述：
+RequestServices_Task
+发生异常
+发生时间2017-08-20 17:49:21
+本次共用时：0
+异常讯息：System.Data.SQLite.SQLiteException (0x80004005): SQL logic error or missing database
+no such table: UserInfo
+   在 System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   在 System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   在 System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NET.DataAccessLayer.Common.SqlMapper.<QueryInternal>d__31`1.MoveNext() 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 690
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 NET.DataAccessLayer.Common.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 647
+   在 DataBase.DBHelper.ReadCollection[T](String sql, DynamicParameters p) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 21
+   在 NET.DataAccessLayer.Base`1.Find(T entity, Int32 findId) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 189
+   在 NET.BusinessRule.Base`1.Find(T t, Int32 findId) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 47
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServeicesResponse(RequestParam param, UserInfoUnDeteil& userinfoundeteil) 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 59
+   在 NET.Web.UI.Models.RequestServicesBase.<>c__DisplayClass4_0.<RequestServicesRecording>b__0() 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch(Action input) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 166
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServicesRecording(RequestParam param) 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch[T1](Action`1 func, T1 t1) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 205
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices_Task(RequestParam param) 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 247
+请求参数是 ：{"Data":"{\"ret\":1,\"start\":-1,\"end\":-1,\"country\":\"中国\",\"province\":\"江苏\",\"city\":\"苏州\",\"district\":\"\",\"isp\":\"\",\"type\":\"\",\"desc\":\"\"}","Ip":"112.0.151.17","ModelType":null,"Token":"42fd59ffb9254df9b84192b652d22e96","UserAgent":"Mozilla\/5.0 (Windows NT 6.3; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/58.0.3029.110 Safari\/537.36","WaitHandle":null}
+ 
+
+ 
+记录时间：2017-08-20 17:49:25,317 
+线程ID:[7] 
+日志级别：  ERROR 
+错误描述：
+RequestServices_Task
+发生异常
+发生时间2017-08-20 17:49:25
+本次共用时：0
+异常讯息：System.Data.SQLite.SQLiteException (0x80004005): SQL logic error or missing database
+no such table: UserInfo
+   在 System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   在 System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   在 System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NET.DataAccessLayer.Common.SqlMapper.<QueryInternal>d__31`1.MoveNext() 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 690
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 NET.DataAccessLayer.Common.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 647
+   在 DataBase.DBHelper.ReadCollection[T](String sql, DynamicParameters p) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 21
+   在 NET.DataAccessLayer.Base`1.Find(T entity, Int32 findId) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 189
+   在 NET.BusinessRule.Base`1.Find(T t, Int32 findId) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 47
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServeicesResponse(RequestParam param, UserInfoUnDeteil& userinfoundeteil) 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 59
+   在 NET.Web.UI.Models.RequestServicesBase.<>c__DisplayClass4_0.<RequestServicesRecording>b__0() 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch(Action input) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 166
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServicesRecording(RequestParam param) 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch[T1](Action`1 func, T1 t1) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 205
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices_Task(RequestParam param) 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 247
+请求参数是 ：{"Data":"{\"ret\":1,\"start\":-1,\"end\":-1,\"country\":\"中国\",\"province\":\"江苏\",\"city\":\"苏州\",\"district\":\"\",\"isp\":\"\",\"type\":\"\",\"desc\":\"\"}","Ip":"112.0.151.17","ModelType":null,"Token":"4caf46db46ad438cabf60a4356cbae03","UserAgent":"Mozilla\/5.0 (Windows NT 6.3; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/58.0.3029.110 Safari\/537.36","WaitHandle":null}
+ 
+
+ 
+记录时间：2017-08-20 17:49:26,304 
+线程ID:[10] 
+日志级别：  ERROR 
+错误描述：
+RequestServices_Task
+发生异常
+发生时间2017-08-20 17:49:26
+本次共用时：0
+异常讯息：System.Data.SQLite.SQLiteException (0x80004005): SQL logic error or missing database
+no such table: UserInfo
+   在 System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   在 System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   在 System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NET.DataAccessLayer.Common.SqlMapper.<QueryInternal>d__31`1.MoveNext() 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 690
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 NET.DataAccessLayer.Common.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 647
+   在 DataBase.DBHelper.ReadCollection[T](String sql, DynamicParameters p) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 21
+   在 NET.DataAccessLayer.Base`1.Find(T entity, Int32 findId) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 189
+   在 NET.BusinessRule.Base`1.Find(T t, Int32 findId) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 47
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServeicesResponse(RequestParam param, UserInfoUnDeteil& userinfoundeteil) 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 59
+   在 NET.Web.UI.Models.RequestServicesBase.<>c__DisplayClass4_0.<RequestServicesRecording>b__0() 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch(Action input) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 166
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServicesRecording(RequestParam param) 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch[T1](Action`1 func, T1 t1) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 205
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices_Task(RequestParam param) 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 247
+请求参数是 ：{"Data":"{\"ret\":1,\"start\":-1,\"end\":-1,\"country\":\"中国\",\"province\":\"江苏\",\"city\":\"苏州\",\"district\":\"\",\"isp\":\"\",\"type\":\"\",\"desc\":\"\"}","Ip":"112.0.151.17","ModelType":null,"Token":"153af5d9266f48a283242d4fdb5a4583","UserAgent":"Mozilla\/5.0 (Windows NT 6.3; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/58.0.3029.110 Safari\/537.36","WaitHandle":null}
+ 
+
+ 
+记录时间：2017-08-20 17:49:27,124 
+线程ID:[13] 
+日志级别：  ERROR 
+错误描述：
+RequestServices_Task
+发生异常
+发生时间2017-08-20 17:49:27
+本次共用时：0
+异常讯息：System.Data.SQLite.SQLiteException (0x80004005): SQL logic error or missing database
+no such table: UserInfo
+   在 System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   在 System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   在 System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NET.DataAccessLayer.Common.SqlMapper.<QueryInternal>d__31`1.MoveNext() 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 690
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 NET.DataAccessLayer.Common.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 647
+   在 DataBase.DBHelper.ReadCollection[T](String sql, DynamicParameters p) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 21
+   在 NET.DataAccessLayer.Base`1.Find(T entity, Int32 findId) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 189
+   在 NET.BusinessRule.Base`1.Find(T t, Int32 findId) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 47
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServeicesResponse(RequestParam param, UserInfoUnDeteil& userinfoundeteil) 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 59
+   在 NET.Web.UI.Models.RequestServicesBase.<>c__DisplayClass4_0.<RequestServicesRecording>b__0() 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch(Action input) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 166
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServicesRecording(RequestParam param) 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch[T1](Action`1 func, T1 t1) 位置 E:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 205
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices_Task(RequestParam param) 位置 E:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 247
+请求参数是 ：{"Data":"{\"ret\":1,\"start\":-1,\"end\":-1,\"country\":\"中国\",\"province\":\"江苏\",\"city\":\"苏州\",\"district\":\"\",\"isp\":\"\",\"type\":\"\",\"desc\":\"\"}","Ip":"112.0.151.17","ModelType":null,"Token":"18f6f692ce7841018fbd4aba66666ec7","UserAgent":"Mozilla\/5.0 (Windows NT 6.3; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/58.0.3029.110 Safari\/537.36","WaitHandle":null}
+ 

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=asp.net获取客户端浏览器及主机信息>
+    <meta name="keywords" content=在线预览效果：http://tool.hovertree.com/info/client/其中aspx页面的控件代码:asp:ListBoxrunat=serverID=lbHoverTreeInfoClientIDMode=Static/asp:ListBox以下是实现代码：1usingSystem;2usingSystem.Web;3usingSystem.Web.UI;45namespace>
+    <title>asp.net获取客户端浏览器及主机信息</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/B8C0509A-82D4-4BD7-A1BB-5BAF70ED1C60.html' title='.NET'>.NET</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>asp.net获取客户端浏览器及主机信息</h1>
+                        <pre>
+                        <code>
+                            <p style="margin: 10px auto; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 14.4px; line-height: 21.6px; white-space: normal;">在线预览效果：<br/><a href="http://tool.hovertree.com/info/client/" target="_blank" style="color: rgb(0, 102, 170); text-decoration: none;">http://tool.hovertree.com/info/client/</a><br/><br/>其中aspx页面的控件代码:</p><pre style="margin-top: 0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">&lt;asp:ListBox&nbsp;runat=&quot;server&quot;&nbsp;ID=&quot;lbHoverTreeInfo&quot;&nbsp;ClientIDMode=&quot;Static&quot;&gt;&nbsp;&lt;/asp:ListBox&gt;</pre><p style="margin: 10px auto; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 14.4px; line-height: 21.6px; white-space: normal;">以下是实现代码：</p><p><span class="cnblogs_code_copy" style="padding-right: 5px; line-height: 1.5 !important;"><a title="复制代码" style="color: rgb(0, 102, 170); border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="border: none !important;"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">&nbsp;&nbsp;1&nbsp;using&nbsp;System;&nbsp;&nbsp;2&nbsp;using&nbsp;System.Web;&nbsp;&nbsp;3&nbsp;using&nbsp;System.Web.UI;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;5&nbsp;namespace&nbsp;HoverTreeTool.HvtInfo.KeleyiClient&nbsp;&nbsp;6&nbsp;{&nbsp;&nbsp;7&nbsp;public&nbsp;partial&nbsp;class&nbsp;Index&nbsp;:&nbsp;System.Web.UI.Page&nbsp;&nbsp;8&nbsp;{&nbsp;&nbsp;9&nbsp;protected&nbsp;void&nbsp;Page_Load(object&nbsp;sender,&nbsp;EventArgs&nbsp;e)&nbsp;10&nbsp;{&nbsp;11&nbsp;string&nbsp;userAgent&nbsp;=&nbsp;Request.UserAgent&nbsp;==&nbsp;null&nbsp;?&nbsp;&quot;无&quot;&nbsp;:&nbsp;Request.UserAgent;&nbsp;12&nbsp;if&nbsp;(!IsPostBack)&nbsp;13&nbsp;{lbHoverTreeInfo.Items.Add(&quot;您的系统信息为：&quot;);&nbsp;14&nbsp;lbHoverTreeInfo.Items.Add(&quot;客户端IP[Page.Request.UserHostAddress]：&quot;+&nbsp;Page.Request.UserHostAddress);&nbsp;15&nbsp;lbHoverTreeInfo.Items.Add(&quot;浏览器类型[Request.Browser.Browser]：&quot;&nbsp;+&nbsp;Request.Browser.Browser);&nbsp;16&nbsp;lbHoverTreeInfo.Items.Add(&quot;浏览器标识[Request.Browser.Id]：&quot;&nbsp;+&nbsp;Request.Browser.Id);&nbsp;17&nbsp;lbHoverTreeInfo.Items.Add(&quot;浏览器版本号[Request.Browser.Version]：&quot;&nbsp;+&nbsp;Request.Browser.Version);&nbsp;18&nbsp;lbHoverTreeInfo.Items.Add(&quot;浏览器是不是测试版本[Request.Browser.Beta]：&quot;&nbsp;+&nbsp;Request.Browser.Beta);&nbsp;19&nbsp;lbHoverTreeInfo.Items.Add(&quot;浏览器类型[Request.Browser.Type]：&quot;&nbsp;+&nbsp;Request.Browser.Type);&nbsp;20&nbsp;lbHoverTreeInfo.Items.Add(&quot;是否支持框架网页[Request.Browser.Frames]：&quot;&nbsp;+&nbsp;Request.Browser.Frames);&nbsp;21&nbsp;lbHoverTreeInfo.Items.Add(&quot;是否支持Cookie[Request.Browser.Cookies]：&quot;&nbsp;+&nbsp;Request.Browser.Cookies);&nbsp;22&nbsp;lbHoverTreeInfo.Items.Add(&quot;浏览器JScript版本[Request.Browser.JScriptVersion]：&quot;&nbsp;+&nbsp;Request.Browser.JScriptVersion);&nbsp;23&nbsp;lbHoverTreeInfo.Items.Add(&quot;屏幕分辨率宽[System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width&nbsp;]]：&quot;&nbsp;+&nbsp;System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width);&nbsp;24&nbsp;lbHoverTreeInfo.Items.Add(&quot;屏幕分辨率高[System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height&nbsp;]]：&quot;&nbsp;+&nbsp;System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height);&nbsp;25&nbsp;lbHoverTreeInfo.Items.Add(&quot;浏览器类型[Request.Browser.Type]：&quot;&nbsp;+&nbsp;Request.Browser.Type);&nbsp;26&nbsp;lbHoverTreeInfo.Items.Add(&quot;客户端IP[GetHoverTreeIp()]：&quot;&nbsp;+&nbsp;GetHoverTreeIp());&nbsp;27&nbsp;lbHoverTreeInfo.Items.Add(&quot;客户端的操作系统[Request.Browser.Platform]：&quot;&nbsp;+&nbsp;Request.Browser.Platform);&nbsp;28&nbsp;lbHoverTreeInfo.Items.Add(&quot;客户端的操作系统[GetHoverTreeOSName(userAgent)]：&quot;&nbsp;+&nbsp;GetHoverTreeOSName(userAgent));&nbsp;29&nbsp;lbHoverTreeInfo.Items.Add(&quot;是不是win16系统[Request.Browser.Win16]：&quot;&nbsp;+&nbsp;Request.Browser.Win16);&nbsp;30&nbsp;lbHoverTreeInfo.Items.Add(&quot;是不是win32系统[Request.Browser.Win32]：&quot;&nbsp;+&nbsp;Request.Browser.Win32);&nbsp;31&nbsp;lbHoverTreeInfo.Items.Add(&quot;客户端.NET&nbsp;Framework版本：Request.Browser.ClrVersion]：&quot;&nbsp;+&nbsp;Request.Browser.ClrVersion);&nbsp;32&nbsp;lbHoverTreeInfo.Items.Add(&quot;是否支持Java[Request.Browser.JavaApplets]：&quot;&nbsp;+&nbsp;Request.Browser.JavaApplets);&nbsp;33&nbsp;&nbsp;34&nbsp;if&nbsp;(Request.ServerVariables[&quot;HTTP_UA_CPU&quot;]&nbsp;==&nbsp;null)&nbsp;35&nbsp;lbHoverTreeInfo.Items.Add(&quot;CPU&nbsp;类型[Request.ServerVariables[\&quot;HTTP_UA_CPU\&quot;]]:未知&quot;);&nbsp;36&nbsp;else&nbsp;37&nbsp;lbHoverTreeInfo.Items.Add(&quot;CPU&nbsp;类型[Request.ServerVariables[\&quot;HTTP_UA_CPU\&quot;]]:&quot;&nbsp;+&nbsp;Request.ServerVariables[&quot;HTTP_UA_CPU&quot;]);&nbsp;38&nbsp;&nbsp;39&nbsp;lbHoverTreeInfo.Items.Add(&quot;UserAgent信息[Request.UserAgent]：&quot;&nbsp;+&nbsp;userAgent);&nbsp;40&nbsp;lbHoverTreeInfo.Items.Add(&quot;By&nbsp;何问起工具&nbsp;http://tool.hovertree.com/info/client/&quot;);&nbsp;41&nbsp;&nbsp;42&nbsp;}&nbsp;43&nbsp;}&nbsp;44&nbsp;&nbsp;45&nbsp;///&nbsp;&lt;summary&gt;&nbsp;46&nbsp;///&nbsp;获取真实IP&nbsp;47&nbsp;///&nbsp;&lt;/summary&gt;&nbsp;48&nbsp;///&nbsp;&lt;returns&gt;&lt;/returns&gt;&nbsp;49&nbsp;public&nbsp;string&nbsp;GetHoverTreeIp()&nbsp;50&nbsp;{&nbsp;51&nbsp;string&nbsp;result&nbsp;=&nbsp;HttpContext.Current.Request.ServerVariables[&quot;HTTP_X_FORWARDED_FOR&quot;];&nbsp;52&nbsp;if&nbsp;(null&nbsp;==&nbsp;result&nbsp;||&nbsp;result&nbsp;==&nbsp;String.Empty)&nbsp;53&nbsp;{&nbsp;54&nbsp;result&nbsp;=&nbsp;HttpContext.Current.Request.ServerVariables[&quot;REMOTE_ADDR&quot;];&nbsp;55&nbsp;}&nbsp;56&nbsp;if&nbsp;(null&nbsp;==&nbsp;result&nbsp;||&nbsp;result&nbsp;==&nbsp;String.Empty)&nbsp;57&nbsp;{&nbsp;58&nbsp;result&nbsp;=&nbsp;HttpContext.Current.Request.UserHostAddress;&nbsp;59&nbsp;}&nbsp;60&nbsp;return&nbsp;result;&nbsp;61&nbsp;}&nbsp;62&nbsp;&nbsp;63&nbsp;///&nbsp;&lt;summary&gt;&nbsp;64&nbsp;///&nbsp;根据&nbsp;User&nbsp;Agent&nbsp;获取操作系统名称&nbsp;65&nbsp;///&nbsp;&lt;/summary&gt;&nbsp;66&nbsp;private&nbsp;string&nbsp;GetHoverTreeOSName(string&nbsp;userAgent)&nbsp;67&nbsp;{&nbsp;68&nbsp;string&nbsp;m_hvtOsVersion&nbsp;=&nbsp;&quot;未知&quot;;&nbsp;69&nbsp;if&nbsp;(userAgent.Contains(&quot;NT&nbsp;6.4&quot;))&nbsp;70&nbsp;{&nbsp;71&nbsp;m_hvtOsVersion&nbsp;=&nbsp;&quot;Windows&nbsp;10&quot;;&nbsp;72&nbsp;}&nbsp;73&nbsp;else&nbsp;74&nbsp;if&nbsp;(userAgent.Contains(&quot;NT&nbsp;6.3&quot;))&nbsp;75&nbsp;{&nbsp;76&nbsp;m_hvtOsVersion&nbsp;=&nbsp;&quot;Windows&nbsp;8.1&quot;;&nbsp;77&nbsp;}&nbsp;78&nbsp;else&nbsp;79&nbsp;if&nbsp;(userAgent.Contains(&quot;NT&nbsp;6.2&quot;))&nbsp;80&nbsp;{&nbsp;81&nbsp;m_hvtOsVersion&nbsp;=&nbsp;&quot;Windows&nbsp;8&quot;;&nbsp;82&nbsp;}&nbsp;83&nbsp;else&nbsp;84&nbsp;if&nbsp;(userAgent.Contains(&quot;NT&nbsp;6.1&quot;))&nbsp;85&nbsp;{&nbsp;86&nbsp;m_hvtOsVersion&nbsp;=&nbsp;&quot;Windows&nbsp;7&quot;;&nbsp;87&nbsp;}else&nbsp;88&nbsp;if&nbsp;(userAgent.Contains(&quot;NT&nbsp;6.0&quot;))&nbsp;89&nbsp;{&nbsp;90&nbsp;m_hvtOsVersion&nbsp;=&nbsp;&quot;Windows&nbsp;Vista/Server&nbsp;2008&quot;;&nbsp;91&nbsp;}&nbsp;92&nbsp;else&nbsp;if&nbsp;(userAgent.Contains(&quot;NT&nbsp;5.2&quot;))&nbsp;93&nbsp;{&nbsp;94&nbsp;m_hvtOsVersion&nbsp;=&nbsp;&quot;Windows&nbsp;Server&nbsp;2003&quot;;&nbsp;95&nbsp;}&nbsp;96&nbsp;else&nbsp;if&nbsp;(userAgent.Contains(&quot;NT&nbsp;5.1&quot;))&nbsp;97&nbsp;{&nbsp;98&nbsp;m_hvtOsVersion&nbsp;=&nbsp;&quot;Windows&nbsp;XP&quot;;&nbsp;99&nbsp;}100&nbsp;else&nbsp;if&nbsp;(userAgent.Contains(&quot;NT&nbsp;5&quot;))101&nbsp;{102&nbsp;m_hvtOsVersion&nbsp;=&nbsp;&quot;Windows&nbsp;2000&quot;;103&nbsp;}104&nbsp;else&nbsp;if&nbsp;(userAgent.Contains(&quot;NT&nbsp;4&quot;))105&nbsp;{106&nbsp;m_hvtOsVersion&nbsp;=&nbsp;&quot;Windows&nbsp;NT4&quot;;107&nbsp;}108&nbsp;else&nbsp;if&nbsp;(userAgent.Contains(&quot;Me&quot;))109&nbsp;{110&nbsp;m_hvtOsVersion&nbsp;=&nbsp;&quot;Windows&nbsp;Me&quot;;111&nbsp;}112&nbsp;else&nbsp;if&nbsp;(userAgent.Contains(&quot;98&quot;))113&nbsp;{114&nbsp;m_hvtOsVersion&nbsp;=&nbsp;&quot;Windows&nbsp;98&quot;;115&nbsp;}116&nbsp;else&nbsp;if&nbsp;(userAgent.Contains(&quot;95&quot;))117&nbsp;{118&nbsp;m_hvtOsVersion&nbsp;=&nbsp;&quot;Windows&nbsp;95&quot;;119&nbsp;}120&nbsp;else&nbsp;if&nbsp;(userAgent.Contains(&quot;Mac&quot;))121&nbsp;{122&nbsp;m_hvtOsVersion&nbsp;=&nbsp;&quot;Mac&quot;;123&nbsp;}124&nbsp;else&nbsp;if&nbsp;(userAgent.Contains(&quot;Unix&quot;))125&nbsp;{126&nbsp;m_hvtOsVersion&nbsp;=&nbsp;&quot;UNIX&quot;;127&nbsp;}128&nbsp;else&nbsp;if&nbsp;(userAgent.Contains(&quot;Linux&quot;))129&nbsp;{130&nbsp;m_hvtOsVersion&nbsp;=&nbsp;&quot;Linux&quot;;131&nbsp;}132&nbsp;else&nbsp;if&nbsp;(userAgent.Contains(&quot;SunOS&quot;))133&nbsp;{134&nbsp;m_hvtOsVersion&nbsp;=&nbsp;&quot;SunOS&quot;;135&nbsp;}136&nbsp;return&nbsp;m_hvtOsVersion;137&nbsp;}138&nbsp;139&nbsp;}140&nbsp;}</pre><p><span class="cnblogs_code_copy" style="padding-right: 5px; line-height: 1.5 !important;"><a title="复制代码" style="color: rgb(0, 102, 170); border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="border: none !important;"/></a></span></p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

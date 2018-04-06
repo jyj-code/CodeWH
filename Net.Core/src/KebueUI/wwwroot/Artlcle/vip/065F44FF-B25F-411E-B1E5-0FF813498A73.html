@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=Oracle创建用户设置权限>
+    <meta name="keywords" content=Oracle创建用户设置权限（转：http://www.cnblogs.com/yangy608/archive/2011/08/22/2148893.html）create user TEST identified by TEST --创建TEST用户default tablespace USERStemporary tablespace TEMPprofile DEFAULT;grant co>
+    <title>Oracle创建用户设置权限</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/0D8667FF-B247-4368-A163-B9D7274FE236.html' title='Oracle'>Oracle</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>Oracle创建用户设置权限</h1>
+                        <pre>
+                        <code>
+                            <h1 style="font-family: 微软雅黑; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);"><a href="http://www.cnblogs.com/jenson138/p/4735982.html" style="background-color: inherit; cursor: pointer;">Oracle创建用户设置权限</a></h1><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">（转：<a title="Oracle创建用户设置权限" href="http://www.cnblogs.com/yangy608/archive/2011/08/22/2148893.html" target="_blank" style="background-color: inherit; cursor: pointer;">http://www.cnblogs.com/yangy608/archive/2011/08/22/2148893.html</a>）</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">create user TEST identified by &quot;TEST&quot; &nbsp;--创建TEST用户</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;default tablespace USERS</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;temporary tablespace TEMP</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;profile DEFAULT;</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">grant connect,create view ,resource &nbsp;to TEST;</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">grant unlimited tablespace to TEST;</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">&nbsp;</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">&nbsp;</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">--管理员授权</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　grant create session to TEST;--授予TEST用户创建session的权限，即登陆权限</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　grant unlimited session to TEST;--授予TEST用户使用表空间的权限</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　grant create table to TEST;--授予创建表的权限</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　grant drop table to TEST;--授予删除表的权限</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　grant insert table to TEST;--插入表的权限</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　grant update table to TEST;--修改表的权限</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　grant all to public;--这条比较重要，授予所有权限(all)给所有用户(public)</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">--oralce对权限管理比较严谨，普通用户之间也是默认不能互相访问的</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　grant select on tablename to TEST;--授予TEST用户查看指定表的权限</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　grant drop on tablename to TEST;--授予删除表的权限</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　grant insert on tablename to TEST;--授予插入的权限</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　grant update on tablename to TEST;--授予修改表的权限</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　grant insert(id) on tablename to TEST;</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　grant update(id) on tablename to TEST;--授予对指定表特定字段的插入和修改权限，注意，只能是insert和update</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">&nbsp;</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">--撤销权限</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　基本语法同grant,关键字为revoke</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">--查看权限</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　select * from user_sys_privs;--查看当前用户所有权限</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　select * from user_tab_privs;--查看所用用户对表的权限</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">--操作表的用户的表</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　/*需要在表名前加上用户名，如下*/</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">--权限传递</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　 即用户A将权限授予B，B可以将操作的权限再授予C，命令如下：</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　grant alert table on tablename to TEST with admin option;--关键字 with admin option</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　grant alert table on tablename to TEST with grant option;--关键字 with grant option效果和admin类似</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">--角色</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　角色即权限的集合，可以把一个角色授予给用户</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　create role myrole;--创建角色</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　grant create session to myrole;--将创建session的权限授予myrole</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　grant myrole to TEST;--授予TEST用户myrole的角色</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　drop role myrole;删除角色</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　/*但是有些权限是不能授予给角色的，比如unlimited tablespace和any关键字*/</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=Cookie和Session 简单介绍>
+    <meta name="keywords" content=cookie：  1、cookie是存在客户端（浏览器）的进程内存中和客户端所在的机器硬盘上  2、cookie只能能够存储少量文本，大概4K大小  3、cookie是不能在不同浏览器之间共享1添加Cookie2//1.0在服务器端实例化cookie对象34HttpCookiecookie=newHttpCookie(name,name);56//2.0设置cookie在浏览器端有效时间为2分钟，>
+    <title>Cookie和Session 简单介绍</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/B8C0509A-82D4-4BD7-A1BB-5BAF70ED1C60.html' title='.NET'>.NET</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>Cookie和Session 简单介绍</h1>
+                        <pre>
+                        <code>
+                            <p><span style="margin: 0px; padding: 0px; line-height: 1.5; color: rgb(255, 0, 0);"><span style="margin: 0px; padding: 0px; line-height: 1.5; font-size: 18px;"><strong style="margin: 0px; padding: 0px;">cookie</strong>&nbsp;</span>：</span></p><p>&nbsp; &nbsp; 1、cookie是存在客户端（浏览器）的进程内存中和客户端所在的机器硬盘上</p><p>&nbsp; &nbsp; 2、cookie只能能够存储少量文本，大概4K大小</p><p>&nbsp; &nbsp; 3、cookie是不能在不同浏览器之间共享</p><p>&nbsp;</p><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5;"><a title="复制代码" style="margin: 0px; padding: 0px; color: rgb(7, 93, 179); text-decoration: underline; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">&nbsp;1&nbsp;添加Cookie&nbsp;2&nbsp;//1.0&nbsp;在服务器端实例化cookie对象&nbsp;3&nbsp;&nbsp;4&nbsp;HttpCookie&nbsp;cookie&nbsp;=&nbsp;new&nbsp;HttpCookie(&quot;name&quot;,&nbsp;name);&nbsp;5&nbsp;&nbsp;6&nbsp;//2.0&nbsp;&nbsp;设置cookie在浏览器端有效时间为2分钟，注意：此时浏览器就会将cookie存入到其所在的硬盘（等待时间到期以后才消失）&nbsp;7&nbsp;&nbsp;8&nbsp;cookie.Expires&nbsp;=&nbsp;DateTime.Now.AddSeconds(120);&nbsp;9&nbsp;10&nbsp;//3.0&nbsp;Path&nbsp;=&quot;/&quot;&nbsp;表示当前浏览器请求此网站的任何页面都会将有效cookie传入给服务器11&nbsp;12&nbsp;cookie.Path&nbsp;=&nbsp;&quot;/01cookie/&quot;;&nbsp;//指定当前cookie只有在浏览器访问01cookie文件下下的所有页面才传入服务器13&nbsp;14&nbsp;//4.0&nbsp;&nbsp;设置Domain&nbsp;表示当前cookie只有在当前设置好的域名下才有效15&nbsp;16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//注意：如果没有指定Domain&nbsp;的情况下，asp.net会智能的读取当前url中的主机17&nbsp;18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//实现单点登录的简单方式可以设置cookie的Domain&nbsp;为顶级域名19&nbsp;20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//顶级域名&nbsp;.baidu.com21&nbsp;22&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//二级域名:www.baidu.com,zhidao.baidu.com&nbsp;&nbsp;mp3.baidu.com23&nbsp;24&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//三级域名:zhidao.s1.baidu.com&nbsp;,但是一般只是用到二级域名，三级域名对于网站的seo优化回不明显25&nbsp;26&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//单点登录:实现一次登录以后再当前域名下面的其他站点可以实现免登录27&nbsp;28&nbsp;cookie.Domain&nbsp;=&nbsp;&quot;.c12.com&quot;;&nbsp;//将cookie的Domain设置成顶级域名以后再其所有的二级域名下的网站都可以共享此cookie29&nbsp;30&nbsp;//5.0&nbsp;通过Response.Cookies&nbsp;将cookie对象发送给浏览器保存31&nbsp;32&nbsp;Response.Cookies.Add(cookie);&nbsp;//底层就是向相应报文头中&nbsp;添加指令&nbsp;set-cookie:name&nbsp;=&nbsp;admin;Expires&nbsp;UTC时间</pre><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5;"><a title="复制代码" style="margin: 0px; padding: 0px; color: rgb(7, 93, 179); text-decoration: underline; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><p style="margin: 10px auto; padding: 0px; line-height: 19.5px; font-size: 13px; font-family: Verdana, Arial, Helvetica, sans-serif; white-space: normal; background-color: rgb(254, 254, 242);">&nbsp;</p><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">&nbsp;<span style="margin: 0px; padding: 0px; line-height: 1.5;">获取Cookie的值</span>:</p><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5;"><a title="复制代码" style="margin: 0px; padding: 0px; color: rgb(7, 93, 179); text-decoration: underline; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">if&nbsp;(Request.Cookies[&quot;name&quot;]&nbsp;==&nbsp;null)    {    &nbsp;&nbsp;&nbsp;&nbsp;Response.Write(&quot;&lt;script&gt;alert(&#39;登录状态已经失效，请重新登录&#39;);window.location=&#39;login.aspx&#39;&lt;/script&gt;&quot;);    }</pre><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5;"><a title="复制代码" style="margin: 0px; padding: 0px; color: rgb(7, 93, 179); text-decoration: underline; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">&nbsp;</p><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">删除Cookie:</p><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5;"><a title="复制代码" style="margin: 0px; padding: 0px; color: rgb(7, 93, 179); text-decoration: underline; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">//清除cookie思路，一定是将cookie的过期时间设置为当前时间以前的某个时间点//清除&nbsp;path=/下的并且doamin曲子url主机的cookieHttpCookie&nbsp;cookie&nbsp;=&nbsp;new&nbsp;HttpCookie(&quot;name&quot;,&nbsp;&quot;&quot;);    cookie.Expires&nbsp;=&nbsp;DateTime.Now.AddYears(-1);//表示清除path=/01cookie/的cookiecookie.Path&nbsp;=&nbsp;&quot;/01cookie/&quot;;    Response.Cookies.Add(cookie);&nbsp;//set-cookie&nbsp;:Expires:2013-4-11</pre><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5;"><a title="复制代码" style="margin: 0px; padding: 0px; color: rgb(7, 93, 179); text-decoration: underline; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">&nbsp;</p><p><br style="margin: 0px; padding: 0px;"/></p><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">&nbsp;</p><hr style="margin: 0px; padding: 0px;"/><p><br style="margin: 0px; padding: 0px;"/></p><p style="margin: 10px auto; padding: 0px; line-height: 1.5;"><span style="margin: 0px; padding: 0px; line-height: 1.5; color: rgb(255, 0, 0); font-size: 18px;"><strong style="margin: 0px; padding: 0px;">Session:</strong></span></p><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">&nbsp; &nbsp; &nbsp;1、存在服务器端，存在网站进程的内存中</p><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">&nbsp; &nbsp; &nbsp;2、在初次设置session的时候，会在session池中实例化一个session对象，以asp.net_sessionid 的值作为key，同时会将key以cookie的形式</p><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">&nbsp;保存到客户端的内存中</p><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">&nbsp; &nbsp; &nbsp;3、session的作用域只存在当前浏览器的会话中，当浏览器关闭以后就会将sessionid丢失，但是服务器的session对象要20分钟以后才会回收</p><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">&nbsp; &nbsp; &nbsp;4、在web.config中的&nbsp;<span style="margin: 0px; padding: 0px; line-height: 1.5; color: rgb(0, 204, 255);">&lt;system.web&gt;</span>&nbsp;节点下添加&nbsp;<span style="margin: 0px; padding: 0px; line-height: 1.5; color: rgb(0, 204, 255);">&lt;sessionState timeout=&quot;5&quot; cookieless=&quot;true&quot;&gt;&lt;/sessionState&gt;</span>&nbsp;手动修改session的相关设置</p><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">注意点：</p><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">aspx编译完成以后会自动实现接口IRequiresSessionState，所以能够直接使用session</p><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">但是一般处理程序，需要程序员自己实现接口IRequiresSessionState ，才能够使用session对象</p><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">如果浏览器禁用了cookie，则可以使用</p><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">设置：<span style="margin: 0px; padding: 0px; line-height: 1.5; color: rgb(0, 204, 255);">&lt;sessionState cookieless=&quot;true&quot;&gt;&lt;/sessionState&gt;</span>&nbsp;来开启url传入sessionid到服务器，但是不推荐使用</p><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">&nbsp;</p><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">添加Session：</p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">//将当前name的值存入session中context.Session[&quot;name&quot;]&nbsp;=&nbsp;name;</pre><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">获取Cookie:</p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">(string)Session[&quot;name&quot;]</pre><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">&nbsp;</p><p style="margin: 10px auto; padding: 0px; line-height: 1.5;">删除Cookie:</p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">//负责清除sessioncontext.Session[&quot;name&quot;]&nbsp;=&nbsp;null;    context.Session.Abandon();&nbsp;&nbsp;&nbsp;&nbsp;取消当前会话</pre><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

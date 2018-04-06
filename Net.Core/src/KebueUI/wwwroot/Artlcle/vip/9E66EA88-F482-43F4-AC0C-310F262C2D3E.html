@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=ASP.NET Cache缓存实例引用案例永不过期和限定时间过期>
+    <meta name="keywords" content=//不加时间限制永不过期，只有IIS重启后才过期protected void Page_Load(object sender, EventArgs e){ //Cache[date]=要缓存的数据;  这里是自定义缓存的简单声明使用 string datastr = Label1.Text; Response.Write(第一个输出时间: + datastr + /br); //这里读取的当前的时>
+    <title>ASP.NET Cache缓存实例引用案例永不过期和限定时间过期</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/B8C0509A-82D4-4BD7-A1BB-5BAF70ED1C60.html' title='.NET'>.NET</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>ASP.NET Cache缓存实例引用案例永不过期和限定时间过期</h1>
+                        <pre>
+                        <code>
+                            <p>&nbsp;//不加时间限制永不过期，只有IIS重启后才过期</p><p>&nbsp;protected void Page_Load(object sender, EventArgs e)</p><p>&nbsp;{</p><p>&nbsp; &nbsp;//Cache[&quot;date&quot;]=要缓存的数据; &nbsp; 这里是自定义缓存的简单声明使用</p><p>&nbsp; &nbsp;string datastr = Label1.Text;</p><p>&nbsp; &nbsp;Response.Write(&quot;第一个输出时间:&quot; + datastr + &quot;&lt;/br&gt;&quot;); &nbsp;//这里读取的当前的时间，刷新页面时，这里的时,会随着变化。</p><p>&nbsp; &nbsp;if (Cache[&quot;date&quot;] == null) //判断是否存在value值为date的缓存是否存在<br/></p><p>&nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp;Cache[&quot;date&quot;] = datastr;</p><p>&nbsp; &nbsp; &nbsp;Response.Write(&quot;第二个输出时间为：&quot; + Cache[&quot;date&quot;] + &quot;这里读取的当前的时间&quot;); &nbsp; //这里读取的当前的时间，刷新页面时，这里的时间会随着变化。</p><p>&nbsp; &nbsp; &nbsp;}</p><p>&nbsp; &nbsp; &nbsp; else</p><p>&nbsp; &nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp;Response.Write(Cache[&quot;date&quot;] + &quot;这里是从缓存中读取的时间&quot;);//这里读取的缓存中的时间，刷新页面时，这里的随着时间变化，不会变化。</p><p>&nbsp; &nbsp; &nbsp; }</p><p>&nbsp; }</p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p style="white-space: normal;">protected void Page_Load(object sender, EventArgs e)</p><p style="white-space: normal;">&nbsp;{</p><p>&nbsp;string ids = Label1.Text;</p><p>&nbsp; ids = ids + &quot;完&quot;; &nbsp;//这里的ids为从数据库中读取表中的id值然后用--链接起来的一个字符串</p><p>&nbsp; if (Cache[&quot;key&quot;] == null)</p><p>&nbsp; {</p><p>&nbsp; &nbsp;Cache.Insert(&quot;key&quot;, ids, null, DateTime.Now.AddSeconds(10), &nbsp; &nbsp; &nbsp; &nbsp; System.Web.Caching.Cache.NoSlidingExpiration); &nbsp;//这里给数据加缓存，设置缓存时间</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //&quot;key&quot;为缓存的键，ids为缓存起来的值,null为缓存依赖项，这里没有使用缓存依赖项，所以为null，下面会详细介绍缓存依赖项</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //null后面为缓存的时间为40秒</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //最后一个参数为设置时间的格式，ASP.NET允许你设置一个绝对过期时间或滑动过期时间，但不能同时使用，</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //我们这里设置的为绝对过期时间，也就是没刷新一次页面后缓存数据为40秒，40秒后会从数据库中重新获取。&nbsp;</p><p>&nbsp; &nbsp; &nbsp;Response.Write(&quot;cache加载为---&quot; + Cache[&quot;key&quot;] + &quot;&lt;/br&gt;&quot;);</p><p>&nbsp; &nbsp; &nbsp;}</p><p>&nbsp; &nbsp; &nbsp;else</p><p>&nbsp; &nbsp; &nbsp;{</p><p>&nbsp; &nbsp; &nbsp; Response.Write(&quot;cache加载为---&quot; + Cache[&quot;key&quot;] + &quot;&lt;/br&gt;&quot;);</p><p>&nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; Response.Write(&quot;直接加载为---&quot; + ids + &quot;&lt;/br&gt;&quot;);</p><p>}</p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

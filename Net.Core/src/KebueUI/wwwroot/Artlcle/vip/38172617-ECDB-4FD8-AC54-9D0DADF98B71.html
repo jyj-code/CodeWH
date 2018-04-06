@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=js?获取网页正文、屏幕、滚动条相关>
+    <meta name="keywords" content=网页正文、屏幕、滚动条相关分类：web前端2015-08-23 11:37100人阅读评论(0)收藏举报网页正文频幕滚动条坐标宽高网页可见区域宽： document.body.clientWidth;网页可见区域高： document.body.clientHeight;网页可见区域宽： document.body.offsetWidth(包括边线的宽);网页可见区域高： document.bod>
+    <title>js?获取网页正文、屏幕、滚动条相关</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/9D69FD3D-028F-4239-89F1-BAC91B1DFF4A.html' title='JavaScript'>JavaScript</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>js?获取网页正文、屏幕、滚动条相关</h1>
+                        <pre>
+                        <code>
+                            <p><span style="background-color: inherit;">&nbsp;</span></p><h1 style="font-size: 20px; font-weight: normal; background-color: inherit;"><span style="background-color: inherit;"><a href="http://blog.csdn.net/huangfei711/article/details/47904305" style="background-color: inherit; cursor: pointer; color: rgb(0, 0, 0);">网页正文、屏幕、滚动条相关</a></span></h1><p><span style="background-color: inherit;">分类：<span style="background-color: inherit;">&nbsp;</span><a href="http://blog.csdn.net/huangfei711/article/category/5716811" style="background-color: inherit; cursor: pointer; color: rgb(202, 0, 0);">web前端</a></span><span style="background-color: inherit;">2015-08-23 11:37</span><span style="background-color: inherit;">&nbsp;</span><span title="阅读次数" style="background-color: inherit;">100人阅读</span><span style="background-color: inherit;">&nbsp;</span><span title="评论次数" style="background-color: inherit;"><a href="http://blog.csdn.net/huangfei711/article/details/47904305#comments" style="background-color: inherit; cursor: pointer; color: rgb(202, 0, 0);">评论</a>(0)</span><span style="background-color: inherit;">&nbsp;</span><span style="background-color: inherit;">收藏</span><span style="background-color: inherit;">&nbsp;</span><span style="background-color: inherit;"><a title="举报" href="http://blog.csdn.net/huangfei711/article/details/47904305#report" style="background-color: inherit; cursor: pointer; color: rgb(202, 0, 0);">举报</a></span></p><p><a href="http://www.csdn.net/tag/%e7%bd%91%e9%a1%b5%e6%ad%a3%e6%96%87" target="_blank" style="background-color: rgb(238, 238, 238); cursor: pointer; color: rgb(202, 0, 0);">网页正文</a><a href="http://www.csdn.net/tag/%e9%a2%91%e5%b9%95" target="_blank" style="background-color: rgb(238, 238, 238); cursor: pointer; color: rgb(202, 0, 0);">频幕</a><a href="http://www.csdn.net/tag/%e6%bb%9a%e5%8a%a8%e6%9d%a1" target="_blank" style="background-color: rgb(238, 238, 238); cursor: pointer; color: rgb(202, 0, 0);">滚动条</a><a href="http://www.csdn.net/tag/%e5%9d%90%e6%a0%87" target="_blank" style="background-color: rgb(238, 238, 238); cursor: pointer; color: rgb(202, 0, 0);">坐标</a><a href="http://www.csdn.net/tag/%e5%ae%bd%e9%ab%98" target="_blank" style="background-color: rgb(238, 238, 238); cursor: pointer; color: rgb(202, 0, 0);">宽高</a></p><p style="background-color: inherit;"><span style="background-color: inherit;">网页可见区域宽： document.body.clientWidth;<br style="background-color: inherit;"/>网页可见区域高： document.body.clientHeight;<br style="background-color: inherit;"/>网页可见区域宽： document.body.offsetWidth<span style="background-color: inherit;">&nbsp;</span><wbr style="background-color: inherit;"/><wbr style="background-color: inherit;"/><wbr style="background-color: inherit;"/>(包括边线的宽);<br style="background-color: inherit;"/>网页可见区域高： document.body.offsetHeight<span style="background-color: inherit;">&nbsp;</span><wbr style="background-color: inherit;"/><wbr style="background-color: inherit;"/>(包括边线的宽);<br style="background-color: inherit;"/>网页正文全文宽： document.body.scrollWidth;<br style="background-color: inherit;"/>网页正文全文高： document.body.scrollHeight;<br style="background-color: inherit;"/>网页被卷去的高： document.body.scrollTop;<br style="background-color: inherit;"/>网页被卷去的左： document.body.scrollLeft;<br style="background-color: inherit;"/>网页正文部分上： window.screenTop;<br style="background-color: inherit;"/>网页正文部分左： window.screenLeft;<br style="background-color: inherit;"/>屏幕分辨率的高： window.screen.height;<br style="background-color: inherit;"/>屏幕分辨率的宽： window.screen.width;<br style="background-color: inherit;"/>屏幕可用工作区高度： window.screen.availHeight;<br style="background-color: inherit;"/>屏幕可用工作区宽度：window.screen.availWidth;<br style="background-color: inherit;"/><br style="background-color: inherit;"/><br style="background-color: inherit;"/>scrollHeight: 获取对象的滚动高度。<span style="background-color: inherit;">&nbsp;</span><wbr style="background-color: inherit;"/><wbr style="background-color: inherit;"/><br style="background-color: inherit;"/>scrollLeft:设置或获取位于对象左边界和窗口中目前可见内容的最左端之间的距离<br style="background-color: inherit;"/>scrollTop:设置或获取位于对象最顶端和窗口中可见内容的最顶端之间的距离<br style="background-color: inherit;"/>scrollWidth:获取对象的滚动宽度<br style="background-color: inherit;"/>offsetHeight:获取对象相对于版面或由父坐标 offsetParent 属性指定的父坐标的高度<br style="background-color: inherit;"/>offsetLeft:获取对象相对于版面或由 offsetParent 属性指定的父坐标的计算左侧位置<br style="background-color: inherit;"/>offsetTop:获取对象相对于版面或由 offsetTop 属性指定的父坐标的计算顶端位置<span style="background-color: inherit;">&nbsp;</span><wbr style="background-color: inherit;"/><wbr style="background-color: inherit;"/><br style="background-color: inherit;"/>event.clientX 相对文档的水平座标<br style="background-color: inherit;"/>event.clientY 相对文档的垂直座标<br style="background-color: inherit;"/><br style="background-color: inherit;"/>event.offsetX 相对容器的水平坐标<br style="background-color: inherit;"/>event.offsetY 相对容器的垂直坐标<span style="background-color: inherit;">&nbsp;</span><wbr style="background-color: inherit;"/><wbr style="background-color: inherit;"/><br style="background-color: inherit;"/>document.documentElement.scrollTop 垂直方向滚动的值<br style="background-color: inherit;"/>event.clientX+document.documentElement.scrollTop 相对文档的水平座标+垂直方向滚动的量<br style="background-color: inherit;"/></span></p><p style="background-color: inherit;"><span style="background-color: inherit;">要获取当前页面的滚动条纵坐标位置，用：<br style="background-color: inherit;"/>document.documentElement.scrollTop;<br style="background-color: inherit;"/>而不是：<br style="background-color: inherit;"/>document.body.scrollTop;<br style="background-color: inherit;"/>documentElement 对应的是 html 标签，而 body 对应的是 body 标签</span></p><p><span style="background-color: inherit;"><br/></span></p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

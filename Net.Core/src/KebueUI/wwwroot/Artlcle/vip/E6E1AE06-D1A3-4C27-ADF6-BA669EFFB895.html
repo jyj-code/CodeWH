@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=oracle 11g 回收站(recyclebin)的使用>
+    <meta name="keywords" content=我们都比较熟悉windows中的回收站,文件删除后放到回收站里还可以再复原.Oracle回收站的原理完全一样,只是实现的细节方面有些差异.另外回收站中只能回收表和相关的对象包括索引、约束、触发器、嵌套表、大的二进制对象（LOB）段和LOB索引段.从Orace 10g开始有回收站的功能.1.回收站启动和关闭回收站默认是开启的.不过我们可以通过参数recyclebin来关闭和开启.如果只是针对每个se>
+    <title>oracle 11g 回收站(recyclebin)的使用</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/0D8667FF-B247-4368-A163-B9D7274FE236.html' title='Oracle'>Oracle</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>oracle 11g 回收站(recyclebin)的使用</h1>
+                        <pre>
+                        <code>
+                            <p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(51, 51, 255);">我们都比较熟悉windows中的回收站,文件删除后放到回收站里还可以再复原.Oracle回收站的原理完全一样,只是实现的细节方面有些差异</span>.另外回收站中只能回收表和相关的对象包括索引、约束、触发器、嵌套表、大的二进制对象（LOB）段和LOB索引段.从Orace 10g开始有回收站的功能.</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">&nbsp;</p><h2 style="margin: 0px; padding: 0px; font-size: 21px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; white-space: normal;"><a style="margin: 0px; padding: 0px; font-size: 14px; font-weight: normal; text-decoration: underline;" name="t0"></a>1.回收站启动和关闭</h2><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">&nbsp;</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(51, 51, 255);">回收站默认是开启的.不过我们可以通过参数recyclebin来关闭和开启.</span></p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">如果只是针对每个session可以通过alter session set recyclebin=off; 和 alter session set recyclebin=on;来关闭和开启</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">如果是针对所有session可以通过修改系统参数recyclebin来实现,不过这里<span style="margin: 0px; padding: 0px; color: rgb(51, 51, 255);">要注意10g和11g有点不一样,它们的参数类型不同</span></p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">10g可以用:alter system set recyclebin=off; 和alter system set recyclebin=on;来关闭和开启</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">11g可以用:alter system set recyclebin=off deferred; 和alter system set recyclebin=on deferred;来关闭和开启</p><h3 style="margin: 0px; padding: 0px; font-size: 16px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; white-space: normal;"><a style="margin: 0px; padding: 0px; font-size: 14px; font-weight: normal; text-decoration: underline;" name="t1"></a>补充:我们来简单的了解下Oracle参数类型</h3><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">Oracle参数信息可以通过视图v$parameter查看,其中有一列issys_modifiable表示参数类型,<span style="margin: 0px; padding: 0px; color: rgb(51, 51, 255);">有immediate,false,deferred三种</span>,其中false表示是静态参数,只要当instance重新启动时才会生效,其他两种是动态参数,immediate表示修改参数后立即生效,deferred表示修改后要等下一个session才能生效,修改时已经连接的session是不会生效的.在用alter修改参数时如果是false或immediate一般可以不写,如果是deferred则要写</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">10g: select&nbsp;&nbsp; ISSYS_MODIFIABLE&nbsp; from v$parameter where name = &#39;recyclebin&#39;;的结果是immediate</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">11g:&nbsp; select&nbsp;&nbsp; ISSYS_MODIFIABLE&nbsp; from v$parameter where name = &#39;recyclebin&#39;;的结果是deferred</p><h2 style="margin: 0px; padding: 0px; font-size: 21px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; white-space: normal;"><a style="margin: 0px; padding: 0px; font-size: 14px; font-weight: normal; text-decoration: underline;" name="t2"></a>&nbsp;</h2><h2 style="margin: 0px; padding: 0px; font-size: 21px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; white-space: normal;"><a style="margin: 0px; padding: 0px; font-size: 14px; font-weight: normal; text-decoration: underline;" name="t3"></a>2.查看回收站内容</h2><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">&nbsp;</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(51, 102, 255);">select * from user_recyclebin</span>;或select * from recyclebin;查看当前用户所drop的对象(里面有对象之前的名字和drop之后的名字)</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;"><span style="margin: 0px; padding: 0px; color: rgb(51, 51, 255);">select * from dba_recyclebin;</span>查看所有用户drop掉的对象</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;"><strong style="margin: 0px; padding: 0px;">其实当一个对象drop后,并且开启了回收站功能.它并没有真正被删除,实际上只是修改了一下名字,</strong>我们用select * from user_objects where type= &#39;TABLE&#39;还能查到.只是它的名字有点怪,例如BIN$qAUuckGyd3TgQKjAFAFTAg==$0,它的命名规范是BIN$unique_id$version&nbsp; 其中BIN代表RecycleBin, unique_id是数据库中该对象的唯一标志，26个字符长度 ,version表示该对象的版本号.</p><h2 style="margin: 0px; padding: 0px; font-size: 21px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; white-space: normal;"><a style="margin: 0px; padding: 0px; font-size: 14px; font-weight: normal; text-decoration: underline;" name="t4"></a>&nbsp;</h2><h2 style="margin: 0px; padding: 0px; font-size: 21px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; white-space: normal;"><a style="margin: 0px; padding: 0px; font-size: 14px; font-weight: normal; text-decoration: underline;" name="t5"></a>3.还原回收站内容</h2><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">&nbsp;</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">假如有表test被drop,drop后的object_name是BIN$qAUuckGyd3TgQKjAFAFTAg==$0</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">可以用flashback table &quot;BIN$qAUuckGyd3TgQKjAFAFTAg==$0&quot;&nbsp; to before drop ;(记得名字加双引号)</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">或者<span style="margin: 0px; padding: 0px; color: rgb(51, 51, 255);">flashback table test&nbsp; to before drop&nbsp;</span>;来还原.不过假如drop掉一个表test,再新建一个表test,然后再drop.那么flashback table test&nbsp; to before drop只能还原最后被drop掉的表test.最先drop掉的表还原时会出错,因为表名不能重名.所以必须改名flashback table test&nbsp; to before drop rename to test2</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">&nbsp;</p><h2 style="margin: 0px; padding: 0px; font-size: 21px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; white-space: normal;"><a style="margin: 0px; padding: 0px; font-size: 14px; font-weight: normal; text-decoration: underline;" name="t6"></a>4.清空回收站</h2><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">&nbsp;</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">如果一次只清空一个表,可以用PURGE table&nbsp; test 或PURGE table &quot;BIN$qAUuckGyd3TgQKjAFAFTAg==$0&quot;;</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">如果一次清空所有的可以用PURGE recyclebin 或者PURGE dba_recyclebin</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">还原时是只能一次还原一个表,不能像清空一样一次还原所有表</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">&nbsp;</p><h2 style="margin: 0px; padding: 0px; font-size: 21px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; white-space: normal;"><a style="margin: 0px; padding: 0px; font-size: 14px; font-weight: normal; text-decoration: underline;" name="t7"></a>5,注意事项</h2><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">&nbsp;</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">如果表是在system表空间下面则不能使用回收站的功能,不知道为啥有这限制啊</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">如果表空间快满时系统会自动的去清空回收站中一部分内容,先清空最早drop的对象</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">&nbsp;</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">&nbsp;</p><p style="margin: 10px auto; padding: 0px; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal;">如果删除表时候不想放在回收站，彻底删除 使用 drop table table-name<strong style="margin: 0px; padding: 0px;"><span style="margin: 0px; padding: 0px; color: rgb(51, 153, 102);">&nbsp;purge</span></strong></p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

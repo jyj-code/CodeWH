@@ -1,0 +1,319 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+    </div>
+</body>
+</html>
+
+<html manifest="cache.appcache">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>学术搜索 - 站在巨人的肩膀上</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="keywords" content="学术搜索,学术检索,文献检索,学术社区,学术导航,谷歌学术" />
+    <meta name="description" content="学术搜索——科布尔出品!为广大科研工作者,高校学生,以及学术爱好者提供方便、权威的学术搜索入口,是你的学术搜索第一站!" />
+    <meta name="revised" content="Chong, 2015/10/11/" />
+    <meta name="author" content="kebue.com" />
+    <link rel="shortcut icon" href="http://scholar.chongbuluo.com//favicon.ico" />
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/3.1.0/jquery-3.1.0.min.js"></script>
+    <script src="http://lib.sinaapp.com/js/jquery-ui/1.10.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="http://scholar.chongbuluo.com/soo.css" />
+    <script src="http://scholar.chongbuluo.com/config.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <script type="text/javascript">
+ 		if(localStorage.style === 'icon') {
+ 			$(document.body).addClass('icon-style');
+ 		}
+    </script>
+    <div id="nav">
+        <!--<h3 class="descr">科布尔</h3>-->
+        <ul id="skin-nav">
+            <li>
+                <a class="logo" href="http://scholar.chongbuluo.com/">
+                    <img src="images/xs-logo.png">
+                </a>
+            </li>
+            <li id="donate">
+                <i style="color:#589BFF;" class="fa fa-thumbs-up"></i>&nbsp;赞助&nbsp;&nbsp;&nbsp;
+                <div id="sub_donate"></div>
+            </li>
+            <li>
+                <a href="http://bbs.chongbuluo.com/forum.php?mod=viewthread&tid=344" target="_blank">
+                    <i style="color:#ED6D52;" class="fa fa-heartbeat"></i> 赞助者
+                </a>
+            </li>
+            <li>
+                <a href="http://bbs.chongbuluo.com/forum.php?mod=viewthread&tid=322" target="_blank">
+                    <i style="color:#FCC629;" class="fa fa-cog fa-spin"></i> 自定义
+                </a>
+            </li>
+            <li>
+                <a href="http://bbs.chongbuluo.com/forum.php?mod=viewthread&tid=599" target="_blank">
+                    <i style="color:#589BFF;" class="fa fa-spinner fa-spin"></i> 更新存档
+                </a>
+            </li>
+            <li>
+                <a href="http://bbs.chongbuluo.com/" title="科布尔社区" target="_blank">
+                    <i style="color:#8150A7;" class="fa fa-mortar-board"></i> 社区
+                </a>
+            </li>
+            <li>
+                <a href="http://search.chongbuluo.com/" target="_blank">
+                    <i style="color:#77C159;" class="fa fa-flash"></i> 快搜
+                </a>
+            </li>
+            <li>
+                <a href="http://data.chongbuluo.com/" target="_blank">
+                    <i style="color:#FCC629" class="fa fa-cubes"></i> 数据搜索
+                </a>
+            </li>
+            <li>
+                <a href="http://image.chongbuluo.com/" target="_blank">
+                    <i style="color:#FF6700" class="fa fa-picture-o"></i> 图搜
+                </a>
+            </li>
+            <li>
+                <a href="http://magnet.chongbuluo.com/" target="_blank">
+                    <i style="color:#52DBFC" class="fa fa-magnet"></i> 磁力搜索
+                </a>
+            </li>
+            <li>
+                <i class="fa fa-exchange"></i>&nbsp;
+                <a id="translateLink"></a>
+            </li>
+            <li>
+                <a href="http://weibo.com/chongbuluomo" title="科布尔微博" target="_blank">
+                    <i style="color:#E42825" class="fa fa-weibo"></i> 微博
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/chongbuluo" title="科布尔 Twitter" target="_blank">
+                    <i style="color:#6FC5F5" class="fa fa-twitter"></i> Twitter
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="left-nav">
+            <ul id="foo" class="chongbuluo">
+                <li id="bing">
+                    <img src="http://cn.bing.com/favicon.ico" />
+                    <a data="http://bbs.chongbuluo.com/bingscholar.html">必应学术</a>
+                </li>
+                <li id="xueshu">
+                    <img src="http://tb1.bdstatic.com/tb/favicon.ico" />
+                    <a data="http://xueshu.baidu.com/">百度学术</a>
+                </li>
+                <li id="oalib">
+                    <img src="http://7q5dsg.com1.z0.glb.clouddn.com//favicon/oalib/favicon.ico" />
+                    <a data="http://www.oalib.com/">OALib</a>
+                </li>
+                <li id="pubmed">
+                    <img src="http://7q5dsg.com1.z0.glb.clouddn.com/@/faviconfavicon.ico" />
+                    <a data="http://pubmed.cn/">PubMed</a>
+                </li>
+                <li id="aminer">
+                    <img src="http://ww2.sinaimg.cn/large/b1601727gw1ey8te68h8eg200g00g0sh.gif" />
+                    <a data="https://aminer.org/">AMiner</a>
+                </li>
+                <li id="sci-hub">
+                    <img src="http://sci-hub.cc/favicon.ico" />
+                    <a data="http://sci-hub.cc">Sci-Hub</a>
+                </li>
+                <li id="nlc">
+                    <img src="http://www.nlc.cn/favicon.ico" />
+                    <a data="http://bbs.chongbuluo.com/wenjin.html">国图文津</a>
+                </li>
+                <li id="wdl">
+                    <img src="http://7q5dsg.com1.z0.glb.clouddn.com//favicon/wdl/favicon.ico" />
+                    <a data="http://www.wdl.org/zh/">世界数字图书</a>
+                </li>
+                <li id="las">
+                    <img src="http://www.las.ac.cn/images_discovery/favicon.ico" />
+                    <a data="http://www.las.ac.cn/">中科院文献</a>
+                </li>
+                <li id="cnki">
+                    <img src="http://www.cnki.net/favicon.ico" />
+                    <a data="http://scholar.cnki.net/">CNKI学术</a>
+                </li>
+                <li id="trend">
+                    <img src="http://www.cnki.net/favicon.ico" />
+                    <a data="http://trend.cnki.net/TrendSearch/">学术趋势</a>
+                </li>
+                <li id="number">
+                    <img src="http://www.cnki.net/favicon.ico" />
+                    <a data="http://number.cnki.net/">数字搜索</a>
+                </li>
+                <li id="termonline">
+                    <img src="http://www.termonline.cn/favicon.ico" />
+                    <a data="http://www.termonline.cn/index.htm">术语搜索</a>
+                </li>
+                <li id="base">
+                    <img src="http://7q5dsg.com1.z0.glb.clouddn.com//favicon/base/favicon.ico" />
+                    <a data="http://www.base-search.net/">比勒费尔德学术</a>
+                </li>
+                <li id="ncpssd">
+                    <img src="http://wx4.sinaimg.cn/small/b1601727gy1fdm8r7k7o5j200w00wa9t.jpg" />
+                    <a data="http://www.ncpssd.org/">哲社科文献中心</a>
+                </li>
+                <li id="sjr">
+                    <img src="http://www.scimagojr.com/favicon.ico" />
+                    <a data="http://www.scimagojr.com/index.php">SJR</a>
+                </li>
+                <li id="letpub">
+                    <img src="http://www.letpub.com.cn/favicon.ico" />
+                    <a data="http://www.letpub.com.cn/index.php?page=journalapp">SCI影响因子</a>
+                </li>
+                <li id="fund">
+                    <img src="http://www.letpub.com.cn/favicon.ico" />
+                    <a data="http://www.letpub.com.cn/index.php?page=grant">科学基金项目</a>
+                </li>
+                <li id="oa">
+                    <img src="http://ww3.sinaimg.cn/large/b1601727gw1ey8te5qb9lg200g00g0sh.gif" />
+                    <a data="http://foas.gytec.net/">OA文献检索</a>
+                </li>
+                <li id="dart-europe">
+                    <img src="http://www.dart-europe.eu/images/dart-fav.png" />
+                    <a data="http://www.dart-europe.eu/basic-search.php">DART-Europe</a>
+                </li>
+                <li id="cinii">
+                    <img src="http://ci.nii.ac.jp/images/favicon.ico" />
+                    <a data="http://ci.nii.ac.jp/">CINII</a>
+                </li>
+                <li id="wenxian">
+                    <img src="http://www.chongbuluo.com/images/daizhige.ico" />
+                    <a data="http://wenxian.fanren8.com/">古文献</a>
+                </li>
+                <li id="doaj">
+                    <img src="http://7q5dsg.com1.z0.glb.clouddn.com//favicon/doaj/favicon.ico" />
+                    <a data="https://doaj.org/">DOAJ</a>
+                </li>
+                <li id="jairo">
+                    <img src="http://7q5dsg.com1.z0.glb.clouddn.com//favicon/jairo/favicon.ico" />
+                    <a data="http://jairo.nii.ac.jp/">JAIRO</a>
+                </li>
+                <li id="sciencedirect">
+                    <img src="http://cdn.els-cdn.com/sd/favSD.ico" />
+                    <a data="http://www.sciencedirect.com">ScienceDirect</a>
+                </li>
+                <li id="biorxiv">
+                    <img src="http://d2538ggaoe6cji.cloudfront.net/sites/default/files/bioarchives.ico" />
+                    <a data="http://biorxiv.org/">bioRxiv</a>
+                </li>
+                <li id="cafs">
+                    <img src="http://ww4.sinaimg.cn/large/b1601727gw1ezvayu2svoj200g00g0is.jpg" />
+                    <a data="http://www.cafs.ac.cn/scholar/">水产科学</a>
+                </li>
+                <li id="doi">
+                    <img src="http://dx.doi.org/static/favicon.ico" />
+                    <a data="http://dx.doi.org/">英文DOI</a>
+                </li>
+                <li id="rsc">
+                    <img src="http://www.rsc-cdn.org/oxygen/core/images/favicons/favicon.ico" />
+                    <a data="http://pubs.rsc.org/en/search/advancedsearch">RSC Publishing</a>
+                </li>
+                <li id="b1bj">
+                    <img src="http://www.tsinghua.edu.cn/publish/newthu/images/favicon.ico" />
+                    <a data="http://discovery.lib.tsinghua.edu.cn/primo_library/libweb/action/search.do">水木搜索</a>
+                </li>
+                <li id="whu">
+                    <img src="http://ww1.sinaimg.cn/large/b1601727gw1f13j4bq5zmj200g00g0f6.jpg" />
+                    <a data="http://whu.findplus.cn/">珞珈学术</a>
+                </li>
+                <li id="zjlib">
+                    <img src="http://ww1.sinaimg.cn/small/b1601727gw1ety42cavbgj200u00u3y9.jpg" />
+                    <a data="http://zjusa.zjlib.cn//index!goIndex.action">浙图检索</a>
+                </li>
+                <li id="sgst">
+                    <img src="http://data.sgst.cn/favicon.ico" />
+                    <a data="http://s.sgst.cn/search/">上研检索</a>
+                </li>
+                <li id="wanfangdata">
+                    <img src="http://s.wanfangdata.com.cn/favicon.ico" />
+                    <a data="http://s.wanfangdata.com.cn/Paper.aspx">万方数据</a>
+                </li>
+                <li id="mit">
+                    <img src="http://web.mit.edu/files/assets/images/favicon.ico" />
+                    <a data="http://web.mit.edu/search.html">麻省理工文献</a>
+                </li>
+                <li id="sh">
+                    <img src="http://sou.library.sh.cn/favicon.ico" />
+                    <a data="http://sou.library.sh.cn/">上图发现</a>
+                </li>
+                <li id="plagiarisma">
+                    <img src="http://plagiarisma.net/favicon.ico" />
+                    <a data="http://plagiarisma.net/cn/scholar.php">Plagiarisma</a>
+                </li>
+                <li id="sciinfo">
+                    <img src="http://plagiarisma.net/favicon.ico" />
+                    <a data="http://www.sciinfo.cn/">中国学术</a>
+                </li>
+                <li id="nenu">
+                    <img src="http://plagiarisma.net/favicon.ico" />
+                    <a data="http://primo.library.nenu.edu.cn/">东师外文</a>
+                </li>
+                <li id="duxiu">
+                    <img src="https://res.wx.qq.com/mpres/htmledition/images/favicon218877.ico" />
+                    <a data="http://www.duxiu.com/">读秀</a>
+                </li>
+                <li id="cam">
+                    <img src="http://ww2.sinaimg.cn/large/b1601727gw1eyzjkro1poj200g00g0fi.jpg" />
+                    <a data="https://www.repository.cam.ac.uk/discover">剑桥大学知识库</a>
+                </li>
+                <li id="ieee">
+                    <img src="http://ieeexplore.ieee.org/favicon.ico" />
+                    <a data="http://ieeexplore.ieee.org/Xplore/home.jsp">IEEE</a>
+                </li>
+                <li id="ust">
+                    <img src="http://repository.ust.hk/ir/themes/root/images/vufind-favicon.ico" />
+                    <a data="http://repository.ust.hk/ir/Search/">香港大学文献</a>
+                </li>
+            </ul>
+            <script type="text/javascript">
+    	var c = localStorage.content;
+    	if(c) {
+    		$("#foo")[0].innerHTML = c;
+    	}
+            </script>
+            <script src="http://7q5dsg.com1.z0.glb.clouddn.com/search/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script>$(".left-nav").mCustomScrollbar({theme:"minimal"});</script>
+        </div>
+        <div class="main">
+            <iframe id="engine" name="engine" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" style="background-color:#fff"></iframe>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="http://www.chongbuluo.com/" target="_blank">科布尔出品</a>
+        <span>&copy; 2013-2017 Chongbuluo</span>
+        <a href="http://www.miibeian.gov.cn/" target="_blank">陕ICP备14001577-5</a>
+        <a href="http://www.chongbuluo.org/" title="国内首个搜索向维基" target="_blank">科布尔维基</a>
+        <a href="http://www.giffox.com/" title="老司机导航" target="_blank">老司机导航</a>
+    </div>
+    <link href="http://7q5dsg.com1.z0.glb.clouddn.com/search/csshake.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/ui-dialog.css" />
+    <script src="http://7q5dsg.com1.z0.glb.clouddn.com/search/dialog-min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/messenger.css" />
+    <link rel="stylesheet" type="text/css" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/messenger-theme-ice.css" />
+    <script src="http://7q5dsg.com1.z0.glb.clouddn.com/search/messenger.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://scholar.chongbuluo.com/color.js"></script>
+    <script src="http://chong.qiniudn.com/js/chinese_convert.js"></script>
+    <!--放下偷刀(盗)，立地成佛-->
+    <!--今后凡以任何形式盗取或变相盗取本站程序者，我随即会直接将你本人的所有私人信息公开到网络上！2016.11.01虫子宣-->
+
+</body>
+</html>

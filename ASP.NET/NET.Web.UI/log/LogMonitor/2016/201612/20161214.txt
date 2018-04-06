@@ -1,0 +1,704 @@
+
+ 
+记录时间：2016-12-14 22:14:49,623 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-14 下午 10:14:48
+			结束时间：16-12-14 下午 10:14:49
+			总 时 间：1.5770729秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:15:07,169 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-14 下午 10:14:49
+			结束时间：16-12-14 下午 10:15:07
+			总 时 间：17.5146004秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:15:16,468 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：16-12-14 下午 10:15:14
+			结束时间：16-12-14 下午 10:15:16
+			总 时 间：2.3856618秒
+			Form表单数据：IP=36.149.6.17&Token=cd9ac6d51859492d9c850b0e89f8e956
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:15:16,483 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：16-12-14 下午 10:15:16
+			结束时间：16-12-14 下午 10:15:16
+			总 时 间：0.0156312秒
+			Form表单数据：IP=36.149.6.17&Token=cd9ac6d51859492d9c850b0e89f8e956
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:15:17,131 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：16-12-14 下午 10:15:16
+			结束时间：16-12-14 下午 10:15:17
+			总 时 间：0.44934秒
+			Form表单数据：IP=36.149.6.17&Token=cd9ac6d51859492d9c850b0e89f8e956&data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:15:17,131 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：16-12-14 下午 10:15:17
+			结束时间：16-12-14 下午 10:15:17
+			总 时 间：0秒
+			Form表单数据：IP=36.149.6.17&Token=cd9ac6d51859492d9c850b0e89f8e956&data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:16:18,897 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-14 下午 10:16:18
+			结束时间：16-12-14 下午 10:16:18
+			总 时 间：0.0010962秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:16:18,906 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-14 下午 10:16:18
+			结束时间：16-12-14 下午 10:16:18
+			总 时 间：0.0090052秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:17:12,530 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：16-12-14 下午 10:16:19
+			结束时间：16-12-14 下午 10:17:12
+			总 时 间：52.6403958秒
+			Form表单数据：IP=36.149.6.17&Token=0941220cae2644ce87f4df039f3b10be
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:17:12,530 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：16-12-14 下午 10:17:12
+			结束时间：16-12-14 下午 10:17:12
+			总 时 间：0秒
+			Form表单数据：IP=36.149.6.17&Token=0941220cae2644ce87f4df039f3b10be
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:17:17,250 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：16-12-14 下午 10:17:12
+			结束时间：16-12-14 下午 10:17:17
+			总 时 间：4.588122秒
+			Form表单数据：IP=36.149.6.17&Token=0941220cae2644ce87f4df039f3b10be&data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:17:17,250 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：16-12-14 下午 10:17:17
+			结束时间：16-12-14 下午 10:17:17
+			总 时 间：0秒
+			Form表单数据：IP=36.149.6.17&Token=0941220cae2644ce87f4df039f3b10be&data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:18:03,684 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-14 下午 10:18:03
+			结束时间：16-12-14 下午 10:18:03
+			总 时 间：6.26E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:18:03,697 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-14 下午 10:18:03
+			结束时间：16-12-14 下午 10:18:03
+			总 时 间：0.0120099秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:21:09,277 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：16-12-14 下午 10:18:04
+			结束时间：16-12-14 下午 10:21:09
+			总 时 间：184.7761174秒
+			Form表单数据：IP=36.149.6.17&Token=49d446ed88ac48b5a3f5f1787db9c517
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:21:09,308 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：16-12-14 下午 10:21:09
+			结束时间：16-12-14 下午 10:21:09
+			总 时 间：0秒
+			Form表单数据：IP=36.149.6.17&Token=49d446ed88ac48b5a3f5f1787db9c517
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:24:29,697 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-14 下午 10:24:29
+			结束时间：16-12-14 下午 10:24:29
+			总 时 间：0.6084662秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:24:35,937 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-14 下午 10:24:29
+			结束时间：16-12-14 下午 10:24:35
+			总 时 间：6.1981063秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:36:25,974 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-14 下午 10:36:24
+			结束时间：16-12-14 下午 10:36:25
+			总 时 间：1.1737971秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:36:25,975 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-14 下午 10:36:24
+			结束时间：16-12-14 下午 10:36:25
+			总 时 间：1.1737971秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:36:33,625 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-14 下午 10:36:26
+			结束时间：16-12-14 下午 10:36:33
+			总 时 间：7.6050398秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:36:33,626 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-14 下午 10:36:26
+			结束时间：16-12-14 下午 10:36:33
+			总 时 间：7.6060369秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:36:38,284 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：16-12-14 下午 10:36:36
+			结束时间：16-12-14 下午 10:36:38
+			总 时 间：2.0985575秒
+			Form表单数据：IP=36.149.134.17&Token=c5ddc3a41ec44373a26bb8aaa4abe0a0
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:36:38,300 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：16-12-14 下午 10:36:38
+			结束时间：16-12-14 下午 10:36:38
+			总 时 间：0.0156253秒
+			Form表单数据：IP=36.149.134.17&Token=c5ddc3a41ec44373a26bb8aaa4abe0a0
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:36:38,450 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：16-12-14 下午 10:36:36
+			结束时间：16-12-14 下午 10:36:38
+			总 时 间：1.6621239秒
+			Form表单数据：IP=36.149.134.17&Token=f3e6d5530e154a74800424907a846dfe
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:36:38,451 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：16-12-14 下午 10:36:38
+			结束时间：16-12-14 下午 10:36:38
+			总 时 间：0秒
+			Form表单数据：IP=36.149.134.17&Token=f3e6d5530e154a74800424907a846dfe
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:37:55,063 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-14 下午 10:37:55
+			结束时间：16-12-14 下午 10:37:55
+			总 时 间：9.19E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:38:15,838 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-14 下午 10:37:55
+			结束时间：16-12-14 下午 10:38:15
+			总 时 间：20.7747593秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:38:17,765 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：16-12-14 下午 10:38:17
+			结束时间：16-12-14 下午 10:38:17
+			总 时 间：0.2032266秒
+			Form表单数据：IP=36.149.134.17&Token=031a3e14e37d44f29998102ecf2748f7
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:38:17,765 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：16-12-14 下午 10:38:17
+			结束时间：16-12-14 下午 10:38:17
+			总 时 间：0秒
+			Form表单数据：IP=36.149.134.17&Token=031a3e14e37d44f29998102ecf2748f7
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:39:31,656 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-14 下午 10:39:31
+			结束时间：16-12-14 下午 10:39:31
+			总 时 间：2E-07秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:39:45,739 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-14 下午 10:39:31
+			结束时间：16-12-14 下午 10:39:45
+			总 时 间：14.0833325秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:39:47,353 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：16-12-14 下午 10:39:47
+			结束时间：16-12-14 下午 10:39:47
+			总 时 间：0.0610986秒
+			Form表单数据：IP=36.149.134.17&Token=7f8da748866f4d71919a28152ec68710
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:39:47,353 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：16-12-14 下午 10:39:47
+			结束时间：16-12-14 下午 10:39:47
+			总 时 间：0秒
+			Form表单数据：IP=36.149.134.17&Token=7f8da748866f4d71919a28152ec68710
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:43:08,916 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-14 下午 10:43:08
+			结束时间：16-12-14 下午 10:43:08
+			总 时 间：6.72E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:43:33,051 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-14 下午 10:43:08
+			结束时间：16-12-14 下午 10:43:33
+			总 时 间：24.1349817秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:43:34,918 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：16-12-14 下午 10:43:34
+			结束时间：16-12-14 下午 10:43:34
+			总 时 间：0.9086853秒
+			Form表单数据：IP=36.149.6.17&Token=db725b319841461a84544acf0e3a6715
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:43:34,919 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：16-12-14 下午 10:43:34
+			结束时间：16-12-14 下午 10:43:34
+			总 时 间：0秒
+			Form表单数据：IP=36.149.6.17&Token=db725b319841461a84544acf0e3a6715
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:43:35,564 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：16-12-14 下午 10:43:35
+			结束时间：16-12-14 下午 10:43:35
+			总 时 间：0.3713134秒
+			Form表单数据：IP=36.149.6.17&Token=db725b319841461a84544acf0e3a6715&data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:43:35,564 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：16-12-14 下午 10:43:35
+			结束时间：16-12-14 下午 10:43:35
+			总 时 间：0秒
+			Form表单数据：IP=36.149.6.17&Token=db725b319841461a84544acf0e3a6715&data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:43:40,397 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-14 下午 10:43:40
+			结束时间：16-12-14 下午 10:43:40
+			总 时 间：1.59E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:44:02,912 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-14 下午 10:43:40
+			结束时间：16-12-14 下午 10:44:02
+			总 时 间：22.514915秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:44:04,369 
+线程ID:[24] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：16-12-14 下午 10:44:04
+			结束时间：16-12-14 下午 10:44:04
+			总 时 间：0.0730935秒
+			Form表单数据：IP=36.149.6.17&Token=8badd8d9f80e4566854f9e7000b09d18
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-14 22:44:04,369 
+线程ID:[24] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：16-12-14 下午 10:44:04
+			结束时间：16-12-14 下午 10:44:04
+			总 时 间：0秒
+			Form表单数据：IP=36.149.6.17&Token=8badd8d9f80e4566854f9e7000b09d18
+			URL参数：
+					
+ 

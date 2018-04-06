@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=ASP.NET Core开发-读取配置文件Configuration>
+    <meta name="keywords" content=ASP.NET Core 是如何读取配置文件，今天我们来学习。ASP.NET Core的配置系统已经和之前版本的ASP.NET有所不同了，之前是依赖于System.Configuration和XML配置文件web.config。新的配置系统支持多种格式的配置文件。下面我们来以json 格式的配置文件正式开始学习。我们新建一个ASP.NET Core Web 应用程序，选择无身份验证。读取配置文件在>
+    <title>ASP.NET Core开发-读取配置文件Configuration</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/B8C0509A-82D4-4BD7-A1BB-5BAF70ED1C60.html' title='.NET'>.NET</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>ASP.NET Core开发-读取配置文件Configuration</h1>
+                        <pre>
+                        <code>
+                            <p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">ASP.NET Core 是如何读取配置文件，今天我们来学习。</p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">ASP.NET Core的配置系统已经和之前版本的ASP.NET有所不同了，之前是依赖于System.Configuration和XML配置文件web.config。</p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">新的配置系统支持多种格式的配置文件。</p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">下面我们来以json 格式的配置文件正式开始学习。</p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;</p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">我们新建一个ASP.NET Core Web 应用程序，选择无身份验证。</p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J28212515-247.png" alt=""/><span style="margin: 0px; padding: 0px; line-height: 1.5;">&nbsp;</span></p><h2 style="margin: 15px auto 2px; padding: 0px; font-size: 21px; font-family: 微软雅黑, 宋体; white-space: normal; background-color: rgb(255, 255, 255);">读取配置文件</h2><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">在项目目录下有个&nbsp;appsettings.json ，我们先来操作这个文件。</p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">在appsettings.json 添加如下两个节点。</p><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J28212515-746.gif" alt="复制代码"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &quot;Courier New&quot; !important;">{&nbsp;
+&nbsp;&quot;Data&quot;:&nbsp;&quot;LineZero&quot;,&nbsp;&nbsp;
+&nbsp;&quot;ConnectionStrings&quot;:&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;DefaultConnection&quot;:&nbsp;&quot;数据库1&quot;,&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;DevConnection&quot;:&nbsp;&quot;数据库2&quot;
+&nbsp;&nbsp;},&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&quot;Logging&quot;:&nbsp;
+&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;IncludeScopes&quot;:&nbsp;false,&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;LogLevel&quot;:&nbsp;
+&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;Default&quot;:&nbsp;&quot;Debug&quot;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;System&quot;:&nbsp;&quot;Information&quot;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;Microsoft&quot;:&nbsp;&quot;Information&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;}
+}</pre><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J28212515-746.gif" alt="复制代码"/></a></span></p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">下面我们来读取。由于项目默认已经将该文件加入ConfigurationBuilder 之中，所以我们可以直接来读取。</p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">在&nbsp;Configure 方法中读取：</p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &quot;Courier New&quot; !important;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;void&nbsp;Configure(IApplicationBuilder&nbsp;app,&nbsp;IHostingEnvironment&nbsp;env,&nbsp;ILoggerFactory&nbsp;loggerFactory)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;data&nbsp;=&nbsp;Configuration[&quot;Data&quot;];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//两种方式读取
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;defaultcon&nbsp;=&nbsp;Configuration.GetConnectionString(&quot;DefaultConnection&quot;);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;devcon&nbsp;=&nbsp;Configuration[&quot;ConnectionStrings:DevConnection&quot;];
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</pre><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J28212515-520.png" alt=""/></p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">调试程序，可以看到数据成功取出。</p><h2 style="margin: 15px auto 2px; padding: 0px; font-size: 21px; font-family: 微软雅黑, 宋体; white-space: normal; background-color: rgb(255, 255, 255);">多环境区分</h2><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">我们复制一个appsettings.json 然后重命名为&nbsp;appsettings.Development.json</p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">更改appsettings.Development.json 如下：</p><p><br/></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &quot;Courier New&quot; !important;">{&nbsp;&nbsp;
+&quot;Data&quot;:&nbsp;&quot;LineZero&nbsp;Development&quot;,&nbsp;&nbsp;
+&quot;ConnectionStrings&quot;:&nbsp;
+&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;DefaultConnection&quot;:&nbsp;&quot;开发数据库1&quot;,&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;DevConnection&quot;:&nbsp;&quot;开发数据库2&quot;
+&nbsp;&nbsp;},&nbsp;&nbsp;
+&nbsp;&quot;Logging&quot;:&nbsp;
+&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&quot;IncludeScopes&quot;:&nbsp;false,&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&quot;LogLevel&quot;:&nbsp;
+&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&quot;Default&quot;:&nbsp;&quot;Debug&quot;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&quot;System&quot;:&nbsp;&quot;Information&quot;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&quot;Microsoft&quot;:&nbsp;&quot;Information&quot;
+&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;}
+}</pre><p><br/></p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">然后我们调试程序，你会发现获取到的值变成了Development.json 里的值。</p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J28212515-645.png" alt=""/></p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">这里就是多环境配置。</p><p><br/></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &quot;Courier New&quot; !important;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;Startup(IHostingEnvironment&nbsp;env)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;builder&nbsp;=&nbsp;new&nbsp;ConfigurationBuilder()
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.SetBasePath(env.ContentRootPath)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.AddJsonFile(&quot;appsettings.json&quot;,&nbsp;optional:&nbsp;true,&nbsp;reloadOnChange:&nbsp;true)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.AddJsonFile($&quot;appsettings.{env.EnvironmentName}.json&quot;,&nbsp;optional:&nbsp;true)//增加环境配置文件，新建项目默认有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.AddEnvironmentVariables();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Configuration&nbsp;=&nbsp;builder.Build();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</pre><p><br/></p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">如果我们直接执行读取到的就是appsettings.json 的值，因为直接执行时是 Production 环境。</p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">下面是输出图：</p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">调试时：</p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J28212516-165.png" alt=""/></p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">dotnet run 时：</p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J28212516-341.png" alt=""/></p><h2 style="margin: 15px auto 2px; padding: 0px; font-size: 21px; font-family: 微软雅黑, 宋体; white-space: normal; background-color: rgb(255, 255, 255);">对象读取</h2><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">我们在appsettings.json 及&nbsp;Development.json 都添加一个&nbsp;SiteConfig 节点。</p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &quot;Courier New&quot; !important;">&nbsp;&nbsp;&quot;SiteConfig&quot;:&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&quot;Name&quot;:&nbsp;&quot;LineZero&#39;s&nbsp;Blog&quot;,&nbsp;&nbsp;&nbsp;&nbsp;&quot;Info&quot;:&nbsp;&quot;ASP.NET&nbsp;Core&nbsp;开发及跨平台，配置文件读取&quot;
+&nbsp;&nbsp;},</pre><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">然后新建一个SiteConfig&nbsp;类。</p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &quot;Courier New&quot; !important;">&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;class&nbsp;SiteConfig
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;string&nbsp;Name&nbsp;{&nbsp;get;&nbsp;set;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;string&nbsp;Info&nbsp;{&nbsp;get;&nbsp;set;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;}</pre><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;</p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">首先在&nbsp;ConfigureServices 中添加Options 及对应配置。</p><p><br/></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &quot;Courier New&quot; !important;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;void&nbsp;ConfigureServices(IServiceCollection&nbsp;services)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Add&nbsp;framework&nbsp;services.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;services.AddMvc();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//添加options&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;services.AddOptions();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;services.Configure&lt;SiteConfig&gt;(Configuration.GetSection(&quot;SiteConfig&quot;));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</pre><p><br/></p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;</p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">然后我们在 Controller 中读取。</p><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J28212515-746.gif" alt="复制代码"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &quot;Courier New&quot; !important;">&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;class&nbsp;HomeController&nbsp;:&nbsp;Controller
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;SiteConfig&nbsp;Config;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;HomeController(IOptions&lt;SiteConfig&gt;&nbsp;option)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Config&nbsp;=&nbsp;option.Value;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;IActionResult&nbsp;Index()
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;View(Config);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;}</pre><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 0px; text-decoration: underline; border: none !important;"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J28212515-746.gif" alt="复制代码"/></a></span></p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">对应View Index.cshtml</p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &quot;Courier New&quot; !important;">@model&nbsp;SiteConfig
+@{
+&nbsp;&nbsp;&nbsp;&nbsp;ViewData[&quot;Title&quot;]&nbsp;=&nbsp;Model.Name;
+}
+&lt;h1&gt;@Model.Name&lt;/h1&gt;
+&lt;h2&gt;@Model.Info&lt;/h2&gt;</pre><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;</p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);">执行程序&nbsp;http://localhost:5000/</p><p style="margin: 10px auto; padding: 0px; font-family: 微软雅黑, 宋体; font-size: 14px; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);"><img src="/Content/Content/Content/Content/../../../../upload/image/201608/J28212516-388.png" alt=""/></p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

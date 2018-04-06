@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "HtmlRunTest";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Html & JavaScript 测试</h2>
+
+<div class="row">
+    <div class="col-xs-12">
+        <textarea id="HtmlRunTest1987" style="height:300px;width:100%"></textarea>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="juzhong">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-group-lg btn-primary btn-lg" id="BtnHtmlrun" style="width:500px">运行代码</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/js/jquery-1.9.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#BtnHtmlrun").click(function () {
+            OpenWindow = window.open("Kebue.com", "Tony.Jiang");
+            OpenWindow.document.write($("#HtmlRunTest1987").val())
+            OpenWindow.document.close()
+        })
+    });
+</script>

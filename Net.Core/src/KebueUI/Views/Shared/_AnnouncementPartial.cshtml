@@ -1,0 +1,14 @@
+﻿@using Model;
+@{
+    var data = ViewData["Announcement"];
+    if (data != null)
+    {
+        <div class="fade in thisclosediv">
+            <button type="button" class="close" data-dismiss="alert" onclick="thisclosediv()">&times;</button>
+            <marquee direction="up" truespeed="truespeed" behavior="scroll" onmouseover=this.stop() onmouseout=this.start() scrollamount=1 style="color:red;font-size:24px">
+                @data.ToString();
+            </marquee>
+        </div>
+    }
+}
+

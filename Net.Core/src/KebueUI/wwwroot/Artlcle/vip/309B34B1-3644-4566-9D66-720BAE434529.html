@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=服务器调用JS>
+    <meta name="keywords" content=服务器调用JS服务器控件调用JS一、两类JS的触发设计1.提交之前的JS -- 加js的事件例：script language=javascript// 构造函数function test(){alert(abcdefg);return true;}/script// 添加点击事件，点击按钮后调用test 返回值，如果获得Faluse 则不执行C#代码 ；true 执行代码；asp:Button >
+    <title>服务器调用JS</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/9D69FD3D-028F-4239-89F1-BAC91B1DFF4A.html' title='JavaScript'>JavaScript</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>服务器调用JS</h1>
+                        <pre>
+                        <code>
+                            <h1 style="white-space: normal; widows: auto; color: rgb(51, 51, 51); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 400; line-height: 1.8; background-color: rgb(255, 255, 255);"><a href="http://www.cnblogs.com/woniu-net/p/4724556.html" style="background-color: inherit; cursor: pointer; color: rgb(51, 51, 51);">服务器调用JS</a></h1><p style="background-color: inherit;">服务器控件调用JS<br style="background-color: inherit;"/>一、两类JS的触发设计<br style="background-color: inherit;"/>1.提交之前的JS -- 加js的事件<br style="background-color: inherit;"/>例：<br style="background-color: inherit;"/>&lt;script language=&quot;javascript&quot;&gt;<br style="background-color: inherit;"/>// 构造函数<br style="background-color: inherit;"/>function test()<br style="background-color: inherit;"/>{<br style="background-color: inherit;"/>alert(&quot;abcdefg&quot;);<br style="background-color: inherit;"/>return true;<br style="background-color: inherit;"/>}<br style="background-color: inherit;"/>&lt;/script&gt;</p><p style="background-color: inherit;">// 添加点击事件，点击按钮后调用test 返回值，如果获得Faluse 则不执行C#代码 ；true 执行代码；<br style="background-color: inherit;"/>&lt;asp:Button ID=&quot;Button1&quot; runat=&quot;server&quot; OnClientClick=&quot;return test();&quot; Text=&quot;Button&quot; OnClick=&quot;Button1_Click&quot; /&gt;</p><p style="background-color: inherit;">C#代码：<br style="background-color: inherit;"/><br style="background-color: inherit;"/>2.提交之后 的JS -- 用C#代码向页面上写&lt;script&gt;..&lt;/script&gt;<br style="background-color: inherit;"/>在aspx 页面添加 Literal 控件<span style="background-color: inherit;">&nbsp;</span><br style="background-color: inherit;"/>在cs 页面：<br style="background-color: inherit;"/>Label1.Text = DateTime.Now.ToString();<br style="background-color: inherit;"/>// literal 控件用于页面输出。其内容是可以编程的<br style="background-color: inherit;"/>Literal1.Text = &quot;&lt;script language=javascript&gt;alert(&#39;&quot; + DateTime.Now.ToString() + &quot;正确吗？&#39;)&lt;/script&gt;&quot;;<br style="background-color: inherit;"/>可以实现点击按钮前后弹出提示信息；</p><p style="background-color: inherit;"><br style="background-color: inherit;"/>二、除了Button之外的其它控件如何触发JS？（其他控件没有Onclick 事件）<br style="background-color: inherit;"/>要点思想：<br style="background-color: inherit;"/>1.直接在服务端控件的HTML代码中加上JS的事件。<br style="background-color: inherit;"/>2.在C#代码界面中的PageLoad中，使用“控件名.Attributes.Add(&quot;键&quot;,&quot;值&quot;);”</p><p style="background-color: inherit;">例子：效果：点击前提示（“请输入姓名”） 输入后不提示 。输入值直接传给Label文本框；<br style="background-color: inherit;"/>★★★★★★★★★★★★控件：TEXTBOX★★★★★★★★★★★★★★<br style="background-color: inherit;"/>HTML 知识点：<br style="background-color: inherit;"/>// document - HTML 文档 getElementById(&quot;to&quot;) - 其中的 id=&quot;to&quot; 的 HTML 元素<span style="background-color: inherit;">&nbsp;</span><br style="background-color: inherit;"/>// innerHTML - HTML 元素的内部文本<span style="background-color: inherit;">&nbsp;</span><br style="background-color: inherit;"/>document.getElementById(&quot;to&quot;).innerHTML=</p><p style="background-color: inherit;">代码：<br style="background-color: inherit;"/>1 添加TEXTBox 控件后，在aspx 中添加Onblur（失去焦点后触发） 事件，<br style="background-color: inherit;"/>&lt;asp:TextBox ID=&quot;TextBox1&quot; onfocus=&quot;this.value=&#39;&#39;;&quot; onblur=&quot;document.getElementById(&#39;Label1&#39;).innerHTML=this.value;&quot; runat=&quot;server&quot; Height=&quot;47px&quot;&gt;必填&lt;/asp:TextBox&gt;<br style="background-color: inherit;"/>★★★★★★失去焦点触发事件★★★★★★ onblur=&quot;document.getElementById(&#39;Label1&#39;).innerHTML=this.value;&quot;</p><p style="background-color: inherit;">★★★★★★★★★★★Label★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★<br style="background-color: inherit;"/>效果：添加点击事件，点击后弹出”你好“提示<br style="background-color: inherit;"/>代码：&lt;asp:Label ID=&quot;Label2&quot; runat=&quot;server&quot; onclick=&quot;alert(&#39;你好！&#39;);&quot; Text=&quot;Label&quot;&gt;&lt;/asp:Label&gt;</p><p style="background-color: inherit;">★★★★★★★★★★★ RadioButten★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★<br style="background-color: inherit;"/>效果： 点击“同意” “下一步” 点击”不同意“ “下一步不可用”<span style="background-color: inherit;">&nbsp;</span><br style="background-color: inherit;"/>知识点补充：<br style="background-color: inherit;"/>setAttribute() 方法用于改变属性的值<br style="background-color: inherit;"/>removeAttribute() 方法删除指定属性。</p><p style="background-color: inherit;">&lt;asp:RadioButton ID=&quot;RadioButton1&quot; runat=&quot;server&quot; onclick=&quot;document.getElementById(&#39;Button2&#39;).removeAttribute(&#39;disabled&#39;)&quot; GroupName=&quot;q&quot; OnCheckedChanged=&quot;RadioButton1_CheckedChanged&quot; Text=&quot;同意&quot; /&gt;<br style="background-color: inherit;"/>&lt;asp:RadioButton ID=&quot;RadioButton2&quot; runat=&quot;server&quot; onclick=&quot;document.getElementById(&#39;Button2&#39;).setAttribute(&#39;disabled&#39;,&#39;disabled&#39;)&quot; Checked=&quot;True&quot; GroupName=&quot;q&quot; Text=&quot;不同意&quot; /&gt;</p><p style="background-color: inherit;">&nbsp;</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

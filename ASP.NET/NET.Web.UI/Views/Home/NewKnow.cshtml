@@ -1,0 +1,68 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="icon" href="http://www.kebue.com//images/kebue.ico">
+    <meta name="Title" content="科布尔，科技社区,知识分享">
+    <title>机器人 科布尔</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Content/layer-v3.0.1/layer/layer.js"></script>
+    <link href="~/Content/Turing/css/turing.css" rel="stylesheet" />
+</head>
+<body class="gradient">
+    <div class="container">
+        <form class="form-horizontal" role="form" id="fmNewKnow">
+            <div class="form-group">
+                <label for="firstname" class="col-sm-2 control-label">知识库问题名字：<i class="glyphicon glyphicon-asterisk text-danger"></i></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="KnowName" required="required" placeholder="请输入问题名字，">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastname" class="col-sm-2 control-label">知识库答案：<i class="glyphicon glyphicon-asterisk text-danger"></i></label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" rows="10" id="KnowAnswer" required="required" placeholder="请言简一概输入答案"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="firstname" class="col-sm-2 control-label">知识库答案类型：<i class="glyphicon glyphicon-asterisk text-danger"></i></label>
+                <div class="col-sm-10">
+                    <select class="form-control input-lg" id="KnowType">
+                        <option value="555001">普通文本类型</option>
+                        <option value="555002">代码&脚本类型</option>
+                        <option value="555003">按钮链接类型</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input type="button" class="btn btn-lg btn-primary" id="btnNewKnow" style="width:100%" value="提交" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <a href="http://kebue.com/" title="科布尔，科技社区,知识分享"><i class="glyphicon glyphicon-home"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    @Html.ActionLink("返回智能问答窗口", "Chat"); &nbsp;&nbsp;&nbsp;
+                    @Html.ActionLink("机器人后台控制中心", "NewKnowList")
+                    <hr />
+                </div>
+            </div>
+        </form>
+        <input type="hidden" id="hidip" />
+        <input type="hidden" id="hidClientAddress" />
+        <input type="hidden" id="hidip" />
+        <input type="hidden" id="hidip" />
+
+    </div>
+    <script src="~/Content/Turing/js/Know.js"></script>
+</body>
+</html>

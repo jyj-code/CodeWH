@@ -1,0 +1,9 @@
+
+ 
+记录时间：2016-12-13 22:04:37,651 
+线程ID:[12] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=36.149.6.2Type=PC
+{"content":{"Pois":null,"address_component":{"City":"苏州市","Country":"中国","District":"吴中区","Province":"江苏省","Street":"星华街","Street_Number":"","admin_area_code":"320506"},"confidence":"0.2","formatted_address":"江苏省苏州市吴中区星华街","location":{"City":null,"Country":null,"District":null,"Province":null,"Street":null,"Street_Number":null,"Ip":null,"Lat":"3654569.0","Lng":"13444958.0"},"locid":"999408f62c1ca21f1d84a31f52b930f7","radius":"68670"},"result":{"error":"161","loc_time":"2016-12-13 22:04:33"}}
+ 

@@ -1,0 +1,602 @@
+
+ 
+记录时间：2018-04-06 11:27:10,141 
+线程ID:[12] 
+日志级别：  ERROR 
+错误描述：
+RequestServices_Task
+发生异常
+发生时间2018-04-06 11:27:10
+本次共用时：0
+异常讯息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.DataAccessLayer.Common.SqlMapper.Identity..ctor(String sql, Nullable`1 commandType, IDbConnection connection, Type type, Type parametersType, Type[] otherTypes) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 378
+   在 NET.DataAccessLayer.Common.SqlMapper.<QueryInternal>d__31`1.MoveNext() 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 685
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 NET.DataAccessLayer.Common.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 647
+   在 DataBase.DBHelper.ReadCollection[T](String sql, DynamicParameters p) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 21
+   在 NET.DataAccessLayer.Base`1.Find(T entity, Int32 findId) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 189
+   在 NET.BusinessRule.Base`1.Find(T t, Int32 findId) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 47
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServeicesResponse(RequestParam param, UserInfoUnDeteil& userinfoundeteil) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 59
+   在 NET.Web.UI.Models.RequestServicesBase.<>c__DisplayClass4_0.<RequestServicesRecording>b__0() 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch(Action input) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 166
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServicesRecording(RequestParam param) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch[T1](Action`1 func, T1 t1) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 205
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices_Task(RequestParam param) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 247
+请求参数是 ：{"Data":"{\"ret\":1,\"start\":-1,\"end\":-1,\"country\":\"中国\",\"province\":\"浙江\",\"city\":\"杭州\",\"district\":\"\",\"isp\":\"\",\"type\":\"\",\"desc\":\"\"}","Ip":"112.10.94.220","ModelType":null,"Token":"7252920027a0437aabc97fcdfbd00651","UserAgent":"Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/64.0.3282.186 Safari\/537.36","WaitHandle":null}
+ 
+
+ 
+记录时间：2018-04-06 11:28:10,675 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：
+RequestServices_Task
+发生异常
+发生时间2018-04-06 11:28:10
+本次共用时：0
+异常讯息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.DataAccessLayer.Common.SqlMapper.Identity..ctor(String sql, Nullable`1 commandType, IDbConnection connection, Type type, Type parametersType, Type[] otherTypes) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 378
+   在 NET.DataAccessLayer.Common.SqlMapper.<QueryInternal>d__31`1.MoveNext() 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 685
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 NET.DataAccessLayer.Common.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 647
+   在 DataBase.DBHelper.ReadCollection[T](String sql, DynamicParameters p) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 21
+   在 NET.DataAccessLayer.Base`1.Find(T entity, Int32 findId) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 189
+   在 NET.BusinessRule.Base`1.Find(T t, Int32 findId) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 47
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServeicesResponse(RequestParam param, UserInfoUnDeteil& userinfoundeteil) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 59
+   在 NET.Web.UI.Models.RequestServicesBase.<>c__DisplayClass4_0.<RequestServicesRecording>b__0() 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch(Action input) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 166
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServicesRecording(RequestParam param) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch[T1](Action`1 func, T1 t1) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 205
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices_Task(RequestParam param) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 247
+请求参数是 ：{"Data":"{\"ret\":1,\"start\":-1,\"end\":-1,\"country\":\"中国\",\"province\":\"浙江\",\"city\":\"杭州\",\"district\":\"\",\"isp\":\"\",\"type\":\"\",\"desc\":\"\"}","Ip":"112.10.94.220","ModelType":null,"Token":"66ffd3f2edad4b63b86e2b1da0a26c41","UserAgent":"Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/64.0.3282.186 Safari\/537.36","WaitHandle":null}
+ 
+
+ 
+记录时间：2018-04-06 11:29:08,370 
+线程ID:[5] 
+日志级别：  ERROR 
+错误描述：
+RequestServices_Task
+发生异常
+发生时间2018-04-06 11:29:08
+本次共用时：0
+异常讯息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.DataAccessLayer.Common.SqlMapper.Identity..ctor(String sql, Nullable`1 commandType, IDbConnection connection, Type type, Type parametersType, Type[] otherTypes) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 378
+   在 NET.DataAccessLayer.Common.SqlMapper.<QueryInternal>d__31`1.MoveNext() 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 685
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 NET.DataAccessLayer.Common.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 647
+   在 DataBase.DBHelper.ReadCollection[T](String sql, DynamicParameters p) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 21
+   在 NET.DataAccessLayer.Base`1.Find(T entity, Int32 findId) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 189
+   在 NET.BusinessRule.Base`1.Find(T t, Int32 findId) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 47
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServeicesResponse(RequestParam param, UserInfoUnDeteil& userinfoundeteil) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 59
+   在 NET.Web.UI.Models.RequestServicesBase.<>c__DisplayClass4_0.<RequestServicesRecording>b__0() 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch(Action input) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 166
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServicesRecording(RequestParam param) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch[T1](Action`1 func, T1 t1) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 205
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices_Task(RequestParam param) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 247
+请求参数是 ：{"Data":"{\"ret\":1,\"start\":-1,\"end\":-1,\"country\":\"中国\",\"province\":\"浙江\",\"city\":\"杭州\",\"district\":\"\",\"isp\":\"\",\"type\":\"\",\"desc\":\"\"}","Ip":"112.10.94.220","ModelType":null,"Token":"a617dea9044e402dae7acf6f98c2ed4d","UserAgent":"Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/64.0.3282.186 Safari\/537.36","WaitHandle":null}
+ 
+
+ 
+记录时间：2018-04-06 11:31:39,540 
+线程ID:[6] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[CharSession] 时产生异常
+ 
+System.IO.DirectoryNotFoundException: 未能找到路径“E:/工作室/新项目/CodeWH/DatabaseFile\\log”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalCreateDirectory(String fullPath, String path, Object dirSecurityObj, Boolean checkHost)
+   在 System.IO.Directory.InternalCreateDirectoryHelper(String path, Boolean checkHost)
+   在 System.IO.Directory.CreateDirectory(String path)
+   在 UI.Models.FileOperations.WriteLog(String UserId, String message, String session, String Client_IpAddress)
+   在 NET.Web.UI.Controllers.HomeController.CharSession(String message, String key, String s_ip)
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+
+ 
+记录时间：2018-04-06 11:34:47,133 
+线程ID:[5] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[CharSession] 时产生异常
+ 
+System.IO.DirectoryNotFoundException: 未能找到路径“E:/工作室/新项目/CodeWH/DatabaseFile\\log”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalCreateDirectory(String fullPath, String path, Object dirSecurityObj, Boolean checkHost)
+   在 System.IO.Directory.InternalCreateDirectoryHelper(String path, Boolean checkHost)
+   在 System.IO.Directory.CreateDirectory(String path)
+   在 UI.Models.FileOperations.WriteLog(String UserId, String message, String session, String Client_IpAddress)
+   在 NET.Web.UI.Controllers.HomeController.CharSession(String message, String key, String s_ip)
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-04-06 11:38:04,392 
+线程ID:[6] 
+日志级别：  ERROR 
+错误描述：
+RequestServices_Task
+发生异常
+发生时间2018-04-06 11:38:04
+本次共用时：0
+异常讯息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.DataAccessLayer.Common.SqlMapper.Identity..ctor(String sql, Nullable`1 commandType, IDbConnection connection, Type type, Type parametersType, Type[] otherTypes) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 378
+   在 NET.DataAccessLayer.Common.SqlMapper.<QueryInternal>d__31`1.MoveNext() 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 685
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 NET.DataAccessLayer.Common.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 647
+   在 DataBase.DBHelper.ReadCollection[T](String sql, DynamicParameters p) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 21
+   在 NET.DataAccessLayer.Base`1.Find(T entity, Int32 findId) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 189
+   在 NET.BusinessRule.Base`1.Find(T t, Int32 findId) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 47
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServeicesResponse(RequestParam param, UserInfoUnDeteil& userinfoundeteil) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 59
+   在 NET.Web.UI.Models.RequestServicesBase.<>c__DisplayClass4_0.<RequestServicesRecording>b__0() 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch(Action input) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 166
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServicesRecording(RequestParam param) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch[T1](Action`1 func, T1 t1) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 205
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices_Task(RequestParam param) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 247
+请求参数是 ：{"Data":"{\"ret\":1,\"start\":-1,\"end\":-1,\"country\":\"中国\",\"province\":\"浙江\",\"city\":\"杭州\",\"district\":\"\",\"isp\":\"\",\"type\":\"\",\"desc\":\"\"}","Ip":"112.10.94.220","ModelType":null,"Token":"da3ee9f7a78c4a7ba2add2673418d10d","UserAgent":"Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/64.0.3282.186 Safari\/537.36","WaitHandle":null}
+ 
+
+ 
+记录时间：2018-04-06 11:44:11,679 
+线程ID:[20] 
+日志级别：  ERROR 
+错误描述：
+RequestServices_Task
+发生异常
+发生时间2018-04-06 11:44:11
+本次共用时：0
+异常讯息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.DataAccessLayer.Common.SqlMapper.Identity..ctor(String sql, Nullable`1 commandType, IDbConnection connection, Type type, Type parametersType, Type[] otherTypes) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 378
+   在 NET.DataAccessLayer.Common.SqlMapper.<QueryInternal>d__31`1.MoveNext() 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 685
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 NET.DataAccessLayer.Common.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 647
+   在 DataBase.DBHelper.ReadCollection[T](String sql, DynamicParameters p) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 21
+   在 NET.DataAccessLayer.Base`1.Find(T entity, Int32 findId) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 189
+   在 NET.BusinessRule.Base`1.Find(T t, Int32 findId) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 47
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServeicesResponse(RequestParam param, UserInfoUnDeteil& userinfoundeteil) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 59
+   在 NET.Web.UI.Models.RequestServicesBase.<>c__DisplayClass4_0.<RequestServicesRecording>b__0() 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch(Action input) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 166
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServicesRecording(RequestParam param) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch[T1](Action`1 func, T1 t1) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 205
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices_Task(RequestParam param) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 247
+请求参数是 ：{"Data":"{\"ret\":1,\"start\":-1,\"end\":-1,\"country\":\"中国\",\"province\":\"浙江\",\"city\":\"杭州\",\"district\":\"\",\"isp\":\"\",\"type\":\"\",\"desc\":\"\"}","Ip":"112.10.94.220","ModelType":null,"Token":"54030fce74274351a67896510ee38405","UserAgent":"Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/64.0.3282.186 Safari\/537.36","WaitHandle":null}
+ 
+
+ 
+记录时间：2018-04-06 11:46:17,506 
+线程ID:[29] 
+日志级别：  ERROR 
+错误描述：
+RequestServices_Task
+发生异常
+发生时间2018-04-06 11:46:17
+本次共用时：0
+异常讯息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.DataAccessLayer.Common.SqlMapper.Identity..ctor(String sql, Nullable`1 commandType, IDbConnection connection, Type type, Type parametersType, Type[] otherTypes) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 378
+   在 NET.DataAccessLayer.Common.SqlMapper.<QueryInternal>d__31`1.MoveNext() 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 685
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 NET.DataAccessLayer.Common.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 647
+   在 DataBase.DBHelper.ReadCollection[T](String sql, DynamicParameters p) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 21
+   在 NET.DataAccessLayer.Base`1.Find(T entity, Int32 findId) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 189
+   在 NET.BusinessRule.Base`1.Find(T t, Int32 findId) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 47
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServeicesResponse(RequestParam param, UserInfoUnDeteil& userinfoundeteil) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 59
+   在 NET.Web.UI.Models.RequestServicesBase.<>c__DisplayClass4_0.<RequestServicesRecording>b__0() 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch(Action input) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 166
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServicesRecording(RequestParam param) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch[T1](Action`1 func, T1 t1) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 205
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices_Task(RequestParam param) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 247
+请求参数是 ：{"Data":"{\"ret\":1,\"start\":-1,\"end\":-1,\"country\":\"中国\",\"province\":\"浙江\",\"city\":\"杭州\",\"district\":\"\",\"isp\":\"\",\"type\":\"\",\"desc\":\"\"}","Ip":"112.10.94.220","ModelType":null,"Token":"6b00dfab482a403981ebf0739a158c0d","UserAgent":"Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/64.0.3282.186 Safari\/537.36","WaitHandle":null}
+ 
+
+ 
+记录时间：2018-04-06 11:48:25,082 
+线程ID:[32] 
+日志级别：  ERROR 
+错误描述：
+RequestServices_Task
+发生异常
+发生时间2018-04-06 11:48:25
+本次共用时：0
+异常讯息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.DataAccessLayer.Common.SqlMapper.Identity..ctor(String sql, Nullable`1 commandType, IDbConnection connection, Type type, Type parametersType, Type[] otherTypes) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 378
+   在 NET.DataAccessLayer.Common.SqlMapper.<QueryInternal>d__31`1.MoveNext() 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 685
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 NET.DataAccessLayer.Common.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 647
+   在 DataBase.DBHelper.ReadCollection[T](String sql, DynamicParameters p) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 21
+   在 NET.DataAccessLayer.Base`1.Find(T entity, Int32 findId) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 189
+   在 NET.BusinessRule.Base`1.Find(T t, Int32 findId) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 47
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServeicesResponse(RequestParam param, UserInfoUnDeteil& userinfoundeteil) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 59
+   在 NET.Web.UI.Models.RequestServicesBase.<>c__DisplayClass4_0.<RequestServicesRecording>b__0() 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch(Action input) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 166
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServicesRecording(RequestParam param) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch[T1](Action`1 func, T1 t1) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 205
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices_Task(RequestParam param) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 247
+请求参数是 ：{"Data":"{\"ret\":1,\"start\":-1,\"end\":-1,\"country\":\"中国\",\"province\":\"浙江\",\"city\":\"杭州\",\"district\":\"\",\"isp\":\"\",\"type\":\"\",\"desc\":\"\"}","Ip":"112.10.94.220","ModelType":null,"Token":"fabace9b41e34e8b81ad5b64860a029f","UserAgent":"Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/64.0.3282.186 Safari\/537.36","WaitHandle":null}
+ 
+
+ 
+记录时间：2018-04-06 11:49:37,405 
+线程ID:[31] 
+日志级别：  ERROR 
+错误描述：
+RequestServices_Task
+发生异常
+发生时间2018-04-06 11:49:37
+本次共用时：0
+异常讯息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.DataAccessLayer.Common.SqlMapper.Identity..ctor(String sql, Nullable`1 commandType, IDbConnection connection, Type type, Type parametersType, Type[] otherTypes) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 378
+   在 NET.DataAccessLayer.Common.SqlMapper.<QueryInternal>d__31`1.MoveNext() 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 685
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 NET.DataAccessLayer.Common.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 647
+   在 DataBase.DBHelper.ReadCollection[T](String sql, DynamicParameters p) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 21
+   在 NET.DataAccessLayer.Base`1.Find(T entity, Int32 findId) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 189
+   在 NET.BusinessRule.Base`1.Find(T t, Int32 findId) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 47
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServeicesResponse(RequestParam param, UserInfoUnDeteil& userinfoundeteil) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 59
+   在 NET.Web.UI.Models.RequestServicesBase.<>c__DisplayClass4_0.<RequestServicesRecording>b__0() 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch(Action input) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 166
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServicesRecording(RequestParam param) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch[T1](Action`1 func, T1 t1) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 205
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices_Task(RequestParam param) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 247
+请求参数是 ：{"Data":"{\"ret\":1,\"start\":-1,\"end\":-1,\"country\":\"中国\",\"province\":\"浙江\",\"city\":\"杭州\",\"district\":\"\",\"isp\":\"\",\"type\":\"\",\"desc\":\"\"}","Ip":"112.10.94.220","ModelType":null,"Token":"fabace9b41e34e8b81ad5b64860a029f","UserAgent":"Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/64.0.3282.186 Safari\/537.36","WaitHandle":null}
+ 
+
+ 
+记录时间：2018-04-06 11:50:49,783 
+线程ID:[54] 
+日志级别：  ERROR 
+错误描述：
+RequestServices_Task
+发生异常
+发生时间2018-04-06 11:50:49
+本次共用时：0
+异常讯息：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NET.DataAccessLayer.Common.SqlMapper.Identity..ctor(String sql, Nullable`1 commandType, IDbConnection connection, Type type, Type parametersType, Type[] otherTypes) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 378
+   在 NET.DataAccessLayer.Common.SqlMapper.<QueryInternal>d__31`1.MoveNext() 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 685
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 NET.DataAccessLayer.Common.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\Dapper.cs:行号 647
+   在 DataBase.DBHelper.ReadCollection[T](String sql, DynamicParameters p) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Common\DBHelper.cs:行号 21
+   在 NET.DataAccessLayer.Base`1.Find(T entity, Int32 findId) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\Base.cs:行号 189
+   在 NET.BusinessRule.Base`1.Find(T t, Int32 findId) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.BusinessRule\Base.cs:行号 47
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServeicesResponse(RequestParam param, UserInfoUnDeteil& userinfoundeteil) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 59
+   在 NET.Web.UI.Models.RequestServicesBase.<>c__DisplayClass4_0.<RequestServicesRecording>b__0() 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch(Action input) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 166
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServicesRecording(RequestParam param) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 186
+   在 NET.Architect.Common.HelpComm.Stopwatch[T1](Action`1 func, T1 t1) 位置 D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\Common\HelpComm.cs:行号 205
+   在 NET.Web.UI.Models.RequestServicesBase.RequestServices_Task(RequestParam param) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Models\RequestServicesBase.cs:行号 247
+请求参数是 ：{"Data":"{\"ret\":1,\"start\":-1,\"end\":-1,\"country\":\"中国\",\"province\":\"浙江\",\"city\":\"杭州\",\"district\":\"\",\"isp\":\"\",\"type\":\"\",\"desc\":\"\"}","Ip":"112.10.94.220","ModelType":null,"Token":"5493203bdcc84b669b1e485ba51fd9d8","UserAgent":"Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/64.0.3282.186 Safari\/537.36","WaitHandle":null}
+ 
+
+ 
+记录时间：2018-04-06 13:05:39,592 
+线程ID:[13] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[Index] 时产生异常
+ 
+OpenQA.Selenium.DriverServiceNotFoundException: The PhantomJS.exe file does not exist in the current directory or in a directory on the PATH environment variable. The driver can be downloaded at http://phantomjs.org/download.html.
+   在 OpenQA.Selenium.DriverService.FindDriverServiceExecutable(String executableName, Uri downloadUrl)
+   在 OpenQA.Selenium.PhantomJS.PhantomJSDriverService.CreateDefaultService()
+   在 PhantomJS.CrawlerHelper.GetPhantomJSDriverService() 位置 D:\工作室\新项目\CodeWH\PhantomJS\CrawlerHelper.cs:行号 24
+   在 PhantomJS.CrawlerHelper.PhantomJs(String url, String& path) 位置 D:\工作室\新项目\CodeWH\PhantomJS\CrawlerHelper.cs:行号 16
+   在 NET.Web.UI.Controllers.HomeController.Index() 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Controllers\HomeController.cs:行号 32
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+
+ 
+记录时间：2018-04-06 13:57:22,166 
+线程ID:[15] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[Phantom] 时产生异常
+ 
+System.ArgumentException: 参数无效。
+   在 System.Drawing.Image.FromStream(Stream stream, Boolean useEmbeddedColorManagement, Boolean validateImageData)
+   在 OpenQA.Selenium.Screenshot.SaveAsFile(String fileName, ScreenshotImageFormat format)
+   在 OpenQA.Selenium.Screenshot.SaveAsFile(String fileName)
+   在 PhantomJS.CrawlerHelper.PhantomJs(String url, String& path) 位置 D:\工作室\新项目\CodeWH\PhantomJS\CrawlerHelper.cs:行号 20
+   在 NET.Web.UI.Controllers.HomeController.Phantom() 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Controllers\HomeController.cs:行号 662
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-04-06 15:00:49,250 
+线程ID:[7] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[Crawler] 时产生异常
+ 
+System.UnauthorizedAccessException: 对路径“D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Content\CrawlerImae\180406\144428.png”的访问被拒绝。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   在 System.IO.FileStream..ctor(String path, FileMode mode)
+   在 OpenQA.Selenium.Screenshot.SaveAsFile(String fileName, ScreenshotImageFormat format)
+   在 OpenQA.Selenium.Screenshot.SaveAsFile(String fileName)
+   在 PhantomJS.CrawlerHelper.PhantomJs(String url, String& path)
+   在 NET.Web.UI.Controllers.HomeController.Crawler(String url) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Controllers\HomeController.cs:行号 668
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-04-06 15:00:51,895 
+线程ID:[7] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[Crawler] 时产生异常
+ 
+OpenQA.Selenium.WebDriverException: Cannot start the driver service on http://localhost:59684/
+   在 OpenQA.Selenium.DriverService.Start()
+   在 OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)
+   在 OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   在 OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)
+   在 OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+   在 OpenQA.Selenium.PhantomJS.PhantomJSDriver..ctor(PhantomJSDriverService service, PhantomJSOptions options, TimeSpan commandTimeout)
+   在 OpenQA.Selenium.PhantomJS.PhantomJSDriver..ctor()
+   在 PhantomJS.CrawlerHelper.PhantomJs(String url, String& path)
+   在 NET.Web.UI.Controllers.HomeController.Crawler(String url) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Controllers\HomeController.cs:行号 668
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-04-06 15:20:34,159 
+线程ID:[4] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[Crawler] 时产生异常
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: path
+   在 System.IO.Directory.CreateDirectory(String path)
+   在 PhantomJS.CrawlerHelper.PhantomJs(String url, String& path) 位置 D:\工作室\新项目\CodeWH\PhantomJS\CrawlerHelper.cs:行号 22
+   在 NET.Web.UI.Controllers.HomeController.Crawler(String url)
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+
+ 
+记录时间：2018-04-06 15:50:18,530 
+线程ID:[21] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[Crawler] 时产生异常
+ 
+System.ArgumentException: 参数无效。
+   在 System.Drawing.Image.FromStream(Stream stream, Boolean useEmbeddedColorManagement, Boolean validateImageData)
+   在 OpenQA.Selenium.Screenshot.SaveAsFile(String fileName, ScreenshotImageFormat format)
+   在 PhantomJS.CrawlerHelper.PhantomJs(String url, String& path) 位置 D:\工作室\新项目\CodeWH\PhantomJS\CrawlerHelper.cs:行号 26
+   在 NET.Web.UI.Controllers.HomeController.Crawler(String url) 位置 D:\工作室\新项目\CodeWH\ASP.NET\NET.Web.UI\Controllers\HomeController.cs:行号 671
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+ 
+记录时间：2018-04-06 15:59:21,305 
+线程ID:[16] 
+日志级别：  ERROR 
+错误描述：在执行 controller[HomeController] 的 action[Crawler] 时产生异常
+ 
+System.ArgumentException: 参数无效。
+   在 System.Drawing.Image.FromStream(Stream stream, Boolean useEmbeddedColorManagement, Boolean validateImageData)
+   在 OpenQA.Selenium.Screenshot.SaveAsFile(String fileName, ScreenshotImageFormat format)
+   在 PhantomJS.CrawlerHelper.PhantomJs(String url, String& path) 位置 D:\工作室\新项目\CodeWH\PhantomJS\CrawlerHelper.cs:行号 26
+   在 NET.Web.UI.Controllers.HomeController.Crawler(String url)
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)

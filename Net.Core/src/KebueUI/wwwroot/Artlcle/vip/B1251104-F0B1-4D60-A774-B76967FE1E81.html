@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=Linux上搭建Asp.net MVC3环境(CentOS + Nginx + Mono)>
+    <meta name="keywords" content=CentOS Mono Nginx 部署 MVC4+WebApi
+经过几天的折磨，终于在CentOS上成功部署了MVC4+WebApi。Mono上的服务器推荐两种：Jexus（国产高人写的一款很牛的服务器）和Nginx(Fastcgi方式)。本文介绍Nginx如何部署MVC4+WebApi。
+环境：
+CentOS 6.4（32、64位）
+Mono-3.2.1
+Nginx 1.5.4
+A>
+    <title>Linux上搭建Asp.net MVC3环境(CentOS + Nginx + Mono)</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/B8C0509A-82D4-4BD7-A1BB-5BAF70ED1C60.html' title='.NET'>.NET</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>Linux上搭建Asp.net MVC3环境(CentOS + Nginx + Mono)</h1>
+                        <pre>
+                        <code>
+                            <p>CentOS Mono Nginx 部署 MVC4+WebApi</p>
+<p>经过几天的折磨，终于在CentOS上成功部署了MVC4+WebApi。Mono上的服务器推荐两种：Jexus（国产高人写的一款很牛的服务器）和Nginx(Fastcgi方式)。本文介绍Nginx如何部署MVC4+WebApi。</p>
+<p>环境：</p>
+<p>CentOS 6.4（32、64位）</p>
+<p>Mono-3.2.1</p>
+<p>Nginx 1.5.4</p>
+<p>ASP.NET MVC 4</p>
+<p>WebApi 1.0</p>
+<p>&nbsp;</p>
+<p>一、首先安装一些需要的软件包</p>
+<p>1、&nbsp; 首先更新CentOS上的软件包：yum &ndash;y update。</p>
+<p>2、&nbsp; 安装一些需要的库：</p>
+<div class="cnblogs_code">
+<pre>yum -y install gcc gcc-c++ bison pkgconfig glib2-devel gettext make libpng-devel libjpeg-devel libtiff-devel libexif-devel giflib-devel libX11-devel freetype-devel fontconfig-devel  cairo-<span style="color: #000000;">devel
+yum &ndash;y install build</span>-essential automake autoconf libtool bison libglib2.<span style="color: #800080;">0</span>-dev libfreetype6-dev libfontconfig-dev gettext libgif-dev libtiff4-dev libpng12-dev libexif-dev libx11-dev libxft-dev libjpeg-dev</pre>
+</div>
+<p>以上的包挺多的，但是为了保险起见，还是全部安装吧，有可能还会有缺少包的情况，就使用yum自己安装吧。</p>
+<p>二、下载所需要的软件包</p>
+<p>我把所有的软件包都下载在/usr/local/src中了，你也可以选择其他的位置。</p>
+<p>&nbsp;&nbsp;&nbsp; 首先在命令行执行：cd /usr/local/src，然后开始下载以下软件包。</p>
+<p>1、&nbsp; Mono：由于从Mono3.0之后编译源代码需要原来有一个老的Mono环境，所以必须要下载两个版本的Mono：Mono-2.11.4和Mono-3.2.1。</p>
+<div class="cnblogs_code">
+<pre>Mono-<span style="color: #800080;">2.11</span>.<span style="color: #800080;">4</span><span style="color: #000000;">：
+wget http:</span><span style="color: #008000;">//</span><span style="color: #008000;">origin-download.mono-project.com/sources/mono/mono-2.11.4.tar.bz2</span>
+<span style="color: #000000;">
+Mono</span>-<span style="color: #800080;">3.2</span>.<span style="color: #800080;">1</span><span style="color: #000000;">：
+wget http:</span><span style="color: #008000;">//</span><span style="color: #008000;">origin-download.mono-project.com/sources/mono/mono-3.2.1.tar.bz2</span></pre>
+</div>
+<p>2、&nbsp; Libgdiplus：</p>
+<div class="cnblogs_code">
+<pre>wget http:<span style="color: #008000;">//</span><span style="color: #008000;">download.mono-project.com/sources/libgdiplus/libgdiplus-2.10.9.tar.bz2</span></pre>
+</div>
+<p>3、&nbsp; xsp：xsp是Mono提供的一个测试版本的服务器，但是也提供Nginx运行asp.net的fastcgi。</p>
+<p><span style="color: #ff0000;">官网上的xsp是2.x的，这个版本的fastcgi-mono-server4不能用；所以需要从github上下载最新的3.0版本。（git之前，要使用yum &ndash;y intall git安装git包。）</span></p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">Yum &ndash;y install git。
+Git clone https:</span><span style="color: #008000;">//</span><span style="color: #008000;">github.com/mono/xsp.git</span></pre>
+</div>
+<p>4、&nbsp; pcre：</p>
+<div class="cnblogs_code">
+<pre>wget ftp:<span style="color: #008000;">//</span><span style="color: #008000;">ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.33.tar.bz2</span></pre>
+</div>
+<p>5、&nbsp; Nginx：</p>
+<div class="cnblogs_code">
+<pre>wget http:<span style="color: #008000;">//</span><span style="color: #008000;">nginx.org/download/nginx-1.5.4.tar.gz</span></pre>
+</div>
+<p>关于Nginx这个下载的是最新版本，需要自己安装，也可以使用配置yum源头的方式安装，这个安装的好处是：执行yum命令后就自动安装完了，最后还会帮你生成一个nginx的帮助命令文件，帮助你执行nginx的启动、重启和关闭等等。本文先介绍自己编译安装的情况（个人喜好这种方式，因为新版的Nginx已经添加了一些辅助命令了，以后介绍。）</p>
+<p>三、安装软件包</p>
+<p>1、&nbsp; 安装Mono：</p>
+<p>(1)&nbsp;&nbsp;&nbsp; 首先安装Mono 2.11.4：执行以下命令，</p>
+<div class="cnblogs_code">
+<pre>转到存放目录：Cd /usr/local/<span style="color: #000000;">src
+解压：tar &ndash;jxvf mono.</span><span style="color: #800080;">2.11</span>.<span style="color: #800080;">4</span><span style="color: #000000;">.tar.bz2
+转到解压后的目录：Cd mono</span>-<span style="color: #800080;">2.11</span>.<span style="color: #800080;">4</span><span style="color: #000000;">
+Configure：我把mono安装在usr目录下，所以执行以下命令：
+.</span>/configure --prefix=/<span style="color: #000000;">usr
+编译安装：make </span>&amp;&amp; make install（这个过程比较漫长，去干点别的吧。）</pre>
+</div>
+<p>(2)&nbsp;&nbsp;&nbsp; Mono2.11.4安装完成之后，开始安装Mono3.2.1：执行以下命令：</p>
+<div class="cnblogs_code">
+<pre>cd /usr/local/<span style="color: #000000;">src
+tar &ndash;jvxf mono</span>-<span style="color: #800080;">3.2</span>.<span style="color: #800080;">1</span><span style="color: #000000;">.tar.bz2
+cd mono</span>-<span style="color: #800080;">3.2</span>.<span style="color: #800080;">1</span><span style="color: #000000;">
+.</span>/autogen.sh &ndash;prefix=/<span style="color: #000000;">usr
+make (这个过程也很漫长)</span></pre>
+</div>
+<p>(3)&nbsp;&nbsp;&nbsp; mono-3.2.1编译完成之后，需要先卸载掉Mono-2.11.4:</p>
+<div class="cnblogs_code">
+<pre>cd /usr/local/src/mono-<span style="color: #800080;">2.11</span>.<span style="color: #800080;">4</span><span style="color: #000000;">
+make uninstall</span></pre>
+</div>
+<p>(4)&nbsp;&nbsp;&nbsp; 卸载完mono-2.11.4之后开始安装mono-3.2.1：</p>
+<div class="cnblogs_code">
+<pre>cd /usr/local/src/mono-<span style="color: #800080;">3.2</span>.<span style="color: #800080;">1</span><span style="color: #000000;">
+make install</span></pre>
+</div>
+<p>(5)安装完成之后，执行一下ldconfig命令，确保新安装的动态库可以被找到。</p>
+<div class="cnblogs_code">
+<pre> ldconfig </pre>
+</div>
+<p>2、&nbsp; 安装libgdiplus：</p>
+<div class="cnblogs_code">
+<pre>cd /usr/local/<span style="color: #000000;">src
+tar &ndash;jxvf libgdiplus</span>-<span style="color: #800080;">2.10</span>.<span style="color: #800080;">9</span><span style="color: #000000;">.tar.bz2
+cd libgdiplus</span>-<span style="color: #800080;">2.10</span>.<span style="color: #800080;">9</span><span style="color: #000000;">
+.</span>/configure &ndash;prefix=/<span style="color: #000000;">usr
+Make </span>&amp;&amp;<span style="color: #000000;"> make install
+ldconfig</span></pre>
+</div>
+<p>3、&nbsp; 安装xsp：</p>
+<div class="cnblogs_code">
+<pre>cd /usr/local/src/<span style="color: #000000;">xsp
+.</span>/autogen.sh &ndash;prefix=/<span style="color: #000000;">usr
+make </span>&amp;&amp; make install</pre>
+</div>
+<p>4、&nbsp; 安装pcre：</p>
+<div class="cnblogs_code">
+<pre>cd /usr/local/<span style="color: #000000;">src
+tar &ndash;jxvf pcre</span>-<span style="color: #800080;">8.33</span><span style="color: #000000;">.tar.bz2
+cd pcre</span>-<span style="color: #800080;">8.33</span><span style="color: #000000;">
+.</span>/configure &ndash;prefix=/<span style="color: #000000;">usr
+make </span>&amp;&amp; make install</pre>
+</div>
+<p>5、&nbsp; 安装nginx：</p>
+<p>开始说了nginx的安装可以使用yum源的方式，也可以使用自己编译的方式，下面是自己编译的方式：</p>
+<div class="cnblogs_code">
+<pre>cd /usr/local/<span style="color: #000000;">src
+tar zxvf nginx</span>-<span style="color: #800080;">1.5</span>.<span style="color: #800080;">4</span><span style="color: #000000;">.tar.gz
+cd nginx</span>-<span style="color: #800080;">1.5</span>.<span style="color: #800080;">4</span><span style="color: #000000;">
+.</span>/configure &ndash;prefix=/usr/<span style="color: #000000;">nginx（nginx安装在nginx目录里面）
+make </span>&amp;&amp; make install</pre>
+</div>
+<p>（注：第二种安装nginx的方法：<a href="http://www.cnblogs.com/highend/archive/2013/03/06/centos6_3_install_nginx_1_2_7.html">http://www.cnblogs.com/highend/archive/2013/03/06/centos6_3_install_nginx_1_2_7.html</a>）</p>
+<p>四、配置nginx：</p>
+<p>1、&nbsp; 开放80端口：</p>
+<div class="cnblogs_code">
+<pre>iptables -I INPUT -p tcp --dport <span style="color: #800080;">80</span> -<span style="color: #000000;">j ACCEPT
+service iptables save （这句把上述规则写进防火墙中，要不以后每次都要开启80端口）
+启动nginx
+</span>/usr/nginx/sbin/nginx</pre>
+</div>
+<p>启动之后，就可以通过地址访问nginx了，自己访问看看吧。</p>
+<p>2、&nbsp; 配置nginx：</p>
+<div class="cnblogs_code">
+<pre>vi /usr/nginx/conf/nginx.conf</pre>
+</div>
+<p>修改server如下：</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">server {
+         listen   </span><span style="color: #800080;">80</span><span style="color: #000000;">;
+         server_name  localhost;
+         location </span>/<span style="color: #000000;"> {
+                 root </span>/usr/nginx/<span style="color: #000000;">html;
+                 index index.html index.htm;
+                 fastcgi_index Default.aspx;
+                 fastcgi_pass </span><span style="color: #800080;">127.0</span>.<span style="color: #800080;">0.1</span>:<span style="color: #800080;">9000</span><span style="color: #000000;">;
+                 include </span>/usr/nginx/conf/<span style="color: #000000;">fastcgi_params;
+         }
+ }</span></pre>
+</div>
+<p>打开fastcgi_params，在最后面添加以下两句：</p>
+<div class="cnblogs_code">
+<pre>vi /usr/nginx/conf/<span style="color: #000000;">fastcgi_params
+fastcgi_param  PATH_INFO          </span><span style="color: #800000;">""</span><span style="color: #000000;">;
+fastcgi_param  SCRIPT_FILENAME    $document_root$fastcgi_script_name;</span></pre>
+</div>
+<p>&nbsp;</p>
+<p>五、编写MVC+WebApi程序：</p>
+<p>1、&nbsp; 使用vs建立mvc4项目，选择&ldquo;基本&rdquo;或者&ldquo;空&rdquo;。</p>
+<p>2、&nbsp; 项目建立好后，删除对System.Web.Providers.dll的引用，这个貌似不支持，添加上去就无法执行程序。</p>
+<p>3、&nbsp; 以下dll从本地复制出来放到你的项目下面，建立个libs，放到这里吧。</p>
+<p>这些dll我已经复制出来了，放到后<a href="http://files.cnblogs.com/acles/libs.rar">附件下载</a>中，如果你不想自己一个一个的复制的话，就使用附件里面的吧。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;"><strong>Mvc4对应的dll：</strong>
+Microsoft.Web.Infrastructure.dll
+System.Web.Helpers.dll
+System.Web.Mvc.dll
+System.Web.Razor.dll
+System.Web.WebPages.Deployment.dll
+System.Web.WebPages.dll
+System.Web.WebPages.Razor.dll
+<strong>WebApi对应dll：</strong>
+System.Net.Http.dll（注意：这个dll要复制4.0的哦，不要2.0的。）
+System.Net.Http.Formatting.dll
+System.Net.Http.WebRequest.dll
+<strong>Webgrease对应的dll：</strong>
+System.Web.Optimization.dll</span></pre>
+</div>
+<p>&nbsp;</p>
+<p>4、&nbsp; 删除掉原来项目中对以上dll的引用，重新添加引用，地址为你的项目中的libs（存放你复制的dll的文件夹），注意：</p>
+<p>Mvc4对应的dll&ldquo;复制本地&rdquo;都选择&ldquo;True&rdquo;；</p>
+<p>WebApi对应的dll中System.Net.Http.Formatting.dll选择复制本地就可以了。</p>
+<p>Webgrease对应的dll：System.Web.Optimization.dll选择复制本地。</p>
+<p>5、&nbsp; 配置Web.config</p>
+<p>由于我们使用了System.Net.Http.dll的4.0版本，Webgrease也有可能会因为版本问题保存，所以需要在配置文件中配置升级配置，具体如下：</p>
+<div class="cnblogs_code">
+<pre>&lt;runtime&gt;
+    &lt;assemblyBinding xmlns=<span style="color: #800000;">"</span><span style="color: #800000;">urn:schemas-microsoft-com:asm.v1</span><span style="color: #800000;">"</span>&gt;
+      &lt;dependentAssembly&gt;
+        &lt;assemblyIdentity name=<span style="color: #800000;">"</span><span style="color: #800000;">System.Web.Helpers</span><span style="color: #800000;">"</span> publicKeyToken=<span style="color: #800000;">"</span><span style="color: #800000;">31bf3856ad364e35</span><span style="color: #800000;">"</span>/&gt;
+        &lt;bindingRedirect oldVersion=<span style="color: #800000;">"</span><span style="color: #800000;">1.0.0.0-2.0.0.0</span><span style="color: #800000;">"</span> newVersion=<span style="color: #800000;">"</span><span style="color: #800000;">2.0.0.0</span><span style="color: #800000;">"</span> /&gt;
+      &lt;/dependentAssembly&gt;
+      &lt;dependentAssembly&gt;
+        &lt;assemblyIdentity name=<span style="color: #800000;">"</span><span style="color: #800000;">System.Web.Mvc</span><span style="color: #800000;">"</span> publicKeyToken=<span style="color: #800000;">"</span><span style="color: #800000;">31bf3856ad364e35</span><span style="color: #800000;">"</span> /&gt;
+        &lt;bindingRedirect oldVersion=<span style="color: #800000;">"</span><span style="color: #800000;">1.0.0.0-4.0.0.0</span><span style="color: #800000;">"</span> newVersion=<span style="color: #800000;">"</span><span style="color: #800000;">4.0.0.0</span><span style="color: #800000;">"</span> /&gt;
+      &lt;/dependentAssembly&gt;
+      &lt;dependentAssembly&gt;
+        &lt;assemblyIdentity name=<span style="color: #800000;">"</span><span style="color: #800000;">System.Web.WebPages</span><span style="color: #800000;">"</span><span style="color: #000000;">publicKeyToken</span>=<span style="color: #800000;">"</span><span style="color: #800000;">31bf3856ad364e35</span><span style="color: #800000;">"</span> /&gt;
+        &lt;bindingRedirect oldVersion=<span style="color: #800000;">"</span><span style="color: #800000;">1.0.0.0-2.0.0.0</span><span style="color: #800000;">"</span> newVersion=<span style="color: #800000;">"</span><span style="color: #800000;">2.0.0.0</span><span style="color: #800000;">"</span> /&gt;
+      &lt;/dependentAssembly&gt;
+ 
+      &lt;dependentAssembly&gt;
+        &lt;assemblyIdentity name=<span style="color: #800000;">"</span><span style="color: #800000;">WebGrease</span><span style="color: #800000;">"</span> publicKeyToken=<span style="color: #800000;">"</span><span style="color: #800000;">31bf3856ad364e35</span><span style="color: #800000;">"</span> /&gt;
+        &lt;bindingRedirect oldVersion=<span style="color: #800000;">"</span><span style="color: #800000;">1.0.0.0-1.3.0.0</span><span style="color: #800000;">"</span> newVersion=<span style="color: #800000;">"</span><span style="color: #800000;">1.3.0.0</span><span style="color: #800000;">"</span> /&gt;
+      &lt;/dependentAssembly&gt;
+ 
+      &lt;dependentAssembly&gt;
+        &lt;assemblyIdentity name=<span style="color: #800000;">"</span><span style="color: #800000;">System.Net.Http</span><span style="color: #800000;">"</span> publicKeyToken=<span style="color: #800000;">"</span><span style="color: #800000;">b03f5f7f11d50a3a</span><span style="color: #800000;">"</span> /&gt;
+        &lt;bindingRedirect oldVersion=<span style="color: #800000;">"</span><span style="color: #800000;">0.0.0.0-4.0.0.0</span><span style="color: #800000;">"</span> newVersion=<span style="color: #800000;">"</span><span style="color: #800000;">4.0.0.0</span><span style="color: #800000;">"</span> /&gt;
+      &lt;/dependentAssembly&gt;
+    &lt;/assemblyBinding&gt;
+  &lt;/runtime&gt;</pre>
+</div>
+<p>如果有runtime这个配置节，就按照这个配置，如果没有，就自己添加。其中只有WebGrease和System.Net.Http是必须的，其他可有可无。</p>
+<p>6、&nbsp; 添加Controller、View和WebApi</p>
+<p>在Controllers文件夹下添加一个HomeController控制器，然后添加一个Index视图。</p>
+<p>然后再添加一个FirstApiController的WebApi。</p>
+<p>7、按照文件的方式发布程序。</p>
+<p>&nbsp;</p>
+<p>六、部署</p>
+<p>使用ftp或者winscp等等工具，把发布好的程序上传到centos的 /usr/nginx/html中，</p>
+<p>还有重要的一步：发布完成后，一定要修改删除Web.config中</p>
+<p>&lt;httpRuntime targetFramework="4.5" /&gt;</p>
+<p>&lt;compilation targetFramework="4.5" /&gt;</p>
+<p>这两行，因为mono不支持&lt;httpRuntime targetFramework="4.5" /&gt;这个中的targetFramework，为了保险起见把&lt;compilation targetFramework="4.5" /&gt;也删除了。</p>
+<p>七、启动</p>
+<p>1、重启nginx</p>
+<div class="cnblogs_code">
+<pre>/usr/nginx/sbin/nginx &ndash;s reload</pre>
+</div>
+<p>2、启动 fastcgi_mono服务器</p>
+<div class="cnblogs_code">
+<pre>fastcgi-mono-server4 /applications=/:/usr/nginx/html /socket=tcp:<span style="color: #800080;">127.0</span>.<span style="color: #800080;">0.1</span>:<span style="color: #800080;">9000</span></pre>
+</div>
+<p>&nbsp;</p>
+<p>八、开始访问吧</p>
+<p>你以为你到这里就可以正确访问你的程序了，你要是这样认为你就错了。记得在windows下，我们输入xxx、xxx/home或者xxx/home/index就可以正确访问了，如果在mono下你也这样干，你就错了，你必须要注意url地址的大小写，如果你的Controller是HomeController，首页是Index，那你就老老实实的xxx/Home或者xxx/Home/Index这样访问，否则就提示你老死也找不到视图啊（这个简答的问题差点把我搞疯掉啊）。这些应该在nginx或者mono下面可以配置，暂时没找到配置的地方，有知道的兄弟姐妹可以告知一下啊。</p>
+<p><span style="color: #ff0000;">总之一条：在mono下一定要注意大小写。</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff;"><strong>附录：使用jexus替代nginx</strong></span></p>
+<p>Jexus是个好东东啊，比nginx配置起来简单，也非常好的支持最新的mono。</p>
+<p>1、&nbsp; 下载Jexus</p>
+<div class="cnblogs_code">
+<pre>cd /usr/local/<span style="color: #000000;">src
+wget http:</span><span style="color: #008000;">//</span><span style="color: #008000;">www.linuxdot.net/down/jexus-5.4.3.tar.gz</span></pre>
+</div>
+<p>2、&nbsp; 安装Jexus</p>
+<div class="cnblogs_code">
+<pre>tar -zvxf jexus-<span style="color: #800080;">5.4</span><span style="color: #000000;">.tar.gz
+cd jexus</span>-<span style="color: #800080;">5.4</span><span style="color: #000000;">
+sudo .</span>/<span style="color: #000000;">install
+</span><span style="color: #800080;">3</span><span style="color: #000000;">、  启动Jexus
+cd </span>/usr/<span style="color: #000000;">jexus
+sudo .</span>/jws start</pre>
+</div>
+<p>4、&nbsp; 部署</p>
+<p>把你的发布文件上传到jexus对应的web目录就可以了，部署的方式和上面nginx是一样的，注意点也一样哦。</p>
+<p>部署完成之后，直接重启jexus就可以了（sudo ./jws restart）。</p>
+<p>然后，你就可以尽情的访问了。</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15px;"><strong><span style="color: #0000ff;">写的有点仓促，不合理的地方，请大家指正，谢谢！</span></strong></span></p>
+<p>&nbsp;</p>
+<p>参考：</p>
+<p>1、CentOS 6.3下 安装 Mono 3.2 和Jexus 5.4</p>
+<p><a href="http://www.cnblogs.com/shanyou/p/3218611.html">http://www.cnblogs.com/shanyou/p/3218611.html</a></p>
+<p>2、在Ubuntu13.04中配置Jexus+Mono3.2运行Asp.Net Mvc 4站点 (一)</p>
+<p><a href="http://www.cnblogs.com/windvoice/p/3221974.html">http://www.cnblogs.com/windvoice/p/3221974.html</a></p>
+<p>3、Linux上搭建Asp.net MVC3环境(CentOS + Nginx + Mono)</p>
+<p><a href="http://www.cnblogs.com/bboy/archive/2012/10/08/2714626.html">http://www.cnblogs.com/bboy/archive/2012/10/08/2714626.html</a></p>
+<p>4、CentOS上搭建Nginx + Mono 运行 asp.net</p>
+<p><a href="http://www.cnblogs.com/wander1129/archive/2011/12/16/mono.html">http://www.cnblogs.com/wander1129/archive/2011/12/16/mono.html</a></p>
+<p>5、CentOS 6.3 - 安装 Nginx 1.2.7（yum源）</p>
+<p><a href="http://www.cnblogs.com/highend/archive/2013/03/06/centos6_3_install_nginx_1_2_7.html">http://www.cnblogs.com/highend/archive/2013/03/06/centos6_3_install_nginx_1_2_7.html</a></p>
+<p>6、FastCGI Nginx</p>
+<p><a href="http://www.mono-project.com/FastCGI_Nginx">http://www.mono-project.com/FastCGI_Nginx</a></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 16px; color: #ff0000;"><strong>附件：</strong></span></p>
+<p><a href="http://files.cnblogs.com/acles/libs.rar">所需要的dll附件</a></p>
+<p><a href="http://files.cnblogs.com/acles/mono6.rar">可以部署的项目源码</a></p>
+<p><a href="http://pan.baidu.com/s/1dFBglDR">所需要的dll附件 百度网盘下载</a></p>
+<p><a href="http://pan.baidu.com/s/1dEMvqIP">可以部署的项目源码 百度网盘下载</a></p>
+
+
+
+
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

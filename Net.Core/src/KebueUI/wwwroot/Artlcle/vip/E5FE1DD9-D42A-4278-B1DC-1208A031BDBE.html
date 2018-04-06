@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=自增长函数  decode>
+    <meta name="keywords" content=select LPAD(decode(count(cerpcode),0,1,max(to_number(cerpcode)+1)),6,0) from BASE_PART where cerpcode in 279960含义解释：decode(条件,值1,返回值1,值2,返回值2,...值n,返回值n,缺省值)该函数的含义如下：IF 条件=值1 THEN　　　　RETURN(翻译值1)ELSIF>
+    <title>自增长函数  decode</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/0D8667FF-B247-4368-A163-B9D7274FE236.html' title='Oracle'>Oracle</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>自增长函数  decode</h1>
+                        <pre>
+                        <code>
+                            <p>select LPAD(decode(count(cerpcode),0,1,max(to_number(cerpcode)+1)),6,&#39;0&#39;) from BASE_PART where cerpcode in &#39;279960&#39;</p><p style="background-color: inherit;">含义解释：<br style="background-color: inherit;"/><strong style="background-color: inherit;"><span style="background-color: inherit;text-decoration:underline;">decode</span></strong>(条件,值1,返回值1,值2,返回值2,...值n,返回值n,缺省值)</p><p style="background-color: inherit;">该函数的含义如下：<br style="background-color: inherit;"/>IF 条件=值1 THEN<br style="background-color: inherit;"/>　　　　RETURN(翻译值1)<br style="background-color: inherit;"/>ELSIF 条件=值2 THEN<br style="background-color: inherit;"/>　　　　RETURN(翻译值2)<br style="background-color: inherit;"/>　　　　......<br style="background-color: inherit;"/>ELSIF 条件=值n THEN<br style="background-color: inherit;"/>　　　　RETURN(翻译值n)<br style="background-color: inherit;"/>ELSE<br style="background-color: inherit;"/>　　　　RETURN(缺省值)<br style="background-color: inherit;"/>END IF<br style="background-color: inherit;"/><strong style="background-color: inherit;"><span style="background-color: inherit;text-decoration:underline;">decode</span></strong>(字段或字段的运算，值1，值2，值3）</p><p style="background-color: inherit;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这个函数运行的结果是，当字段或字段的运算的值等于值1时，该函数返回值2，否则返回值3<br style="background-color: inherit;"/>当然值1，值2，值3也可以是表达式，这个函数使得某些sql语句简单了许多</p><p style="background-color: inherit;">使用方法：<br style="background-color: inherit;"/><strong style="background-color: inherit;">1、比较大小<br style="background-color: inherit;"/></strong>select&nbsp;<span style="background-color: inherit;text-decoration:underline;"><strong style="background-color: inherit;"><strong style="background-color: inherit;">decode</strong></strong></span>(sign(变量1-变量2),-1,变量1,变量2) from dual; --取较小值<br style="background-color: inherit;"/>sign()函数根据某个值是0、正数还是负数，分别返回0、1、-1<br style="background-color: inherit;"/>例如：<br style="background-color: inherit;"/>变量1=10，变量2=20<br style="background-color: inherit;"/>则sign(变量1-变量2)返回-1，<span style="background-color: inherit;text-decoration:underline;"><strong style="background-color: inherit;"><strong style="background-color: inherit;">decode</strong></strong></span>解码结果为“变量1”，达到了取较小值的目的。</p><p style="background-color: inherit;"><strong style="background-color: inherit;">2、此函数用在SQL语句中，功能介绍如下：</strong></p><p style="background-color: inherit;">Decode函数与一系列嵌套的 IF-THEN-ELSE语句相似。base_exp与compare1,compare2等等依次进行比较。如果base_exp和 第i 个compare项匹配，就返回第i 个对应的value 。如果base_exp与任何的compare值都不匹配，则返回default。每个compare值顺次求值，如果发现一个匹配，则剩下的compare值（如果还有的话）就都不再求值。一个为NULL的base_exp被认为和NULL compare值等价。如果需要的话，每一个compare值都被转换成和第一个compare 值相同的数据类型，这个数据类型也是返回值的类型。</p><p style="background-color: inherit;">Decode函数在实际开发中非常的有用</p><p style="background-color: inherit;"><strong style="background-color: inherit;">结合Lpad函数，如何使主键的值自动加1并在前面补0<br style="background-color: inherit;"/></strong>select LPAD(decode(count(记录编号),0,1,max(to_number(记录编号)+1)),14,&#39;0&#39;) 记录编号 from tetdmis</p><p style="background-color: inherit;">eg:</p><p style="background-color: inherit;">select decode(dir,1,0,1) from a1_interval</p><p style="background-color: inherit;">dir 的值是1变为0，是0则变为1</p><p style="background-color: inherit;">比如我要查询某班男生和女生的数量分别是多少?</p><p style="background-color: inherit;">通常我们这么写:</p><p style="background-color: inherit;">select count(*) from 表 where 性别 ＝ 男；</p><p style="background-color: inherit;">select count(*) from 表 where 性别 ＝ 女；</p><p style="background-color: inherit;">要想显示到一起还要union一下，太麻烦了</p><p style="background-color: inherit;">用decode呢，只需要一句话</p><p style="background-color: inherit;">select decode(性别，男，1，0），decode(性别，女，1，0） from 表</p><p style="background-color: inherit;">&nbsp;</p><p style="background-color: inherit;">&nbsp;</p><p style="background-color: inherit;">3，order by对字符列进行特定的排序</p><p style="background-color: inherit;">大家还可以在Order by中使用Decode。</p><p style="background-color: inherit;">例：表table_subject，有subject_name列。要求按照：语、数、外的顺序进行排序。这时，就可以非常轻松的使用Decode完成要求了。</p><p style="background-color: inherit;">select * from table_subject order by decode(subject_name, &#39;语文&#39;, 1, &#39;数学&#39;, 2, , &#39;外语&#39;,3)</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

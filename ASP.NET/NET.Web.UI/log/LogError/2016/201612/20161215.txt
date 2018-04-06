@@ -1,0 +1,9 @@
+
+ 
+记录时间：2016-12-15 20:38:49,667 
+线程ID:[6] 
+日志级别：  ERROR 
+错误描述：百度API请求  ：
+请求参数是：Ip=112.22.234.44Type=PC
+{"content":{"Pois":null,"address_component":{"City":"苏州市","Country":"中国","District":"吴中区","Province":"江苏省","Street":"敦煌路","Street_Number":"","admin_area_code":"320506"},"confidence":"0.16000000000000004","formatted_address":"江苏省苏州市吴中区敦煌路","location":{"City":null,"Country":null,"District":null,"Province":null,"Street":null,"Street_Number":null,"Ip":null,"Lat":"3649506.0","Lng":"13440468.0"},"locid":"b26e0d58982b376edce17619c6694545","radius":"1726"},"result":{"error":"161","loc_time":"2016-12-15 20:38:44"}}
+ 

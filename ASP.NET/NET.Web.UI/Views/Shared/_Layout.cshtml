@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="icon" href="http://www.kebue.com//images/kebue.ico">
+    <meta name="Title" content="科布尔，科技社区,知识分享">
+    <title>机器人 科布尔</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Content/layer-v3.0.1/layer/layer.js"></script>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="container body-content">
+        <div class="container">
+            @RenderBody()
+            <br /><br />
+        </div>
+        <footer>
+            <div style="margin:0 auto; width:800px;">
+                <!-- 版权信息 -->
+                <h4 style="font-weight: bold; border-bottom: solid 1px #999; padding-bottom: 5px;">关于本站</h4>
+                <br />
+                <p>
+                    Copyright © 2016-2116
+                    Power by
+                    <a href="http://www.miibeian.gov.cn" target="_blank" title="陕ICP备15014626号-2" _href="http://www.miibeian.gov.cn">陕ICP备15014626号-2</a>
+                    <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=6132f5422023914b0c3a0c7cb83484f07b233b337ff2d31004acf3afdd4fef52"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt=".Net Core 研究院" title=".Net Core 研究院"></a>
+                    <a href="mailto:admin@kebue.com" title="admin@kebue.com">我的邮箱</a>
+                </p>
+                <!-- 版权信息结束 -->
+                <br /><br />
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

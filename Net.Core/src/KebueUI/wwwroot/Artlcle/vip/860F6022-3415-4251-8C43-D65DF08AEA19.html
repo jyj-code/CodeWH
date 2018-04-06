@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=关于理想化的编程>
+    <meta name="keywords" content=理想化编程测例子还很多，我就拿做接口这个例子说事吧！   现在一般的接口都是给的json格式，Json是一种特殊的字符串（就像string是特殊的引用类型，至于怎样特殊问题留给你了）！XX提供一个接口是一个字符串，然后我问是怎么搞得，他说拼接，此时此刻，大家觉得有问题嘛？   你拼接Json串，总有一天你会感觉到日了狗。。。。（包括在js拼接json串也是一样，一定要拼json对象！一定要拼jso>
+    <title>关于理想化的编程</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/B8C0509A-82D4-4BD7-A1BB-5BAF70ED1C60.html' title='.NET'>.NET</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>关于理想化的编程</h1>
+                        <pre>
+                        <code>
+                            <p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">理想化编程测例子还很多，我就拿做接口这个例子说事吧！</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">&nbsp; &nbsp; &nbsp; 现在一般的接口都是给的json格式，Json是一种特殊的字符串（就像string是特殊的引用类型，至于怎样特殊问题留给你了）！XX提供一个接口是一个字符串，然后我问是怎么搞得，他说拼接，此时此刻，大家觉得有问题嘛？</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">&nbsp; &nbsp; &nbsp; 你拼接Json串，总有一天你会感觉到日了狗。。。。（<span style="color: rgb(255, 0, 0);">包括在js拼接json串也是一样，一定要拼json对象！一定要拼json对象！一定要拼json对象！重要的事情说三遍！</span>然后再用JSON.parse()和JSON.stringfy()去操作。<a href="http://blog.csdn.net/wangxiaohu__/article/details/7254598" style="text-decoration: none; color: rgb(51, 153, 255);"><br/></a></p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">&nbsp; &nbsp; &nbsp; XX提供的结构就是一串字符串，为什么不序列化！！！！出现占位符怎么样？XX曰：我们数据不会出现！这么肯定？这就是理想化编程的可怕！</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">&nbsp; &nbsp; &nbsp; 我跟到底层原来写的这么鬼：</p><pre style="margin-top: 0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; padding: 0px; list-style-type: none; list-style-image: none; font-family: &#39;Courier New&#39; !important;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;string&nbsp;ToJson()  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;string.Format(&quot;{{\&quot;para1\&quot;:{0},\&quot;para2\&quot;:{1},\&quot;para3\&quot;:{2}}}&quot;,&nbsp;para1,&nbsp;para2,&nbsp;para3);  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</pre><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">&nbsp; &nbsp; &nbsp; 此时我已无力吐槽。。。。为什么不序列化(Serialization)成json?</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">&nbsp; &nbsp; &nbsp; 下面还有关于反序列化成model。为什么用强转？强转为什么不加Try catch？</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">&nbsp; &nbsp; &nbsp; &nbsp;LModel codelist = (Model)JsonConvert.DeserializeObject(strJson, typeof(Model));</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">&nbsp; &nbsp; &nbsp; 其实也没必要用Try catch，用as就行</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">&nbsp; &nbsp; &nbsp; 关于强转和as的区别：强制类型转换：转换不成功会抛出异常，对引用类型和值类型都适用。as运算符：转换不成功得到一个null值，不会抛出异常；仅适用于引用类型，不能用于值类型。</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">&nbsp; &nbsp; &nbsp; LModel codelist = JsonConvert.DeserializeObject(strJson, typeof(Model)) as model;</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">&nbsp; &nbsp; &nbsp;这不就OK了。。。。</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">&nbsp; &nbsp;&nbsp;<span style="color: rgb(255, 0, 0);">&nbsp;做接口要注意的地方（一家之言，欢迎拍砖）</span>：</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">&nbsp; &nbsp; &nbsp;1，标准的接口文档和标准的接口数据；</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">&nbsp; &nbsp; &nbsp;2，性能；</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">&nbsp; &nbsp; &nbsp;a、SQL语句性能，查询更快</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">&nbsp; &nbsp; &nbsp;b、缓存，减少数据库压力</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">&nbsp; &nbsp; &nbsp;c、数据量，能不能一次把数据拿出来</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">&nbsp; &nbsp; &nbsp;d、生成压缩gz文件，减少网络传输</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none;">&nbsp; &nbsp; &nbsp;先以json为例吧，像编程理想化的例子还很多，比如不写后端验证，我们改怎么防御攻击。此恨绵绵无绝期，吾将上下而求索！我是不是有点较真了？？？？</p><p><span class="diggword" style="margin-top: 5px; margin-left: 0px; font-size: 12px; color: gray;">--相信不屈不饶的努力，相信战胜死亡的年轻！</span></p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

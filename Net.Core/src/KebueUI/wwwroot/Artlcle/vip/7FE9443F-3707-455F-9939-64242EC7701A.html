@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=css模块化思想（一）--------命名是个技术活>
+    <meta name="keywords" content=引子：　　女孩子都喜欢买衣服，而我也不例外，奈何钱包太瘦，买不起高大上的定制，只能买撞衫率极高的休闲衣，不过对于我来说，我还是开心的，毕竟买衣服买的不仅是衣服，更是一种心情。在web前端的世界里，css里也充满了生活的艺术，都说，艺术源于生活，却高于生活，是对生活的一种升华，那么在css里，是个性化的定制好，还是模块化的量产好呢？这就要看各个项目了，这是一种权衡，一切离不开一个度，这世上没有最好的>
+    <title>css模块化思想（一）--------命名是个技术活</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/A632AFCE-5A51-4B23-8983-921172870D0C.html' title='CSS'>CSS</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>css模块化思想（一）--------命名是个技术活</h1>
+                        <pre>
+                        <code>
+                            <h1 style="text-align: center;">引子：</h1><p>　　女孩子都喜欢买衣服，而我也不例外，奈何钱包太瘦，买不起高大上的定制，只能买撞衫率极高的休闲衣，不过对于我来说，我还是开心的，毕竟买衣服买的不仅是衣服，更是一种心情。在web前端的世界里，css里也充满了生活的艺术，都说，艺术源于生活，却高于生活，是对生活的一种升华，那么在css里，是个性化的定制好，还是模块化的量产好呢？这就要看各个项目了，这是一种权衡，一切离不开一个度，这世上没有最好的，只有最适合自己的，在web前端的世界里亦是如此。</p><p>　　假如你现在只是做自己的一个小博客，那么就需要你有自己的个性，因为博客相当于你个人的代言，那么很多都是个性化的，而且需要你独自一人慢慢打造出适合自己的风格。不过，大多数的时候是在工作中，对于工作中，就要考虑两个字--合作，面对一个需要大家合作才能尽快完成的项目，这就需要模块化的思想了，大家需要一个共同的标准，有一个共享库，不在是个性化的代码，而是便于团队成员阅读和维护的优雅代码。由于css模块化涉及方方面面，所以，我就一点点揭开它的神秘面纱吧！这一篇就先聊聊命名好了。</p><h1 style="text-align: center;">　　正篇：</h1><h2>什么是css模块化思想？(what)</h2><p>为了理解css模块化思想，我们首先了解下，什么是模块化，在百度百科上的解释是，在系统的结构中，模块是可组合、分解和更换的单元。模块化是一种处理复杂系统分解成为更好的可管理模块的方式。它可以通过在不同组件设定不同的功能，把一个问题分解成多个小的独立、互相作用的组件，来处理复杂、大型的软件。看完模块化，是不是有种拼图的即视感，可以把大图分成各个小图，然后把小图拼成大图，分与合的艺术感。那么css模块化思想，也就是在css编写环境中，用上模块化的思想，?岩桓龃蟮南钅浚纸獬啥懒⒌淖榧煌淖榧涸鸩煌墓δ埽詈蟀涯？樽樽埃统闪宋颐且瓿傻南钅苛恕?/p><h2>为什么需要css模块化?(why)</h2><p>当做一个大项目，几个人团队合作开发，结果看不懂彼此的代码，怎么办，当面对前人已经写好代码，需要修改，可是无处下手，怎么办.当代码耦合，修改费时费力，怎么办，当需要迭代，面对庞大的代码，牵一发动全身的悲催时刻，怎么办，这个时候，模块化思想就是救星了。css写法特别的灵活，也因为灵活，所以容易耦合在一起，这时候就需要进行模块化的分离。那么css模块化的好处多多，列举了一些如下：</p><p>　　　　提高代码重用率</p><p>　　　　提高开发效率、减少沟通成本</p><p>　　　　提高页面容错</p><p>　　　　降低耦合</p><p>　　　　降低发布风险</p><p>　　　　减少Bug定位时间和Fix成本</p><p>　　　　更好的实现快速迭代</p><p>　　　　便于代码维护</p><p>　　　　。。。。。。</p><h2>怎样实现css模块化？（how）</h2><p>　　　　要实现css模块化需要很多步，今天我们就说说第一步，命名。</p><p>　　　　看别人的代码，就好像进入对方的军事基地一样，要想里面的武器用的得心应手，首先得知道每个武器的名字，假如你的武器都是取的不三不四，那么就算来到了基地，估计也不敢动你的武器了，更别提战斗了，所以，要规范我们在css中的命名，尽量做到团队成员能一看就懂。</p><p>　　　　css命名上的优化可以分为css文件名的命名，以及css选择器的命名。</p><h3>css样式文件名：</h3><p>1）　</p><p>主要的 master.css&nbsp;<br/>布局，版面 layout.css&nbsp;<br/>专栏 columns.css&nbsp;<br/>文字 font.css&nbsp;<br/>打印样式 print.css&nbsp;<br/>主题 themes.css</p><p>2）</p><p>reset.css // 对浏览器的默认样式进行重设&nbsp;<br/>layout.css // 管理页面的布局&nbsp;<br/>typeset.css // 图文的编排<br/>color.css // 统一管理颜色的搭配&nbsp;<br/>print.css // 打印效果样式&nbsp;<br/>ie.css // 把对ie的hack单独分开&nbsp;</p><p>3）</p><p>reset.css&nbsp;<br/>header.css // 头部的所有样式&nbsp;<br/>container.css // 除头部/底部外的中间区域样式&nbsp;<br/>footer.css // 底部样式&nbsp;<br/>print.css&nbsp;<br/>ie.css&nbsp;</p><p>4)</p><p>reset.css /*页面样式充值*/<br/>header.css /*全站头部样式*/<br/>footer.css /*全站尾部样式*/<br/>public.css /*全站公共模块样式*/<br/>index.css /*首页特有样式*/<br/>container.css /*二级及以下主体样式*/<br/>print.css /*打印样式*/<br/>ie.css /*IE hack*/</p><p>等等</p><p>还是那句话，没有最好的命名方式，只有最合适的命名方式。主要就是从html结构和bug的快速定位和便于其他成员的修改上去考虑。</p><p>假如你的网站是新闻类的门户网站，然后html的结构就主要是布局<span style="font-family: 宋体;">，版面 layout.css ，专栏 columns.css ，文字 font.css ，打印样式 print.css 就比较适合，因为跟html很一致，也很契合。</span></p><p><span style="font-family: 宋体;">假如是企业官网的话，一般html结构都是头和尾都有标准的，所以与html结构最契合的就是第三种了，同时我们可以优化第三种，在container里面再分类，分成common,layout，就方便进一步的修改，至于common里就可以放入font,color一些公用的样式。</span></p><p><span style="font-family: 宋体;">没有完美的生活，也没有完美的人，所以也没有完美的文件命名，只有尽量做到与html布局契合，然后重在从每次的项目中反省，总结，条条大路通罗马，能抓住老鼠的就是好猫。</span></p><p>&nbsp;</p><h3><span style="font-family: 宋体;">css选择器的命名：</span></h3><p><span style="font-family: 宋体;">规范css选择器的命名，是个老生常谈的问题，对它的规范，不仅是模块化实现的一环，便于团队开发，同时也规避了一些兼容性的麻烦。因为各个浏览器，IE，火狐，谷歌，safari</span></p><p><span style="font-family: 宋体;">，每个浏览器,IE产品，火狐，safari,</span><span style="font-family: 宋体;">coogle Chrome，都会因为命名不规范会产生不同样式..</span></p><p>&nbsp;</p><p>所有的CSS语法是不区分大小写的ASCII范围（即，i.e., [a-z] and [A-Z]是等价的）中，除了部分不属于CSS的控制之下。例如，在HTML中值的区分大小写属性“ID”的字体名称和“class”，和URI就在于本规范的范围之内。请特别注意，元素名称是不区分大小写的HTML，但区分大小写的XML。<br/>在CSS中，标识符（包括元素名称，类别，并在选择的ID）只能包含字符[A-ZA-Z0-9]和ISO 10646字符U + 00A0高，加上连字符（ - ）和下划线（ _）;他们不能以数字开头，两个连字符，或一个连字符后跟数字。标识符也可以包含转义字符和任何ISO 10646字符作为一个数字代码（见下项）。例如，识别符“B&amp;W?”可被写为“B \＆W \？”或“B \ 26Wˉˉ\ 3F”。请参考W3C CSS2.1的4.1.3节,链接地址：http://www.w3.org/TR/CSS21/syndata.html#characters</p><p>通过如下代码：</p><p><img style="margin-right: auto; margin-left: auto; display: block;" alt="" src="http://images0.cnblogs.com/blog2015/790006/201507/291434154077833.png"/></p><p><img style="margin-right: auto; margin-left: auto; display: block;" alt="" src="http://images0.cnblogs.com/blog2015/790006/201507/291435007982500.png"/></p><p>在各浏览器的结果如下：</p><p>ie6:</p><p><img style="margin-right: auto; margin-left: auto; display: block;" alt="" src="http://images0.cnblogs.com/blog2015/790006/201507/291435376428942.png"/></p><p>ie7</p><p><img style="margin-right: auto; margin-left: auto; display: block;" alt="" src="http://images0.cnblogs.com/blog2015/790006/201507/291435590484971.png"/></p><p>ie8</p><p><img style="margin-right: auto; margin-left: auto; display: block;" alt="" src="http://images0.cnblogs.com/blog2015/790006/201507/291436162354286.png"/></p><p>Firefox38.0.1</p><p><img style="margin-right: auto; margin-left: auto; display: block;" alt="" src="http://images0.cnblogs.com/blog2015/790006/201507/291440595329004.png"/></p><p>360结果，Google Chrome，safari,opera结果一致如下：</p><p><img style="margin-right: auto; margin-left: auto; display: block;" alt="" src="http://images0.cnblogs.com/blog2015/790006/201507/291441382517075.png"/></p><p>&nbsp;</p><p>从上面直观的了解到选择器的命名在各浏览器下的支持情况有所不同。因此，如果选择器的命名不规范，将影响各浏览器下的渲染效果。为了兼容以上的浏览器，省麻烦，我们尽量命名以字母开头。可以保证都兼容。</p><h3><strong>常用的css命名规则</strong></h3><p>头：header</p><p>内容：content/container</p><p>尾：footer</p><p>导航：nav</p><p>侧栏：sidebar</p><p>栏目：column</p><p>页面外围控制整体布局宽度：wrapper</p><p>左右中：left right center</p><p>登录条：loginbar</p><p>标志：logo</p><p>广告：banner</p><p>页面主体：main</p><p>热点：hot</p><p>新闻：news</p><p>下载：download</p><p>子导航：subnav</p><p>菜单：menu</p><p>子菜单：submenu</p><p>搜索：search</p><p>友情链接：friendlink</p><p>页脚：footer</p><p>版权：copyright</p><p>滚动：scroll</p><p>内容：content</p><p>标签页：tab</p><p>文章列表：list</p><p>提示信息：msg</p><p>小技巧：tips</p><p>栏目标题：title</p><p>加入：joinus</p><p>指南：guide</p><p>服务：service</p><p>注册：register</p><p>状态：status</p><p>投票：vote</p><p>合作伙伴：partner</p><p>(二)注释的写法:</p><pre>/*&nbsp;Header&nbsp;*/    内容区/*&nbsp;End&nbsp;Header&nbsp;*/</pre><p>(三)id的命名:</p><p>(1)页面结构</p><p>容器: container</p><p>页头：header</p><p>内容：content/container</p><p>页面主体：main</p><p>页尾：footer</p><p>导航：nav</p><p>侧栏：sidebar</p><p>栏目：column</p><p>页面外围控制整体布局宽度：wrapper</p><p>左右中：left right center</p><p>(2)导航</p><p>导航：nav</p><p>主导航：mainbav</p><p>子导航：subnav</p><p>顶导航：topnav</p><p>边导航：sidebar</p><p>左导航：leftsidebar</p><p>右导航：rightsidebar</p><p>菜单：menu</p><p>子菜单：submenu</p><p>标题: title</p><p>摘要: summary</p><p>(3)功能</p><p>标志：logo</p><p>广告：banner</p><p>登陆：login</p><p>登录条：loginbar</p><p>注册：register</p><p>搜索：search</p><p>功能区：shop（如购物车）</p><p>标题：title</p><p>加入：joinus</p><p>状态：status</p><p>按钮：btn</p><p>滚动：scroll</p><p>标签页：tab</p><p>文章列表：list</p><p>提示信息：msg</p><p>当前的: current</p><p>小技巧：tips</p><p>图标: icon</p><p>注释：note</p><p>指南：guide</p><p>服务：service</p><p>热点：hot</p><p>新闻：news</p><p>下载：download</p><p>投票：vote</p><p>合作伙伴：partner</p><p>友情链接：link</p><p>版权：copyright</p><p>(四)class的命名:</p><p><span style="font-family: &quot;Microsoft YaHei&quot;;">(1)颜色:使用颜色的名称或者16进制代码,如</span></p><pre>.red&nbsp;{&nbsp;color:&nbsp;red;&nbsp;}.f60&nbsp;{&nbsp;color:&nbsp;#f60;&nbsp;}.ff8600&nbsp;{&nbsp;color:&nbsp;#ff8600;&nbsp;}</pre><p><span style="font-family: &quot;Microsoft YaHei&quot;;">（2）字体大小,直接使用”font+字体大小”作为名称,如</span></p><pre>.font10px&nbsp;{&nbsp;font-size:&nbsp;10px;&nbsp;}.font6pt&nbsp;{font-size:&nbsp;6pt;&nbsp;}</pre><p><span style="font-family: &quot;Microsoft YaHei&quot;;">(3)对齐样式,使用对齐目标的英文名称,如</span></p><pre>.left&nbsp;{&nbsp;float:left;&nbsp;}.bottom&nbsp;{&nbsp;float:bottom;&nbsp;}</pre><p><span style="font-family: &quot;Microsoft YaHei&quot;;">(4)标题栏样式,使用”类别+功能”的方式命名,如</span></p><pre>.barnews&nbsp;{&nbsp;}.barproduct&nbsp;{&nbsp;}</pre><p><span style="font-family: 宋体;">注意事项::</span></p><ol class=" list-paddingleft-2"><li><p><span style="font-family: 宋体;">一律小写;</span></p></li><li><p><span style="font-family: 宋体;">尽量用英文;</span></p></li><li><p><span style="font-family: 宋体;">不加中杠和下划线;</span></p></li><li><p><span style="font-family: 宋体;">尽量不缩写；</span></p></li></ol><p><span style="font-family: 宋体;">我比较喜欢bootstrap的简洁优雅的风格。所以css命名也可以参考一下。</span></p><p><span style="font-family: 宋体;">&nbsp;</span></p><h3><span style="font-family: 宋体;">特别是class命名：</span></h3><p>&nbsp;</p><ul class=" list-paddingleft-2"><li><p>class 名称中只能出现小写字符和连字符（不是下划线，也不是驼峰命名法）。连字符应当用于相关 class 的命名（类似于命名空间）（例如，<code>.btn</code>&nbsp;和&nbsp;<code>.btn-danger</code>）。</p></li><li><p>避免过度任意的简写。<code>.btn</code>&nbsp;代表&nbsp;<em>button</em>，但是&nbsp;<code>.s</code>&nbsp;不能表达任何意思。</p></li><li><p>class 名称应当尽可能短，并且意义明确。</p></li><li><p>使用有意义的名称。使用有组织的或目的明确的名称，不要使用表现形式（presentational）的名称。</p></li><li><p>基于最近的父 class 或基本（base） class 作为新 class 的前缀。</p></li><li><p>使用&nbsp;<code>.js-*</code>&nbsp;class 来标识行为（与样式相对），并且不要将这些 class 包含到 CSS 文件中。</p></li></ul><p>&nbsp;</p><p style="text-align: center;"><img alt="" src="http://images0.cnblogs.com/blog2015/790006/201507/291504136734954.png"/></p><h3>选择器</h3><ul class=" list-paddingleft-2"><li><p>对于通用元素使用 class ，这样利于渲染性能的优化。</p></li><li><p>对于经常出现的组件，避免使用属性选择器（例如，<code>[class^=&quot;...&quot;]</code>）。浏览器的性能会受到这些因素的影响。</p></li><li><p>选择器要尽可能短，并且尽量限制组成选择器的元素个数，建议不要超过 3 。</p></li><li><p><strong>只有</strong>在必要的时候才将 class 限制在最近的父元素内（也就是后代选择器）（例如，不使用带前缀的 class 时 -- 前缀类似于命名空间）。</p></li></ul><p style="text-align: center;"><img alt="" src="http://images0.cnblogs.com/blog2015/790006/201507/291508090795435.png"/></p><p>&nbsp;</p><p>css编码规范可以参考http://codeguide.bootcss.com/</p><p>&nbsp;</p><p>非常高兴能跟大家一起分享，一起学习，今天就写到这里了，因为本人水平有限，有错误的地方，欢迎指正，谢谢啦！---妙瞳。</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>　　</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

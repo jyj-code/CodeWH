@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=经验分享：CSS浮动(float,clear)通俗讲解>
+    <meta name="keywords" content=很早以前就接触过CSS，但对于浮动始终非常迷惑，可能是自身理解能力差，也可能是没能遇到一篇通俗的教程。 前些天小菜终于搞懂了浮动的基本原理，迫不及待的分享给大家。写在前面的话： 由于CSS内容比较多，小菜没有精力从头到尾讲一遍，只能有针对性的讲解。 如果读者理解CSS盒子模型，但对于浮动不理解，那么这篇文章可以帮助你。 小菜水平有限，本文仅仅是入门教程，不当之处请谅解！ 本文以div元素布局为例。>
+    <title>经验分享：CSS浮动(float,clear)通俗讲解</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/A632AFCE-5A51-4B23-8983-921172870D0C.html' title='CSS'>CSS</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>经验分享：CSS浮动(float,clear)通俗讲解</h1>
+                        <pre>
+                        <code>
+                            <p>很早以前就接触过CSS，但对于浮动始终非常迷惑，可能是自身理解能力差，也可能是没能遇到一篇通俗的教程。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 前些天小菜终于搞懂了浮动的基本原理，迫不及待的分享给大家。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p><strong>写在前面的话：</strong></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 由于CSS内容比较多，小菜没有精力从头到尾讲一遍，只能有针对性的讲解。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 如果读者理解CSS盒子模型，但对于浮动不理解，那么这篇文章可以帮助你。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 小菜水平有限，本文仅仅是入门教程，不当之处请谅解！</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 本文以div元素布局为例。</p><p>&nbsp;</p><p><strong>教程开始：</strong></p><p>&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 首先要知道，div是块级元素，在页面中独占一行，自上而下排列，也就是传说中的<strong>流</strong>。如下图：</p><p>&nbsp;<img style="margin-right: auto; margin-left: auto; display: block;" alt="" src="http://images.cnitblog.com/blog/471788/201303/27004951-2cdc11e4340c484ab8a7eb8f515a683e.png"/></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 可以看出，即使div1的宽度很小，页面中一行可以容下div1和div2，div2也不会排在div1后边，因为div元素是独占一行的。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 注意，以上这些理论，是指标准流中的div。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 小菜认为，无论多么复杂的布局，其基本出发点均是：“<strong>如何在一行显示多个</strong><strong>div</strong><strong>元素</strong>”。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 显然标准流已经无法满足需求，这就要用到浮动。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 浮动可以理解为让某个div</strong><strong>元素脱离标准流，漂浮在标准流之上，和标准流不是一个层次。</strong></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 例如，假设上图中的div2浮动，那么它将脱离标准流，但div1、div3、div4仍然在标准流当中，所以div3会自动向上移动，占据div2的位置，重新组成一个流。如图：</p><p>&nbsp;<img style="margin-right: auto; margin-left: auto; display: block;" alt="" src="http://images.cnitblog.com/blog/471788/201303/27005043-61e7e3050eb3466d99f25b10f449daa3.png"/></p><p>&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 从图中可以看出，由于对div2设置浮动，因此它不再属于标准流，div3自动上移<strong>顶替</strong>div2的位置，div1、div3、div4依次排列，成为一个新的流。又因为浮动是漂浮在标准流之上的，因此div2挡住了一部分div3，div3看起来变“矮”了。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这里div2用的是左浮动(float:left;)，可以理解为漂浮起来后靠左排列，右浮动(float:right;)当然就是靠右排列。这里的靠左、靠右是说页面的左、右边缘。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 如果我们把div2采用右浮动，会是如下效果：</p><p>&nbsp;<img style="width: 978px; margin-right: auto; margin-left: auto; display: block;" alt="" src="http://images.cnitblog.com/blog/471788/201303/27005121-3bfe4640443c4cd19c850857cc1ce39b.png"/></p><p>&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 此时div2靠页面右边缘排列，不再遮挡div3，读者可以清晰的看到上面所讲的div1、div3、div4组成的流。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 目前为止我们只浮动了一个div元素，多个呢？</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 下面我们把div2和div3都加上左浮动，效果如图：</p><p>&nbsp;<img style="margin-right: auto; margin-left: auto; display: block;" alt="" src="http://images.cnitblog.com/blog/471788/201303/27005158-1b23072329b04449a4438af06cbb8387.png"/></p><p>&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 同理，由于div2、div3浮动，它们不再属于标准流，因此div4会自动上移，与div1组成一个“新”标准流，而浮动是漂浮在标准流之上，因此div2又挡住了div4。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 咳咳，到重点了，当同时对div2、div3设置浮动之后，div3会跟随在div2之后，不知道读者有没有发现，一直到现在，div2在每个例子中都是浮动的，但并没有跟随到div1之后。因此，我们可以得出一个重要结论：</p><p><span style="color: rgb(255, 0, 0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>假如某个div</strong><strong>元素A</strong><strong>是浮动的，如果A</strong><strong>元素上一个元素也是浮动的，那么A</strong><strong>元素会跟随在上一个元素的</strong><span style="color: rgb(0, 0, 255);"><strong>后</strong></span><strong><span style="color: rgb(0, 0, 255);">边</span>(</strong><strong>如果一行放不下这两个元素，那么A</strong><strong>元素会被挤到下一行)</strong><strong>；如果A</strong><strong>元素上一个元素是标准流中的元素，那么A</strong><strong>的相对垂直位置不会改变，也就是说A</strong><strong>的顶部总是和上一个元素的底部对齐。</strong></span></p><p><span style="color: rgb(255, 0, 0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>div</strong><strong>的顺序是HTML</strong><strong>代码中div</strong><strong>的顺序决定的。</strong></span></p><p><span style="color: rgb(255, 0, 0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>靠近页面边缘的一端是</strong><span style="color: rgb(0, 0, 255);"><strong>前</strong></span><strong>，远离页面边缘的一端是</strong><span style="color: rgb(0, 0, 255);"><strong>后</strong></span><strong>。</strong></span></p><p>&nbsp;<img style="margin-right: auto; margin-left: auto; display: block;" alt="" src="http://images.cnitblog.com/blog/471788/201303/27005253-004f304d2c6e424d81e7658e26d3f8a3.png"/></p><p>&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 为了帮助读者理解，再举几个例子。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 假如我们把div2、div3、div4都设置成<strong>左</strong>浮动，效果如下：</p><p>&nbsp;<img style="margin-right: auto; margin-left: auto; display: block;" alt="" src="http://images.cnitblog.com/blog/471788/201303/27005331-95ad1122cc5641a3a3701e6c7fb775e0.png"/></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 根据上边的结论，跟着小菜理解一遍：先从div4开始分析，它发现上边的元素div3是浮动的，所以div4会跟随在div3之后；div3发现上边的元素div2也是浮动的，所以div3会跟随在div2之后；而div2发现上边的元素div1是标准流中的元素，因此div2的相对垂直位置不变，顶部仍然和div1元素的底部对齐。由于是左浮动，左边靠近页面边缘，所以左边是前，因此div2在最左边。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 假如把div2、div3、div4都设置成<strong>右</strong>浮动，效果如下：</p><p>&nbsp;<img style="margin-right: auto; margin-left: auto; display: block;" alt="" src="http://images.cnitblog.com/blog/471788/201303/27005405-331c3a369d5c4bfb8692c40ac3e59bf9.png"/></p><p>&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 道理和左浮动基本一样，只不过需要注意一下前后对应关系。由于是右浮动，因此右边靠近页面边缘，所以右边是前，因此div2在最右边。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 假如我们把div2、div4左浮动，效果图如下：</p><p>&nbsp;<img style="margin-right: auto; margin-left: auto; display: block;" alt="" src="http://images.cnitblog.com/blog/471788/201303/27005436-fc787817a4d84c1590684b0b53d92267.png"/></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 依然是根据结论，div2、div4浮动，脱离了标准流，因此div3将会自动上移，与div1组成标准流。div2发现上一个元素div1是标准流中的元素，因此div2相对垂直位置不变，与div1底部对齐。div4发现上一个元素div3是标准流中的元素，因此div4的顶部和div3的底部对齐，并且总是成立的，因为从图中可以看出，div3上移后，div4也跟着上移，<strong>div4</strong><strong>总是保证自己的顶部和上一个元素div3(</strong><strong>标准流中的元素)</strong><strong>的底部对齐</strong>。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 至此，恭喜读者已经掌握了添加浮动，但还有清除浮动，有上边的基础清除浮动非常容易理解。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 经过上边的学习，可以看出：元素浮动之前，也就是在标准流中，是竖向排列的，而浮动之后可以理解为横向排列。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>清除浮动可以理解为打破横向排列。</strong></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 清除浮动的关键字是clear，官方定义如下：</p><p>&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 语法：</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; clear : none | left | right | both</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 取值：</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; none&nbsp; :&nbsp; 默认值。允许两边都可以有浮动对象</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; left&nbsp;&nbsp; :&nbsp; 不允许左边有浮动对象</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; right&nbsp; :&nbsp; 不允许右边有浮动对象</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; both&nbsp; :&nbsp; 不允许有浮动对象</p><p>&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 定义非常容易理解，但是读者实际使用时可能会发现不是这么回事。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 定义没有错，只不过它描述的太模糊，让我们不知所措。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 根据上边的基础，假如页面中只有两个元素div1、div2，它们都是左浮动，场景如下：</p><p><img style="margin-right: auto; margin-left: auto; display: block;" alt="" src="http://images.cnitblog.com/blog/471788/201303/27005535-a73c3a18ef8b432496fbaa26b532d9da.png"/></p><p>&nbsp;&nbsp;&nbsp;&nbsp; 此时div1、div2都浮动，根据规则，div2会跟随在div1后边，但我们仍然希望div2能排列在div1下边，就像div1没有浮动，div2左浮动那样。</p><p>&nbsp;&nbsp;&nbsp;&nbsp; 这时候就要用到清除浮动（clear），如果单纯根据官方定义，读者可能会尝试这样写：在div1的CSS样式中添加clear:right;，理解为不允许div1的右边有浮动元素，由于div2是浮动元素，因此会自动下移一行来满足规则。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 其实这种理解是不正确的，这样做没有任何效果。看小菜定论：</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(255, 0, 0);"><strong>对于CSS</strong><strong>的清除浮动(clear)</strong><strong>，一定要牢记：这个规则只能影响使用清除的元素本身，不能影响其他元素。</strong></span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 怎么理解呢？就拿上边的例子来说，我们是想让div2移动，但我们却是在div1元素的CSS样式中使用了清除浮动，试图通过清除div1右边的浮动元素(clear:right;)来强迫div2下移，这是不可行的，因为这个清除浮动是在div1中调用的，它只能影响div1，不能影响div2。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 根据小菜定论，要想让div2下移，就必须在div2的CSS样式中使用浮动。本例中div2的左边有浮动元素div1，因此只要在div2的CSS样式中使用clear:left;来指定div2元素左边不允许出现浮动元素，这样div2就被迫下移一行。</p><p><img style="margin-right: auto; margin-left: auto; display: block;" alt="" src="http://images.cnitblog.com/blog/471788/201303/27005603-199c35bf7d07478599bf355e3fb8aecf.png"/></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那么假如页面中只有两个元素div1、div2，它们都是右浮动呢？读者此时应该已经能自己推测场景，如下：</p><p><img style="margin-right: auto; margin-left: auto; display: block;" alt="" src="http://images.cnitblog.com/blog/471788/201303/27005626-2408e35fd5f74faa92e46df37c04974d.png"/></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 此时如果要让div2下移到div1下边，要如何做呢？</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 同样根据小菜定论，我们希望移动的是div2，就必须在div2的CSS样式中调用浮动，因为浮动只能影响调用它的元素。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 可以看出div2的右边有一个浮动元素div1，那么我们可以在div2的CSS样式中使用clear:right;来指定div2的右边不允许出现浮动元素，这样div2就被迫下移一行，排到div1下边。</p><p><img style="margin-right: auto; margin-left: auto; display: block;" alt="" src="http://images.cnitblog.com/blog/471788/201303/27005712-4f0ff1cbbd30482694190d93834bd570.png"/></p><p>&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 至此，读者已经掌握了CSS+DIV浮动定位基本原理，足以应付常见的布局。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 其实，万变不离其宗，只要读者用心体会，再复杂的布局都可以通过小菜总结的规律搞定。</p><p>&nbsp;</p><p><strong>写在后面的话：</strong></p><p>&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 必须严正声明，CSS这块极其混乱，尤其是浏览器的兼容性问题，小菜水平有限，本文很可能有不当之处，望读者见谅。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 其实真不想写这么长的文章，可为了读者能够理解，总是不由自主的想多举些例子。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 为了减轻读者心理压力，本文没有任何CSS、HTML代码，因为现在很多教程上来就是一大堆CSS代码，看到就烦，别说细读了。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 最后预祝读者阅读愉快，开心掌握知识。</p><p>&nbsp;</p><p>&nbsp;</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

@@ -1,0 +1,896 @@
+
+ 
+记录时间：2016-12-08 00:09:05,680 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-8 上午 12:09:05
+			结束时间：16-12-8 上午 12:09:05
+			总 时 间：0.619504秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:09:10,755 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-8 上午 12:09:05
+			结束时间：16-12-8 上午 12:09:10
+			总 时 间：5.0473426秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:09:18,711 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 12:09:12
+			结束时间：16-12-8 上午 12:09:18
+			总 时 间：5.9042005秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.134.53&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:09:18,726 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 12:09:18
+			结束时间：16-12-8 上午 12:09:18
+			总 时 间：0.0130082秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.134.53&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:13:45,319 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-8 上午 12:13:44
+			结束时间：16-12-8 上午 12:13:45
+			总 时 间：0.5924838秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:13:50,012 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-8 上午 12:13:45
+			结束时间：16-12-8 上午 12:13:50
+			总 时 间：4.6680926秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:13:53,155 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 12:13:51
+			结束时间：16-12-8 上午 12:13:53
+			总 时 间：1.395275秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.134.53&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:13:53,168 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 12:13:53
+			结束时间：16-12-8 上午 12:13:53
+			总 时 间：0.013013秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.134.53&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:13:58,571 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-8 上午 12:13:58
+			结束时间：16-12-8 上午 12:13:58
+			总 时 间：1.23E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:13:58,572 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-8 上午 12:13:58
+			结束时间：16-12-8 上午 12:13:58
+			总 时 间：0.0010003秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:13:59,596 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 12:13:59
+			结束时间：16-12-8 上午 12:13:59
+			总 时 间：0.2361918秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.134.53&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:13:59,596 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 12:13:59
+			结束时间：16-12-8 上午 12:13:59
+			总 时 间：0秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.134.53&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:14:03,881 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-8 上午 12:14:03
+			结束时间：16-12-8 上午 12:14:03
+			总 时 间：5.17E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:14:03,884 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-8 上午 12:14:03
+			结束时间：16-12-8 上午 12:14:03
+			总 时 间：0.0029985秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:14:04,898 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 12:14:04
+			结束时间：16-12-8 上午 12:14:04
+			总 时 间：0.2602664秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.134.53&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:14:04,899 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 12:14:04
+			结束时间：16-12-8 上午 12:14:04
+			总 时 间：0秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.134.53&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:14:34,473 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-8 上午 12:14:33
+			结束时间：16-12-8 上午 12:14:34
+			总 时 间：0.5363619秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:14:35,959 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-8 上午 12:14:34
+			结束时间：16-12-8 上午 12:14:35
+			总 时 间：1.4599666秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:14:40,601 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 12:14:39
+			结束时间：16-12-8 上午 12:14:40
+			总 时 间：1.3239459秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.134.53&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:14:40,616 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 12:14:40
+			结束时间：16-12-8 上午 12:14:40
+			总 时 间：0.0156317秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.134.53&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:16:57,619 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 12:16:09
+			结束时间：16-12-8 上午 12:16:57
+			总 时 间：47.8811744秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.134.53&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:16:57,619 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 12:16:57
+			结束时间：16-12-8 上午 12:16:57
+			总 时 间：0秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.134.53&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:19:00,859 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-8 上午 12:18:59
+			结束时间：16-12-8 上午 12:19:00
+			总 时 间：1.5010081秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:19:00,859 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-8 上午 12:18:59
+			结束时间：16-12-8 上午 12:19:00
+			总 时 间：1.5010081秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:19:06,196 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-8 上午 12:19:00
+			结束时间：16-12-8 上午 12:19:06
+			总 时 间：5.3126229秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:19:06,196 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-8 上午 12:19:00
+			结束时间：16-12-8 上午 12:19:06
+			总 时 间：5.3126229秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:19:43,521 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 12:19:08
+			结束时间：16-12-8 上午 12:19:43
+			总 时 间：34.8842917秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.134.53&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 00:19:43,537 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 12:19:43
+			结束时间：16-12-8 上午 12:19:43
+			总 时 间：0.0156269秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.134.53&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:23:00,198 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-8 上午 07:22:58
+			结束时间：16-12-8 上午 07:23:00
+			总 时 间：1.9601211秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:23:12,758 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-8 上午 07:23:00
+			结束时间：16-12-8 上午 07:23:12
+			总 时 间：12.5122698秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:27:47,050 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-8 上午 07:27:46
+			结束时间：16-12-8 上午 07:27:47
+			总 时 间：0.4120883秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:27:49,290 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-8 上午 07:27:47
+			结束时间：16-12-8 上午 07:27:49
+			总 时 间：2.2322015秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:33:44,706 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-8 上午 07:33:44
+			结束时间：16-12-8 上午 07:33:44
+			总 时 间：0.5263645秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:33:49,259 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-8 上午 07:33:44
+			结束时间：16-12-8 上午 07:33:49
+			总 时 间：4.5370026秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:38:06,477 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-8 上午 07:38:06
+			结束时间：16-12-8 上午 07:38:06
+			总 时 间：0.1840856秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:38:11,364 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-8 上午 07:38:06
+			结束时间：16-12-8 上午 07:38:11
+			总 时 间：4.8783897秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:39:27,318 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-8 上午 07:39:27
+			结束时间：16-12-8 上午 07:39:27
+			总 时 间：0.2960529秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:39:29,546 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-8 上午 07:39:27
+			结束时间：16-12-8 上午 07:39:29
+			总 时 间：2.2120462秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:42:30,083 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-8 上午 07:42:29
+			结束时间：16-12-8 上午 07:42:30
+			总 时 间：0.4840146秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:42:34,571 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-8 上午 07:42:30
+			结束时间：16-12-8 上午 07:42:34
+			总 时 间：4.4640983秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:46:23,603 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-8 上午 07:46:23
+			结束时间：16-12-8 上午 07:46:23
+			总 时 间：0.3560541秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:46:25,735 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-8 上午 07:46:23
+			结束时间：16-12-8 上午 07:46:25
+			总 时 间：2.1200448秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:47:34,205 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 07:46:26
+			结束时间：16-12-8 上午 07:47:34
+			总 时 间：67.7860921秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.6.53&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:47:34,218 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 07:47:34
+			结束时间：16-12-8 上午 07:47:34
+			总 时 间：0.0120076秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.6.53&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:47:37,484 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-8 上午 07:47:37
+			结束时间：16-12-8 上午 07:47:37
+			总 时 间：4.63E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:47:37,500 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-8 上午 07:47:37
+			结束时间：16-12-8 上午 07:47:37
+			总 时 间：0.016002秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:49:31,409 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-8 上午 07:49:31
+			结束时间：16-12-8 上午 07:49:31
+			总 时 间：0.2680721秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:49:34,542 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-8 上午 07:49:31
+			结束时间：16-12-8 上午 07:49:34
+			总 时 间：3.1174028秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:52:11,369 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-8 上午 07:52:11
+			结束时间：16-12-8 上午 07:52:11
+			总 时 间：0.2800055秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:52:13,381 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-8 上午 07:52:11
+			结束时间：16-12-8 上午 07:52:13
+			总 时 间：2.0000423秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:52:14,676 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 07:52:14
+			结束时间：16-12-8 上午 07:52:14
+			总 时 间：0.5225923秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.134.53&modelType=pc&Browser_1=5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:52:14,676 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 07:52:14
+			结束时间：16-12-8 上午 07:52:14
+			总 时 间：0秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.134.53&modelType=pc&Browser_1=5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:58:22,424 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-8 上午 07:58:22
+			结束时间：16-12-8 上午 07:58:22
+			总 时 间：0.2920513秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:58:24,416 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-8 上午 07:58:22
+			结束时间：16-12-8 上午 07:58:24
+			总 时 间：1.9840427秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:58:25,892 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 07:58:25
+			结束时间：16-12-8 上午 07:58:25
+			总 时 间：0.7079333秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.134.53&modelType=pc&Browser_1=5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-08 07:58:25,908 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserlegitimacyVerification
+			开始时间：16-12-8 上午 07:58:25
+			结束时间：16-12-8 上午 07:58:25
+			总 时 间：0.0156364秒
+			Form表单数据：OS=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&Ip=36.149.134.53&modelType=pc&Browser_1=5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36
+			URL参数：
+					
+ 

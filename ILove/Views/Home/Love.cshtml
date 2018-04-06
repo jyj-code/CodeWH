@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "爱的记忆 ViewBag.SendBy";
+    ViewBag.Music = "Shayne Ward-Until You.mp3";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/Resources/css/love.css" rel="stylesheet" />
+
+<div id=ad1 style="z-index:1">
+    <div class="tips"><a href="../Home/LoveTree" target=_blank title="亲爱的你诺爱我就点点我吧">亲爱的 </a><a href="../Home/LoveTree" target=_blank title="亲爱的你诺爱我就点点我吧">@ViewBag.SendBy</a><a href="../Home/LoveTree" target=_blank title="亲爱的你诺爱我就点点我吧">嫁给我吧</a></div>
+</div>
+<div id=ad2 style="z-index:2">
+    <a href="../Home/LoveTree" target=_blank title="亲爱的你诺爱我就点点我吧"><img src="~/Content/Resources/Image/1.jpg" width="300" height="180" border="0"></a>
+</div>
+<div id=ad3 style="z-index:3">
+    <div>
+        <div id="codefans_net" style="position:absolute">
+            <div class="tips"><a href="../Home/LoveTree" target=_blank title="亲爱的你诺爱我就点点我吧">亲爱的 </a><a href="../Home/LoveTree" target=_blank title="亲爱的你诺爱我就点点我吧">@ViewBag.SendBy</a><a href="../Home/Stars" target=_blank title="亲爱的你诺爱我就点点我吧">I</a><a href="../Home/LoveTree" target=_blank title="亲爱的你诺爱我就点点我吧">LOVE</a><a href="../Home/PeopleFlashRun" target=_blank title="亲爱的你诺爱我就点点我吧">YOU</a></div>
+        </div>
+    </div>
+</div>
+<div id=ad4 style="z-index:4">
+    <div class="tips" id="tips"><a id="manual" href="javascript:;">手动放烟花</a><a id="auto" href="javascript:;">自动放烟花</a><a id="stop" href="javascript:;">停止放烟花</a></div>
+</div>
+<div class="row">
+    <div class="col-xs-6" style="position:absolute"><canvas id="mgCanvas"></canvas></div>
+    <div class="col-xs-6" id="code" style="position:relative">
+        <span class="keyword"></span>亲爱的 @ViewBag.SendBy<br /><span class="placeholder" />
+        <span class="comments">你不需要刻意的来迁就我，</span><br />
+        <span class="comments">你不需要那么辛苦的，</span><br />
+        <span class="comments">无论什么事，我都会尊重你，不会勉强你。</span><br />
+        <span class="comments">你不喜欢去的地方，我不会带着你去；</span><br />
+        <span class="comments">你不喜欢做的事，我不会逼你；你不喜欢我任性，我不会再任性；</span><br />
+        <span class="comments">当你不想我烦着你的时候，我会静静的站在一旁，</span><br />
+        <span class="comments">我送你的礼物，你不喜欢，我不会勉强你。</span><br />
+        <span class="comments">你不需要那么辛苦，</span><br />
+        <span class="comments">你可以把我当成一个值得信任的人，</span><br />
+        <span class="comments">当你开心的时候，让我也一起开心。</span><br />
+        <span class="comments">你可以把我当成一个值得信任的人，</span><br />
+        <span class="comments">当你不开心的时候，让我和你一起分担。</span><br />
+        <span class="comments">你不需要压抑着自己的情绪，生气的时候想说就说出来，</span><br />
+        <span class="comments">想骂就骂出来，想打就打过来，如果什么都不对我说，</span><br />
+        <span class="comments">只会让我觉得我只是一个多余的人。</span><br />
+        <span class="comments">你可以做你自己，那个你说的性格直率，想说就说，想做就做的人。</span><br />
+        <span class="comments">你不需要再改变了，因为我在改变着自己。</span><br /><br />
+        <span class="keyword"><a href="../Home/LoveTree" title="爱我就点点我"></a></span><hr />
+        <span class="keyword"><a href="../Home/LoveTree" title="爱我就点点我">与子成说,执子之手，与子偕老</a></span><hr />
+        <span class="keyword"><a href="../Home/LoveTree" title="爱我就点点我">只愿卿心似我心，定不负相思意。</a></span><hr />
+        <span class="keyword">@ViewBag.CurrentDate</span><br /><span class="placeholder" />
+    </div>
+    <div class="col-xs-6">
+        <div id="loveHeart">
+            <canvas id="garden"></canvas>
+            <div id="words">
+                <div id="messages">
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 我们相识时光
+                    <div id="elapseClock">
+                    </div>
+                </div>
+                <div id="loveu">
+                    <a href="../Home/LoveTree" title="诺爱我就点点我吧">你若不离不弃，我必生死相依</a>
+                    <div class="signature">
+                        - @ViewBag.PeopleBy
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<input type="hidden" id="hiddate" value=@ViewBag.ProductionDate />
+
+<script src="~/Content/Resources/js/love.js"></script>
+<script src="~/Content/Resources/js/snowfall.jquery.js"></script>
+<script src="~/Content/Resources/js/mg.js"></script>
+<script src="~/Content/Resources/js/Fireworks.js"></script>
+<script src="~/Content/Resources/js/Advertising.js"></script>
+<script src="~/Content/Resources/js/ILoveYou.js"></script>
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=如何禁止向文本框黏贴内容只能键盘输入>
+    <meta name="keywords" content=如何禁止向文本框黏贴内容只能键盘输入:在某些情况下需要限制文本框内容的输入方式来达到一些特殊的效果，比如用户注册的时候，一般需要输入两次密码，以确保输入正确，这个时候可能有些用户会采用复制黏贴这种偷工减料的方式，极有可能导致注册密码并非自己预期密码。这个时候限制复制黏贴就非常的重要了，下面直接给出代码实例:!DOCTYPEhtmlhtmlheadmetacharset=utf-8metaname=>
+    <title>如何禁止向文本框黏贴内容只能键盘输入</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/9D69FD3D-028F-4239-89F1-BAC91B1DFF4A.html' title='JavaScript'>JavaScript</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>如何禁止向文本框黏贴内容只能键盘输入</h1>
+                        <pre>
+                        <code>
+                            <p style="margin: 10px auto; padding: 0px; color: rgb(51, 51, 51); font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25.2px; white-space: normal; background-color: rgb(255, 255, 255);">如何禁止向文本框黏贴内容只能键盘输入:<br style="margin: 0px; padding: 0px;"/>在某些情况下需要限制文本框内容的输入方式来达到一些特殊的效果，比如用户注册的时候，一般需要输入两次密码，以确保输入正确，这个时候可能有些用户会采用复制黏贴这种偷工减料的方式，极有可能导致注册密码并非自己预期密码。这个时候限制复制黏贴就非常的重要了，下面直接给出代码实例:</p><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.8;"><a title="复制代码" style="margin: 0px; padding: 0px; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">&lt;!DOCTYPE&nbsp;html&gt;&lt;html&gt;&lt;head&gt;&lt;meta&nbsp;charset=&quot;utf-8&quot;&gt;&lt;meta&nbsp;name=&quot;author&quot;&nbsp;content=&quot;http://www.softwhy.com/&quot;&nbsp;/&gt;&lt;title&gt;蚂蚁部落&lt;/title&gt;&lt;/head&gt;&nbsp;&lt;body&gt;&nbsp;&lt;input&nbsp;type=&quot;text&quot;&nbsp;onpaste=&quot;return&nbsp;false&quot;&nbsp;oncontextmenu=&quot;return&nbsp;false&quot;&nbsp;oncopy=&quot;return&nbsp;false&quot;&nbsp;oncut=&quot;return&nbsp;false&quot;&nbsp;/&gt;&nbsp;&lt;/body&gt;&nbsp;&lt;/html&gt;</pre><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.8;"><a title="复制代码" style="margin: 0px; padding: 0px; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><p style="margin: 10px auto; padding: 0px; color: rgb(51, 51, 51); font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25.2px; white-space: normal; background-color: rgb(255, 255, 255);">以上代码实现了我们想要的功能，只能通过键盘输入内容，复制黏贴是不允许的。</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

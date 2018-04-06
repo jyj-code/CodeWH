@@ -1,0 +1,384 @@
+
+ 
+记录时间：2016-12-28 00:00:07,746 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-28 上午 12:00:06
+			结束时间：16-12-28 上午 12:00:07
+			总 时 间：1.0937766秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 00:00:11,711 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-28 上午 12:00:07
+			结束时间：16-12-28 上午 12:00:11
+			总 时 间：3.9606279秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 00:00:15,607 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：16-12-28 上午 12:00:15
+			结束时间：16-12-28 上午 12:00:15
+			总 时 间：0.0040109秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&Ip=112.22.234.21&Token=2478021165a94001b298187837a0a6e3&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 00:00:15,622 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：16-12-28 上午 12:00:15
+			结束时间：16-12-28 上午 12:00:15
+			总 时 间：0.0150092秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&Ip=112.22.234.21&Token=2478021165a94001b298187837a0a6e3&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 00:07:13,434 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-28 上午 12:07:12
+			结束时间：16-12-28 上午 12:07:13
+			总 时 间：0.8656095秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 00:07:19,897 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-28 上午 12:07:13
+			结束时间：16-12-28 上午 12:07:19
+			总 时 间：6.4613286秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 00:07:22,866 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：16-12-28 上午 12:07:22
+			结束时间：16-12-28 上午 12:07:22
+			总 时 间：0.0040189秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&Ip=112.22.234.21&Token=b06c8b8a6f2a42ebb4f475911fc19ae2&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 00:07:22,866 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：16-12-28 上午 12:07:22
+			结束时间：16-12-28 上午 12:07:22
+			总 时 间：0.0010022秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&Ip=112.22.234.21&Token=b06c8b8a6f2a42ebb4f475911fc19ae2&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 00:08:53,963 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-28 上午 12:08:53
+			结束时间：16-12-28 上午 12:08:53
+			总 时 间：0.8145764秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 00:09:00,702 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-28 上午 12:08:53
+			结束时间：16-12-28 上午 12:09:00
+			总 时 间：6.7364709秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 00:09:03,981 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：16-12-28 上午 12:09:03
+			结束时间：16-12-28 上午 12:09:03
+			总 时 间：0.0040422秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&Ip=112.22.234.21&Token=91e6855a8a384bd49516e322fd924503&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 00:09:04,000 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：16-12-28 上午 12:09:03
+			结束时间：16-12-28 上午 12:09:03
+			总 时 间：0.0170109秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&Ip=112.22.234.21&Token=91e6855a8a384bd49516e322fd924503&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 00:12:39,939 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-28 上午 12:12:39
+			结束时间：16-12-28 上午 12:12:39
+			总 时 间：0.8766607秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 00:12:46,287 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-28 上午 12:12:39
+			结束时间：16-12-28 上午 12:12:46
+			总 时 间：6.3472545秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 00:12:48,868 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：16-12-28 上午 12:12:48
+			结束时间：16-12-28 上午 12:12:48
+			总 时 间：0.0070143秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&Ip=112.22.234.21&Token=4cbc1ff6c2274e9dae3e70e480293c4b&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 00:12:48,893 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：16-12-28 上午 12:12:48
+			结束时间：16-12-28 上午 12:12:48
+			总 时 间：0.0220142秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&Ip=112.22.234.21&Token=4cbc1ff6c2274e9dae3e70e480293c4b&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 00:16:05,013 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-28 上午 12:16:05
+			结束时间：16-12-28 上午 12:16:05
+			总 时 间：1.73E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 00:16:05,024 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-28 上午 12:16:05
+			结束时间：16-12-28 上午 12:16:05
+			总 时 间：0.019013秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 00:16:06,303 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：16-12-28 上午 12:16:06
+			结束时间：16-12-28 上午 12:16:06
+			总 时 间：0.0010723秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&Ip=112.22.234.21&Token=59623291ddad4b2c966855189c9bbf81&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 00:16:06,303 
+线程ID:[35] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：16-12-28 上午 12:16:06
+			结束时间：16-12-28 上午 12:16:06
+			总 时 间：0秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&Ip=112.22.234.21&Token=59623291ddad4b2c966855189c9bbf81&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 21:53:00,824 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：16-12-28 下午 09:52:59
+			结束时间：16-12-28 下午 09:53:00
+			总 时 间：0.9526746秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 21:53:07,451 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Chat
+			开始时间：16-12-28 下午 09:53:00
+			结束时间：16-12-28 下午 09:53:07
+			总 时 间：6.6264011秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 21:53:10,126 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：16-12-28 下午 09:53:10
+			结束时间：16-12-28 下午 09:53:10
+			总 时 间：0.0080707秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&Ip=112.22.234.184&Token=bdd3080f8a27441fb76a9341bc4b675d&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-12-28 21:53:10,130 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：16-12-28 下午 09:53:10
+			结束时间：16-12-28 下午 09:53:10
+			总 时 间：0.0210144秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&Ip=112.22.234.184&Token=bdd3080f8a27441fb76a9341bc4b675d&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"江苏","city":"苏州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 

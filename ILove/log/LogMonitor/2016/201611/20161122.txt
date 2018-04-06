@@ -1,0 +1,2320 @@
+
+ 
+记录时间：2016-11-22 00:00:08,401 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-21 下午 11:59:57
+			结束时间：16-11-22 上午 12:00:08
+			总 时 间：10.4929577秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:00:08,976 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 12:00:08
+			结束时间：16-11-22 上午 12:00:08
+			总 时 间：8.7E-06秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:00:08,976 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 12:00:08
+			结束时间：16-11-22 上午 12:00:08
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:03:16,075 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 12:03:16
+			结束时间：16-11-22 上午 12:03:16
+			总 时 间：6.36E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:03:24,285 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 12:03:16
+			结束时间：16-11-22 上午 12:03:24
+			总 时 间：8.2094446秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:03:25,032 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 12:03:24
+			结束时间：16-11-22 上午 12:03:25
+			总 时 间：0.0931023秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:03:25,032 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 12:03:25
+			结束时间：16-11-22 上午 12:03:25
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:04:36,564 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 12:04:36
+			结束时间：16-11-22 上午 12:04:36
+			总 时 间：0.0721433秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:04:47,880 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 12:04:36
+			结束时间：16-11-22 上午 12:04:47
+			总 时 间：11.3145013秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:11:06,845 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 12:11:06
+			结束时间：16-11-22 上午 12:11:06
+			总 时 间：3.82E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:11:17,062 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 12:11:06
+			结束时间：16-11-22 上午 12:11:17
+			总 时 间：10.2157734秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:12:17,382 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 12:12:17
+			结束时间：16-11-22 上午 12:12:17
+			总 时 间：0.0020886秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:12:17,384 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 12:12:17
+			结束时间：16-11-22 上午 12:12:17
+			总 时 间：0.0010003秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:16:19,772 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 12:16:19
+			结束时间：16-11-22 上午 12:16:19
+			总 时 间：2.11E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:16:32,102 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 12:16:19
+			结束时间：16-11-22 上午 12:16:32
+			总 时 间：12.3301755秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:20:29,096 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 12:20:29
+			结束时间：16-11-22 上午 12:20:29
+			总 时 间：0.0010958秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:20:37,237 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 12:20:29
+			结束时间：16-11-22 上午 12:20:37
+			总 时 间：8.1413983秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:20:38,221 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 12:20:37
+			结束时间：16-11-22 上午 12:20:38
+			总 时 间：0.3292464秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:20:38,222 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 12:20:38
+			结束时间：16-11-22 上午 12:20:38
+			总 时 间：0.0010006秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:23:36,628 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 12:23:36
+			结束时间：16-11-22 上午 12:23:36
+			总 时 间：7.85E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:23:36,643 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 12:23:36
+			结束时间：16-11-22 上午 12:23:36
+			总 时 间：0.0150112秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:23:37,976 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 12:23:37
+			结束时间：16-11-22 上午 12:23:37
+			总 时 间：0.0940755秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.132.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:23:37,976 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 12:23:37
+			结束时间：16-11-22 上午 12:23:37
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.132.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:23:45,357 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 12:23:45
+			结束时间：16-11-22 上午 12:23:45
+			总 时 间：1.85E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:23:45,361 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 12:23:45
+			结束时间：16-11-22 上午 12:23:45
+			总 时 间：0.0040022秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:23:46,624 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 12:23:46
+			结束时间：16-11-22 上午 12:23:46
+			总 时 间：5.67E-05秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.132.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:23:46,625 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 12:23:46
+			结束时间：16-11-22 上午 12:23:46
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.132.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:27:33,673 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 12:27:33
+			结束时间：16-11-22 上午 12:27:33
+			总 时 间：0.0411139秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:27:37,120 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 12:27:33
+			结束时间：16-11-22 上午 12:27:37
+			总 时 间：3.4342786秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:27:45,448 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 12:27:45
+			结束时间：16-11-22 上午 12:27:45
+			总 时 间：8.66E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:27:45,454 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 12:27:45
+			结束时间：16-11-22 上午 12:27:45
+			总 时 间：0.0060035秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:28:01,499 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 12:28:00
+			结束时间：16-11-22 上午 12:28:01
+			总 时 间：0.5424296秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:28:01,501 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 12:28:01
+			结束时间：16-11-22 上午 12:28:01
+			总 时 间：0.0020053秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:30:00,437 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 12:30:00
+			结束时间：16-11-22 上午 12:30:00
+			总 时 间：0.0010886秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:30:00,464 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 12:30:00
+			结束时间：16-11-22 上午 12:30:00
+			总 时 间：0.0270211秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:30:00,645 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 12:30:00
+			结束时间：16-11-22 上午 12:30:00
+			总 时 间：2.63E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:30:00,654 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 12:30:00
+			结束时间：16-11-22 上午 12:30:00
+			总 时 间：0.0080041秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:30:02,090 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 12:30:01
+			结束时间：16-11-22 上午 12:30:02
+			总 时 间：0.1010837秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.132.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:30:02,091 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 12:30:02
+			结束时间：16-11-22 上午 12:30:02
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.132.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:30:19,504 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 12:30:19
+			结束时间：16-11-22 上午 12:30:19
+			总 时 间：0.0010324秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:30:31,641 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 12:30:19
+			结束时间：16-11-22 上午 12:30:31
+			总 时 间：12.1370467秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:30:32,246 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 12:30:32
+			结束时间：16-11-22 上午 12:30:32
+			总 时 间：8.02E-05秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.132.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:30:32,247 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 12:30:32
+			结束时间：16-11-22 上午 12:30:32
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.132.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:35:25,690 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 12:35:25
+			结束时间：16-11-22 上午 12:35:25
+			总 时 间：0.1031433秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:35:38,731 
+线程ID:[22] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 12:35:25
+			结束时间：16-11-22 上午 12:35:38
+			总 时 间：13.0156313秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:37:55,086 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 12:37:55
+			结束时间：16-11-22 上午 12:37:55
+			总 时 间：9.9E-06秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:38:06,180 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 12:37:55
+			结束时间：16-11-22 上午 12:38:06
+			总 时 间：11.0933558秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:38:07,315 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 12:38:07
+			结束时间：16-11-22 上午 12:38:07
+			总 时 间：0.3032178秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:38:07,316 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 12:38:07
+			结束时间：16-11-22 上午 12:38:07
+			总 时 间：0.001001秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:41:22,776 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 12:41:22
+			结束时间：16-11-22 上午 12:41:22
+			总 时 间：0.095161秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:41:39,166 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 12:41:22
+			结束时间：16-11-22 上午 12:41:39
+			总 时 间：16.3898731秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:41:41,514 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 12:41:40
+			结束时间：16-11-22 上午 12:41:41
+			总 时 间：0.5994987秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.132.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:41:41,516 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 12:41:41
+			结束时间：16-11-22 上午 12:41:41
+			总 时 间：0.0020029秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.132.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:43:36,870 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 12:43:36
+			结束时间：16-11-22 上午 12:43:36
+			总 时 间：0.0010842秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:43:47,611 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 12:43:36
+			结束时间：16-11-22 上午 12:43:47
+			总 时 间：10.7411215秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:43:48,386 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 12:43:48
+			结束时间：16-11-22 上午 12:43:48
+			总 时 间：0.0901197秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:43:48,387 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 12:43:48
+			结束时间：16-11-22 上午 12:43:48
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:46:35,519 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 12:46:35
+			结束时间：16-11-22 上午 12:46:35
+			总 时 间：3.09E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:46:45,598 
+线程ID:[27] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 12:46:35
+			结束时间：16-11-22 上午 12:46:45
+			总 时 间：10.0786826秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:47:16,179 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 12:47:16
+			结束时间：16-11-22 上午 12:47:16
+			总 时 间：9.52E-05秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:47:16,180 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 12:47:16
+			结束时间：16-11-22 上午 12:47:16
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:47:39,732 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 12:47:39
+			结束时间：16-11-22 上午 12:47:39
+			总 时 间：1.41E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:47:49,354 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 12:47:39
+			结束时间：16-11-22 上午 12:47:49
+			总 时 间：9.6223772秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:47:50,039 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 12:47:49
+			结束时间：16-11-22 上午 12:47:50
+			总 时 间：0.1131452秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 00:47:50,039 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 12:47:50
+			结束时间：16-11-22 上午 12:47:50
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 01:01:19,641 
+线程ID:[49] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 01:01:19
+			结束时间：16-11-22 上午 01:01:19
+			总 时 间：0.0650768秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 01:01:24,908 
+线程ID:[49] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 01:01:19
+			结束时间：16-11-22 上午 01:01:24
+			总 时 间：5.2464834秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 01:01:26,851 
+线程ID:[54] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 01:01:26
+			结束时间：16-11-22 上午 01:01:26
+			总 时 间：0.0060617秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 01:01:26,854 
+线程ID:[54] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 01:01:26
+			结束时间：16-11-22 上午 01:01:26
+			总 时 间：0.0020005秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:20:17,190 
+线程ID:[47] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 10:20:17
+			结束时间：16-11-22 上午 10:20:17
+			总 时 间：0.0631108秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:20:22,464 
+线程ID:[47] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 10:20:17
+			结束时间：16-11-22 上午 10:20:22
+			总 时 间：5.2524834秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:20:25,220 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 10:20:24
+			结束时间：16-11-22 上午 10:20:25
+			总 时 间：0.5914435秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:20:25,223 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 10:20:25
+			结束时间：16-11-22 上午 10:20:25
+			总 时 间：0.0030016秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:23:03,566 
+线程ID:[54] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 10:23:03
+			结束时间：16-11-22 上午 10:23:03
+			总 时 间：4.43E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:23:03,650 
+线程ID:[54] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 10:23:03
+			结束时间：16-11-22 上午 10:23:03
+			总 时 间：0.0840558秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:23:33,819 
+线程ID:[47] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 10:23:33
+			结束时间：16-11-22 上午 10:23:33
+			总 时 间：6.6E-06秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:23:33,820 
+线程ID:[47] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 10:23:33
+			结束时间：16-11-22 上午 10:23:33
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:23:44,150 
+线程ID:[56] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 10:23:44
+			结束时间：16-11-22 上午 10:23:44
+			总 时 间：6.36E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:23:44,232 
+线程ID:[56] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 10:23:44
+			结束时间：16-11-22 上午 10:23:44
+			总 时 间：0.0820584秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:23:45,875 
+线程ID:[46] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 10:23:45
+			结束时间：16-11-22 上午 10:23:45
+			总 时 间：0.1762064秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:23:45,875 
+线程ID:[46] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 10:23:45
+			结束时间：16-11-22 上午 10:23:45
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:24:28,328 
+线程ID:[49] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 10:24:28
+			结束时间：16-11-22 上午 10:24:28
+			总 时 间：6.25E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:24:28,407 
+线程ID:[49] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 10:24:28
+			结束时间：16-11-22 上午 10:24:28
+			总 时 间：0.0780454秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:24:29,528 
+线程ID:[46] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 10:24:29
+			结束时间：16-11-22 上午 10:24:29
+			总 时 间：5.34E-05秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:24:29,528 
+线程ID:[46] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 10:24:29
+			结束时间：16-11-22 上午 10:24:29
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:25:38,766 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 10:25:38
+			结束时间：16-11-22 上午 10:25:38
+			总 时 间：1.44E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:25:38,844 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 10:25:38
+			结束时间：16-11-22 上午 10:25:38
+			总 时 间：0.0780513秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:25:40,203 
+线程ID:[49] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 10:25:40
+			结束时间：16-11-22 上午 10:25:40
+			总 时 间：0.1000716秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:25:40,204 
+线程ID:[49] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 10:25:40
+			结束时间：16-11-22 上午 10:25:40
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:29:00,820 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 10:29:00
+			结束时间：16-11-22 上午 10:29:00
+			总 时 间：9.89E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:29:00,876 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 10:29:00
+			结束时间：16-11-22 上午 10:29:00
+			总 时 间：0.0560379秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:29:01,771 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 10:29:01
+			结束时间：16-11-22 上午 10:29:01
+			总 时 间：2.92E-05秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:29:01,771 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 10:29:01
+			结束时间：16-11-22 上午 10:29:01
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:29:10,450 
+线程ID:[49] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 10:29:10
+			结束时间：16-11-22 上午 10:29:10
+			总 时 间：8.55E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:29:10,455 
+线程ID:[49] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 10:29:10
+			结束时间：16-11-22 上午 10:29:10
+			总 时 间：0.0050072秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:29:11,713 
+线程ID:[50] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 10:29:11
+			结束时间：16-11-22 上午 10:29:11
+			总 时 间：0.1251221秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:29:11,713 
+线程ID:[50] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 10:29:11
+			结束时间：16-11-22 上午 10:29:11
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:31:28,560 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 10:31:28
+			结束时间：16-11-22 上午 10:31:28
+			总 时 间：9.41E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:31:28,673 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 10:31:28
+			结束时间：16-11-22 上午 10:31:28
+			总 时 间：0.1120739秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:32:02,553 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 10:32:02
+			结束时间：16-11-22 上午 10:32:02
+			总 时 间：3.46E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:32:02,559 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 10:32:02
+			结束时间：16-11-22 上午 10:32:02
+			总 时 间：0.006004秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:32:32,880 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 10:32:32
+			结束时间：16-11-22 上午 10:32:32
+			总 时 间：5.88E-05秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:32:32,880 
+线程ID:[42] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 10:32:32
+			结束时间：16-11-22 上午 10:32:32
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:34:24,278 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 10:34:24
+			结束时间：16-11-22 上午 10:34:24
+			总 时 间：0.0010947秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:34:24,353 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 10:34:24
+			结束时间：16-11-22 上午 10:34:24
+			总 时 间：0.0740523秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:34:55,071 
+线程ID:[47] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 10:34:54
+			结束时间：16-11-22 上午 10:34:55
+			总 时 间：0.1171165秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:34:55,071 
+线程ID:[47] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 10:34:55
+			结束时间：16-11-22 上午 10:34:55
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:35:31,893 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 10:35:31
+			结束时间：16-11-22 上午 10:35:31
+			总 时 间：4.3E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:35:31,952 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 10:35:31
+			结束时间：16-11-22 上午 10:35:31
+			总 时 间：0.056034秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:35:32,694 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 10:35:32
+			结束时间：16-11-22 上午 10:35:32
+			总 时 间：7.38E-05秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:35:32,694 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 10:35:32
+			结束时间：16-11-22 上午 10:35:32
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.132.85&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.4.85&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:36:28,888 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 10:36:28
+			结束时间：16-11-22 上午 10:36:28
+			总 时 间：2.74E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:36:39,139 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 10:36:28
+			结束时间：16-11-22 上午 10:36:39
+			总 时 间：10.2497976秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:38:29,009 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 10:38:29
+			结束时间：16-11-22 上午 10:38:29
+			总 时 间：6.83E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:38:39,886 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 10:38:29
+			结束时间：16-11-22 上午 10:38:39
+			总 时 间：10.8772165秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:38:40,346 
+线程ID:[43] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 10:38:40
+			结束时间：16-11-22 上午 10:38:40
+			总 时 间：0.1040854秒
+			Form表单数据：data[Ip]=36.149.196.181&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.196.181&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:38:40,347 
+线程ID:[43] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 10:38:40
+			结束时间：16-11-22 上午 10:38:40
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.196.181&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.196.181&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:40:13,078 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 10:40:13
+			结束时间：16-11-22 上午 10:40:13
+			总 时 间：1.81E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:40:13,137 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 10:40:13
+			结束时间：16-11-22 上午 10:40:13
+			总 时 间：0.0590403秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:40:14,157 
+线程ID:[26] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 10:40:14
+			结束时间：16-11-22 上午 10:40:14
+			总 时 间：3.42E-05秒
+			Form表单数据：data[Ip]=36.149.196.181&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.196.181&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:40:14,157 
+线程ID:[26] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 10:40:14
+			结束时间：16-11-22 上午 10:40:14
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.196.181&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.196.181&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:41:26,879 
+线程ID:[43] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 10:41:26
+			结束时间：16-11-22 上午 10:41:26
+			总 时 间：5.6E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:41:26,894 
+线程ID:[43] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 10:41:26
+			结束时间：16-11-22 上午 10:41:26
+			总 时 间：0.0150083秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:41:28,271 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 10:41:28
+			结束时间：16-11-22 上午 10:41:28
+			总 时 间：0.1170793秒
+			Form表单数据：data[Ip]=36.149.196.181&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.196.181&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 10:41:28,271 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 10:41:28
+			结束时间：16-11-22 上午 10:41:28
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.196.181&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.196.181&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:47:53,871 
+线程ID:[95] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 11:47:53
+			结束时间：16-11-22 上午 11:47:53
+			总 时 间：0.0630929秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:47:59,091 
+线程ID:[95] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 11:47:53
+			结束时间：16-11-22 上午 11:47:59
+			总 时 间：5.1974469秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:49:01,317 
+线程ID:[91] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 11:49:00
+			结束时间：16-11-22 上午 11:49:01
+			总 时 间：1.1137599秒
+			Form表单数据：data[Ip]=36.149.196.181&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.68.181&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:49:01,331 
+线程ID:[91] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 11:49:01
+			结束时间：16-11-22 上午 11:49:01
+			总 时 间：0.0070031秒
+			Form表单数据：data[Ip]=36.149.196.181&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.68.181&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:49:01,621 
+线程ID:[99] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 11:49:01
+			结束时间：16-11-22 上午 11:49:01
+			总 时 间：0.0010612秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:49:11,102 
+线程ID:[99] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 11:49:01
+			结束时间：16-11-22 上午 11:49:11
+			总 时 间：9.4802861秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:49:11,548 
+线程ID:[99] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 11:49:11
+			结束时间：16-11-22 上午 11:49:11
+			总 时 间：4.36E-05秒
+			Form表单数据：data[Ip]=36.149.196.181&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.68.181&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:49:11,548 
+线程ID:[99] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 11:49:11
+			结束时间：16-11-22 上午 11:49:11
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.196.181&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.68.181&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:50:15,115 
+线程ID:[99] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 11:50:15
+			结束时间：16-11-22 上午 11:50:15
+			总 时 间：2.83E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:50:25,650 
+线程ID:[99] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 11:50:15
+			结束时间：16-11-22 上午 11:50:25
+			总 时 间：10.534984秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:50:26,258 
+线程ID:[92] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 11:50:26
+			结束时间：16-11-22 上午 11:50:26
+			总 时 间：0.0901165秒
+			Form表单数据：data[Ip]=36.149.196.181&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.196.181&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:50:26,258 
+线程ID:[92] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 11:50:26
+			结束时间：16-11-22 上午 11:50:26
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.196.181&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.196.181&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:51:59,773 
+线程ID:[92] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Love
+			开始时间：16-11-22 上午 11:51:59
+			结束时间：16-11-22 上午 11:51:59
+			总 时 间：0.0010842秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:52:11,231 
+线程ID:[92] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Love
+			开始时间：16-11-22 上午 11:51:59
+			结束时间：16-11-22 上午 11:52:11
+			总 时 间：11.4575969秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:53:11,858 
+线程ID:[99] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 11:53:11
+			结束时间：16-11-22 上午 11:53:11
+			总 时 间：0.1191021秒
+			Form表单数据：data[Ip]=36.149.196.181&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.68.181&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:53:11,858 
+线程ID:[99] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 11:53:11
+			结束时间：16-11-22 上午 11:53:11
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.196.181&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.68.181&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:54:28,195 
+线程ID:[99] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:LoveTree
+			开始时间：16-11-22 上午 11:54:28
+			结束时间：16-11-22 上午 11:54:28
+			总 时 间：0.0010036秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:54:39,913 
+线程ID:[99] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:LoveTree
+			开始时间：16-11-22 上午 11:54:28
+			结束时间：16-11-22 上午 11:54:39
+			总 时 间：11.7177742秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:54:41,233 
+线程ID:[95] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:UserInfo
+			开始时间：16-11-22 上午 11:54:41
+			结束时间：16-11-22 上午 11:54:41
+			总 时 间：0.0941516秒
+			Form表单数据：data[Ip]=36.149.196.181&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.196.181&modelType=pc
+			URL参数：
+					
+ 
+
+ 
+记录时间：2016-11-22 11:54:41,233 
+线程ID:[95] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:UserInfo
+			开始时间：16-11-22 上午 11:54:41
+			结束时间：16-11-22 上午 11:54:41
+			总 时 间：0秒
+			Form表单数据：data[Ip]=36.149.196.181&data[Isp]=北京市 移动&data[Browser]=Google Chrome 53.0.2785.116&data[OS]=Windows NT&data[QueryResult]=1&ip=36.149.196.181&modelType=pc
+			URL参数：
+					
+ 

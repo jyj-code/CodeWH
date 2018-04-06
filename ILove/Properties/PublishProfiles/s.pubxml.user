@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\JiangYanJun\Desktop\WebSite</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/ILove.dll">
+      <publishTime>11/22/2016 10:43:49</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>11/20/2016 04:44:21</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/23/2012 15:23:58</publishTime>
+    </File>
+    <File Include="bin/NET.Architect.dll">
+      <publishTime>11/18/2016 21:28:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>07/17/2013 17:03:52</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
+      <publishTime>01/28/2015 04:02:22</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Optimization.resources.dll">
+      <publishTime>02/11/2014 15:28:40</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
+      <publishTime>01/28/2015 04:02:34</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.resources.dll">
+      <publishTime>01/28/2015 04:04:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>11/19/2016 08:33:45</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>11/19/2016 08:33:45</publishTime>
+    </File>
+    <File Include="Content/layer-v2.4/demo.html">
+      <publishTime>11/20/2016 03:30:34</publishTime>
+    </File>
+    <File Include="Content/layer-v2.4/layer/layer.js">
+      <publishTime>11/20/2016 03:43:27</publishTime>
+    </File>
+    <File Include="Content/layer-v2.4/layer/skin/default/icon-ext.png">
+      <publishTime>11/20/2016 03:30:34</publishTime>
+    </File>
+    <File Include="Content/layer-v2.4/layer/skin/default/icon.png">
+      <publishTime>11/20/2016 03:30:34</publishTime>
+    </File>
+    <File Include="Content/layer-v2.4/layer/skin/default/loading-0.gif">
+      <publishTime>11/20/2016 03:30:34</publishTime>
+    </File>
+    <File Include="Content/layer-v2.4/layer/skin/default/loading-1.gif">
+      <publishTime>11/20/2016 03:30:34</publishTime>
+    </File>
+    <File Include="Content/layer-v2.4/layer/skin/default/loading-2.gif">
+      <publishTime>11/20/2016 03:30:34</publishTime>
+    </File>
+    <File Include="Content/layer-v2.4/layer/skin/layer.css">
+      <publishTime>11/20/2016 03:30:34</publishTime>
+    </File>
+    <File Include="Content/layer-v2.4/layim.url">
+      <publishTime>11/20/2016 03:30:34</publishTime>
+    </File>
+    <File Include="Content/layer-v2.4/文档/jquery下载.url">
+      <publishTime>11/20/2016 03:30:34</publishTime>
+    </File>
+    <File Include="Content/layer-v2.4/文档/layer官网.url">
+      <publishTime>11/20/2016 03:30:34</publishTime>
+    </File>
+    <File Include="Content/layer-v2.4/文档/layer文档.url">
+      <publishTime>11/20/2016 03:30:34</publishTime>
+    </File>
+    <File Include="Content/layer-v2.4/文档/layer社区.url">
+      <publishTime>11/20/2016 03:30:34</publishTime>
+    </File>
+    <File Include="Content/layer-v2.4/更新日志.txt">
+      <publishTime>11/20/2016 03:30:34</publishTime>
+    </File>
+    <File Include="Content/Resources/css/default.css">
+      <publishTime>11/21/2016 23:35:45</publishTime>
+    </File>
+    <File Include="Content/Resources/css/love.css">
+      <publishTime>11/22/2016 00:33:01</publishTime>
+    </File>
+    <File Include="Content/Resources/css/LoveTree.css">
+      <publishTime>11/19/2016 08:47:21</publishTime>
+    </File>
+    <File Include="Content/Resources/css/Menu.css">
+      <publishTime>11/19/2016 15:04:34</publishTime>
+    </File>
+    <File Include="Content/Resources/css/Piano.css">
+      <publishTime>11/19/2016 12:28:23</publishTime>
+    </File>
+    <File Include="Content/Resources/Image/1.jpg">
+      <publishTime>11/21/2016 17:36:41</publishTime>
+    </File>
+    <File Include="Content/Resources/Image/11.jpg">
+      <publishTime>11/21/2016 22:42:25</publishTime>
+    </File>
+    <File Include="Content/Resources/Image/2.gif">
+      <publishTime>11/21/2016 17:41:02</publishTime>
+    </File>
+    <File Include="Content/Resources/Image/22.jpg">
+      <publishTime>11/21/2016 18:29:47</publishTime>
+    </File>
+    <File Include="Content/Resources/Image/3.jpg">
+      <publishTime>11/21/2016 18:01:24</publishTime>
+    </File>
+    <File Include="Content/Resources/Image/33.jpg">
+      <publishTime>11/21/2016 18:51:41</publishTime>
+    </File>
+    <File Include="Content/Resources/Image/4.jpg">
+      <publishTime>11/21/2016 18:03:50</publishTime>
+    </File>
+    <File Include="Content/Resources/Image/exs0erm9.png">
+      <publishTime>11/19/2016 11:44:46</publishTime>
+    </File>
+    <File Include="Content/Resources/Image/huaban.png">
+      <publishTime>11/21/2016 21:32:52</publishTime>
+    </File>
+    <File Include="Content/Resources/Image/nejs3bnm.png">
+      <publishTime>11/19/2016 11:42:44</publishTime>
+    </File>
+    <File Include="Content/Resources/js/Advertising.js">
+      <publishTime>11/21/2016 17:24:49</publishTime>
+    </File>
+    <File Include="Content/Resources/js/CanvasText-0.4.1.js">
+      <publishTime>11/19/2016 08:47:21</publishTime>
+    </File>
+    <File Include="Content/Resources/js/Fireworks.js">
+      <publishTime>11/22/2016 00:32:06</publishTime>
+    </File>
+    <File Include="Content/Resources/js/GetUserInfo.js">
+      <publishTime>11/20/2016 17:01:31</publishTime>
+    </File>
+    <File Include="Content/Resources/js/ILoveYou.js">
+      <publishTime>11/22/2016 00:43:33</publishTime>
+    </File>
+    <File Include="Content/Resources/js/jquery1.9.1.min.js">
+      <publishTime>11/19/2016 08:47:21</publishTime>
+    </File>
+    <File Include="Content/Resources/js/jquery8.js">
+      <publishTime>11/19/2016 10:43:19</publishTime>
+    </File>
+    <File Include="Content/Resources/js/jscex.min.js">
+      <publishTime>11/19/2016 08:47:21</publishTime>
+    </File>
+    <File Include="Content/Resources/js/jscex/functions.js">
+      <publishTime>11/19/2016 10:05:52</publishTime>
+    </File>
+    <File Include="Content/Resources/js/jscex/jquery-1.11.2.min.js">
+      <publishTime>11/19/2016 08:47:21</publishTime>
+    </File>
+    <File Include="Content/Resources/js/jscex/jscex-async-powerpack.min.js">
+      <publishTime>11/19/2016 08:47:21</publishTime>
+    </File>
+    <File Include="Content/Resources/js/jscex/jscex-async.min.js">
+      <publishTime>11/19/2016 08:47:21</publishTime>
+    </File>
+    <File Include="Content/Resources/js/jscex/jscex-builderbase.min.js">
+      <publishTime>11/19/2016 08:47:21</publishTime>
+    </File>
+    <File Include="Content/Resources/js/jscex/jscex-jit.js.js">
+      <publishTime>11/19/2016 08:47:21</publishTime>
+    </File>
+    <File Include="Content/Resources/js/jscex/jscex-parser.js">
+      <publishTime>11/19/2016 08:47:21</publishTime>
+    </File>
+    <File Include="Content/Resources/js/jscex/jscex.min.js">
+      <publishTime>11/19/2016 08:47:21</publishTime>
+    </File>
+    <File Include="Content/Resources/js/jscex/LoveTree.js">
+      <publishTime>11/19/2016 08:47:21</publishTime>
+    </File>
+    <File Include="Content/Resources/js/love.js">
+      <publishTime>11/22/2016 10:43:00</publishTime>
+    </File>
+    <File Include="Content/Resources/js/Menu.js">
+      <publishTime>11/19/2016 14:49:24</publishTime>
+    </File>
+    <File Include="Content/Resources/js/mg.js">
+      <publishTime>11/22/2016 10:39:48</publishTime>
+    </File>
+    <File Include="Content/Resources/js/Piano.js">
+      <publishTime>11/19/2016 12:07:44</publishTime>
+    </File>
+    <File Include="Content/Resources/js/requestAnimationFrame.js">
+      <publishTime>11/19/2016 10:44:07</publishTime>
+    </File>
+    <File Include="Content/Resources/js/snowfall.jquery.js">
+      <publishTime>11/22/2016 00:39:13</publishTime>
+    </File>
+    <File Include="Content/Resources/js/Stars.js">
+      <publishTime>11/19/2016 19:22:13</publishTime>
+    </File>
+    <File Include="Content/Resources/js/Whale.js">
+      <publishTime>11/19/2016 13:08:40</publishTime>
+    </File>
+    <File Include="Content/Resources/Music/Eric Clapton-Wonderful Tonight.mp3">
+      <publishTime>11/20/2016 03:12:07</publishTime>
+    </File>
+    <File Include="Content/Resources/Music/Shayne Ward-Until You.mp3">
+      <publishTime>11/20/2016 03:04:44</publishTime>
+    </File>
+    <File Include="Content/Resources/Music/Trip Road.mp3">
+      <publishTime>11/20/2016 03:01:37</publishTime>
+    </File>
+    <File Include="Content/Resources/Music/张信哲 - 我是真的.mp3">
+      <publishTime>11/20/2016 03:21:47</publishTime>
+    </File>
+    <File Include="Content/Resources/Music/林俊杰 - 我很想爱他.mp3">
+      <publishTime>11/20/2016 03:21:47</publishTime>
+    </File>
+    <File Include="Content/Resources/Music/王力宏-爱的就是你%28浪漫版%29.mp3">
+      <publishTime>11/20/2016 03:26:39</publishTime>
+    </File>
+    <File Include="Content/Resources/Music/马天宇 - 不知不觉爱上你.mp3">
+      <publishTime>11/20/2016 03:21:47</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>11/19/2016 08:33:42</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/19/2016 08:33:45</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/19/2016 08:33:45</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/19/2016 08:33:45</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/19/2016 08:33:45</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>11/19/2016 08:33:42</publishTime>
+    </File>
+    <File Include="Log4net/log4net.config">
+      <publishTime>11/20/2016 20:16:01</publishTime>
+    </File>
+    <File Include="Log4net/log4net.dll">
+      <publishTime>11/20/2016 04:44:21</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/19/2016 08:33:53</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>11/19/2016 08:33:45</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>11/19/2016 08:33:44</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>11/19/2016 08:33:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>11/19/2016 08:33:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>11/19/2016 08:33:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>11/19/2016 08:33:49</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>11/19/2016 08:33:49</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>11/19/2016 08:33:49</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>11/19/2016 08:33:49</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>11/19/2016 08:33:48</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>11/19/2016 08:33:49</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>11/19/2016 08:33:49</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>11/22/2016 00:40:50</publishTime>
+    </File>
+    <File Include="Views/Home/Clock.cshtml">
+      <publishTime>11/19/2016 12:02:49</publishTime>
+    </File>
+    <File Include="Views/Home/DemoTest.cshtml">
+      <publishTime>11/21/2016 17:33:30</publishTime>
+    </File>
+    <File Include="Views/Home/Galaxy.cshtml">
+      <publishTime>11/19/2016 12:46:08</publishTime>
+    </File>
+    <File Include="Views/Home/Love.cshtml">
+      <publishTime>11/22/2016 10:37:12</publishTime>
+    </File>
+    <File Include="Views/Home/LoveTree.cshtml">
+      <publishTime>11/20/2016 14:34:31</publishTime>
+    </File>
+    <File Include="Views/Home/Menu.cshtml">
+      <publishTime>11/19/2016 15:20:15</publishTime>
+    </File>
+    <File Include="Views/Home/PeopleFlashRun.cshtml">
+      <publishTime>11/19/2016 12:34:11</publishTime>
+    </File>
+    <File Include="Views/Home/Piano.cshtml">
+      <publishTime>11/19/2016 15:23:16</publishTime>
+    </File>
+    <File Include="Views/Home/Stars.cshtml">
+      <publishTime>11/21/2016 17:45:36</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>11/19/2016 08:33:42</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>11/21/2016 23:34:00</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>11/19/2016 08:33:42</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>11/19/2016 08:33:42</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/21/2016 18:57:06</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

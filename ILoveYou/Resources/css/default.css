@@ -1,0 +1,7 @@
+﻿body {
+    background: -moz-radial-gradient(center center,circle,#FFF8DC,#FFFFF0,#FF69B4);
+    background: -webkit-radial-gradient(center center,circle,#FFF8DC,#FFFFF0,#FF69B4);
+    background: -o-radial-gradient(center center,circle,#FFF8DC,#FFFFF0,#FF69B4);
+    background: -ms-radial-gradient(center center,circle,#FFF8DC,#FFFFF0,#FF69B4);
+    background: radial-gradient(center center,circle,#FFF8DC,#FFFFF0,#FF69B4);
+}

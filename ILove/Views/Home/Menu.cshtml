@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewBag.Title = "Menu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/Resources/css/Menu.css" rel="stylesheet" />
+<script>
+    $(document).ready(function () {
+        $(".M_1_Love").click(function () {
+            window.location.href = "../Home/Love";
+        });
+        $(".M_1_LoveTree").click(function () {
+            window.location.href = "../Home/LoveTree";
+        });
+        $(".M_1_Stars").click(function () {
+            window.location.href = "../Home/Stars";
+        });
+        $(".M_2_Clock").click(function () {
+            window.location.href = "../Home/Clock";
+        });
+        $(".M_2_Galaxy").click(function () {
+            window.location.href = "../Home/Galaxy";
+        });
+        $(".M_2_PeopleFlashRun").click(function () {
+            window.location.href = "../Home/PeopleFlashRun";
+        });
+        $(".M_2_Piano").click(function () {
+            window.location.href = "../Home/Piano";
+        });
+        $(".M_2_Whale").click(function () {
+            window.location.href = "http://kebue.com/Home/whale";
+        });
+    });
+</script>
+<div class="radmenu">
+    <a href="#" class="show">START</a>
+    <ul>
+        <li>
+            <a href="#" class="">表白</a>
+            <ul>
+                <li><a href="#" class="M_1_Love M_Menu">爱</a></li>
+                <li><a href="#" class="M_1_LoveTree M_Menu">爱树</a></li>
+                <li><a href="#" class="M_1_Stars M_Menu">求爱❤</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">特效</a>
+            <ul>
+                <li><a href="#" class="M_2_Clock M_Menu">Clock</a></li>
+                <li><a href="#" class="M_2_Galaxy M_Menu">Galaxy</a></li>
+                <li><a href="#" class="M_2_PeopleFlashRun M_Menu">PeopleFlashRun</a></li>
+                <li><a href="#" class="M_2_Piano M_Menu">Piano</a></li>
+                <li><a href="#" class="M_2_Whale M_Menu">Whale</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Menu 3</a>
+            <ul>
+                <li><a href="#">Sub Menu 1</a></li>
+                <li><a href="#">Sub Menu 2</a></li>
+                <li><a href="#">Sub Menu 3</a></li>
+                <li><a href="#">Sub Menu 4</a></li>
+                <li><a href="#">Sub Menu 5</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Menu 4</a>
+            <ul>
+                <li><a href="#">Sub Menu 1</a></li>
+                <li><a href="#">Sub Menu 2</a></li>
+                <li><a href="#">Sub Menu 3</a></li>
+                <li><a href="#">Sub Menu 4</a></li>
+                <li><a href="#">Sub Menu 5</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Menu 5</a>
+            <ul>
+                <li><a href="#">Sub Menu 1</a></li>
+                <li><a href="#">Sub Menu 2</a></li>
+                <li><a href="#">Sub Menu 3</a></li>
+                <li><a href="#">Sub Menu 4</a></li>
+                <li><a href="#">Sub Menu 5</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<script src="~/Content/Resources/js/Menu.js"></script>

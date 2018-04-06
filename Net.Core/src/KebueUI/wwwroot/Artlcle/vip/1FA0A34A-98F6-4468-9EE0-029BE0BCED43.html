@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=oracle 表误更新 （flashback ）闪回操作>
+    <meta name="keywords" content=oracle 表误更新 （flashback ）闪回操作--oracle 表误更新 闪回操作 测试环境--select * from v$database;--select * from v$version;操作第一步1.如下命令启用行迁移alter table test_a enable row movement;2.如下命令闪回到某时间点flashback table test_a to ti>
+    <title>oracle 表误更新 （flashback ）闪回操作</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/0D8667FF-B247-4368-A163-B9D7274FE236.html' title='Oracle'>Oracle</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>oracle 表误更新 （flashback ）闪回操作</h1>
+                        <pre>
+                        <code>
+                            <h1 style="font-family: 微软雅黑; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);"><a href="http://www.cnblogs.com/aaaaq/p/4459700.html" style="background-color: inherit; cursor: pointer;">oracle 表误更新 （flashback ）闪回操作</a></h1><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">--oracle&nbsp; 表误更新&nbsp; 闪回操作 测试环境</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">--select * from v$database;</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">--select * from v$version;</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">操作第一步</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">1.如下命令启用行迁移</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);"><span style="background-color: inherit; color: rgb(255, 0, 0);">alter table test_a enable row movement;</span></p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">2.如下命令闪回到某时间点</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);"><span style="background-color: inherit; color: rgb(255, 0, 0);">flashback table test_a to timestamp to_timestamp(&#39;2012-05-31 16:20:30&#39;, &#39;yyyy-mm-dd hh24:mi:ss&#39;);</span></p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">3如下命令查询sql操作日志 可以查看执行的语句执行的时间</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);"><span style="background-color: inherit; color: rgb(255, 0, 0);">select * from v$sql order by FIRST_LOAD_TIME desc;</span></p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　select * from v$sql&nbsp;&nbsp; (#查看最近所作的操作)</p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">　　select * from v$sqlarea（#查看最近所作的操作）</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

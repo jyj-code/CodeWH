@@ -1,0 +1,61 @@
+﻿
+@using Model
+<script>
+    function navAddClass() {
+        if ($("#navMenuCheckbox").is(':checked')) {
+            $("#navContent").addClass('navbar-fixed-top');
+            $("#navend").append('<br /><br /><br /><br /><br />');
+        } else {
+            $("#navContent").removeClass('navbar-fixed-top');
+            $("#navend").empty();
+        }
+    }
+</script>
+<div class="col-xs-12" id="navContent">
+    <div class="row">
+        <div class="col-xs-8">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand"></a>
+        </div>
+        <div class="col-xs-4">
+            <ul class="nav navbar-nav pull-right">
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">关于</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">友情链接</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">联系我</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row navbar-inverse" style="background-color:#6666CC">
+        <div class="col-xs-11">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://kebue.com/" title="Kebue.com">科布尔</a>
+            <ul id="menu-navbar" class="nav navbar-nav margin-center" style="margin-left:auto;margin-right:auto;">
+                <li id="menu-item-215" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-215"><a title="科布尔 首页" href="~/Home/Index"><i class="fa fa-home"></i> 首页</a></li>
+                @{
+                    foreach (var item in ViewData["ArticleType"] as List<ArticleType>)
+                    {
+                        <li id="menu-item-556" class="dropdown menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-556">
+                            <a href="../../../../@item.Link_Url" title="@item.Name"><i class="fa fa-magic"></i>@item.Name</a>
+                            <ul class="dropdown-menu hidden">
+                                <li id="menu-item-557" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-557"><a href="http://www.kebue.com">kebue</a></li>
+                            </ul>
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+        <div class="col-xs-1"><input class="pull-right" id="navMenuCheckbox" onclick="navAddClass()" type="checkbox"></div>
+    </div>
+</div>
+<div id="navend"><br /></div>
+

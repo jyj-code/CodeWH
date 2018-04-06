@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=JavaScript中为什么string可以拥有方法？>
+    <meta name="keywords" content=JavaScript中为什么string可以拥有方法？所有文章搬运自我的个人主页：sheilasun.me引子我们都知道，JavaScript数据类型分两大类，基本类型（或者称原始类型）和引用类型。基本类型的值是保存在栈内存中的简单数据段，它们是按值访问的。JS中有五种基本类型：Undefined、Null、Boolean、Number和String。引用类型的值是保存在堆内存中的对象，它的值是按>
+    <title>JavaScript中为什么string可以拥有方法？</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/9D69FD3D-028F-4239-89F1-BAC91B1DFF4A.html' title='JavaScript'>JavaScript</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>JavaScript中为什么string可以拥有方法？</h1>
+                        <pre>
+                        <code>
+                            <h1 style="font-family: 微软雅黑; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);"><a href="http://www.cnblogs.com/SheilaSun/p/4765394.html" style="background-color: inherit; cursor: pointer;">JavaScript中为什么string可以拥有方法？</a></h1><p style="background-color: inherit;">所有文章搬运自我的个人主页：<a href="http://sheilasun.me/" style="background-color: inherit; cursor: pointer;">sheilasun.me</a></p><h2 style="background-color: inherit;">引子</h2><p style="background-color: inherit;">我们都知道，JavaScript数据类型分两大类，基本类型（或者称原始类型）和引用类型。</p><p style="background-color: inherit;">基本类型的值是保存在栈内存中的简单数据段，它们是按值访问的。JS中有五种基本类型：Undefined、Null、Boolean、Number和String。</p><p style="background-color: inherit;">引用类型的值是保存在堆内存中的对象，它的值是按引用访问的。引用类型主要有Object、Array、Function、RegExp、Date。</p><p style="background-color: inherit;">对象是拥有属性和方法的，所以我们看到下面这段代码一点也不奇怪.</p><pre style="font-family: Monaco, Consolas, Courier, &#39;Lucida Console&#39;, monospace; background-color: inherit;">var&nbsp;favs=[&#39;鸡蛋&#39;,&#39;莲蓬&#39;];  favs.push(&#39;秋葵&#39;);  console.log(favs);//[&quot;鸡蛋&quot;,&nbsp;&quot;莲蓬&quot;,&nbsp;&quot;秋葵&quot;]  console.log(favs.length);//3</pre><p style="background-color: inherit;">Array是引用类型，所以它自然可以拥有属性(length)和方法(push)，这天经地义地就像夏天一定要吃冰淇淋一样。但是，再看下面的代码，仔细想想，这这这，合法吗？</p><pre style="font-family: Monaco, Consolas, Courier, &#39;Lucida Console&#39;, monospace; background-color: inherit;">var&nbsp;realMessage=&quot;Said&nbsp;I&nbsp;love&nbsp;you&nbsp;but&nbsp;I&nbsp;lied&quot;;  var&nbsp;myMessage=realMessage.substring(5,15);  console.log(myMessage);&nbsp;//&quot;I&nbsp;love&nbsp;you&quot;</pre><p style="background-color: inherit;">有一个心碎的女纸任性地对一个用来分手的字符串任性地执行了“substring”方法，然后开心地看着剪辑版睡过去了。可是可是可是，不是说string是基本类型吗，为什么它可以拥有方法？？还有没有王法啊青天大老爷！</p><p style="background-color: inherit;">其实，这一切，都是因为有个叫“基本包装类型”的东东。这个基本包装类型特别耿直，是真正的“事了拂衣去，深藏功与名”！</p><h2 style="background-color: inherit;">基本包装类型</h2><p style="background-color: inherit;">除了一开始提到的Object、Array等引用类型，JavaScript还为我们提供了三种特殊的引用类型：String、Number和Boolean，方便我们操作对应的基本类型。</p><p style="background-color: inherit;">继续看上面的剪辑字符串的例子，有没有注意到，尽管使用了substring方法，realMessage本身的值是不会变的，调用这个方法只是返回了一个新的字符串。</p><p style="background-color: inherit;">这就是基本包装类型的作用了。本来你是没有方法的，但是你想用方法的时候，你尽管调，对应的基本包装类型有这个方法就行。例如上面的substring方法，string这个基本类型是不可能有这个方法的，但是String这个包装类型有啊，它会吭吭哧哧地把这个方法执行完把结果返回。在执行到：</p><pre style="font-family: Monaco, Consolas, Courier, &#39;Lucida Console&#39;, monospace; background-color: inherit;">realMessage.substring(5,15)</pre><p style="background-color: inherit;">这行代码时，发生了很多事。</p><p style="background-color: inherit;">首先，它会从内存中读取realMessage的值。当处于这种读取模式下的时候，后台就开始干活了。JS高程是这样描述后台完成的这些动作的：</p><p style="background-color: inherit;">1.创建String类型的一个实例；<br style="background-color: inherit;"/>2.在实例上调用指定的方法；<br style="background-color: inherit;"/>3.销毁这个实例</p><p style="background-color: inherit;">上面的例子可以用这样的代码来说明：</p><pre style="font-family: Monaco, Consolas, Courier, &#39;Lucida Console&#39;, monospace; background-color: inherit;">var&nbsp;_realMessage=new&nbsp;String(&quot;Said&nbsp;I&nbsp;love&nbsp;you&nbsp;but&nbsp;I&nbsp;lied&quot;);  var&nbsp;myMessage=_realMessage.substring(5,15);  _realMessgae=null;&nbsp;//方法调用后即销毁</pre><p style="background-color: inherit;">所以，这样我们就明白了，并不是基本类型string执行了自身方法，而是后台为它创建了一个对应的基本包装类型String，它根据基本类型的值实例化出了一个实例，让这个实例去调用指定方法，最后销毁自己，感天动地有木有。</p><p style="background-color: inherit;">注意最后一步基本包装类型“会销毁”的特性，这决定了我们不能为基本类型值添加自定义属性和方法。</p><pre style="font-family: Monaco, Consolas, Courier, &#39;Lucida Console&#39;, monospace; background-color: inherit;">var&nbsp;me=&quot;sunjing&quot;;  me.age=18;  console.log(me.age);//undefined</pre><p style="background-color: inherit;">我给“me“这个字符串添加了age属性，值设为美好的18岁，然并卵，再次访问时，这个属性已经渺无踪迹了。这是因为:</p><p style="background-color: inherit;">执行到第二行代码属性赋值时，后台创建了一个基本包装类型的实例，这个age属性确实挂到实例上去了，但是紧跟着，这个实例就被销毁了。执行到第三行时，又重新创建了新的基本包装类型的实例，自然是没有age属性的。</p><h2 style="background-color: inherit;">显示使用基本包装类型</h2><p style="background-color: inherit;">除了在字符串处于读取模式下，后台会帮我们创建基本包装类型实例时，我们自己也可以显示地创建。</p><pre style="font-family: Monaco, Consolas, Courier, &#39;Lucida Console&#39;, monospace; background-color: inherit;">var&nbsp;str=new&nbsp;String(&quot;hello&quot;);  var&nbsp;str2=str.toUpperCase();  console.log(str2);//&quot;HELLO:</pre><p style="background-color: inherit;">这样与后台帮我们创建时变量中保存的东西是不同的。</p><pre style="font-family: Monaco, Consolas, Courier, &#39;Lucida Console&#39;, monospace; background-color: inherit;">var&nbsp;str1=new&nbsp;String(&quot;hello&quot;);  var&nbsp;str2=&quot;hello&quot;;  typeof&nbsp;str1&nbsp;&nbsp;//&quot;object&quot;  typeof&nbsp;str2&nbsp;&nbsp;//&quot;string&quot;</pre><h2 style="background-color: inherit;">总结</h2><p style="background-color: inherit;">多亏了有基本包装类型，我们操作string、boolean、number这三种基本类型更方便了。每当读取这三种基本类型值时，后台会创建对应的包装类型实例，这个实例会调用指定方法，调用完会被销毁。这种短暂的生命周期决定了我们不能为基本类型添加自定义的属性和方法。</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

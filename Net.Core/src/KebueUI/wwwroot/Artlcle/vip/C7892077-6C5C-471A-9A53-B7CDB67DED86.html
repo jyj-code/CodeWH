@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=mvc OnActionExecuting 跳转登陆页面>
+    <meta name="keywords" content=public class BaseController : Controller { protected string hostUrl = ; /// summary /// Action执行前判断 /// /summary /// param name=filterContext/param protected override void OnActionExecuting(ActionExec>
+    <title>mvc OnActionExecuting 跳转登陆页面</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/B8C0509A-82D4-4BD7-A1BB-5BAF70ED1C60.html' title='.NET'>.NET</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>mvc OnActionExecuting 跳转登陆页面</h1>
+                        <pre>
+                        <code>
+                            <p>public class BaseController : Controller<br/>&nbsp;&nbsp;&nbsp; {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; protected string hostUrl = &quot;&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /// &lt;summary&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /// Action执行前判断<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /// &lt;/summary&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /// &lt;param name=&quot;filterContext&quot;&gt;&lt;/param&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; protected override void OnActionExecuting(ActionExecutingContext filterContext)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // url<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.hostUrl = &quot;http://&quot; + this.Request.Url.Host;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.hostUrl += this.Request.Url.Port.ToString() == &quot;80&quot; ? &quot;&quot; : &quot;:&quot; + &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;this.Request.Url.Port;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.hostUrl += this.Request.ApplicationPath;<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; List&lt;string&gt; ActionNameList = new List&lt;string&gt;();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActionNameList.Add(&quot;GetWebName&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActionNameList.Add(&quot;Login&quot;);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (!this.checkLogin() &amp;&amp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!ActionNameList.Contains(filterContext.ActionDescriptor.ActionName))// 判断是否登录<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; filterContext.Result = RedirectToRoute(&quot;Home&quot;, new { Controller = &quot;Login&quot;, Action = &quot;Index&quot; });<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; base.OnActionExecuting(filterContext);<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br/><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /// &lt;summary&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /// 判断是否登录<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /// &lt;/summary&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; protected bool checkLogin()<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (this.Session[&quot;user&quot;] == null)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return false;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return true;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br/>&nbsp;&nbsp;&nbsp; }</p><p><a href="http://blog.csdn.net/feng362998510/article/details/26556187#" class="bds_more" data-cmd="more" target="_blank" style="color: rgb(51, 51, 51); text-decoration: none; float: left; padding-left: 17px; line-height: 16px; height: 16px; cursor: pointer; margin: 6px 6px 6px 0px; background-image: url(&quot;http://bdimg.share.baidu.com/static/api/img/share/icons_0_16.png?v=d754dcc0.png&quot;) !important; background-position: 0px 0px !important; background-repeat: no-repeat;"></a><a href="http://blog.csdn.net/feng362998510/article/details/26556187#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间" target="_blank" style="color: rgb(51, 102, 153); text-decoration: none; float: left; padding-left: 17px; line-height: 16px; height: 16px; cursor: pointer; margin: 6px 6px 6px 0px; background-image: url(&quot;../img/share/icons_0_16.png?v=ba7acbd3.png&quot;); background-position: 0px -52px !important; background-repeat: no-repeat;"></a><a href="http://blog.csdn.net/feng362998510/article/details/26556187#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博" target="_blank" style="color: rgb(51, 102, 153); text-decoration: none; float: left; padding-left: 17px; line-height: 16px; height: 16px; cursor: pointer; margin: 6px 6px 6px 0px; background-image: url(&quot;../img/share/icons_0_16.png?v=ba7acbd3.png&quot;); background-position: 0px -104px !important; background-repeat: no-repeat;"></a><a href="http://blog.csdn.net/feng362998510/article/details/26556187#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博" target="_blank" style="color: rgb(51, 102, 153); text-decoration: none; float: left; padding-left: 17px; line-height: 16px; height: 16px; cursor: pointer; margin: 6px 6px 6px 0px; background-image: url(&quot;../img/share/icons_0_16.png?v=ba7acbd3.png&quot;); background-position: 0px -260px !important; background-repeat: no-repeat;"></a><a href="http://blog.csdn.net/feng362998510/article/details/26556187#" class="bds_renren" data-cmd="renren" title="分享到人人网" target="_blank" style="color: rgb(51, 102, 153); text-decoration: none; float: left; padding-left: 17px; line-height: 16px; height: 16px; cursor: pointer; margin: 6px 6px 6px 0px; background-image: url(&quot;../img/share/icons_0_16.png?v=ba7acbd3.png&quot;); background-position: 0px -208px !important; background-repeat: no-repeat;"></a><a href="http://blog.csdn.net/feng362998510/article/details/26556187#" class="bds_weixin" data-cmd="weixin" title="分享到微信" target="_blank" style="color: rgb(51, 102, 153); text-decoration: none; float: left; padding-left: 17px; line-height: 16px; height: 16px; cursor: pointer; margin: 6px 6px 6px 0px; background-image: url(&quot;../img/share/icons_0_16.png?v=ba7acbd3.png&quot;); background-position: 0px -1612px !important; background-repeat: no-repeat;"></a></p><ul id="btnDigg" class="digg digg_disable list-paddingleft-2" style="display: inline-block; float: left; width: 72px; height: 72px; overflow: hidden; margin: 0px 2px; color: rgb(255, 255, 255); background: rgb(153, 153, 153);"></ul><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

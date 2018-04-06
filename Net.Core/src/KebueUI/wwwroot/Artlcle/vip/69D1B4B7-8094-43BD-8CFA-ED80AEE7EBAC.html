@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=JAVA实现发送电子邮件>
+    <meta name="keywords" content=　相信大家对于网站也好，手机app也好，用户注册时，需要进行邮箱验证的功能特别好奇吧，本篇我将带领大家一起实现一下这个简单而又神奇的小功能，让我们的应用也可以加入这些神奇的元素。废话不多说，下面开始我们今天的内容介绍。　　首先实现上面的功能，需要一个固定的发送电子邮件的邮箱地址，这里我们就以我们经常使用的QQ邮箱为例实现一下这个功能。　　第一件事，你需要开启QQ邮箱的IMAP/SMAP服务：　　登>
+    <title>JAVA实现发送电子邮件</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/921733AE-DBDF-47C6-B557-E47959272851.html' title='JAVA'>JAVA</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>JAVA实现发送电子邮件</h1>
+                        <pre>
+                        <code>
+                            <p style="margin: 10px auto; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal; background-color: rgb(199, 203, 189);">　相信大家对于网站也好，手机app也好，用户注册时，需要进行邮箱验证的功能特别好奇吧，本篇我将带领大家一起实现一下这个简单而又神奇的小功能，让我们的应用也可以加入这些神奇的元素。废话不多说，下面开始我们今天的内容介绍。</p><p style="margin: 10px auto; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal; background-color: rgb(199, 203, 189);">　　首先实现上面的功能，需要一个固定的发送电子邮件的邮箱地址，这里我们就以我们经常使用的QQ邮箱为例实现一下这个功能。</p><p style="margin: 10px auto; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal; background-color: rgb(199, 203, 189);">　　第一件事，你需要开启QQ邮箱的IMAP/SMAP服务：</p><p style="margin: 10px auto; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal; background-color: rgb(199, 203, 189);">　　登录QQ邮箱--&gt;设置--&gt;账号--&gt;开启IMAP/SMAP与P0P3/SMAP</p><p style="margin: 10px auto; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal; background-color: rgb(199, 203, 189);">　　<img src="http://images2015.cnblogs.com/blog/618613/201512/618613-20151206190422722-1529374343.png" alt="" width="509" height="276" style="border: 0px;"/></p><p style="margin: 10px auto; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal; background-color: rgb(199, 203, 189);">　　<img src="http://images2015.cnblogs.com/blog/618613/201512/618613-20151206190448128-421649370.png" alt="" width="508" height="275" style="border: 0px;"/></p><p style="margin: 10px auto; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal; background-color: rgb(199, 203, 189);">　　<img src="http://images2015.cnblogs.com/blog/618613/201512/618613-20151206190522269-1205206567.png" alt="" width="509" height="276" style="border: 0px;"/></p><p style="margin: 10px auto; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal; background-color: rgb(199, 203, 189);">　　开启这两个时，你会获得两个密码，接下来的内容中会使用到。</p><p style="margin: 10px auto; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal; background-color: rgb(199, 203, 189);">　　发送电子邮件服务，需要使用到一下三个JAR包：mail.jar;activation.jar;cos.jar，这里我已经帮大家整理好了，下载地址：<a href="http://pan.baidu.com/s/1sknsZOp" target="_blank" style="color: rgb(73, 73, 73); line-height: normal;">http://pan.baidu.com/s/1sknsZOp</a>，下载好我们的JAR包，导入到我们工程的lib目录下即可。</p><p style="margin: 10px auto; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal; background-color: rgb(199, 203, 189);">　　发送电子邮件的JAVA代码如下：</p><p><span class="cnblogs_code_copy" style="padding-right: 5px; line-height: 1.5 !important;"><a title="复制代码" style="color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-decoration: underline; line-height: normal; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="border: none !important;"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">import&nbsp;java.util.Properties;  import&nbsp;javax.mail.*;  import&nbsp;javax.mail.internet.InternetAddress;  import&nbsp;javax.mail.internet.MimeMessage;/**  &nbsp;*&nbsp;使用QQ邮箱IMAP/SMTP的实现发送电子邮件  &nbsp;*&nbsp;2015-12-06&nbsp;*/public&nbsp;class&nbsp;Mail&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;{  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Properties&nbsp;props&nbsp;=&nbsp;new&nbsp;Properties();  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;props.put(&quot;mail.smtp.host&quot;,&nbsp;&quot;smtp.qq.com&quot;);  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;props.put(&quot;mail.smtp.port&quot;,&nbsp;&quot;587&quot;);//使用465或587端口  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;props.put(&quot;mail.smtp.auth&quot;,&nbsp;&quot;true&quot;);//设置使用验证  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;props.put(&quot;mail.smtp.starttls.enable&quot;,&quot;true&quot;);//使用&nbsp;STARTTLS安全连接  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try&nbsp;{  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PopupAuthenticator&nbsp;auth&nbsp;=&nbsp;new&nbsp;PopupAuthenticator();  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Session&nbsp;session&nbsp;=&nbsp;Session.getInstance(props,&nbsp;auth);  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;session.setDebug(true);//打印Debug信息  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MimeMessage&nbsp;message&nbsp;=&nbsp;new&nbsp;MimeMessage(session);  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address&nbsp;addressFrom&nbsp;=&nbsp;new&nbsp;InternetAddress(PopupAuthenticator.mailuser&nbsp;+&nbsp;&quot;@qq.com&quot;,&nbsp;&quot;&quot;);//第一个参数为发送方电子邮箱地址；第二个参数为发送方邮箱地址的标签  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address&nbsp;addressTo&nbsp;=&nbsp;new&nbsp;InternetAddress(&quot;xxxxxxxxxxxx&quot;,&nbsp;&quot;&quot;);//第一个参数为接收方电子邮箱地址；第二个参数为接收方邮箱地址的标签  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message.setSubject(&quot;发送电子邮件的主题&quot;);  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message.setText(&quot;发送电子邮件内容&quot;);  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message.setFrom(addressFrom);  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message.addRecipient(Message.RecipientType.TO,&nbsp;addressTo);  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message.saveChanges();  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transport&nbsp;transport&nbsp;=&nbsp;session.getTransport(&quot;smtp&quot;);  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transport.connect(&quot;smtp.qq.com&quot;,&nbsp;PopupAuthenticator.mailuser,&nbsp;PopupAuthenticator.password);  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transport.send(message);  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transport.close();  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(&quot;发送成功&quot;);  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(Exception&nbsp;e)&nbsp;{  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(e.toString());  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(&quot;发送失败&quot;);  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}  &nbsp;&nbsp;&nbsp;&nbsp;}  }class&nbsp;PopupAuthenticator&nbsp;extends&nbsp;Authenticator&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;static&nbsp;final&nbsp;String&nbsp;mailuser&nbsp;=&nbsp;&quot;1453296946&quot;;//发送方邮箱&#39;@&#39;符号前的内容:1453296946@qq.com  &nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;static&nbsp;final&nbsp;String&nbsp;password&nbsp;=&nbsp;&quot;xxxxxxxxxxxx&quot;;//成功开启IMAP/SMTP服务，在第三方客户端登录时，腾讯提供的密码。注意不是邮箱密码    &nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;PasswordAuthentication&nbsp;getPasswordAuthentication()&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;new&nbsp;PasswordAuthentication(mailuser,&nbsp;password);  &nbsp;&nbsp;&nbsp;&nbsp;}  }</pre><p><span class="cnblogs_code_copy" style="padding-right: 5px; line-height: 1.5 !important;"><a title="复制代码" style="color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-decoration: underline; line-height: normal; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="border: none !important;"/></a></span></p><p style="margin: 10px auto; color: rgb(73, 73, 73); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22.4px; white-space: normal; background-color: rgb(199, 203, 189);">　　是不是很简单，接下来我们的邮箱验证、登录验证、注册验证、找回密码是不是都找到实现的方向啦。</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

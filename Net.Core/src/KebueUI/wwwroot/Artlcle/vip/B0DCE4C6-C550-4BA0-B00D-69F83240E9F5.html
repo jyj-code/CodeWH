@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=详解Oracle DELETE和TRUNCATE 的区别>
+    <meta name="keywords" content=语法delete from aatruncate table aa区别1.delete from后面可以写条件，truncate不可以。2.delete from记录是一条条删的，所删除的每行记录都会进日志，而truncate一次性删掉整个页，因此日至里面只记录页释放，简言之，delete from更新日志，truncate基本不，所用的事务日志空间较少。3.delete from删空表后，会保留>
+    <title>详解Oracle DELETE和TRUNCATE 的区别</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/0D8667FF-B247-4368-A163-B9D7274FE236.html' title='Oracle'>Oracle</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>详解Oracle DELETE和TRUNCATE 的区别</h1>
+                        <pre>
+                        <code>
+                            <p style="white-space: normal; widows: auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(245, 250, 254);"><strong style="background-color: yellow;">语法</strong><br style="background-color: inherit;"/>delete from aa<span style="background-color: inherit;">&nbsp;</span><br style="background-color: inherit;"/>truncate table aa<span style="background-color: inherit;">&nbsp;</span><br style="background-color: inherit;"/></p><p style="white-space: normal; widows: auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(245, 250, 254);"><strong style="background-color: yellow;">区别</strong><span style="background-color: yellow;"><span style="background-color: inherit;">&nbsp;</span></span><br style="background-color: inherit;"/>1.delete from后面可以写条件，truncate不可以。</p><p style="white-space: normal; widows: auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(245, 250, 254);"><br style="background-color: inherit;"/>2.delete from记录是一条条删的，所删除的每行记录都会进日志，而truncate一次性删掉整个页，因此日至里面只记录页释放，简言之，delete from更新日志，truncate基本不，所用的事务日志空间较少。</p><p style="white-space: normal; widows: auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(245, 250, 254);"><br style="background-color: inherit;"/>3.delete from删空表后，会保留一个空的页，truncate在表中不会留有任何页。</p><p style="white-space: normal; widows: auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(245, 250, 254);"><br style="background-color: inherit;"/>4.当使用行锁执行 DELETE 语句时，将锁定表中各行以便删除。truncate始终锁定表和页，而不是锁定各行。<span style="background-color: inherit;">&nbsp;</span><br style="background-color: inherit;"/></p><p style="white-space: normal; widows: auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(245, 250, 254);">5.如果有identity产生的自增id列，delete from后仍然从上次的数开始增加，即种子不变，而truncate后，种子会恢复初始。</p><p style="white-space: normal; widows: auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(245, 250, 254);"><br style="background-color: inherit;"/>6.truncate不会触发delete的触发器，因为truncate操作不记录各个行删除。</p><p style="white-space: normal; widows: auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(245, 250, 254);"><br style="background-color: inherit;"/><strong style="background-color: yellow;">总结</strong><strong style="background-color: inherit;"><br style="background-color: inherit;"/></strong>1.truncate和 delete只删除数据不删除表的结构(定义)&nbsp;&nbsp;&nbsp;&nbsp;<span style="background-color: inherit;">&nbsp;</span><br style="background-color: inherit;"/>&nbsp;&nbsp; drop语句将删除表的结构被依赖的约束(constrain),触发器(trigger),索引(index); 依赖于该表的存储过程/函数将保留,但是变为invalid状态。</p><p style="white-space: normal; widows: auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(245, 250, 254);">&nbsp;<span style="background-color: inherit;">&nbsp;</span><br style="background-color: inherit;"/>2.delete语句是dml,这个操作会放到rollback segement中,事务提交之后才生效;如果有相应的trigger,执行的时候将被触发<br style="background-color: inherit;"/>&nbsp;&nbsp;&nbsp; truncate,drop是ddl, 操作立即生效,原数据不放到rollback segment中,不能回滚. 操作不触发trigger。</p><p style="white-space: normal; widows: auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(245, 250, 254);">&nbsp;<span style="background-color: inherit;">&nbsp;</span><br style="background-color: inherit;"/>3.delete语句不影响表所占用的extent, 高水线(high watermark)保持原位置不动&nbsp;&nbsp;&nbsp;&nbsp;<span style="background-color: inherit;">&nbsp;</span><br style="background-color: inherit;"/>&nbsp;&nbsp; 显然drop语句将表所占用的空间全部释放&nbsp;&nbsp;&nbsp;&nbsp;<span style="background-color: inherit;">&nbsp;</span><br style="background-color: inherit;"/>&nbsp;&nbsp; truncate 语句缺省情况下见空间释放到 minextents个 extent,除非使用reuse storage;&nbsp;&nbsp; truncate会将高水线复位(回到最开始)。</p><p style="white-space: normal; widows: auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(245, 250, 254);">&nbsp;<br style="background-color: inherit;"/>4.速度,一般来说: drop&gt; truncate &gt; delete。</p><p style="white-space: normal; widows: auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(245, 250, 254);">&nbsp;&nbsp;&nbsp;&nbsp;<span style="background-color: inherit;">&nbsp;</span><br style="background-color: inherit;"/>5.安全性:小心使用drop 和truncate,尤其没有备份的时候.否则哭都来不及。</p><p style="white-space: normal; widows: auto; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(245, 250, 254);"><br style="background-color: inherit;"/>6.使用上,想删除部分数据行用delete,注意带上where子句. 回滚段要足够大.&nbsp;&nbsp;&nbsp;&nbsp; 想删除表,当然用drop&nbsp;&nbsp;&nbsp;&nbsp;<span style="background-color: inherit;">&nbsp;</span><br style="background-color: inherit;"/>想保留表而将所有数据删除. 如果和事务无关,用truncate即可. 如果和事务有关,或者想触发trigger,还是用delete<br style="background-color: inherit;"/>如果是整理表内部的碎片,可以用truncate跟上reuse stroage,再重新导入/插入数据。</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=防止sql注入的三种方法>
+    <meta name="keywords" content=防止sql注入的三种方法常用的避免SQL注入的三种方法一，存储过程  在学习数据库视频的时候接触过，它是存储在数据库中的一些事先编译好的指令。在用的时候不用重新编写，直接调用就好了。所以，使用它可以大大提高程序的执行效率。那么，如果创建一个存储程序并使用它呢？这是我们今天要解决的问题1.创建过程  可编程性——下拉菜单——存储过程——右键——查询菜单——指定模板参数的值——新建查询——输入语句——>
+    <title>防止sql注入的三种方法</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/A6B67D7C-1B75-4AF4-AF00-7D4EF126AFA9.html' title='SQLServer'>SQLServer</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>防止sql注入的三种方法</h1>
+                        <pre>
+                        <code>
+                            <h1 style="background-color: inherit;">防止sql注入的三种方法</h1><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;"><span style="background-color: inherit;">常用的避免SQL注入的三种方法</span></p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;"><span style="background-color: inherit;">一，存储过程</span></p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 在学习数据库视频的时候接触过，它是存储在数据库中的一些事先编译好的指令。在用的时候不用重新编写，直接调用就好了。所以，使用它可以大大提高程序的执行效率。</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">那么，如果创建一个存储程序并使用它呢？这是我们今天要解决的问题&nbsp;&nbsp;</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">&nbsp;<span style="background-color: inherit;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.创建过程</span></p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 可编程性——下拉菜单——存储过程——右键——查询菜单——指定模板参数的值——新建查询——输入语句——查询菜单中的分析检查语法是否正确——执行&nbsp; &nbsp; &nbsp; &nbsp;</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 2.具体创建语法</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 在创建存储程序时，为了应对各种变换的数据，通常会涉及到带参数的存储程序，其中参数用@来表示。</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">&nbsp;&nbsp; &nbsp; Create Procedure&nbsp;procedurename[:number] --[&#39;number]表示一组存储程序中的第几个，如果只有一个，此参数可忽略</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">&nbsp; &nbsp; [@parameter data_type] [default] [OUTPUT] --@parameter表示存储过程中的参数，default表示默认值，OUTPUT表示输出值即输出值as SqlStatement --[]代表可选参数</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">&nbsp; &nbsp; 3.具体执行过程</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">&nbsp; &nbsp; exec[ute]procedurename [参数]</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">&nbsp; &nbsp; 举例：</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">--创建</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">CreateProcedure&nbsp;scores @score1smallint, @score2smallint, @score3smallint,@secre4smallint, @score5smallint, @myAvgsmallint Output --Output可用return来代替&nbsp; &nbsp;</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">As select @myAvg=(@score1+@score2+@score3+@score4+@score5)/5 --调用过程</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">Declare@avgscore smallint --将输出结果放在avgscore中</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">Execavgscore Output 5,6,7,8,9, --带有参数的存储过程调用时，必须加上Output关键字，否则SQL会当做参数来对待</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">小结：存储程序的创建可分为带参数和不带参数，以及含有默认值和输出值的存储程序，但是他们的使用原理是一样的。只是带输出值得存储程序在调用过程中要使用关键字Output来对要输出的变量进行声明，否则SQL会将它当做参数来处理。</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">注意：创建存储程序后，我们可以在编写程序时，直接调用存储程序的名称来代替复杂的查询语句：</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">strSQL=&quot;select .....;&quot; strSQL=&quot;Execte produreName&quot;</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">二、参数化SQL</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;是指在设计与数据库链接并访问数据时，在需要填入数值或数据的地方，使用参数 (Parameter) 来给值，用@或？来表示参数。</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">&nbsp;&nbsp;&nbsp; 在使用参数化查询的情况下，数据库服务器不会将参数的内容视为SQL指令的一部份来处理，而是在数据库完成&nbsp;SQL 指令的编译后，才套用参数运行，因此就算参数中含有恶意的指令，由于已经编译完成，就不会被数据库所运行,因此，可从一定程度上避免SQL注入。</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">参数化SQL在不同数据库中支持的方式有一定的差别。SQL server中二者均支持。</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">在不用的数据库上基本语法都是一样的，但在不同的运行平台上客户端的书写有不同之处，在这里就拿现在我正在学习的SQL server在.net上执行来举例。</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">--SQL server中的参数化SQL语句: SELECT * FROM myTable WHERE myID = @myID INSERT INTO myTable (c1, c2, c3, c4) VALUES (@c1, @c2, @c3, @c4)&#39;.在.NET上执行<br style="background-color: inherit;"/><br style="background-color: inherit;"/>SqlCommand sqlcmd = new SqlCommand(&quot;INSERT INTO myTable (c1, c2, c3, c4) VALUES (@c1, @c2, @c3, @c4)&quot;, sqlconn);<br style="background-color: inherit;"/><br style="background-color: inherit;"/>sqlcmd.Parameters.AddWithValue(&quot;@c1&quot;, 1); &#39; 设定参数 @c1 的值。<br style="background-color: inherit;"/><br style="background-color: inherit;"/>sqlcmd.Parameters.AddWithValue(&quot;@c2&quot;, 2); &#39; 设定参数 @c2 的值。<br style="background-color: inherit;"/><br style="background-color: inherit;"/>sqlcmd.Parameters.AddWithValue(&quot;@c3&quot;, 3); &#39; 设定参数 @c3 的值。<br style="background-color: inherit;"/><br style="background-color: inherit;"/>sqlcmd.Parameters.AddWithValue(&quot;@c4&quot;, 4); &#39; 设定参数 @c4 的值。<br style="background-color: inherit;"/><br style="background-color: inherit;"/>sqlconn.Open();<br style="background-color: inherit;"/><br style="background-color: inherit;"/>sqlcmd.ExecuteNonQuery();<br style="background-color: inherit;"/><br style="background-color: inherit;"/>sqlconn.Close();</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">在向command中增加参数时，还有其他的方法，如：</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">sqlcmd.parameters.Add(&quot;@c1&quot;,SqlDbType.BigInt) &#39;BigInt为c1的数据类型<br style="background-color: inherit;"/><br style="background-color: inherit;"/>sqlcmd.parameter(&quot;@c1&quot;).value=1 &#39;设定值</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">三、Regular Expression</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp; 简称REs是一种非常强大的文字验证技术。通常我们在设计程序时，如果要在TEXT中输入数字的话，那么我们会用到IsNumberic函数来限制，但是很多情况，为了用户方便，我们不止要用到限定数字这一个技术，还有很多关系式需要我们去遵循，如手机号码要限定成11为，邮箱号码要限制相应的格式等。这时候就用到了REs这种技术。它可以为我们要输入的内容提供一个模板，让用户的输入必须遵循这个模板的格式，如果格式不正确，则程序不能继续执行。这样也可以避免SQL注入。</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">例如</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">\d&nbsp;&nbsp; -------代表数字</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">\d{5}&nbsp; -------代表5位数字</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">\w+@\w+ -------@前的w+表示要有至少一个的字符，@代表这个模板中必须有一个@字符。</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">当然在使用这种技术之前，是有条件的，首先，它需要引用一个命名空间，具体如下：</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">Imports RE=System.Text.RegularExpressions.Regex</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">这样还不够，我们需要一个方法来做验证用户输入是否正确的工作，这里，我们要用到一个方法match，具体使用如下：</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">Dim input,pattern As String<br style="background-color: inherit;"/><br style="background-color: inherit;"/>Input=Me.txtInput.TextTrim()<br style="background-color: inherit;"/><br style="background-color: inherit;"/>Pattern=Me.txtPattern.Text<br style="background-color: inherit;"/><br style="background-color: inherit;"/>If Re.Mathc(input,pattern).Success Then ‘使用Match方法来对用户输入的内容与定义好的模板进行验证<br style="background-color: inherit;"/><br style="background-color: inherit;"/>MessageBox.Show(&quot;True,input matches pattern&quot;) Else MessageBox.Show(&quot;False,input does not match pattern&quot;) End if</p><p style="color: rgb(51, 51, 51); font-family: &#39;Microsoft Yahei&#39;, 微软雅黑, arial, 宋体, sans-serif; font-size: 16px; text-align: justify;">以上，是?ü?net视频总结出来的避免SQL注入的三种方法，由于对专业知识了解有限，具体原理并不清楚，有待以后深入学习后总结。&nbsp;</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=java基础知识2>
+    <meta name="keywords" content=58、线程的基本概念、线程的基本状态以及状态之间的关系线程指在程序执行过程中，能够执行程序代码的一个执行单位，每个程序至少都有一个线程，也就是程序本身。Java中的线程有四种状态分别是：运行、就绪、挂起、结束。59、JSP的常用指令%@pagelanguage=java contenType=text/html;charset=gb2312 session=true buffer=64kb aut>
+    <title>java基础知识2</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/921733AE-DBDF-47C6-B557-E47959272851.html' title='JAVA'>JAVA</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>java基础知识2</h1>
+                        <pre>
+                        <code>
+                            <p>58、线程的基本概念、线程的基本状态以及状态之间的关系<br/>线程指在程序执行过程中，能够执行程序代码的一个执行单位，每个程序至少都有一个线程，也就是程序本身。<br/>Java中的线程有四种状态分别是：运行、就绪、挂起、结束。</p><p>&nbsp;</p><p><br/>59、JSP的常用指令<br/>&lt;<a href="mailto:%@page" style="color: rgb(245, 165, 175); text-decoration: none;">%@page</a>&nbsp;language=&quot;java&quot; contenType=&quot;text/html;charset=gb2312&quot; session=&quot;true&quot; buffer=&quot;64kb&quot; autoFlush=&quot;true&quot; isThreadSafe=&quot;true&quot; info=&quot;text&quot; errorPage=&quot;error.jsp&quot; isErrorPage=&quot;true&quot; isELIgnored=&quot;true&quot; pageEncoding=&quot;gb2312&quot; import=&quot;java.sql.*&quot;%&gt;<br/>isErrorPage(是否能使用Exception对象)，isELIgnored(是否忽略表达式)<br/>&lt;<a href="mailto:%@include" style="color: rgb(245, 165, 175); text-decoration: none;">%@include</a>&nbsp;file=&quot;filename&quot;%&gt;<br/>&lt;<a href="mailto:%@taglib" style="color: rgb(245, 165, 175); text-decoration: none;">%@taglib</a>&nbsp;prefix=&quot;c&quot;uri=&quot;<a href="http://......%22/" style="color: rgb(245, 165, 175); text-decoration: none;">http://......&quot;%</a>&gt;</p><p>&nbsp;</p><p><br/>60、什么情况下调用doGet()和doPost()？<br/>Jsp页面中的form标签里的method属性为get时调用doGet()，为post时调用doPost()。</p><p>&nbsp;</p><p><br/>61、servlet的生命周期<br/>web容器加载servlet，生命周期开始。通过调用servlet的init()方法进行servlet的初始化。通过调用service()方法实现，根据请求的不同调用不同的do***()方法。结束服务，web容器调用servlet的destroy()方法。</p><p>&nbsp;</p><p><br/>62、如何现实servlet的单线程模式<br/>&lt;%@ page isThreadSafe=&quot;false&quot;%&gt;</p><p>&nbsp;</p><p><br/>63、页面间对象传递的方法<br/>request，session，application，cookie等</p><p>&nbsp;</p><p><br/>64、JSP和Servlet有哪些相同点和不同点，他们之间的联系是什么？&nbsp;<br/>JSP 是Servlet技术的扩展，本质上是Servlet的简易方式，更强调应用的外表表达。JSP编译后是&quot;类servlet&quot;。Servlet和JSP最主要的不同点在于，Servlet的应用逻辑是在Java文件中，并且完全从表示层中的HTML里分离开来。而JSP的情况是Java和HTML可以组合成一个扩展名为.jsp的文件。JSP侧重于视图，Servlet主要用于控制逻辑。</p><p>&nbsp;</p><p><br/>65、四种会话跟踪技术<br/>会话作用域ServletsJSP 页面描述<br/>page否是代表与一个页面相关的对象和属性。一个页面由一个编译好的 Java servlet 类（可以带有任何的 include 指令，但是没有 include 动作）表示。这既包括 servlet 又包括被编译成 servlet 的 JSP 页面<br/>request是是代表与 Web 客户机发出的一个请求相关的对象和属性。一个请求可能跨越多个页面，涉及多个 Web 组件（由于 forward 指令和 include 动作的关系）<br/>session是是代表与用于某个 Web 客户机的一个用户体验相关的对象和属性。一个 Web 会话可以也经常会跨越多个客户机请求<br/>application是是代表与整个 Web 应用程序相关的对象和属性。这实质上是跨越整个 Web 应用程序，包括多个页面、请求和会话的一个全局作用域</p><p>&nbsp;</p><p><br/>66、Request对象的主要方法：<br/>setAttribute(String name,Object)：设置名字为name的request的参数值<br/>getAttribute(String name)：返回由name指定的属性值<br/>getAttributeNames()：返回request对象所有属性的名字集合，结果是一个枚举的实例<br/>getCookies()：返回客户端的所有Cookie对象，结果是一个Cookie数组<br/>getCharacterEncoding()：返回请求中的字符编码方式<br/>getContentLength()：返回请求的Body的长度<br/>getHeader(String name)：获得HTTP协议定义的文件头信息<br/>getHeaders(String name)：返回指定名字的request Header的所有值，结果是一个枚举的实例<br/>getHeaderNames()：返回所以request Header的名字，结果是一个枚举的实例<br/>getInputStream()：返回请求的输入流，用于获得请求中的数据<br/>getMethod()：获得客户端向服务器端传送数据的方法<br/>getParameter(String name)：获得客户端传送给服务器端的有name指定的参数值<br/>getParameterNames()：获得客户端传送给服务器端的所有参数的名字，结果是一个枚举的实例<br/>getParameterValues(String name)：获得有name指定的参数的所有值<br/>getProtocol()：获取客户端向服务器端传送数据所依据的协议名称<br/>getQueryString()：获得查询字符串<br/>getRequestURI()：获取发出请求字符串的客户端地址<br/>getRemoteAddr()：获取客户端的IP地址<br/>getRemoteHost()：获取客户端的名字<br/>getSession([Boolean create])：返回和请求相关Session<br/>getServerName()：获取服务器的名字<br/>getServletPath()：获取客户端所请求的脚本文件的路径<br/>getServerPort()：获取服务器的端口号<br/>removeAttribute(String name)：删除请求中的一个属性</p><p>&nbsp;</p><p><br/>67、J2EE是技术还是平台还是框架？<br/>&nbsp;&nbsp;&nbsp; J2EE本身是一个标准，一个为企业分布式应用的开发提供的标准平台。<br/>&nbsp;&nbsp;&nbsp; J2EE也是一个框架，包括JDBC、JNDI、RMI、JMS、EJB、JTA等技术。</p><p>&nbsp;</p><p><br/>68、我们在web应用开发过程中经常遇到输出某种编码的字符，如iso8859-1等，如何输出一个某种编码的字符串？<br/>&nbsp; Public String translate (String str) {<br/>&nbsp;&nbsp;&nbsp; String tempStr = &quot;&quot;;<br/>&nbsp;&nbsp;&nbsp; try {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tempStr = new String(str.getBytes(&quot;ISO-8859-1&quot;), &quot;GBK&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tempStr = tempStr.trim();<br/>&nbsp;&nbsp;&nbsp; }<br/>&nbsp;&nbsp;&nbsp; catch (Exception e) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.err.println(e.getMessage());<br/>&nbsp;&nbsp;&nbsp; }<br/>&nbsp;&nbsp;&nbsp; return tempStr;<br/>&nbsp; }</p><p>&nbsp;</p><p><br/>69、简述逻辑操作(&amp;,|,^)与条件操作(&amp;&amp;,||)的区别。<br/>区别主要答两点：a.条件操作只能操作布尔型的,而逻辑操作不仅可以操作布尔型,而且可以操作数值型<br/>b.逻辑操作不会产生短路</p><p>&nbsp;</p><p><br/>70、XML文档定义有几种形式？它们之间有何本质区别？解析XML文档有哪几种方式？&nbsp;<br/>a: 两种形式 dtd&nbsp; schema，b: 本质区别:schema本身是xml的，可以被XML解析器解析(这也是从DTD上发展schema的根本目的)，c:有DOM,SAX,STAX等&nbsp;<br/>&nbsp;&nbsp;&nbsp; DOM:处理大型文件时其性能下降的非常厉害。这个问题是由DOM的树结构所造成的，这种结构占用的内存较多，而且DOM必须在解析文件之前把整个文档装入内存,适合对XML的随机访问<br/>SAX:不现于DOM,SAX是事件驱动型的XML解析方式。它顺序读取XML文件，不需要一次全部装载整个文件。当遇到像文件开头，文档结束，或者标签开头与标签结束时，它会触发一个事件，用户通过在其回调事件中写入处理代码来处理XML文件，适合对XML的顺序访问&nbsp;<br/>&nbsp;&nbsp;&nbsp; STAX:Streaming API for XML (StAX)</p><p>&nbsp;</p><p><br/>71、简述synchronized和java.util.concurrent.locks.Lock的异同 ？<br/>主要相同点：Lock能完成synchronized所实现的所有功能<br/>主要不同点：Lock有比synchronized更精确的线程语义和更好的性能。synchronized会自动释放锁，而Lock一定要求程序员手工释放，并且必须在finally从句中释放。</p><p>&nbsp;</p><p><br/>72、EJB的角色和三个对象<br/>一个完整的基于EJB的分布式计算结构由六个角色组成，这六个角色可以由不同的开发商提供，每个角色所作的工作必须遵循Sun公司提供的EJB规范，以保证彼此之间的兼容性。这六个角色分别是EJB组件开发者（Enterprise Bean Provider） 、应用组合者（Application Assembler）、部署者（Deployer）、EJB 服务器提供者（EJB Server Provider）、EJB 容器提供者（EJB Container Provider）、系统管理员（System Administrator）<br/>三个对象?荝emote（Local）接口、Home（LocalHome）接口，Bean类</p><p>&nbsp;</p><p><br/>73、EJB容器提供的服务<br/>主要提供声明周期管理、代码产生、持续性管理、安全、事务管理、锁和并发行管理等服务。</p><p>&nbsp;</p><p><br/>74、EJB规范规定EJB中禁止的操作有哪些？&nbsp;<br/>&nbsp;&nbsp;&nbsp; 1.不能操作线程和线程API(线程API指非线程对象的方法如notify,wait等)，2.不能操作awt，3.不能实现服务器功能，4.不能对静态属生存取，5.不能使用IO操作直接存取文件系统，6.不能加载本地库.，7.不能将this作为变量和返回，8.不能循环调用。</p><p>&nbsp;</p><p><br/>75、remote接口和home接口主要作用<br/>remote接口定义了业务方法，用于EJB客户端调用业务方法。<br/>home接口是EJB工厂用于创建和移除查找EJB实例</p><p>&nbsp;</p><p><br/>76、bean 实例的生命周期<br/>对于Stateless Session Bean、Entity Bean、Message Driven Bean一般存在缓冲池管理，而对于Entity Bean和Statefull Session Bean存在Cache管理，通常包含创建实例，设置上下文、创建EJB Object（create）、业务方法调用、remove等过程，对于存在缓冲池管理的Bean，在create之后实例并不从内存清除，而是采用缓冲池调度机制不断重用实例，而对于存在Cache管理的Bean则通过激活和去激活机制保持Bean的状态并限制内存中实例数量。</p><p>&nbsp;</p><p><br/>77、EJB的激活机制<br/>以Stateful Session Bean 为例：其Cache大小决定了内存中可以同时存在的Bean实例的数量，根据MRU或NRU算法，实例在激活和去激活状态之间迁移，激活机制是当客户端调用某个EJB实例业务方法时，如果对应EJB Object发现自己没有绑定对应的Bean实例则从其去激活Bean存储中（通过序列化机制存储实例）回复（激活）此实例。状态变迁前会调用对应的 ejbActive和ejbPassivate方法。</p><p>&nbsp;</p><p><br/>78、EJB的几种类型<br/>会话（Session）Bean ，实体（Entity）Bean 消息驱动的（Message Driven）Bean<br/>会话Bean又可分为有状态（Stateful）和无状态（Stateless）两种<br/>实体Bean可分为Bean管理的持续性（BMP）和容器管理的持续性（CMP）两种</p><p>&nbsp;</p><p><br/>79、客服端调用EJB对象的几个基本步骤<br/>设置JNDI服务工厂以及JNDI服务地址系统属性，查找Home接口，从Home接口调用Create方法创建Remote接口，通过Remote接口调用其业务方法。</p><p>&nbsp;</p><p><br/>80、如何给weblogic指定大小的内存?&nbsp;<br/>在启动Weblogic的脚本中（位于所在Domian对应服务器目录下的startServerName），增加set MEM_ARGS=-Xms32m -Xmx200m，可以调整最小内存为32M，最大200M</p><p>&nbsp;</p><p><br/>81、如何设定的weblogic的热启动模式(开发模式)与产品发布模式?<br/>可以在管理控制台中修改对应服务器的启动模式为开发或产品模式之一。或者修改服务的启动文件或者commenv文件，增加set PRODUCTION_MODE=true。</p><p>&nbsp;</p><p><br/>82、如何启动时不需输入用户名与密码?<br/>修改服务启动文件，增加 WLS_USER和WLS_PW项。也可以在boot.properties文件中增加加密过的用户名和密码.</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>83、在weblogic管理制台中对一个应用域(或者说是一个网站,Domain)进行jms及ejb或连接池等相关信息进行配置后,实际保存在什么文件中?<br/>保存在此Domain的config.xml文件中，它是服务器的核心配置文件。</p><p>&nbsp;</p><p><br/>84、说说weblogic中一个Domain的缺省目录结构?比如要将一个简单的helloWorld.jsp放入何目录下,然的在浏览器上就可打入 http://主机:端口号//helloword.jsp就可以看到运行结果了? 又比如这其中用到了一个自己写的javaBean该如何办?<br/>Domain 目录服务器目录applications，将应用目录放在此目录下将可以作为应用访问，如果是Web应用，应用目录需要满足Web应用目录要求，jsp文件可以直接放在应用目录中，Javabean需要放在应用目录的WEB-INF目录的classes目录中，设置服务器的缺省应用将可以实现在浏览器上无需输入应用名。</p><p>&nbsp;</p><p><br/>85、在weblogic中发布ejb需涉及到哪些配置文件<br/>不同类型的EJB涉及的配置文件不同，都涉及到的配置文件包括ejb-jar.xml,weblogic-ejb-jar.xmlCMP实体Bean一般还需要weblogic-cmp-rdbms-jar.xml</p><p>&nbsp;</p><p><br/>86、如何在weblogic中进行ssl配置与客户端的认证配置或说说j2ee(标准)进行ssl的配置<br/>缺省安装中使用DemoIdentity.jks和DemoTrust.jks&nbsp; KeyStore实现SSL，需要配置服务器使用Enable SSL，配置其端口，在产品模式下需要从CA获取私有密钥和数字证书，创建identity和trust keystore，装载获得的密钥和数字证书。可以配置此SSL连接是单向还是双向的。</p><p>&nbsp;</p><p><br/>87、如何查看在weblogic中已经发布的EJB?<br/>可以使用管理控制台，在它的Deployment中可以查看所有已发布的EJB</p><p>&nbsp;</p><p><br/>88、CORBA是什么?用途是什么?&nbsp;<br/>CORBA 标准是公共对象请求代理结构(Common Object Request Broker Architecture)，由对象管理组织 (Object Management Group，缩写为 OMG)标准化。它的组成是接口定义语言(IDL), 语言绑定(binding:也译为联编)和允许应用程序间互操作的协议。其目的为：用不同的程序设计语言书写在不同的进程中运行，为不同的操作系统开发。</p><p>&nbsp;</p><p><br/>89、说说你所熟悉或听说过的j2ee中的几种常用模式?及对设计模式的一些看法<br/>&nbsp; Session Facade Pattern：使用SessionBean访问EntityBean<br/>Message Facade Pattern：实现异步调用<br/>EJB Command Pattern：使用Command JavaBeans取代SessionBean，实现轻量级访问<br/>Data Transfer Object Factory：通过DTO Factory简化EntityBean数据提供特性<br/>Generic Attribute Access：通过AttibuteAccess接口简化EntityBean数据提供特性<br/>Business Interface：通过远程（本地）接口和Bean类实现相同接口规范业务逻辑一致性<br/>ＥＪＢ架构的设计好坏将直接影响系统的性能、可扩展性、可维护性、组件可重用性及开发效率。项目越复杂，项目队伍越庞大则越能体现良好设计的重要性。</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

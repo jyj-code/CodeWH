@@ -1,0 +1,305 @@
+﻿
+@using Model;
+<div id="Login_black">
+    @{
+        var CurrentUserObj = ViewData["CurrentLoginUser"] as S_User;
+        if (CurrentUserObj == null || CurrentUserObj.UserAccount == null || CurrentUserObj.UserAccount.Length < 1)
+        {
+            <aside>
+                <div class="panel panel-zan">
+                    <div class="panel-heading">加入科布尔</div>
+                    <div class="login-form clearfix">
+                        <div class="alert alert-danger hide" id="longDivError"></div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="glyphicon glyphicon-user"></i>
+                                </div>
+                                <input class="form-control"style="height:41px" type="text" id="txtAccount" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="glyphicon glyphicon-lock"></i>
+                                </div>
+                                <input class="form-control" style="height:41px" type="password" id="txtPwd" />
+                            </div>
+                        </div>
+                        <button class="btn btn-inverse-primary pull-left" type="button" id="btnLogin">登录</button>
+                        <button class="btn btn-inverse-primary pull-right" type="button" disabled id="btnreg">注册</button>
+                    </div>
+                </div>
+            </aside>
+        }
+        else
+        {
+            switch (CurrentUserObj.Role_ID)
+            {
+                case "Administrator":
+                    <aside>
+                        <div class="panel panel-zan">
+                            <div class="panel-heading" id="btnLoginOut"><h1>欢迎您: <u>@CurrentUserObj.UserName</u></h1></div>
+                            <div class="login-form clearfix">
+                                <button class="btn btn-inverse-primary pull-left" type="button" id="btnArticleDetailsUpdate"><i class="glyphicon glyphicon-refresh"></i>文章明细模板更新</button>
+                                <button class="btn btn-inverse-primary pull-right" type="button" id="btnArticleTypeUpdate"><i class="glyphicon glyphicon-refresh"></i>文章类型模板更新</button>
+                            </div>
+                        </div>
+                    </aside>
+                    break;
+                case "User":
+                    <aside>
+                        <div class="panel panel-zan">
+                            <div class="panel-heading"><h1>欢迎您: <u>@CurrentUserObj.UserName</u></h1></div>
+                        </div>
+                    </aside>
+                    break;
+                default:
+                    <aside id="zan_login-2">
+                        <div class="panel panel-zan">
+                            <div class="panel-heading">加入科布尔</div>
+                            <div class="login-form clearfix">
+                                <div class="alert alert-danger hide" id="longDivError"></div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="glyphicon glyphicon-user"></i>
+                                        </div>
+                                        <input class="form-control" type="text" id="txtAccount" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="glyphicon glyphicon-lock"></i>
+                                        </div>
+                                        <input class="form-control" type="password" id="txtPwd" />
+                                    </div>
+                                </div>
+                                <button class="btn btn-inverse-primary pull-left" type="button" id="btnLogin">登录</button>
+                                <a href="/reg" class="btn btn-inverse-primary pull-right">注册</a>
+                            </div>
+                        </div>
+                    </aside>
+                    break;
+            }
+        }
+    }
+</div>
+<aside>
+    <div class="panel-heading search">
+        <div class="form-inline clearfix" id="searchform">
+            <input class="form-control" type="text" name="wd" id="wd" placeholder="站内全文搜索" style="" onkeypress="EnterPress(event)" onkeydown="EnterPress()" />
+            <button type="button" onclick="Search()" class="btn btn-info btn-small" disabled><i class="glyphicon glyphicon-search"></i></button>
+        </div>
+    </div>
+</aside>
+<aside>
+    <div class="panel panel-zan">
+        <div class="panel-heading">站内统计</div>
+        <ul class="list-group list-group-flush" id="Site_StatisticsCount"></ul>
+    </div>
+</aside>
+<aside>
+    <div class="panel panel-zan">
+        <div class="panel-heading">博文标签</div>
+        <div class="login-form">
+            <div class="rmlable">
+                <div id="rmlableLable"></div>
+            </div>
+        </div>
+    </div>
+</aside>
+<aside>
+    <div class="panel panel-zan">
+        <div class="panel-heading">微软学习导航</div>
+        <div class="login-form">
+            <div>
+                <h2>Application uses</h2>
+                <ul>
+                    <li>Sample pages using ASP.NET Core MVC</li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=518004">Bower</a> for managing client-side libraries</li>
+                    <li>Theming using <a href="http://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>How to</h2>
+                <ul>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkID=699562">Add an appsetting in config and access it in app.</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=699318">Add client packages using Bower.</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Overview</h2>
+                <ul>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Run & Deploy</h2>
+                <ul>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</aside>
+<aside>
+    <div class="panel-zan">
+        <div class="panel-heading">常用网站链接</div>
+        @*<div id="Useful_links"></div>*@
+        <ul class="list-group">
+            @{
+                List<Link> Linkdata = ViewData["Link"] as List<Link>;
+                if (Linkdata != null)
+                {
+                    foreach (var item in Linkdata)
+                    {
+                        <li class="list-group-item"><span class="post-title"><a href=@item.URL target="_blank" title=@item.NAME &nbsp;&nbsp;&nbsp; @item.URL>@item.NAME</a></span></li>
+                    }
+                }
+            }
+        </ul>
+    </div>
+</aside>
+
+<script>
+    $(document).ready(function () {
+        LoaadDataTypeList();
+        //LoaadDataLink();
+        $("#btnLogin").click(function () {
+            Login();
+        });
+        $("#btnArticleDetailsUpdate").click(function () {
+            $.ajax({
+                type: "post",
+                url: "/Home/AutoTemplateCreate",
+                data: { type: 1 },
+                success: function (data) {
+                    layer.alert(data);
+                }
+            })
+        });
+        $("#btnArticleTypeUpdate").click(function () {
+            $.ajax({
+                type: "post",
+                url: "/Home/AutoTemplateCreate",
+                data: { type: 2 },
+                success: function (data) {
+                    layer.alert(data);
+                }
+            })
+        });
+        $("#btnLoginOut").click(function () {
+            layer.confirm('您确定退出本系统吗？', {
+                btn: ['是的，我确定', '取消']
+            }, function () {
+                $.ajax({
+                    type: "Get",
+                    url: "/Home/LoginOut",
+                    success: function (data) {
+                        layer.alert(data);
+                    }
+                })
+                window.location.reload();
+                layer.msg(data, { icon: 1 });
+            });
+        });
+    })
+    function LoaadDataTypeList() {
+        $("#Site_StatisticsCount").html("");
+        $("#rmlableLable").html("");
+        var LableHtml = "";
+        $.ajax({
+            type: "Get",
+            url: "/api/article/type",
+            async: true,
+            ifModified: true,
+            cache: true,
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                $.each(data, function (i, item) {
+                    var html = '<li class="list-group-item"><span class="post-title"><a href="../../../../' + item.link_Url + '" title="' + item.Name + '" target="_blank">' + item.name + '</a></span><span class="badge">' + item.lover + '</span></li>'
+                    if (item.name == '.NET')
+                        LableHtml = '<a class="label label-default" href="../../../../' + item.link_Url + '" title="' + item.Name + '">' + item.name + '</a>';
+                    else if (item.name == 'CSS')
+                        LableHtml = '<a class="label label-primary" href="../../../../' + item.link_Url + '" title="' + item.Name + '">' + item.name + '</a>';
+                    else if (item.name == 'JAVA')
+                        LableHtml = '<a class="label label-success" href="../../../../' + item.link_Url + '" title="' + item.Name + '">' + item.name + '</a>';
+                    else if (item.name == 'JavaScript')
+                        LableHtml = '<a class="label label-info" href="../../../../' + item.link_Url + '" title="' + item.Name + '">' + item.name + '</a>';
+                    else if (item.name == 'Oracle')
+                        LableHtml = '<a class="label label-warning" href="../../../../' + item.link_Url + '" title="' + item.Name + '">' + item.name + '</a>';
+                    else
+                        LableHtml = '<a class="label label-danger" href="../../../../' + item.link_Url + '" title="' + item.Name + '">' + item.name + '</a>';
+                    $("#Site_StatisticsCount").append(html);
+                    if (i % 4 == 0) {
+                        $("#rmlableLable").append('<hr/>');
+                    }
+                    $("#rmlableLable").append(LableHtml);
+                })
+            }
+        })
+    }
+    //function LoaadDataLink() {
+    //    $("#Useful_links").html("");
+    //    var LableHtml = "";
+    //    $.ajax({
+    //        type: "Get",
+    //        url: "/api/Link",
+    //        async: true,
+    //        ifModified: true,
+    //        cache: true,
+    //        dataType: "json",
+    //        contentType: "application/json; charset=utf-8",
+    //        success: function (data) {
+    //            $.each(data, function (i, item) {
+    //                var html = '<li class="list-group-item"><span class="post-title"><a href=' + item.url + ' target="_blank" title="' + item.name + "&nbsp;&nbsp;&nbsp;" + item.url + '">' + item.name + '</a></span></li>'
+    //                $("#Useful_links").append(html);
+    //            })
+    //        }
+    //    })
+    //}
+    function Login() {
+        var account = $("#txtAccount").val();
+        var pwssword = $("#txtPwd").val();
+        if (account.trim() == '') {
+            layer.alert('请输入账号');
+            $("#txtAccount").focus();
+            return;
+        };
+        if (pwssword.trim() == '') {
+            layer.alert('请输入密码');
+            $("#txtPwd").focus();
+            return;
+        };
+        $.ajax({
+            type: "post",
+            url: "/Home/LoginVerify",
+            data: { Account: account, Password: pwssword },
+            async: false,
+            ifModified: true,
+            cache: true,
+            success: function (data) {
+                if (data != 0 || data != "0") {
+                    window.location.reload();
+                    layer.alert(data, { icon: 1 });
+                } else { layer.alert("登录失败，登录的用户【" + account + "】与密码比匹配", { icon: 0 }) }
+            }
+        })
+    }
+</script>

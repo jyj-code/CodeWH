@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=不安装Oracle客户端也能使用PL/SQL>
+    <meta name="keywords" content=不安装Oracle客户端也能使用PL/SQL解压缩instantclient_12_1 到D:\Oracle\instantclient_12_1在文件夹内建立目录,/NETWORK/ADMIN在该目录下，新建文件tnsnames.oraadamdb=  (DESCRIPTION=  (ADDRESS_LIST=  (ADDRESS=(PROTOCOL=TCP)(HOST=192.168.1.7)>
+    <title>不安装Oracle客户端也能使用PL/SQL</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/0D8667FF-B247-4368-A163-B9D7274FE236.html' title='Oracle'>Oracle</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>不安装Oracle客户端也能使用PL/SQL</h1>
+                        <pre>
+                        <code>
+                            <h1 class="postTitle" style="margin: 0px 0px 10px; padding: 0px 15px; font-size: 12px; font-weight: normal; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 18px; white-space: normal; background-image: url(http://www.cnblogs.com/skins/iMetro_HD/images/logo.png); background-color: rgb(255, 255, 255); background-position: -10px 0px; background-repeat: repeat-y;"><a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/hamy/p/3919309.html" style="margin: 0px; padding: 0px; font-size: 24px; color: rgb(0, 0, 0); text-decoration: none;">不安装Oracle客户端也能使用PL/SQL</a></h1><p style="margin: 10px auto; padding: 0px;">解压缩&nbsp;instantclient_12_1 到&nbsp;D:\Oracle\instantclient_12_1</p><p style="margin: 10px auto; padding: 0px;">在文件夹内建立目录,&nbsp;/NETWORK/ADMIN</p><p style="margin: 10px auto; padding: 0px;">在该目录下，新建文件tnsnames.ora</p><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 1px 3px; color: green; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">adamdb&nbsp;=  &nbsp;&nbsp;(DESCRIPTION&nbsp;=  &nbsp;&nbsp;&nbsp;&nbsp;(ADDRESS_LIST&nbsp;=  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADDRESS&nbsp;=&nbsp;(PROTOCOL&nbsp;=&nbsp;TCP)(HOST&nbsp;=&nbsp;192.168.1.7)(PORT&nbsp;=&nbsp;1521))  &nbsp;&nbsp;&nbsp;&nbsp;)  &nbsp;&nbsp;&nbsp;&nbsp;(CONNECT_DATA&nbsp;=  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(SID&nbsp;=&nbsp;adamdb)  &nbsp;&nbsp;&nbsp;&nbsp;)  &nbsp;&nbsp;)</pre><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 1px 3px; color: green; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><p style="margin: 10px auto; padding: 0px;">添加环境变量</p><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 1px 3px; color: green; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">【ORACLE_HOME】  D:\Oracle\instantclient_12_1    【TNS_ADMIN】  D:\Oracle\instantclient_12_1\NETWORK\ADMIN    【NLS_LANG】  AMERICAN_AMERICA.UTF8</pre><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.5 !important;"><a title="复制代码" style="margin: 0px; padding: 1px 3px; color: green; border: none !important;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码" style="margin: 0px; padding: 0px; border: none !important;"/></a></span></p><p style="margin: 10px auto; padding: 0px;">启动PL/SQL Developer，在登录窗口界面,点击取消按钮就可以进行主界面,点击Tools-&gt;Preferences，在Connection中需要配置如下两个参数</p><p style="margin: 10px auto; padding: 0px;">Oracle Home：D:\Oracle\instantclient_12_1<br style="margin: 0px; padding: 0px;"/>OCI Library：D:\Oracle\instantclient_12_1\oci.dll</p><p style="margin: 10px auto; padding: 0px;">至此配置完成,现在就可以正常使用pl/sql developer了</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

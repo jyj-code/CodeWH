@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=Oracle 日期查询>
+    <meta name="keywords" content=Oracle 日期查询转自:http://hi.baidu.com/fengboy_7334/blog/item/b0aa60035f36a1e809fa935d.html例如:select * from c where cdate=to_date(2010-10-14 14:00:00,yyyy-mm-dd hh24:mi:ss)select * from mytable where to_ch>
+    <title>Oracle 日期查询</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/0D8667FF-B247-4368-A163-B9D7274FE236.html' title='Oracle'>Oracle</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>Oracle 日期查询</h1>
+                        <pre>
+                        <code>
+                            <h3 style="background-color: inherit;"><span style="background-color: inherit;">Oracle 日期查询</span>&nbsp;</h3><p style="background-color: inherit;">转自:http://hi.baidu.com/fengboy_7334/blog/item/b0aa60035f36a1e809fa935d.html</p><p style="background-color: inherit;">例如:select * from c where&nbsp; cdate&gt;=to_date(&#39;2010-10-14 14:00:00&#39;,&#39;yyyy-mm-dd hh24:mi:ss&#39;)</p><p style="background-color: inherit;">select * from mytable where to_char(install_date,&#39;YYYYMMDD&#39;) &gt; &#39;20050101&#39;</p><p style="background-color: inherit;">select&nbsp;&nbsp; *&nbsp;&nbsp; from&nbsp;&nbsp; mytable&nbsp;&nbsp; where&nbsp;&nbsp; install_date&nbsp;&nbsp;&nbsp;&nbsp; &gt;&nbsp;&nbsp; to_date(&#39;20050101&#39;,&#39;yyyymmdd&#39;);</p><p style="background-color: inherit;">取得当前日期是本月的第几周</p><p style="background-color: inherit;">SQL&gt;&nbsp;&nbsp; select&nbsp;&nbsp; to_char(sysdate,&#39;YYYYMMDD&nbsp;&nbsp; W&nbsp;&nbsp; HH24:MI:SS&#39;)&nbsp;&nbsp; from&nbsp;&nbsp; dual; &nbsp;&nbsp; TO_CHAR(SYSDATE,&#39;YY ------------------- 20080327&nbsp;&nbsp; 4&nbsp;&nbsp; 18:16:09 &nbsp;&nbsp; SQL&gt;&nbsp;&nbsp; select&nbsp;&nbsp; to_char(sysdate,&#39;W&#39;)&nbsp;&nbsp; from&nbsp;&nbsp; dual;&nbsp;<br style="background-color: inherit;"/>&nbsp;&nbsp; T - 4</p><p style="background-color: inherit;">№2:取得当前日期是一个星期中的第几天,注意星期日是第一天</p><p style="background-color: inherit;">SQL&gt;&nbsp;&nbsp; select&nbsp;&nbsp; sysdate,to_char(sysdate,&#39;D&#39;)&nbsp;&nbsp; from&nbsp;&nbsp; dual; &nbsp;&nbsp;&nbsp;<br style="background-color: inherit;"/>SYSDATE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T ---------&nbsp;&nbsp; - 27-MAR-08&nbsp;&nbsp; 5</p><p style="background-color: inherit;">类似:</p><p style="background-color: inherit;">select&nbsp;&nbsp; to_char(sysdate,&#39;yyyy&#39;)&nbsp;&nbsp; from&nbsp;&nbsp; dual;&nbsp;&nbsp; --当前年 select&nbsp;&nbsp; to_char(sysdate,&#39;Q&#39;&nbsp;&nbsp; from&nbsp;&nbsp; dual;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --当前季度 select&nbsp;&nbsp; to_char(sysdate,&#39;mm&#39;)&nbsp;&nbsp; from&nbsp;&nbsp; dual;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --当前月 select&nbsp;&nbsp; to_char(sysdate,&#39;dd&#39;)&nbsp;&nbsp; from&nbsp;&nbsp; dual;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --当前日 ddd&nbsp;&nbsp; 年中的第几天 WW&nbsp;&nbsp; 年中的第几个星期 W&nbsp;&nbsp; 该月中第几个星期</p><p style="background-color: inherit;">DAY 周中的星期几 D&nbsp;&nbsp; 今天对映的NUMBER</p><p style="background-color: inherit;">&#39;1&#39;,&#39;星期日&#39;,&nbsp; &#39;2&#39;,&#39;星期一&#39;, &#39;3&#39;,&#39;星期二&#39;, &#39;4&#39;,&#39;星期三&#39;, &#39;5&#39;,&#39;星期四&#39;,&nbsp; &#39;6&#39;,&#39;星期五&#39;,&nbsp; &#39;7&#39;,&#39;星期六&#39; hh&nbsp;&nbsp; 小时(12) hh24&nbsp;&nbsp; 小时(24) Mi&nbsp;&nbsp; 分 ss&nbsp;&nbsp; 秒</p><p style="background-color: inherit;">№3:取当前日期是星期几的中文显示:</p><p style="background-color: inherit;">SQL&gt;&nbsp;&nbsp; select&nbsp;&nbsp; to_char(sysdate,&#39;day&#39;)&nbsp;&nbsp; from&nbsp;&nbsp; dual; &nbsp;&nbsp;&nbsp;<br style="background-color: inherit;"/>TO_CHAR(SYSDATE,&#39;DAY&#39;) ---------------------- 星期四</p><p style="background-color: inherit;">№4:如果一个表在一个date类型的字段上面建立了索引，如何使用</p><p style="background-color: inherit;">alter session set NLS_DATE_FORMAT=&#39;YYYY-MM-DD HH24:MI:SS&#39;</p><p style="background-color: inherit;">№5: 得到当前的日期 select sysdate from dual;</p><p style="background-color: inherit;">№6: 得到当天凌晨0点0分0秒的日期 select trunc(sysdate) from dual;</p><p style="background-color: inherit;">-- 得到这天的最后一秒 select trunc(sysdate) + 0.99999 from dual;</p><p style="background-color: inherit;">-- 得到小时的具体数值 select trunc(sysdate) + 1/24 from dual;</p><p style="background-color: inherit;">select trunc(sysdate) + 7/24 from dual;</p><p style="background-color: inherit;">№7:得到明天凌晨0点0分0秒的日期</p><p style="background-color: inherit;">select trunc(sysdate+1) from dual;</p><p style="background-color: inherit;">select trunc(sysdate)+1 from dual;</p><p style="background-color: inherit;">№8: 本月一日的日期 select trunc(sysdate,&#39;mm&#39;) from dual;</p><p style="background-color: inherit;">№9:得到下月一日的日期 select trunc(add_months(sysdate,1),&#39;mm&#39;) from dual;</p><p style="background-color: inherit;">№10:返回当前月的最后一天? select last_day(sysdate) from dual;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; select last_day(trunc(sysdate)) from dual; select trunc(last_day(sysdate)) from dual; select trunc(add_months(sysdate,1),&#39;mm&#39;) - 1 from dual;</p><p style="background-color: inherit;">№11: 得到一年的每一天 select trunc(sysdate,&#39;yyyy&#39;)+ rn -1 date0 from (select rownum rn from all_objects where rownum&lt;366);</p><p style="background-color: inherit;">№12:今天是今年的第N天 SELECT TO_CHAR(SYSDATE,&#39;DDD&#39;) FROM DUAL;</p><p style="background-color: inherit;">№13:如何在给现有的日期加上2年 select add_months(sysdate,24) from dual;</p><p style="background-color: inherit;">№14:判断某一日子所在年分是否为润年 select decode(to_char(last_day(trunc(sysdate,&#39;y&#39;)+31),&#39;dd&#39;),&#39;29&#39;,&#39;闰年&#39;,&#39;平年&#39;) from dual;</p><p style="background-color: inherit;">№15:判断两年后是否为润年 select decode(to_char(last_day(trunc(add_months(sysdate,24),&#39;y&#39;)+31),&#39;dd&#39;),&#39;29&#39;,&#39;闰年&#39;,&#39;平年&#39;) from dual;</p><p style="background-color: inherit;">№16:得到日期的季度</p><p style="background-color: inherit;">select ceil(to_number(to_char(sysdate,&#39;mm&#39;))/3) from dual;</p><p style="background-color: inherit;">select to_char(sysdate, &#39;Q&#39;) from dual;</p><p style="background-color: inherit;">No17:返回某个月的最后一天</p><p style="background-color: inherit;">select to_char(last_day(sysdate),&#39;dd&#39;) from dual</p><p style="background-color: inherit;">参数传递,Number型插入空值 昨天在程序中遇到一个数据类型转换的问题，在传递参数时，往Number类型中插入空值出现的问题：</p><p style="background-color: inherit;">例如：</p><p style="background-color: inherit;">string cskzcxcl ;</p><p style="background-color: inherit;">para[0] = new OracleParameter(&quot;:cskzcxcl&quot;, OracleType.Number, 9);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style="background-color: inherit;">para[0].Value = cskzcxcl;</p><p style="background-color: inherit;">总是报错，说是数据类型的问题; 经过本人今天在朋友的帮助下，总算找到了解决办法:</p><p style="background-color: inherit;">para[0].Value =DBNull.Value;</p><p style="background-color: inherit;">这样再插入空字符串时就不会出错;</p><p style="background-color: inherit;">Oracle中LPAD和RPAD的用法 LPAD和RPAD的用法 SELECT LPAD(&#39;B&#39;,10,&#39;-&#39;) || 字段名 FROM 表1;</p><p style="background-color: inherit;">在 B 的左边插入10个 &#39;-&#39; 字符.</p><p style="background-color: inherit;">SELECT RPAD(&#39;B&#39;,10,&#39;-&#39;) || 字段名 FROM 表1;</p><p style="background-color: inherit;">在 B 的右边插入10个 &#39;-&#39; 字符.</p><p>Hi，I&#39;m Cortana,Can I help you? wechat：Excel_Cortana;QQ群: 303625469</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

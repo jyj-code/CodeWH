@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="~/images/kebue.ico">
+    <link rel="icon" href="~/images/kebue.ico">
+    <meta name="Title" content="科布尔，科技社区,科布尔是一个面向开发者的知识分享社区">
+    <title>@ViewData["Title"] - 科布尔</title>
+    <environment names="Staging,Production,Development">
+        <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="~/css/site.min.css" />
+        <link href="~/css/core.css" rel="stylesheet" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">@await Html.PartialAsync("_NavigationPartial")</div>  <!-- 导航 -->
+        </div>
+        <div class="row">
+            <div class="col-xs-12">@await Html.PartialAsync("_AnnouncementPartial")</div>  <!-- 公告 -->
+        </div>
+        <div class="row">
+            <div class="col-xs-12">@RenderBody()</div> <!-- 类容主题 -->
+        </div>
+        <div class="row margin-top50">
+            <div class="col-xs-12">@await Html.PartialAsync("_FootPartial")</div> <!-- 页眉 -->
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="zan-gotop">
+                    <i class="glyphicon glyphicon-chevron-up"></i>
+                </div>
+            </div> <!-- 回到顶端 -->
+        </div>
+    </div>
+
+
+
+
+    <div class="container body-content" style="margin-top:60px">
+    </div>
+    <script>
+        function thisclosediv() {
+            $(".thisclosediv").hide();
+        }
+    </script>
+    <environment names="Staging,Production,Development">
+        <script src="~/js/jquery-1.9.1.js"></script>
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="~/js/zanblog.js"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="~/Plug/layer-v2.4/layer/layer.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=Java中负数以及类型转换问题>
+    <meta name="keywords" content=学习过java的都知道，在java中，不是直观的表示负数，而是采用补码的形式表示负数。这是为了硬件操作的方便，把减法也转换成加法来运算。那补码是怎样表示的呢？为了得到补码，我们引入了反码。对于正数来讲，它的反码补码都为本身，如果不明白为什么，我们可以这样理解：引入反码补码的原因就是为了解决减法的问题，换句话数就是解决java中负数的问题，正数不存在这些问题，所以它的反码补码就是它本身。在有符号的基>
+    <title>Java中负数以及类型转换问题</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/921733AE-DBDF-47C6-B557-E47959272851.html' title='JAVA'>JAVA</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>Java中负数以及类型转换问题</h1>
+                        <pre>
+                        <code>
+                            <p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none; color: rgb(68, 68, 68); font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25.2px; white-space: normal; background-color: rgb(255, 255, 255);">学习过java的都知道，在java中，不是直观的表示负数，而是采用补码的形式表示负数。</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none; color: rgb(68, 68, 68); font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25.2px; white-space: normal; background-color: rgb(255, 255, 255);">这是为了硬件操作的方便，把减法也转换成加法来运算。&nbsp;<br/>那补码是怎样表示的呢？为了得到补码，我们引入了反码。</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none; color: rgb(68, 68, 68); font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25.2px; white-space: normal; background-color: rgb(255, 255, 255);">对于正数来讲，它的反码补码都为本身，如果不明白为什么，我们可以这样理解：引入反码补码的原因就是为了解决减法的问题，换句话数就是解决java中负数的问题，正数不存在这些问题，所以它的反码补码就是它本身。在有符号的基本数据类型中，最高位0表示正数，最高位1表示负数。 对于负数来讲，它的反码就是除去符号位取反，然后加1就得到了它的补码。&nbsp;<br/>这里举个简单的例子，一个byte型数据，它在计算机中占8位，-7可以表示为10000111，最高位的1代表负号，它的反码是除去符号位各位取反为11111000，然后加1得到补码11111001。</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none; color: rgb(68, 68, 68); font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25.2px; white-space: normal; background-color: rgb(255, 255, 255);">8的二进制表示为00001000，现在我们运算8 - 7，在计算机并不是用8减去7，而是用8 + (-7)，也就是用00001000加上-7的补码11111001，两个有符号数相加，如果符号位相加有近位就删去符号位的进位，得到00000001，也就是1.&nbsp;<br/>java中我们经常也会遇到不同数据类型的转换，这是最容易出错的地方。</p><p style="margin: 10px auto; padding: 0px; list-style-type: none; list-style-image: none; color: rgb(68, 68, 68); font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25.2px; white-space: normal; background-color: rgb(255, 255, 255);">首先我们了解一下什么是符号扩展，对于正数来讲，在前面补0； 负数时在前面补1。比如8位的二进制数10000111扩展为16位，我们在前面加上8个1，1111111110000111；如果是正数，则在前面补0。这样进行扩展后，符号和数值的大小都不变。&nbsp;<br/>接下来我们我们看一下不同类型之间是怎样转换的，首先我们要知道这些基本类型各自占几位。 有符号型： byte = 8 &nbsp; int = 32 &nbsp; short = 16 long = 64 &nbsp; float = 32 &nbsp; double = 64 &nbsp; *boolean 只占一位，用0和1代表false和true。&nbsp;<br/>无符号型： char =&nbsp; 16&nbsp;<br/>1. byte型转为char型 因为byte是有符号类型，再转成char型时需要进行符号位扩展，如果是正数就在前面不上8个0， 如果是负数就在前面补上8个1。例如11111111（0xff）左边连续补上8个1结果是0xffff。因为char是无符号类型，所以0xffff表示的十进制数是65535。&nbsp;<br/>2. char型转为int型 因为char是无符号类型，转换成int型时进行在前面补上16个0，用十进制表示结果为结果0x0000ffff,对应的十进制数是65535。&nbsp;<br/>3. int型转为byte型 因为int是32位，而byte类型值只占8位，直接截取最后8位。例如-1的补码为0xffffffff，转换为byte型后为0xff，值为-1。&nbsp;<br/>总结：如果最初的数值类型是有符号的，那么就执行符号扩展；如果是char类型，那么不管它要被转换成什么类型，都执行零扩展。还有另外一条规则也需要记住，如果目标类型的长度小于源类型的长度，则直接截取目标类型的长度。例如将int型转换成byte型，直接截取int型的右边8位</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

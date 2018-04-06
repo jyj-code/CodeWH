@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=请求管道与19个标准事件>
+    <meta name="keywords" content=1.BeginRequestASP.NET开始处理对的第一个事件，表示处理的开始。2.AuthenticateRequest验证请求，一般用来去请求的用户信息3.PostAuthenticateRequest已经获取请求的用户信息4.AuthorizeRequest授权，一般用来检查用户的请求是否获取权限5.PostAuthorizeRequest用户请求已经得到授权7.PostResolveRe>
+    <title>请求管道与19个标准事件</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/B8C0509A-82D4-4BD7-A1BB-5BAF70ED1C60.html' title='.NET'>.NET</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>请求管道与19个标准事件</h1>
+                        <pre>
+                        <code>
+                            <p>1.BeginRequest</p><p>ASP.NET开始处理对的第一个事件，表示处理的开始。</p><p>2.AuthenticateRequest</p><p>验证请求，一般用来去请求的用户信息</p><p>3.PostAuthenticateRequest</p><p>已经获取请求的用户信息</p><p>4.AuthorizeRequest</p><p>授权，一般用来检查用户的请求是否获取权限</p><p>5.PostAuthorizeRequest</p><p>用户请求已经得到授权</p><p>7.PostResolveRequestCache</p><p>已经完成缓存的获取工作</p><p>8.PostMappRequestHandler</p><p>已经根据用户的请求，创建了处理请求处理器的对象。</p><p>9.AcquireRequestState</p><p>取得请求的状态，一般用户Session</p><p>10.PostAcquireRequestState</p><p>已经取得了Session</p><p>11.PreRequestHandlerExecute</p><p>准备执行处理程序。</p><p>&nbsp;</p><p>11、12管道事件之间开始进入页面生命周期(Page类)</p><p>①执行一般处理程序或者是页面的PR方法</p><p>②创建控件树：_BuilderControlTree 内部就是将整个页面控件树的结构创建好，如果是普通的C#代码，将被编译到一个方法体里。</p><p>③决定是否IsPostBack，确定当前请求是否是回发，通过ViewState实现，如果ViewState</p><p>④PreInit()初始化执勤啊的一个事件</p><p>&nbsp; &nbsp; Init()实际输出化：就是将控件树上的控件都new一个实例，并赋默认值。Init方法内部是执行一个递归初始化。</p><p>&nbsp; &nbsp; InitComplete</p><p>⑤加载ViewState加载页面的状态，解析隐藏域中的ViewState</p><p>⑥ProcessPostData处理回发数据</p><p>&nbsp; &nbsp; 1.比较表单提交过来的数据和控件上原来的状态做对比，然后将需要触发改变的控件放到一个集合里面去。</p><p>&nbsp; &nbsp; 2.将表单里面的值赋值到控件上。</p><p>⑦页面加载PreLoad</p><p>&nbsp; &nbsp;(这是在事件响应之前最后改变事件的地方)</p><p>&nbsp; &nbsp;Load(PageLoad)</p><p>⑧ProcessPostData:第二次处理回发数据。</p><p>再次将要触发改变事件的控件又一次的放到集合里面去。</p><p>⑨触发改变的事件LoadComplete</p><p>⑩触发PostBack回来的控件的事件</p><p>?PreRend(渲染之前)</p><p>&nbsp; &nbsp; 渲染：就是将服务器端的控件转换成html代码，这也是最后一次能改变即将发送给客户端的响应内容</p><p>?页面渲染。</p><p>&nbsp;</p><p>12.PostRequestHandler</p><p>已经执行了处理程序</p><p>13.ReleaseRequestState</p><p>释放请求的状态</p><p>14.PostReleaseRequestState</p><p>已经释放了请求的状态</p><p>15.UpdateRequestCache</p><p>更新缓存</p><p>16.PostUpdateRequestCache</p><p>已经更新了缓存</p><p>17.LogRequest</p><p>请求的日志操作</p><p>18.PostLogRequest</p><p>已经完成了请求的日志操作</p><p>19.EndRequest</p><p>本次请求处理完成</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

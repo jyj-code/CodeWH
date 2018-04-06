@@ -1,0 +1,171 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MRManager
+</name>
+</assembly>
+<members>
+<member name="M:MRManager.MR.MRCounseling_Main(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ MR画面起動
+ </summary>
+	<param name="userId"></param>
+	<param name="countryId"></param>
+	<param name="counterId"></param>
+	<param name="machineId"></param>
+	<param name="timeStamp"></param>
+	<param name="consumerId"></param>
+	<param name="sessionId"></param>
+	<param name="familyName"></param>
+	<param name="birthYearMonth"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MRManager.MR.MRSyncStatus_Menu(System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ 同期画面起動
+ </summary>
+	<param name="userId"></param>
+	<param name="countryId"></param>
+	<param name="counterId"></param>
+	<param name="machineId"></param>
+	<param name="timeStamp"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MRManager.MR.MRConfig_Menu(System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ 設定画面起動
+ </summary>
+	<param name="userId"></param>
+	<param name="countryId"></param>
+	<param name="counterId"></param>
+	<param name="machineId"></param>
+	<param name="timeStamp"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MRManager.MR.MRDNAID_Management(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ DNAひもづけ画面起動
+ </summary>
+	<param name="userId"></param>
+	<param name="countryId"></param>
+	<param name="counterId"></param>
+	<param name="machineId"></param>
+	<param name="timeStamp"></param>
+	<param name="consumerId"></param>
+	<param name="familyName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MRManager.MR.MRDNAID_Check(System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ DNAチェック画面起動
+ </summary>
+	<param name="userId"></param>
+	<param name="countryId"></param>
+	<param name="counterId"></param>
+	<param name="machineId"></param>
+	<param name="timeStamp"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MRManager.MR.MRManager_Start(System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ C2 Login
+ </summary>
+	<param name="userId">BC login id</param>
+	<param name="countryId">country id</param>
+	<param name="counterId">counter id</param>
+	<param name="machineId">machine id</param>
+	<param name="timeStamp">timestamp</param>
+	<returns>OK:"0000", NG:"9999"</returns>
+	<remarks>C2ログイン時に呼ばれる</remarks>
+</member><member name="M:MRManager.MR.MRManager_End(System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ C2 Logout
+ </summary>
+	<param name="userId"></param>
+	<param name="countryId"></param>
+	<param name="counterId"></param>
+	<param name="machineId"></param>
+	<param name="timeStamp"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MRManager.MR.MRDataSave_Mapping(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ ConsumerIdとsessionIdの紐づけ
+ </summary>
+	<param name="userId">BC login id</param>
+	<param name="countryId">country id</param>
+	<param name="counterId">counter id</param>
+	<param name="machineId">machine id</param>
+	<param name="timeStamp">timestamp</param>
+	<param name="consumerId">consumer id</param>
+	<param name="sessionId">temporary id</param>
+	<returns>OK:"0000", NG:"9999"</returns>
+	<remarks>
+	</remarks>
+</member><member name="M:MRManager.MR.MRTemporarySave_Info(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ 一時保存
+ </summary>
+	<param name="userId"></param>
+	<param name="countryId"></param>
+	<param name="counterId"></param>
+	<param name="machineId"></param>
+	<param name="timeStamp"></param>
+	<param name="consumerId"></param>
+	<param name="sessionId"></param>
+	<returns></returns>
+	<remarks>お客さまが離席されたときに呼ばれる</remarks>
+</member><member name="M:MRManager.MR.MRDataDelete_Info(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Temporaryデータの削除
+ </summary>
+	<param name="userId"></param>
+	<param name="countryId"></param>
+	<param name="counterId"></param>
+	<param name="machineId"></param>
+	<param name="timeStamp"></param>
+	<param name="consumerId"></param>
+	<param name="sessionId"></param>
+	<returns></returns>
+	<remarks>保存確認でNoを選択された場合に呼ばれる</remarks>
+</member><member name="M:MRManager.MR.MRDataDownload_Sync(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Download
+ </summary>
+	<param name="userId"></param>
+	<param name="countryId"></param>
+	<param name="counterId"></param>
+	<param name="machineId"></param>
+	<param name="timeStamp"></param>
+	<param name="consumerId"></param>
+	<param name="SessionID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MRManager.MR.MRDataUpload_Sync(System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Upload
+ </summary>
+	<param name="userId"></param>
+	<param name="countryId"></param>
+	<param name="counterId"></param>
+	<param name="machineId"></param>
+	<param name="timeStamp"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:MRManager.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:MRManager.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:MRManager.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

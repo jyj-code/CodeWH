@@ -1,0 +1,140 @@
+
+ 
+记录时间：2016-12-08 00:09:18,681 
+线程ID:[8] 
+日志级别：  INFO  
+日志描述：用户进入信息记录：{"Browser":null,"IMG":0,"Id":"87aa288ea9f25b842d2d8c97bfbe6dad","InCount":0,"Ip":"36.149.134.53","Isp":"江苏省苏州市吴中区凤里街","OS":"电脑","OperationTime":null,"Remarks":"{\"content\":{\"Pois\":null,\"address_component\":{\"admin_area_code\":\"320506\",\"city\":\"苏州市\",\"country\":\"中国\",\"district\":\"吴中区\",\"province\":\"江苏省\",\"street\":\"凤里街\",\"street_number\":\"\"},\"confidence\":\"0.2\",\"formatted_address\":\"江苏省苏州市吴中区凤里街\",\"location\":{\"lat\":\"3654259.0\",\"lng\":\"13445768.0\"},\"locid\":\"87aa288ea9f25b842d2d8c97bfbe6dad\",\"radius\":\"59138\"},\"result\":{\"error\":\"161\",\"loc_time\":\"2016-12-08 00:09:11\"}}","Status":0,"lat":"3654259.0","lng":"13445768.0"}
+ 
+
+ 
+记录时间：2016-12-08 00:09:32,354 
+线程ID:[11] 
+日志级别：  INFO  
+日志描述：6b86e8c4c5825a5c7ed325420eda4135	1a33f9096bc24b75bf7883bcad3b3010	ｑｗ	ｑｗ	2016-12-08 00:09:32	
+ 
+
+ 
+记录时间：2016-12-08 00:09:39,510 
+线程ID:[8] 
+日志级别：  INFO  
+日志描述：6b86e8c4c5825a5c7ed325420eda4135	fb587f613dec4e1599fd509b3d7b093f	ｑｗｑ	ｑｗｑ	2016-12-08 00:09:39	
+ 
+
+ 
+记录时间：2016-12-08 00:13:53,153 
+线程ID:[7] 
+日志级别：  INFO  
+日志描述：用户进入信息记录：{"Browser":null,"IMG":0,"Id":"0ced1ac1e4fee7b064ccdac4b182875b","InCount":0,"Ip":"36.149.134.53","Isp":"江苏省苏州市吴中区凤里街","OS":"电脑","OperationTime":null,"Remarks":"{\"content\":{\"Pois\":null,\"address_component\":{\"admin_area_code\":\"320506\",\"city\":\"苏州市\",\"country\":\"中国\",\"district\":\"吴中区\",\"province\":\"江苏省\",\"street\":\"凤里街\",\"street_number\":\"\"},\"confidence\":\"0.2\",\"formatted_address\":\"江苏省苏州市吴中区凤里街\",\"location\":{\"lat\":\"3654259.0\",\"lng\":\"13445768.0\"},\"locid\":\"0ced1ac1e4fee7b064ccdac4b182875b\",\"radius\":\"59138\"},\"result\":{\"error\":\"161\",\"loc_time\":\"2016-12-08 00:13:50\"}}","Status":0,"lat":"3654259.0","lng":"13445768.0"}
+ 
+
+ 
+记录时间：2016-12-08 00:13:59,596 
+线程ID:[5] 
+日志级别：  INFO  
+日志描述：用户进入信息记录：{"Browser":null,"IMG":0,"Id":"0be6791cf797e761cbaa5d1e7643bbac","InCount":0,"Ip":"36.149.134.53","Isp":"江苏省苏州市吴中区凤里街","OS":"电脑","OperationTime":null,"Remarks":"{\"content\":{\"Pois\":null,\"address_component\":{\"admin_area_code\":\"320506\",\"city\":\"苏州市\",\"country\":\"中国\",\"district\":\"吴中区\",\"province\":\"江苏省\",\"street\":\"凤里街\",\"street_number\":\"\"},\"confidence\":\"0.2\",\"formatted_address\":\"江苏省苏州市吴中区凤里街\",\"location\":{\"lat\":\"3654259.0\",\"lng\":\"13445768.0\"},\"locid\":\"0be6791cf797e761cbaa5d1e7643bbac\",\"radius\":\"59138\"},\"result\":{\"error\":\"161\",\"loc_time\":\"2016-12-08 00:13:57\"}}","Status":0,"lat":"3654259.0","lng":"13445768.0"}
+ 
+
+ 
+记录时间：2016-12-08 00:14:04,898 
+线程ID:[11] 
+日志级别：  INFO  
+日志描述：用户进入信息记录：{"Browser":null,"IMG":0,"Id":"6ef0ba8214e21aedec3e2bcdcc55c146","InCount":0,"Ip":"36.149.134.53","Isp":"江苏省苏州市吴中区凤里街","OS":"电脑","OperationTime":null,"Remarks":"{\"content\":{\"Pois\":null,\"address_component\":{\"admin_area_code\":\"320506\",\"city\":\"苏州市\",\"country\":\"中国\",\"district\":\"吴中区\",\"province\":\"江苏省\",\"street\":\"凤里街\",\"street_number\":\"\"},\"confidence\":\"0.2\",\"formatted_address\":\"江苏省苏州市吴中区凤里街\",\"location\":{\"lat\":\"3654259.0\",\"lng\":\"13445768.0\"},\"locid\":\"6ef0ba8214e21aedec3e2bcdcc55c146\",\"radius\":\"59138\"},\"result\":{\"error\":\"161\",\"loc_time\":\"2016-12-08 00:14:03\"}}","Status":0,"lat":"3654259.0","lng":"13445768.0"}
+ 
+
+ 
+记录时间：2016-12-08 00:14:40,601 
+线程ID:[7] 
+日志级别：  INFO  
+日志描述：用户进入信息记录：{"Browser":null,"IMG":0,"Id":"1da79bd0ee8fcac744a023d2ac604e2d","InCount":0,"Ip":"36.149.134.53","Isp":"江苏省苏州市吴中区凤里街","OS":"电脑","OperationTime":null,"Remarks":"{\"content\":{\"Pois\":null,\"address_component\":{\"admin_area_code\":\"320506\",\"city\":\"苏州市\",\"country\":\"中国\",\"district\":\"吴中区\",\"province\":\"江苏省\",\"street\":\"凤里街\",\"street_number\":\"\"},\"confidence\":\"0.2\",\"formatted_address\":\"江苏省苏州市吴中区凤里街\",\"location\":{\"lat\":\"3654259.0\",\"lng\":\"13445768.0\"},\"locid\":\"1da79bd0ee8fcac744a023d2ac604e2d\",\"radius\":\"59138\"},\"result\":{\"error\":\"161\",\"loc_time\":\"2016-12-08 00:14:37\"}}","Status":0,"lat":"3654259.0","lng":"13445768.0"}
+ 
+
+ 
+记录时间：2016-12-08 00:16:52,331 
+线程ID:[13] 
+日志级别：  INFO  
+日志描述：用户进入信息记录：{"Browser":null,"IMG":4,"Id":"9c02d2e8db9fcaeeec4cfd2f10ab817d","InCount":1,"Ip":"36.149.134.53","Isp":"江苏省苏州市吴中区凤里街","OS":"电脑","OperationTime":null,"Remarks":"{\"content\":{\"Pois\":null,\"address_component\":{\"admin_area_code\":\"320506\",\"city\":\"苏州市\",\"country\":\"中国\",\"district\":\"吴中区\",\"province\":\"江苏省\",\"street\":\"凤里街\",\"street_number\":\"\"},\"confidence\":\"0.2\",\"formatted_address\":\"江苏省苏州市吴中区凤里街\",\"location\":{\"lat\":\"3654259.0\",\"lng\":\"13445768.0\"},\"locid\":\"9c02d2e8db9fcaeeec4cfd2f10ab817d\",\"radius\":\"59138\"},\"result\":{\"error\":\"161\",\"loc_time\":\"2016-12-08 00:16:08\"}}","Status":1,"lat":"3654259.0","lng":"13445768.0"}
+ 
+
+ 
+记录时间：2016-12-08 00:17:03,328 
+线程ID:[10] 
+日志级别：  INFO  
+日志描述：9c02d2e8db9fcaeeec4cfd2f10ab817d	39ba441920e0446bacfa24e4679d3445	ｆｄ	ｆｄ	2016-12-08 00:17:03	
+ 
+
+ 
+记录时间：2016-12-08 00:19:13,399 
+线程ID:[8] 
+日志级别：  INFO  
+日志描述：用户进入信息记录：{"Browser":"电脑","IMG":0,"Id":"45d9443d8686295e1ce6ff2dff37f2e3","InCount":0,"Ip":"36.149.134.53","Isp":"江苏省苏州市吴中区凤里街","OS":"Windows 8","OperationTime":null,"Remarks":"{\"content\":{\"Pois\":null,\"address_component\":{\"admin_area_code\":\"320506\",\"city\":\"苏州市\",\"country\":\"中国\",\"district\":\"吴中区\",\"province\":\"江苏省\",\"street\":\"凤里街\",\"street_number\":\"\"},\"confidence\":\"0.2\",\"formatted_address\":\"江苏省苏州市吴中区凤里街\",\"location\":{\"lat\":\"3654259.0\",\"lng\":\"13445768.0\"},\"locid\":\"45d9443d8686295e1ce6ff2dff37f2e3\",\"radius\":\"59138\"},\"result\":{\"error\":\"161\",\"loc_time\":\"2016-12-08 00:19:07\"}}","Status":0,"lat":"3654259.0","lng":"13445768.0"}
+ 
+
+ 
+记录时间：2016-12-08 00:20:00,537 
+线程ID:[6] 
+日志级别：  INFO  
+日志描述：45d9443d8686295e1ce6ff2dff37f2e3	2d71065e08a5420fafc0878ef9c40288	九方城公交首末站－萧林路紫竹路－同心村－萧林路汉浦路－滨江花园－江南明珠苑－昆山花园－长江路春晖路－长江路昆太路－汉浦新村－昆太路汉林路－昆太路市后街－东门－仁济医院－集街－在水一方－雍景湾－花鸟市场－葛江中学－合兴路新闸路－西大桥南－震川路仓基街－超华商贸城－交通大厦－虹桥路马鞍山路－鹿城路马鞍山路－鹿城路万步路－振华小学－鹿城花园－泾河花园－罗马假日－虹祺路花园路北－新华舍－鑫源热电－萧林路鹿城路－萧林路水秀路－海峰公寓－九方城公交首末站	２３	2016-12-08 00:20:00	
+ 
+
+ 
+记录时间：2016-12-08 07:35:38,320 
+线程ID:[7] 
+日志级别：  INFO  
+日志描述：用户进入信息记录：{"Browser":null,"Browser_1":null,"IMG":4,"Id":"341372bc2f97b9121512a94b55553a24","InCount":1,"Ip":"36.149.134.53","Isp":"江苏省苏州市吴中区现代大道","OS":"Windows 8","OS_1":"Mozilla\/5.0 (Windows NT 6.2; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.116 Safari\/537.36","OperationTime":null,"Remarks":"{\"content\":{\"Pois\":null,\"address_component\":{\"admin_area_code\":\"320506\",\"city\":\"苏州市\",\"country\":\"中国\",\"district\":\"吴中区\",\"province\":\"江苏省\",\"street\":\"现代大道\",\"street_number\":\"\"},\"confidence\":\"0.2\",\"formatted_address\":\"江苏省苏州市吴中区现代大道\",\"location\":{\"lat\":\"3653971.0\",\"lng\":\"13445229.0\"},\"locid\":\"341372bc2f97b9121512a94b55553a24\",\"radius\":\"67669\"},\"result\":{\"error\":\"161\",\"loc_time\":\"2016-12-08 07:34:59\"}}","Status":1,"lat":"3653971.0","lng":"13445229.0","modelType":"电脑"}
+ 
+
+ 
+记录时间：2016-12-08 07:39:51,109 
+线程ID:[6] 
+日志级别：  INFO  
+日志描述：用户进入信息记录：{"Browser":null,"Browser_1":null,"IMG":6,"Id":"f38d1c3e209b873bb37c1ddc0b51654b","InCount":1,"Ip":"36.149.6.53","Isp":"江苏省苏州市吴中区亭平路","OS":"Windows 8","OS_1":"Mozilla\/5.0 (Windows NT 6.2; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.116 Safari\/537.36","OperationTime":null,"Remarks":"{\"content\":{\"Pois\":null,\"address_component\":{\"admin_area_code\":\"320506\",\"city\":\"苏州市\",\"country\":\"中国\",\"district\":\"吴中区\",\"province\":\"江苏省\",\"street\":\"亭平路\",\"street_number\":\"\"},\"confidence\":\"0.2\",\"formatted_address\":\"江苏省苏州市吴中区亭平路\",\"location\":{\"lat\":\"3656434.0\",\"lng\":\"13448953.0\"},\"locid\":\"f38d1c3e209b873bb37c1ddc0b51654b\",\"radius\":\"66419\"},\"result\":{\"error\":\"161\",\"loc_time\":\"2016-12-08 07:39:47\"}}","Status":1,"lat":"3656434.0","lng":"13448953.0","modelType":"电脑"}
+ 
+
+ 
+记录时间：2016-12-08 07:43:17,810 
+线程ID:[7] 
+日志级别：  INFO  
+日志描述：用户进入信息记录：{"Browser":null,"Browser_1":null,"IMG":0,"Id":"77e78641ff990d605d27dfda9e30815e","InCount":0,"Ip":"36.149.134.53","Isp":"江苏省苏州市吴中区凤里街","OS":"Windows 8","OS_1":"Mozilla\/5.0 (Windows NT 6.2; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.116 Safari\/537.36","OperationTime":null,"Remarks":"{\"content\":{\"Pois\":null,\"address_component\":{\"admin_area_code\":\"320506\",\"city\":\"苏州市\",\"country\":\"中国\",\"district\":\"吴中区\",\"province\":\"江苏省\",\"street\":\"凤里街\",\"street_number\":\"\"},\"confidence\":\"0.2\",\"formatted_address\":\"江苏省苏州市吴中区凤里街\",\"location\":{\"lat\":\"3654259.0\",\"lng\":\"13445768.0\"},\"locid\":\"77e78641ff990d605d27dfda9e30815e\",\"radius\":\"59138\"},\"result\":{\"error\":\"161\",\"loc_time\":\"2016-12-08 07:43:00\"}}","Status":0,"lat":"3654259.0","lng":"13445768.0","modelType":"电脑"}
+ 
+
+ 
+记录时间：2016-12-08 07:47:30,426 
+线程ID:[7] 
+日志级别：  INFO  
+日志描述：用户进入信息记录：{"Browser":null,"Browser_1":null,"IMG":1,"Id":"964d5471b4349a0d878a02fc4278c117","InCount":1,"Ip":"36.149.6.53","Isp":"江苏省苏州市吴中区唯胜路","OS":"Windows 8","OS_1":"Mozilla\/5.0 (Windows NT 6.2; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.116 Safari\/537.36","OperationTime":null,"Remarks":"{\"content\":{\"Pois\":null,\"address_component\":{\"admin_area_code\":\"320506\",\"city\":\"苏州市\",\"country\":\"中国\",\"district\":\"吴中区\",\"province\":\"江苏省\",\"street\":\"唯胜路\",\"street_number\":\"\"},\"confidence\":\"0.2\",\"formatted_address\":\"江苏省苏州市吴中区唯胜路\",\"location\":{\"lat\":\"3655919.0\",\"lng\":\"13448715.0\"},\"locid\":\"964d5471b4349a0d878a02fc4278c117\",\"radius\":\"66674\"},\"result\":{\"error\":\"161\",\"loc_time\":\"2016-12-08 07:47:26\"}}","Status":1,"lat":"3655919.0","lng":"13448715.0","modelType":"电脑"}
+ 
+
+ 
+记录时间：2016-12-08 07:52:14,676 
+线程ID:[6] 
+日志级别：  INFO  
+日志描述：用户进入信息记录：{"Browser":null,"Browser_1":"5.0 (Windows NT 6.2; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.116 Safari\/537.36","IMG":0,"Id":"16766442818b046b2d3660ada6694e9a","InCount":0,"Ip":"36.149.134.53","Isp":"江苏省苏州市吴中区凤里街","OS":"Windows 8","OS_1":"Mozilla\/5.0 (Windows NT 6.2; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.116 Safari\/537.36","OperationTime":null,"Remarks":"{\"content\":{\"Pois\":null,\"address_component\":{\"admin_area_code\":\"320506\",\"city\":\"苏州市\",\"country\":\"中国\",\"district\":\"吴中区\",\"province\":\"江苏省\",\"street\":\"凤里街\",\"street_number\":\"\"},\"confidence\":\"0.2\",\"formatted_address\":\"江苏省苏州市吴中区凤里街\",\"location\":{\"lat\":\"3654259.0\",\"lng\":\"13445768.0\"},\"locid\":\"16766442818b046b2d3660ada6694e9a\",\"radius\":\"59138\"},\"result\":{\"error\":\"161\",\"loc_time\":\"2016-12-08 07:52:12\"}}","Status":0,"lat":"3654259.0","lng":"13445768.0","modelType":"电脑"}
+ 
+
+ 
+记录时间：2016-12-08 07:53:06,705 
+线程ID:[5] 
+日志级别：  INFO  
+日志描述：bd23a958029d4c4836297ea841695c45	aca3ba050dab4bbe843a04fedd0f5ca4	九方城公交首末站－萧林路紫竹路－同心村－萧林路汉浦路－滨江花园－江南明珠苑－昆山花园－长江路春晖路－长江路昆太路－汉浦新村－昆太路汉林路－昆太路市后街－东门－仁济医院－集街－在水一方－雍景湾－花鸟市场－葛江中学－合兴路新闸路－西大桥南－震川路仓基街－超华商贸城－交通大厦－虹桥路马鞍山路－鹿城路马鞍山路－鹿城路万步路－振华小学－鹿城花园－泾河花园－罗马假日－虹祺路花园路北－新华舍－鑫源热电－萧林路鹿城路－萧林路水秀路－海峰公寓－九方城公交首末站	２３	2016-12-08 07:53:06	
+ 
+
+ 
+记录时间：2016-12-08 07:58:25,892 
+线程ID:[6] 
+日志级别：  INFO  
+日志描述：用户进入信息记录：{"Browser":null,"Browser_1":"5.0 (Windows NT 6.2; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.116 Safari\/537.36","IMG":3,"Id":"40ebc2aa30689e42dad3f24894c40ccb","InCount":1,"Ip":"36.149.134.53","Isp":"江苏省苏州市吴中区凤里街","OS":"Windows 8","OS_1":"Mozilla\/5.0 (Windows NT 6.2; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.116 Safari\/537.36","OperationTime":null,"Remarks":"{\"content\":{\"Pois\":null,\"address_component\":{\"admin_area_code\":\"320506\",\"city\":\"苏州市\",\"country\":\"中国\",\"district\":\"吴中区\",\"province\":\"江苏省\",\"street\":\"凤里街\",\"street_number\":\"\"},\"confidence\":\"0.2\",\"formatted_address\":\"江苏省苏州市吴中区凤里街\",\"location\":{\"lat\":\"3654259.0\",\"lng\":\"13445768.0\"},\"locid\":\"40ebc2aa30689e42dad3f24894c40ccb\",\"radius\":\"59138\"},\"result\":{\"error\":\"161\",\"loc_time\":\"2016-12-08 07:58:23\"}}","Status":1,"lat":"3654259.0","lng":"13445768.0","modelType":"电脑"}
+ 
+
+ 
+记录时间：2016-12-08 07:58:36,909 
+线程ID:[7] 
+日志级别：  INFO  
+日志描述：40ebc2aa30689e42dad3f24894c40ccb	15b88fe1ee084b989715e8ced71f7ec0	ｑｗｑ	ｑｗｑ	2016-12-08 07:58:36	
+ 
+
+ 
+记录时间：2016-12-08 07:58:42,800 
+线程ID:[8] 
+日志级别：  INFO  
+日志描述：40ebc2aa30689e42dad3f24894c40ccb	100445741e5248d9a003cc6b78537ad4	ｑｗｗｗｗ	ｑｗｗｗｗ	2016-12-08 07:58:42	
+ 

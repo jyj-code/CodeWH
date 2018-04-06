@@ -1,0 +1,176 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="ujianVerification" content="b273f969bcdb7d88b30eb85b22648bbb" />
+    <link rel="shortcut icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="icon" href="http://www.kebue.com//images/kebue.ico">
+    <base target="_blank" />
+    <meta name="Title" content="科布尔，科小智,机器人,智能机器人，科技社区,科布尔是一个面向开发者的知识分享社区">
+    <meta name="Keywords" content="科布尔，科小智,机器人,智能机器人，科技社区,科布尔是一个面向开发者的知识分享社区" />
+    <title>科布尔，科小智,机器人,智能机器人，科技社区,科布尔是一个面向开发者的知识分享社区</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="~/Content/kebue.chat.css" rel="stylesheet" />
+    <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <style type="text/css">
+        .chat_right a {
+            color: blue;
+            font-weight: 800;
+            font-family: Arial;
+            font-size: 12px;
+        }
+
+        .text-white {
+            color: blue;
+            font-family: Arial;
+            font-size: 12px;
+        }
+
+        .chat_right a:hover {
+            text-decoration: none;
+            font-size: 22px;
+            color: red;
+        }
+
+        #chat_msgs {
+            height: 300px;
+            position: inherit;
+        }
+    </style>
+</head>
+<body class="container" style="background-image: url('../../Content/image/1.gif');">
+    <div class="row" style="margin-top:20px"></div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="web-main-header">
+                <span class="web-header-logo"></span>
+                <div class="web-header-info">
+                    <h1 class="title ng-binding">科布尔，科小智陪你聊天</h1>
+                    <p class="describe ng-binding">
+                        科布尔，科小智,机器人,智能机器人，科技社区,科布尔是一个面向开发者的知识分享社区
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-10" style="background-color:white;left:15px">
+            <div class="web-record-box" id="chat_msgs">
+                <div class="chat-msgs">
+                </div>
+            </div>
+
+            <div class="ueditor-input-con" style="padding: 3px;border-top:2px dotted #D5D5D5">
+                <textarea class="manual-ueditor" placeholder="科小智请您输入您要说的话或您想问我的问题"></textarea>
+            </div>
+            <div class="ueditor-send-con">
+                <input type="button" class="btn-send" id="btn-send" value="发送">
+                <span class="send-tip">支持Enter快捷键发送</span>
+            </div>
+        </div>
+        <div class="col-xs-2">
+            <!-- 常用问答功能 -->
+            <div class="web-main-sidebar-inner" style="background-color:#EDEDF2;height:460px">
+                <div class="eui-tab-01 web-sidebar-con">
+                    <h1><i class="glyphicon glyphicon-thumbs-down btn-primary lg"></i></h1>
+                    <hr />
+                    <ol class="chat_right">
+                        <li><a href="http://kebue.com" title="科布尔，科小智,机器人,智能机器人，科技社区,科布尔是一个面向开发者的知识分享社区" target="_blank">科布尔官网</a><hr /></li>
+                        <li><a href="../Home/NewKnow" title="新建自己的知识库" target="_blank">新建知识库</a><hr /></li>
+                        <li><a href="../Home/NewKnowList" title="机器人控制中心" target="_blank">机器人控制中心</a><hr /></li>
+                    </ol>
+                    <strong class="text-white" onclick="HlperClick()">键入关键词（ help     或  帮助 )获取帮助</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 web-main-footer">
+            老 姜 欢 迎 您 来 到 <a href="http://kebue.com/" title="科布尔，科小智,机器人,智能机器人，科技社区,科布尔是一个面向开发者的知识分享社区">科布尔</a>
+        </div>
+    </div>
+    <div class="row">
+        <!-- 版权信息 -->
+        <div class="col-xs-12" style="padding-left: 0;">
+            <h4 style="font-weight: bold; border-bottom: solid 1px #999; padding-bottom: 5px;">关于本站</h4>
+            <p>Copyright © 2016-2116 <a href="http://www.kebue.com">科布尔</a></p>
+            <p><a href="http://www.miibeian.gov.cn" target="_blank" title="陕ICP备15014626号-2" _href="http://www.miibeian.gov.cn">陕ICP备15014626号-2</a></p>
+            @*<p>Power by <a href="http://icp.chinaz.com/info?q=%E9%99%95ICP%E5%A4%8715014626%E5%8F%B7" target="_blank">科布尔</a></p>*@
+            <div class="margin-center">
+                <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1260373153'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1260373153%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $.getScript('http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js', function (_result) {
+                var cip = returnCitySN["cip"];
+                $.post("../Home/ChatVerification", { UserAgent: navigator.userAgent, Ip: cip, Token: $("#userToken").val(), Data: JSON.stringify(remote_ip_info) }, function (result) {
+                    $('#hidCip').val(cip);
+                })
+            })
+            $("#btn-send").click(function () {
+                sendMsg();
+            });
+        });
+        $('.click-question').click(function () {
+            var msg = $(this).children('p').children('a').text();
+            $('.manual-ueditor').val(msg);
+            sendMsg();
+        });
+        function HlperClick() {
+            $('.manual-ueditor').val("help");
+            sendMsg();
+        }
+        function sendMsg() {
+            $('.btn-send').attr('disabled', true);
+            var msg = $('.manual-ueditor').val();
+            if (msg.length <= 0) {
+                return false;
+            }
+            // 输出到屏幕
+            $('.chat-msgs').append('<div class="ng-scope"><div class="talk-item talk-a"><div class="talk-item-time ng-binding">' + getNowFormatDate() + '</div><img class="head-photo" src="/../Content/image/user/0.jpg"><div class="message-text">' + msg + '</div></div></div>');
+            goBottom();
+            // 清空输入框
+            $('.manual-ueditor').val('');
+            $.ajax({
+                type: "POST", url: "/Home/CharSession/", data: { message: msg, key: $("#userToken").val(), s_ip: $('#hidCip').val() },
+                success:
+                    function (result) {
+                        $('.chat-msgs').append('<div class="ng-scope"><div class="talk-item talk-b ng-isolate-scope"><div class="talk-item-time ng-binding">' + getNowFormatDate() + '</div><img class="head-photo" src="/../Content/image/im.jpg"><div class="message-text">' + result.session + '</div></div></div>');
+                        goBottom();
+                    }
+            });
+            $('.btn-send').removeAttr('disabled');
+        }
+        function goBottom() {
+            var chatMsgs = document.getElementById('chat_msgs');
+            chatMsgs.scrollTop = chatMsgs.scrollHeight;
+        }
+        function getNowFormatDate() {
+            var date = new Date();
+            var currentdate = date.getMonth() + "/" + date.getDay() + "  " + date.getHours() + ':' + date.getMinutes();
+            return currentdate;
+        }
+        $('.manual-ueditor').keydown(function (e) {
+            if (e.which == 13) {
+                $(".btn-send").click();
+                return false;
+            }
+        });
+    </script>
+    <input type="hidden" value=@ViewBag.userinfomodel id="userToken" />
+    <input type="hidden" id="hidCip" />
+</body>
+</html>

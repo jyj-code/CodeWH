@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/kebue.ico">
+    <link rel="icon" href="../../images/kebue.ico">
+    <meta name="description" content=显示系统时间--带有秒数>
+    <meta name="keywords" content=显示系统时间--带有秒数span id=localtime/spanscript type=text/javascriptfunction showLocale(objD){var str,colorhead,colorfoot;var yy = objD.getYear();if(yy1900) yy = yy+1900;var MM = objD.getMonth()+1;if(MM10) M>
+    <title>显示系统时间--带有秒数</title>
+
+    <link href="../../template/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../template/styles/custom.css" rel="stylesheet" />
+</head>
+<body id="pageBody">
+    <div id="divBoxed" class="container">
+        <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+        <div class="divPanel notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo">
+                        <a href="../../../Home/Index" id="divSiteTitle">科布尔 kebue</a><br />
+                        <a href="../../../Home/Index" id="divTagLine">开发者用代码改变世界从科布尔开始</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown glyphicon glyphicon-arrow-left"><a href='javascript:window.history.back()'>后退</a></li>
+                                    <li class="dropdown active"><a href="http://www.kebue.com/">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="contentInnerSeparator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentArea">
+            <div class="divPanel notop page-content">
+                <div class="breadcrumbs">
+                    <a href="../../../Home/Index">Home</a> &nbsp;/&nbsp; <span><a href='../../../../../Artlcle/ArticleType/9D69FD3D-028F-4239-89F1-BAC91B1DFF4A.html' title='JavaScript'>JavaScript</a></span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12" id="divMain">
+                        <h1>显示系统时间--带有秒数</h1>
+                        <pre>
+                        <code>
+                            <p><a href="http://www.cnblogs.com/starliu/p/4812287.html" style="background-color: inherit; cursor: pointer;">显示系统时间--带有秒数</a></p><p style="font-family: 微软雅黑; font-size: 14px; line-height: 21px; white-space: normal; widows: auto; background-color: rgb(255, 255, 255);">&lt;span id=localtime&gt;&lt;/span&gt;<br style="background-color: inherit;"/>&lt;script type=&quot;text/javascript&quot;&gt;<br style="background-color: inherit;"/>function showLocale(objD)<br style="background-color: inherit;"/>{<br style="background-color: inherit;"/>var str,colorhead,colorfoot;<br style="background-color: inherit;"/>var yy = objD.getYear();<br style="background-color: inherit;"/>if(yy&lt;1900) yy = yy+1900;<br style="background-color: inherit;"/>var MM = objD.getMonth()+1;<br style="background-color: inherit;"/>if(MM&lt;10) MM = &#39;0&#39; + MM;<br style="background-color: inherit;"/>var dd = objD.getDate();<br style="background-color: inherit;"/>if(dd&lt;10) dd = &#39;0&#39; + dd;<br style="background-color: inherit;"/>var hh = objD.getHours();<br style="background-color: inherit;"/>if(hh&lt;10) hh = &#39;0&#39; + hh;<br style="background-color: inherit;"/>var mm = objD.getMinutes();<br style="background-color: inherit;"/>if(mm&lt;10) mm = &#39;0&#39; + mm;<br style="background-color: inherit;"/>var ss = objD.getSeconds();<br style="background-color: inherit;"/>if(ss&lt;10) ss = &#39;0&#39; + ss;<br style="background-color: inherit;"/>var ww = objD.getDay();<br style="background-color: inherit;"/>if ( ww==0 ) colorhead=&quot;&lt;font color=\&quot;#FF0000\&quot;&gt;&quot;;<br style="background-color: inherit;"/>if ( ww &gt; 0 &amp;&amp; ww &lt; 6 ) colorhead=&quot;&lt;font color=\&quot;#373737\&quot;&gt;&quot;;<br style="background-color: inherit;"/>if ( ww==6 ) colorhead=&quot;&lt;font color=\&quot;#008000\&quot;&gt;&quot;;<br style="background-color: inherit;"/>if (ww==0) ww=&quot;星期日&quot;;<br style="background-color: inherit;"/>if (ww==1) ww=&quot;星期一&quot;;<br style="background-color: inherit;"/>if (ww==2) ww=&quot;星期二&quot;;<br style="background-color: inherit;"/>if (ww==3) ww=&quot;星期三&quot;;<br style="background-color: inherit;"/>if (ww==4) ww=&quot;星期四&quot;;<br style="background-color: inherit;"/>if (ww==5) ww=&quot;星期五&quot;;<br style="background-color: inherit;"/>if (ww==6) ww=&quot;星期六&quot;;<br style="background-color: inherit;"/>colorfoot=&quot;&lt;/font&gt;&quot;<br style="background-color: inherit;"/>str = colorhead + yy + &quot;-&quot; + MM + &quot;-&quot; + dd + &quot; &quot; + hh + &quot;:&quot; + mm + &quot;:&quot; + ss + &quot; &quot; + ww + colorfoot;<br style="background-color: inherit;"/>return(str);<br style="background-color: inherit;"/>}<br style="background-color: inherit;"/>function tick()<br style="background-color: inherit;"/>{<br style="background-color: inherit;"/>var today;<br style="background-color: inherit;"/>today = new Date();<br style="background-color: inherit;"/>document.getElementById(&quot;localtime&quot;).innerHTML = showLocale(today);<br style="background-color: inherit;"/>window.setTimeout(&quot;tick()&quot;, 1000);<br style="background-color: inherit;"/>}<br style="background-color: inherit;"/>tick();<br style="background-color: inherit;"/>&lt;/script&gt;</p><p><br/></p>
+                        </code>
+                        </pre>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+                        <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2113268"></script>
+                        <!-- UY END -->
+                    </div>
+                </div>
+                <div id="footerInnerSeparator"></div>
+            </div>
+        </div>
+        <div id="footerOuterSeparator"></div>
+    </div>
+    <br /><br /><br />
+    <script src="../../js/jquery-1.9.1.js"></script>
+    <script>
+        window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": $("#divMain pre code").text(), "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+
+ 
+记录时间：2017-04-04 08:14:03,307 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：17-4-4 上午 08:13:40
+			结束时间：17-4-4 上午 08:14:03
+			总 时 间：22.6029876秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-04-04 08:17:50,810 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：17-4-4 上午 08:17:38
+			结束时间：17-4-4 上午 08:17:50
+			总 时 间：12.2751793秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-04-04 08:18:14,448 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：17-4-4 上午 08:18:08
+			结束时间：17-4-4 上午 08:18:14
+			总 时 间：5.8669319秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-04-04 08:19:40,058 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：17-4-4 上午 08:19:18
+			结束时间：17-4-4 上午 08:19:37
+			总 时 间：18.7893116秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2017-04-04 08:19:40,400 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Chat
+			开始时间：17-4-4 上午 08:19:18
+			结束时间：17-4-4 上午 08:19:40
+			总 时 间：21.6041809秒
+			Form表单数据：
+			URL参数：
+					
+ 
