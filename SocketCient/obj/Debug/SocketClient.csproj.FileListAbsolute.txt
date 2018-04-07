@@ -1,0 +1,9 @@
+D:\工作室\新项目\CodeWH\SocketCient\bin\Debug\SocketClient.exe
+D:\工作室\新项目\CodeWH\SocketCient\bin\Debug\SocketClient.pdb
+D:\工作室\新项目\CodeWH\SocketCient\obj\Debug\SocketClient.csprojResolveAssemblyReference.cache
+D:\工作室\新项目\CodeWH\SocketCient\obj\Debug\SocketClient.frmSocketClient.resources
+D:\工作室\新项目\CodeWH\SocketCient\obj\Debug\SocketClient.Properties.Resources.resources
+D:\工作室\新项目\CodeWH\SocketCient\obj\Debug\SocketClient.csproj.GenerateResource.Cache
+D:\工作室\新项目\CodeWH\SocketCient\obj\Debug\SocketClient.csproj.CoreCompileInputs.cache
+D:\工作室\新项目\CodeWH\SocketCient\obj\Debug\SocketClient.exe
+D:\工作室\新项目\CodeWH\SocketCient\obj\Debug\SocketClient.pdb

@@ -1,0 +1,9 @@
+D:\工作室\新项目\CodeWH\SocketServices\bin\Debug\SocketServices.exe
+D:\工作室\新项目\CodeWH\SocketServices\bin\Debug\SocketServices.pdb
+D:\工作室\新项目\CodeWH\SocketServices\obj\Debug\SocketServices.csprojResolveAssemblyReference.cache
+D:\工作室\新项目\CodeWH\SocketServices\obj\Debug\SocketServices.frmSocketServices.resources
+D:\工作室\新项目\CodeWH\SocketServices\obj\Debug\SocketServices.Properties.Resources.resources
+D:\工作室\新项目\CodeWH\SocketServices\obj\Debug\SocketServices.csproj.GenerateResource.Cache
+D:\工作室\新项目\CodeWH\SocketServices\obj\Debug\SocketServices.csproj.CoreCompileInputs.cache
+D:\工作室\新项目\CodeWH\SocketServices\obj\Debug\SocketServices.exe
+D:\工作室\新项目\CodeWH\SocketServices\obj\Debug\SocketServices.pdb

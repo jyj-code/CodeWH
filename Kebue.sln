@@ -67,6 +67,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "车牌识别系统", "车�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "线程", "线程\线程.csproj", "{A79B7CC0-CC92-42AD-9AE6-BECCD6E888BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketClient", "SocketCient\SocketClient.csproj", "{D2C0ECCC-716F-40FD-910D-F39245923488}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketServices", "SocketServices\SocketServices.csproj", "{7161B92C-F0E4-420D-AFE7-B76942A21DA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -273,6 +277,22 @@ Global
 		{A79B7CC0-CC92-42AD-9AE6-BECCD6E888BB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A79B7CC0-CC92-42AD-9AE6-BECCD6E888BB}.Release|x86.ActiveCfg = Release|Any CPU
 		{A79B7CC0-CC92-42AD-9AE6-BECCD6E888BB}.Release|x86.Build.0 = Release|Any CPU
+		{D2C0ECCC-716F-40FD-910D-F39245923488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2C0ECCC-716F-40FD-910D-F39245923488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2C0ECCC-716F-40FD-910D-F39245923488}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D2C0ECCC-716F-40FD-910D-F39245923488}.Debug|x86.Build.0 = Debug|Any CPU
+		{D2C0ECCC-716F-40FD-910D-F39245923488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2C0ECCC-716F-40FD-910D-F39245923488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2C0ECCC-716F-40FD-910D-F39245923488}.Release|x86.ActiveCfg = Release|Any CPU
+		{D2C0ECCC-716F-40FD-910D-F39245923488}.Release|x86.Build.0 = Release|Any CPU
+		{7161B92C-F0E4-420D-AFE7-B76942A21DA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7161B92C-F0E4-420D-AFE7-B76942A21DA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7161B92C-F0E4-420D-AFE7-B76942A21DA8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7161B92C-F0E4-420D-AFE7-B76942A21DA8}.Debug|x86.Build.0 = Debug|Any CPU
+		{7161B92C-F0E4-420D-AFE7-B76942A21DA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7161B92C-F0E4-420D-AFE7-B76942A21DA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7161B92C-F0E4-420D-AFE7-B76942A21DA8}.Release|x86.ActiveCfg = Release|Any CPU
+		{7161B92C-F0E4-420D-AFE7-B76942A21DA8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
