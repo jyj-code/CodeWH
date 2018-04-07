@@ -1,0 +1,1094 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NanoMessageBus</name>
+    </assembly>
+    <members>
+        <member name="T:NanoMessageBus.AbortCurrentHandlerException">
+            <summary>
+            Represents an exception which indicates that any additional logic for the current message handler should be aborted and skipped.
+            </summary>
+        </member>
+        <member name="T:NanoMessageBus.ChannelEnvelope">
+            <summary>
+            Represents a message with a collection of recipients to be dispatched.
+            </summary>
+        </member>
+        <member name="F:NanoMessageBus.ChannelEnvelope.LoopbackAddress">
+            <summary>
+            Represents a loopback address used for dispatching a message to a local endpoint.
+            </summary>
+        </member>
+        <member name="F:NanoMessageBus.ChannelEnvelope.DeadLetterAddress">
+            <summary>
+            Represents the address used for dispatching a message to the dead or expired letter queue
+            </summary>
+        </member>
+        <member name="F:NanoMessageBus.ChannelEnvelope.UnhandledMessageAddress">
+            <summary>
+            Represents the address used for dispatching a message to the unhandled message queue
+            </summary>
+        </member>
+        <member name="F:NanoMessageBus.ChannelEnvelope.UnroutableMessageAddress">
+            <summary>
+            Represents the address used for dispatching a message to the unroutable message queue
+            </summary>
+        </member>
+        <member name="M:NanoMessageBus.ChannelEnvelope.#ctor(NanoMessageBus.ChannelMessage,System.Collections.Generic.IEnumerable{System.Uri},System.Object)">
+            <summary>
+            Initializes a new instance of the ChannelEnvelope class.
+            </summary>
+            <param name="message">The message to be dispatched</param>
+            <param name="recipients">The collection of recipients to which the message will be sent</param>
+            <param name="state">Any optional and temporary state used to better understand the context of the dispatch while in the current application process space.</param>
+        </member>
+        <member name="M:NanoMessageBus.ChannelEnvelope.#ctor">
+            <summary>
+            Initializes a new instance of the ChannelEnvelope class.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.ChannelEnvelope.Message">
+            <summary>
+            Gets the message to be dispatched.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.ChannelEnvelope.Recipients">
+            <summary>
+            Gets the collection of recipients to which the message will be sent.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.ChannelEnvelope.State">
+            <summary>
+            Gets a reference to any temporary state used to better understand the context of the dispatch while in the current application process space.
+            </summary>
+        </member>
+        <member name="T:NanoMessageBus.ChannelException">
+            <summary>
+            Represents a transient communication failure during a channel message exchange.
+            </summary>
+        </member>
+        <member name="M:NanoMessageBus.ChannelException.#ctor">
+            <summary>
+            Initializes a new instance of the ChannelException class.
+            </summary>
+        </member>
+        <member name="M:NanoMessageBus.ChannelException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the ChannelException class.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="inner">The exception that is the cause of the current exception.</param>
+        </member>
+        <member name="T:NanoMessageBus.ChannelConnectionException">
+            <summary>
+            Represents a persistent communication failure during a channel message exchange.
+            </summary>
+        </member>
+        <member name="M:NanoMessageBus.ChannelConnectionException.#ctor">
+            <summary>
+            Initializes a new instance of the ChannelConnectionException class.
+            </summary>
+        </member>
+        <member name="M:NanoMessageBus.ChannelConnectionException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the ChannelConnectionException class.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="inner">The exception that is the cause of the current exception.</param>
+        </member>
+        <member name="T:NanoMessageBus.ChannelGroupFactory">
+            <summary>
+            Provides the ability to construct a new channel group.
+            </summary>
+            <param name="connector">The connector responsible for the channels inside the group.</param>
+            <param name="configuration">The configuration of the channel group to be constructed.</param>
+            <returns>A new object instance of the named channel group specified.</returns>
+        </member>
+        <member name="T:NanoMessageBus.IMessagingChannel">
+            <summary>
+            Represents partition used to separate activities over a single connection to messaging infrastructure.
+            </summary>
+            <remarks>
+            Instances of this class are single threaded and should not be shared between threads.
+            </remarks>
+        </member>
+        <member name="T:NanoMessageBus.IDeliveryContext">
+            <summary>
+            Represents the delivery of a single message on a particular channel.  Where transactional messaging
+            is a available, the send operation will occur within the bounds of the receiving transaction.
+            </summary>
+            <remarks>
+            Instances of this class are single threaded and should not be shared between threads.
+            </remarks>
+        </member>
+        <member name="M:NanoMessageBus.IDeliveryContext.PrepareDispatch(System.Object,NanoMessageBus.IMessagingChannel)">
+            <summary>
+            Prepares a dispatch for transmission.
+            </summary>
+            <param name="message">The optional message to be dispatched; a set of messages can be provided later if necessary.</param>
+            <param name="channel">The optional channel to be used for dispatching. If none is specified, the current channel will be used.</param>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+            <returns>A new instance of a dispatch to be prepared for transmission.</returns>
+        </member>
+        <member name="P:NanoMessageBus.IDeliveryContext.Active">
+            <summary>
+            Gets a value indicating whether the current delivery and subsequent dispatches can continue successfully.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.IDeliveryContext.CurrentMessage">
+            <summary>
+            Gets the current inbound message being handled on the channel.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.IDeliveryContext.CurrentResolver">
+            <summary>
+            Gets an optional reference to the object used to resolve dependencies.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.IDeliveryContext.CurrentTransaction">
+            <summary>
+            Gets the current transaction associated with the channel, if transactions are available.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.IDeliveryContext.CurrentConfiguration">
+            <summary>
+            Gets the current configuration associated with the channel.
+            </summary>
+        </member>
+        <member name="M:NanoMessageBus.IMessagingChannel.BeginShutdown">
+            <summary>
+            Initiates the process shutting down the channel to prevent additional sends and/or receives
+            from occurring on the channel.
+            </summary>
+            <remarks>
+            This is the only thread-safe method that can be invoked on the channel.
+            </remarks>
+        </member>
+        <member name="M:NanoMessageBus.IMessagingChannel.Receive(System.Action{NanoMessageBus.IDeliveryContext})">
+            <summary>
+            Begins receiving messages from the channel and dispatches them to the callback provided.
+            </summary>
+            <param name="callback">The callback to which the received message should be dispatched.</param>
+            <exception cref="T:NanoMessageBus.ChannelConnectionException"></exception>
+            <exception cref="T:NanoMessageBus.ChannelShutdownException"></exception>
+            <remarks>
+            The timeout, if any, has been specified as part of the channel configuration.
+            </remarks>
+        </member>
+        <member name="M:NanoMessageBus.IMessagingChannel.Send(NanoMessageBus.ChannelEnvelope)">
+            <summary>
+            Sends the message specified to the destinations provided.
+            </summary>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:NanoMessageBus.ChannelConnectionException"></exception>
+            <exception cref="T:NanoMessageBus.ChannelShutdownException"></exception>
+            <param name="envelope">The envelope which contains the message and set of intended recipients.</param>
+        </member>
+        <member name="T:NanoMessageBus.IChannelConnector">
+            <summary>
+            Provides the ability to open, establish, and maintain a connection to the messaging infrastructure.
+            </summary>
+            <remarks>
+            Instances of this class must be designed to be multi-thread safe such that they can be shared between threads.
+            </remarks>
+        </member>
+        <member name="M:NanoMessageBus.IChannelConnector.Connect(System.String)">
+            <summary>
+            Opens a channel against the underlying connection.
+            </summary>
+            <param name="channelGroup">The channel group indicating how the channel is to be configured.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+            <exception cref="T:NanoMessageBus.ChannelConnectionException"></exception>
+            <exception cref="T:System.Security.SecurityException"></exception>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException"></exception>
+            <returns>An open channel through which messages may be sent or received according to the configuration.</returns>
+        </member>
+        <member name="P:NanoMessageBus.IChannelConnector.CurrentState">
+            <summary>
+            Gets a value indicating the current state underlying connection.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.IChannelConnector.ChannelGroups">
+            <summary>
+            Gets the set of values which uniquely identify the channel groups to be created.
+            </summary>
+        </member>
+        <member name="T:NanoMessageBus.ConnectionState">
+            <summary>
+            Represents the state of the underlying connection at various critical points.
+            </summary>
+        </member>
+        <member name="F:NanoMessageBus.ConnectionState.Closed">
+            <summary>
+            The connection is closed and no operations can be performed until the connection is reestablished.
+            </summary>
+        </member>
+        <member name="F:NanoMessageBus.ConnectionState.Opening">
+            <summary>
+            The connection is opening and being initialized.
+            </summary>
+        </member>
+        <member name="F:NanoMessageBus.ConnectionState.Open">
+            <summary>
+            The connection is open and ready for work.
+            </summary>
+        </member>
+        <member name="F:NanoMessageBus.ConnectionState.Closing">
+            <summary>
+            The connection is shutting down and performing any cleanup necessary.
+            </summary>
+        </member>
+        <member name="F:NanoMessageBus.ConnectionState.Disconnected">
+            <summary>
+            The endpoint was previously available and attempts to re-open the connection are being made.
+            </summary>
+        </member>
+        <member name="F:NanoMessageBus.ConnectionState.Unauthenticated">
+            <summary>
+            Indicates that the current security credentials are incorrect.
+            </summary>
+        </member>
+        <member name="F:NanoMessageBus.ConnectionState.Unauthorized">
+            <summary>
+            Indicates that the current security context does not contain the necessary privileges.
+            </summary>
+        </member>
+        <member name="T:NanoMessageBus.ChannelShutdownException">
+            <summary>
+            Represents an exception that is thrown when any send or receive operations are attempted against a channel
+            which is shutting down or has been shutdown.
+            </summary>
+        </member>
+        <member name="T:NanoMessageBus.PoisonMessageException">
+            <summary>
+            Represents an exception that occurs when a message cannot be properly deserialized or when
+            a component in the message pipeline decides the message should cannot be successfully processed.
+            </summary>
+        </member>
+        <member name="T:NanoMessageBus.DeadLetterException">
+            <summary>
+            Represents an exception that occurs when an expired (dead on the wire) message is received.
+            </summary>
+        </member>
+        <member name="T:NanoMessageBus.IChannelGroup">
+            <summary>
+            Represents a set of channels which operate connect to the same physical endpoint location and which
+            operate as a cohesive unit.
+            </summary>
+            <remarks>
+            Instances of this class must be designed to be multi-thread safe such that they can be shared between threads.
+            </remarks>
+        </member>
+        <member name="M:NanoMessageBus.IChannelGroup.Initialize">
+            <summary>
+            Starts up the underlying connector, initializes all channels associated with the group,
+            and otherwise prepares the channel group to process and dispatch messages.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+        </member>
+        <member name="M:NanoMessageBus.IChannelGroup.OpenChannel">
+            <summary>
+            Creates a messaging channel that is not controlled or tracked by channel group and which is owned
+            and controlled by the caller.
+            </summary>
+            <exception cref="T:NanoMessageBus.ChannelConnectionException"></exception>
+            <exception cref="T:System.InvalidOperationException"></exception>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+            <returns>If the messaging infrastructure is available, it returns a reference to a new channel.</returns>
+        </member>
+        <member name="M:NanoMessageBus.IChannelGroup.BeginReceive(System.Action{NanoMessageBus.IDeliveryContext})">
+            <summary>
+            Begins streaming any available inbound messages to the callback provided; for dispatch-only groups
+            it throws an exception.
+            </summary>
+            <param name="callback">The callback to which any received messages should be dispatched.</param>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:NanoMessageBus.IChannelGroup.BeginDispatch(System.Action{NanoMessageBus.IDispatchContext})">
+            <summary>
+            For dispatch-only channel groups, it adds the callback provided to an in-memory queue for
+            asynchronous invocation; for full-duplex channel groups (send/receive), it throws an exception.
+            </summary>
+            <param name="callback">The callback which creates and prepares a message for dispatch.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.InvalidOperationException"></exception>
+            <returns>A value indicating whether or not the channel could add the item to the in-memory queue.</returns>
+        </member>
+        <member name="P:NanoMessageBus.IChannelGroup.DispatchOnly">
+            <summary>
+            Gets a value indicating whether the channel group is a dispatch-only (non-receiving) group.
+            </summary>
+        </member>
+        <member name="T:NanoMessageBus.IChannelMessageBuilder">
+            <summary>
+            Provides the ability to build a channel message.
+            </summary>
+            <remarks>
+            Instances of this class must be designed to be multi-thread safe such that they can be shared between threads.
+            </remarks>
+        </member>
+        <member name="M:NanoMessageBus.IChannelMessageBuilder.Build(System.Guid,System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.ICollection{System.Object})">
+            <summary>
+            Builds a new instance of the ChannelMessage class.
+            </summary>
+            <param name="correlationId">The value which uniquely identifies the conversation to which the message belongs.</param>
+            <param name="returnAddress">The address to which all replies should be directed.</param>
+            <param name="headers">The set of headers or metadata the ride along with the message.</param>
+            <param name="messages">The set of logical, application-level messages to be dispatched.</param>
+            <returns>A new instance of the ChannelMessage class.</returns>
+        </member>
+        <member name="T:NanoMessageBus.IDispatchContext">
+            <summary>
+            Provides the ability to assemble a message and associated metadata piece by piece for transmission.
+            </summary>
+            <remarks>
+            Instances of this class are single threaded and should not be shared between threads.
+            </remarks>
+        </member>
+        <member name="M:NanoMessageBus.IDispatchContext.WithMessage(System.Object)">
+            <summary>
+            Appends a single message to the dispatch.
+            </summary>
+            <param name="message">The message to be dispatched.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <returns>A instance to the same dispatch to facilitate fluent construction.</returns>
+        </member>
+        <member name="M:NanoMessageBus.IDispatchContext.WithMessages(System.Object[])">
+            <summary>
+            Appends a set of messages to the dispatch.
+            </summary>
+            <param name="messages">The set of messages to be dispatched.</param>
+            <returns>A instance to the same dispatch to facilitate fluent construction.</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:NanoMessageBus.IDispatchContext.WithCorrelationId(System.Guid)">
+            <summary>
+            Assigns the correlation identifier specified to the dispatch.
+            </summary>
+            <param name="correlationId">The correlation (or conversation) identifier of the dispatch.</param>
+            <returns>A instance to the same dispatch to facilitate fluent construction.</returns>
+        </member>
+        <member name="M:NanoMessageBus.IDispatchContext.WithHeader(System.String,System.String)">
+            <summary>
+            Appends a header to the message metadata.
+            </summary>
+            <param name="key">The header name; if the same value is specified multiple times, the most recent value wins.</param>
+            <param name="value">The value of the header; if the value is null, the associated header is removed.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <returns>A instance to the same dispatch to facilitate fluent construction.</returns>
+        </member>
+        <member name="M:NanoMessageBus.IDispatchContext.WithHeaders(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Appends a set of headers to the message metadata.
+            </summary>
+            <param name="headers">The headers to be applied.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <returns>A instance to the same dispatch to facilitate fluent construction.</returns>
+        </member>
+        <member name="M:NanoMessageBus.IDispatchContext.WithRecipient(System.Uri)">
+            <summary>
+            Specifies an additional recipient for the dispatch beyond those obtained for the underlying dispatch table.
+            </summary>
+            <param name="recipient">The additional recipient to whom the dispatch should be transmitted.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <returns>A instance to the same dispatch to facilitate fluent construction.</returns>
+        </member>
+        <member name="M:NanoMessageBus.IDispatchContext.WithState(System.Object)">
+            <summary>
+            Specifies additional state to be added to the outbound dispatch envelope for evaluation by the upstream pipeline
+            while in the current application process space.
+            </summary>
+            <param name="state">The value indicating temporary state to be applied to the outbound dispatch envelope.</param>
+            <returns>A instance to the same dispatch to facilitate fluent construction.</returns>
+        </member>
+        <member name="M:NanoMessageBus.IDispatchContext.Send(System.Object[])">
+            <summary>
+            Pushes the message onto the underlying channel sending it to any interested parties and completes the context.
+            </summary>
+            <param name="messages">The messages to be dispatched as part of the operation.</param>
+            <exception cref="T:System.InvalidOperationException"></exception>
+            <returns>The current transaction.</returns>
+        </member>
+        <member name="M:NanoMessageBus.IDispatchContext.Publish(System.Object[])">
+            <summary>
+            Pushes the message onto the underlying channel publishing it to all interested parties, and completes the context.
+            </summary>
+            <remarks>
+            The first message in the transmission will be used to determine message type, and thus, the recipients of the message.
+            </remarks>
+            <param name="messages">The messages to be dispatched as part of the operation.</param>
+            <exception cref="T:System.InvalidOperationException"></exception>
+            <returns>The current transaction.</returns>
+        </member>
+        <member name="M:NanoMessageBus.IDispatchContext.Reply(System.Object[])">
+            <summary>
+            Pushes the message onto the channel sending it to the original sender, if any, and completes the context.
+            </summary>
+            <param name="messages">The messages to be dispatched as part of the operation.</param>
+            <exception cref="T:System.InvalidOperationException"></exception>
+            <returns>The current transaction.</returns>
+        </member>
+        <member name="P:NanoMessageBus.IDispatchContext.MessageCount">
+            <summary>
+            Gets the number of logical, business-specific messages pending dispatch.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.IDispatchContext.HeaderCount">
+            <summary>
+            Gets the number of headers that have been added to the pending dispatch.
+            </summary>
+        </member>
+        <member name="T:NanoMessageBus.IMessageHandler`1">
+            <summary>
+            Provides the ability to understand and handle a logical message.
+            </summary>
+            <typeparam name="T">The type of message to be handled.</typeparam>
+            <remarks>
+            Instances of this class may be either single or multi-threaded depending upon their registration.
+            </remarks>
+        </member>
+        <member name="M:NanoMessageBus.IMessageHandler`1.Handle(`0)">
+            <summary>
+            Handles the message provided.
+            </summary>
+            <param name="message">The message to be handled.</param>
+        </member>
+        <member name="T:NanoMessageBus.IDeliveryHandler">
+            <summary>
+            Provides the ability to wrap the delivery of a message.
+            </summary>
+            <remarks>
+            Instances of this class must be designed to be multi-thread safe such that they can be shared between threads.
+            </remarks>
+        </member>
+        <member name="T:NanoMessageBus.IDependencyResolver">
+            <summary>
+            Provides the ability to resolve dependencies from within user code.
+            </summary>
+        </member>
+        <member name="M:NanoMessageBus.IDependencyResolver.As``1">
+            <summary>
+            Gets a reference to the actual IoC container used to resolve dependencies.
+            </summary>
+            <typeparam name="T">The type of IoC container.</typeparam>
+            <returns>A reference to the actual IoC container used to resolve dependencies.</returns>
+        </member>
+        <member name="M:NanoMessageBus.IDependencyResolver.CreateNestedResolver">
+            <summary>
+            Instructs the container to create a nested or child instance.
+            </summary>
+            <returns>A reference to a child instance of IDependencyResolver.</returns>
+        </member>
+        <member name="T:NanoMessageBus.IHandlerContext">
+            <summary>
+            Represents the attempt to delivery a set of logical messages to the associated message handlers.
+            </summary>
+            <remarks>
+            Instances of this class are single threaded and should not be shared between threads.
+            </remarks>
+        </member>
+        <member name="M:NanoMessageBus.IHandlerContext.DropMessage">
+            <summary>
+            Stops handling the current channel message and consumes the message.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+        </member>
+        <member name="M:NanoMessageBus.IHandlerContext.DeferMessage">
+            <summary>
+            Stops handling the channel message and re-enqueues it for later delivery.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+        </member>
+        <member name="M:NanoMessageBus.IHandlerContext.ForwardMessage(System.Collections.Generic.IEnumerable{System.Uri})">
+            <summary>
+            Forwards the current channel message to each of the recipients provided and continues handling the message.
+            </summary>
+            <param name="recipients">The set of recipients to which the current message will be directed.</param>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+        </member>
+        <member name="P:NanoMessageBus.IHandlerContext.ContinueHandling">
+            <summary>
+            Gets a value indicating whether or not processing of the given channel message should continue.
+            </summary>
+        </member>
+        <member name="T:NanoMessageBus.IMessagingHost">
+            <summary>
+            Represents the primary, high-level interface for working with sending and receiving messages.
+            </summary>
+            <remarks>
+            Instances of this class must be designed to be multi-thread safe such that they can be shared between threads.
+            </remarks>
+        </member>
+        <member name="M:NanoMessageBus.IMessagingHost.Initialize">
+            <summary>
+            Creates all channel groups and the initializes each of them and returns the first one.
+            </summary>
+            <exception cref="T:System.Configuration.ConfigurationErrorsException"></exception>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+            <returns>The first or primary channel group initialized.</returns>
+        </member>
+        <member name="M:NanoMessageBus.IMessagingHost.BeginReceive(System.Action{NanoMessageBus.IDeliveryContext})">
+            <summary>
+            Begins streaming any available inbound messages to the callback provided.
+            </summary>
+            <param name="callback">The callback to which any received messages should be dispatched.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.InvalidOperationException"></exception>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+        </member>
+        <member name="P:NanoMessageBus.IMessagingHost.Item(System.String)">
+            <summary>
+            Obtains a reference to the channel group for the key specified.
+            </summary>
+            <param name="channelGroup">The key of the channel group.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException"></exception>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+            <returns>A reference to the outbound-based method of the desired channel group.</returns>
+        </member>
+        <member name="T:NanoMessageBus.Logging.ILog">
+            <summary>
+            Indicates the ability to log diagnostic information.
+            </summary>
+            <remarks>
+            Object instances which implement this interface must be designed to be multi-thread safe.
+            </remarks>
+        </member>
+        <member name="M:NanoMessageBus.Logging.ILog.Verbose(System.String,System.Object[])">
+            <summary>
+            Logs the most detailed level of diagnostic information.
+            </summary>
+            <param name="message">The diagnostic message to be logged.</param>
+            <param name="values">All parameter to be formatted into the message, if any.</param>
+        </member>
+        <member name="M:NanoMessageBus.Logging.ILog.Verbose(System.String,System.Exception)">
+            <summary>
+            Logs the most detailed level of diagnostic information.
+            </summary>
+            <param name="message">The diagnostic message to be logged.</param>
+            <param name="exception">The exception that was thrown.</param>
+        </member>
+        <member name="M:NanoMessageBus.Logging.ILog.Debug(System.String,System.Object[])">
+            <summary>
+            Logs the debug-level diagnostic information.
+            </summary>
+            <param name="message">The diagnostic message to be logged.</param>
+            <param name="values">All parameter to be formatted into the message, if any.</param>
+        </member>
+        <member name="M:NanoMessageBus.Logging.ILog.Debug(System.String,System.Exception)">
+            <summary>
+            Logs the debug-level diagnostic information.
+            </summary>
+            <param name="message">The diagnostic message to be logged.</param>
+            <param name="exception">The exception that was thrown.</param>
+        </member>
+        <member name="M:NanoMessageBus.Logging.ILog.Info(System.String,System.Object[])">
+            <summary>
+            Logs important runtime diagnostic information.
+            </summary>
+            <param name="message">The diagnostic message to be logged.</param>
+            <param name="values">All parameter to be formatted into the message, if any.</param>
+        </member>
+        <member name="M:NanoMessageBus.Logging.ILog.Info(System.String,System.Exception)">
+            <summary>
+            Logs important runtime diagnostic information.
+            </summary>
+            <param name="message">The diagnostic message to be logged.</param>
+            <param name="exception">The exception that was thrown.</param>
+        </member>
+        <member name="M:NanoMessageBus.Logging.ILog.Warn(System.String,System.Object[])">
+            <summary>
+            Logs diagnostic issues to which attention should be given.
+            </summary>
+            <param name="message">The diagnostic message to be logged.</param>
+            <param name="values">All parameter to be formatted into the message, if any.</param>
+        </member>
+        <member name="M:NanoMessageBus.Logging.ILog.Warn(System.String,System.Exception)">
+            <summary>
+            Logs diagnostic issues to which attention should be given.
+            </summary>
+            <param name="message">The diagnostic message to be logged.</param>
+            <param name="exception">The exception that was thrown.</param>
+        </member>
+        <member name="M:NanoMessageBus.Logging.ILog.Error(System.String,System.Object[])">
+            <summary>
+            Logs application and infrastructure-level errors.
+            </summary>
+            <param name="message">The diagnostic message to be logged.</param>
+            <param name="values">All parameter to be formatted into the message, if any.</param>
+        </member>
+        <member name="M:NanoMessageBus.Logging.ILog.Error(System.String,System.Exception)">
+            <summary>
+            Logs application and infrastructure-level errors.
+            </summary>
+            <param name="message">The diagnostic message to be logged.</param>
+            <param name="exception">The exception that was thrown.</param>
+        </member>
+        <member name="M:NanoMessageBus.Logging.ILog.Fatal(System.String,System.Object[])">
+            <summary>
+            Logs fatal errors which result in process termination.
+            </summary>
+            <param name="message">The diagnostic message to be logged.</param>
+            <param name="values">All parameter to be formatted into the message, if any.</param>
+        </member>
+        <member name="M:NanoMessageBus.Logging.ILog.Fatal(System.String,System.Exception)">
+            <summary>
+            Logs fatal errors which result in process termination.
+            </summary>
+            <param name="message">The diagnostic message to be logged.</param>
+            <param name="exception">The exception that was thrown.</param>
+        </member>
+        <member name="T:NanoMessageBus.Logging.LogFactory">
+            <summary>
+            Provides the ability to get a new instance of the configured logger.
+            </summary>
+        </member>
+        <member name="M:NanoMessageBus.Logging.LogFactory.#cctor">
+            <summary>
+            Initializes static members of the LogFactory class.
+            </summary>
+        </member>
+        <member name="M:NanoMessageBus.Logging.LogFactory.LogWith(NanoMessageBus.Logging.ILog)">
+            <summary>
+            Directs all logging output to the logger specified.
+            </summary>
+            <param name="logger">The logger to which all logging information should be directed.</param>
+        </member>
+        <member name="M:NanoMessageBus.Logging.LogFactory.LogWith(System.Func{System.Type,NanoMessageBus.Logging.ILog})">
+            <summary>
+            Directs all logging output to the logger callback specified.
+            </summary>
+            <param name="logger">The logger to which all logging information should be directed.</param>
+        </member>
+        <member name="M:NanoMessageBus.Logging.LogFactory.Build(System.Type)">
+            <summary>
+            Obtains a reference to the configured logger instance.
+            </summary>
+            <param name="typeToLog">The type to be logged.</param>
+            <returns>A reference to the configured logger instance</returns>
+        </member>
+        <member name="T:NanoMessageBus.MessagingWireup">
+            <summary>
+            Performs the primary wireup to create an active instance of the host.
+            </summary>
+            <remarks>
+            This class is designed to be used during the wireup process and then thrown away.
+            </remarks>
+        </member>
+        <member name="T:NanoMessageBus.IRoutingTable">
+            <summary>
+            Provides the ability to route a given message to one or more registered handlers. In addition, multiple routing
+            tables can be used by an IoC-managed application to have different routes depending upon which table is resolved
+            for a given incoming message.
+            </summary>
+            <remarks>
+            Instances of this class must be designed to be multi-thread safe such that they can be shared between threads.
+            At the same time, routes should only be added to instances of this class during wireup rather than at runtime.
+            </remarks>
+        </member>
+        <member name="M:NanoMessageBus.IRoutingTable.Add``1(NanoMessageBus.IMessageHandler{``0},System.Int32)">
+            <summary>
+            Adds a route to the handler provided using the optional sequence specified. Adding the same handler multiple times
+            will result in the most recent registration being used.
+            </summary>
+            <typeparam name="T">The type of message to be handled.</typeparam>
+            <param name="handler">The handler into which the message will be routed.</param>
+            <param name="sequence">The optional value which indicates priority over other handles for the same message.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:NanoMessageBus.IRoutingTable.Add``1(System.Func{NanoMessageBus.IHandlerContext,NanoMessageBus.IMessageHandler{``0}},System.Int32,System.Type)">
+            <summary>
+            Adds a route to the handler provided using the optional sequence specified. When the handler type is specified, adding
+            the same handler multiple times will result in the most recent registration being used.
+            </summary>
+            <typeparam name="T">The type of message to be handled.</typeparam>
+            <param name="callback">The callback used to resolve the handler instance into which the message will be routed.</param>
+            <param name="sequence">The optional value which indicates priority over other handles for the same message.</param>
+            <param name="handlerType">The optional type which indicates the type of handler to be returned by the handler callback.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:NanoMessageBus.IRoutingTable.Route(NanoMessageBus.IHandlerContext,System.Object)">
+            <summary>
+            Routes the message provided to the associated message handlers.
+            </summary>
+            <param name="context">The context surrounding the handling of the channel message.</param>
+            <param name="message">The logical message to be routed to the associated handlers.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <returns>The routes into which the message was routed.</returns>
+        </member>
+        <member name="T:NanoMessageBus.IDispatchTable">
+            <summary>
+            Provides the ability to determine the set of recipients (by address) for a given type of message.
+            </summary>
+            <remarks>
+            Instances of this class must be designed to be multi-thread safe such that they can be shared between threads.
+            </remarks>
+        </member>
+        <member name="M:NanoMessageBus.IDispatchTable.AddSubscriber(System.Uri,System.Type,System.DateTime)">
+            <summary>
+            Adds the subscriber to the set of subscribers for the specified message type.
+            </summary>
+            <param name="subscriber">The address of the subscriber to be added.</param>
+            <param name="messageType">The type of message in which the subscriber is interested.</param>
+            <param name="expiration">The point in time at which the subscription for the given type will expire.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <remarks>
+            Subscribers are used when "publishing" a message. Multiple calls will only add the subscriber once with
+            the latest expiration value provided being used.
+            </remarks>
+        </member>
+        <member name="M:NanoMessageBus.IDispatchTable.AddRecipient(System.Uri,System.Type)">
+            <summary>
+            Adds a recipient to the set of recipients for the specified message type.
+            </summary>
+            <param name="recipient">The address of the recipient to be added.</param>
+            <param name="messageType">The type of message in which the subscriber is interested.</param>
+            <remarks>
+            Recipients are used when "sending" a message.
+            </remarks>
+        </member>
+        <member name="M:NanoMessageBus.IDispatchTable.Remove(System.Uri,System.Type)">
+            <summary>
+            Removes the subscriber or recipient from the set of subscribers for the specified message type.
+            </summary>
+            <param name="address">The address of the subscriber or recipient to be removed.</param>
+            <param name="messageType">The type of message in which the subscriber or recipient is no longer interested.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="P:NanoMessageBus.IDispatchTable.Item(System.Type)">
+            <summary>
+            Gets the set of recipients of the message type specified.
+            </summary>
+            <param name="messageType">The type of message to use when determining the set of subscribers.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <returns>The set addresses for all registered subscribers for the given message type, if any.</returns>
+        </member>
+        <member name="T:NanoMessageBus.IWorkItem`1">
+            <summary>
+            Provides the ability to track state for activity being performed.
+            </summary>
+            <typeparam name="T">The state held by the worker.</typeparam>
+        </member>
+        <member name="M:NanoMessageBus.IWorkItem`1.PerformOperation(System.Action)">
+            <summary>
+            Instructs the worker to perform the operation indicated.
+            </summary>
+            <param name="operation">The operation to be performed by the worker.</param>
+        </member>
+        <member name="P:NanoMessageBus.IWorkItem`1.ActiveWorkers">
+            <summary>
+            Gets the value which indicates the number of active workers performing the activity.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.IWorkItem`1.State">
+            <summary>
+            Gets the state associated with the activity.
+            </summary>
+        </member>
+        <member name="T:NanoMessageBus.IChannelGroupConfiguration">
+            <summary>
+            Represents the minimum configuration necessary to establish a channel group.
+            </summary>
+            <remarks>
+            Instances of this class must be designed to be multi-thread safe such that they can be shared between threads.
+            </remarks>
+        </member>
+        <member name="P:NanoMessageBus.IChannelGroupConfiguration.GroupName">
+            <summary>
+            Gets the value which uniquely identifies the named configuration or channel group.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.IChannelGroupConfiguration.Synchronous">
+            <summary>
+            Gets a value indicating whether the particular configuration should support asynchronous operations.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.IChannelGroupConfiguration.DispatchOnly">
+            <summary>
+            Gets a value indicating whether the connection is configured for dispatch or full duplex.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.IChannelGroupConfiguration.MaxDispatchBuffer">
+            <summary>
+            Gets a value indicating the maximum number of items allowed in the dispatch-only buffer
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.IChannelGroupConfiguration.MinWorkers">
+            <summary>
+            Gets a value indicating the minimum number of workers to be allocated for work.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.IChannelGroupConfiguration.MaxWorkers">
+            <summary>
+            Gets a value indicating the maximum allowable number of workers to be allocated for work.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.IChannelGroupConfiguration.ReturnAddress">
+            <summary>
+            Gets the URI representing the address to which all reply messages will be sent.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.IChannelGroupConfiguration.MessageBuilder">
+            <summary>
+            Gets a reference to the object instance used to build new, outbound channel messages.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.IChannelGroupConfiguration.ReceiveTimeout">
+            <summary>
+            Gets the length of time to await the receipt of a message from a channel before resume other work.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.IChannelGroupConfiguration.DependencyResolver">
+            <summary>
+            Gets an optional reference to resolver used to manage dependencies.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.IChannelGroupConfiguration.DispatchTable">
+            <summary>
+            Gets a reference to the dispatch table to determine the appropriate recipients for a given type of message.
+            </summary>
+        </member>
+        <member name="T:NanoMessageBus.IChannelTransaction">
+            <summary>
+            For supported channels, represents a set of messaging activities on the channel (such as receive and send)
+            that happen as a unit or not all.
+            </summary>
+            <remarks>
+            Instances of this class are single threaded and should not be shared between threads.
+            </remarks>
+        </member>
+        <member name="M:NanoMessageBus.IChannelTransaction.Register(System.Action)">
+            <summary>
+            Registers the associated action with the transaction.
+            </summary>
+            <param name="callback">The action to be invoked when the transaction is committed.</param>
+        </member>
+        <member name="M:NanoMessageBus.IChannelTransaction.Commit">
+            <summary>
+            Invokes the registered callbacks to mark the transaction as complete.
+            </summary>
+        </member>
+        <member name="M:NanoMessageBus.IChannelTransaction.Rollback">
+            <summary>
+            Rolls back any work performed.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.IChannelTransaction.Finished">
+            <summary>
+            Gets a value indicating whether the transaction has been committed, rolled back, or disposed;
+            </summary>
+        </member>
+        <member name="T:NanoMessageBus.ChannelMessage">
+            <summary>
+            Represents an atomic unit of communication--a message or communiqué--that can or has been transported over
+            a communication medium, which holds both the messages and metadata about those messages.
+            </summary>
+        </member>
+        <member name="M:NanoMessageBus.ChannelMessage.MoveNext">
+            <summary>
+            Sets the current active message to the next available message, if any, and increments the active index.
+            </summary>
+            <returns>If successful, returns true; otherwise false.</returns>
+        </member>
+        <member name="M:NanoMessageBus.ChannelMessage.#ctor(System.Guid,System.Guid,System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>
+            Initializes a new instance of the ChannelMessage class.
+            </summary>
+            <param name="messageId">The value which uniquely identifies the message.</param>
+            <param name="correlationId">The value which attaches the message to a larger conversation.</param>
+            <param name="returnAddress">The address to which all replies should be directed.</param>
+            <param name="headers">The message headers which contain additional metadata about the contained messages.</param>
+            <param name="messages">The collection of contained messages.</param>
+        </member>
+        <member name="M:NanoMessageBus.ChannelMessage.#ctor">
+            <summary>
+            Initializes a new instance of the ChannelMessage class.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.ChannelMessage.MessageId">
+            <summary>
+            Gets the value which uniquely identifies the message.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.ChannelMessage.CorrelationId">
+            <summary>
+            Gets the value which attaches the message to a larger conversation.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.ChannelMessage.ReturnAddress">
+            <summary>
+            Gets the address to which all replies should be directed.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.ChannelMessage.Headers">
+            <summary>
+            Gets the message headers which contain additional metadata about the contained messages.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.ChannelMessage.Messages">
+            <summary>
+            Gets the collection of contained messages.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.ChannelMessage.ActiveMessage">
+            <summary>
+            Gets or sets a reference to the active logical message currently being handled.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.ChannelMessage.ActiveIndex">
+            <summary>
+            Gets a value which indicates the index of the logical message currently being handled.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.ChannelMessage.Expiration">
+            <summary>
+            Gets or sets the maximum amount of time the message will live prior to successful receipt.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.ChannelMessage.Persistent">
+            <summary>
+            Gets or sets a value indicating whether the message is durably stored.
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.ChannelMessage.Dispatched">
+            <summary>
+            Gets or sets a value indicating the point in time at which the message was dispatched.
+            </summary>
+        </member>
+        <member name="T:NanoMessageBus.IWorkerGroup`1">
+            <summary>
+            Represents a set of concurrent workers that perform activities.
+            </summary>
+            <typeparam name="T">The state held by the worker.</typeparam>
+            <remarks>
+            Instances of this class must be designed to be multi-thread safe such that they can be shared between threads.
+            </remarks>
+        </member>
+        <member name="M:NanoMessageBus.IWorkerGroup`1.Initialize(System.Func{`0},System.Func{System.Boolean})">
+            <summary>
+            Initializes the factory and causes all future worker groups to use the callbacks provided.
+            </summary>
+            <exception cref="T:System.InvalidOperationException"></exception>
+            <param name="state">The callback used to get the state of the worker.</param>
+            <param name="restart">The callback used to restart the workers.</param>
+        </member>
+        <member name="M:NanoMessageBus.IWorkerGroup`1.StartActivity(System.Action{NanoMessageBus.IWorkItem{`0}})">
+            <summary>
+            Builds a worker group which starts performing the activity specified.
+            </summary>
+            <param name="activity">The activity to be performed by the workers.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:NanoMessageBus.IWorkerGroup`1.StartQueue">
+            <summary>
+            Builds a worker group which watches a work item queue.
+            </summary>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:NanoMessageBus.IWorkerGroup`1.Restart">
+            <summary>
+            Initiates the stopping and restarting of the activity currently being performed.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+        </member>
+        <member name="M:NanoMessageBus.IWorkerGroup`1.Enqueue(System.Action{NanoMessageBus.IWorkItem{`0}})">
+            <summary>
+            Adds a work item to be performed by one of the workers within the worker group.  Work items
+            can safely be added at any time during the lifetime of the object instance.
+            </summary>
+            <param name="workItem">
+            The callback representing the work item to be enqueued and invoked at a later time by one of the workers.
+            </param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+            <returns>If the value was enqueued, returns true; otherwise false.</returns>
+        </member>
+        <member name="T:NanoMessageBus.Serialization.ISerializer">
+            <summary>
+            Provides the ability to serialize and deserialize an object graph.
+            </summary>
+            <remarks>
+            Instances of this class must be designed to be multi-thread safe such that they can be shared between threads.
+            </remarks>
+        </member>
+        <member name="M:NanoMessageBus.Serialization.ISerializer.Serialize(System.IO.Stream,System.Object)">
+            <summary>
+            Serializes the object graph provided and writes a serialized representation to the output stream provided.
+            </summary>
+            <param name="destination">The stream into which the serialized object graph should be written.</param>
+            <param name="graph">The object graph to be serialized.</param>
+        </member>
+        <member name="M:NanoMessageBus.Serialization.ISerializer.Deserialize(System.IO.Stream,System.Type,System.String,System.String)">
+            <summary>
+            Deserializes the stream provided and reconstructs the corresponding object graph.
+            </summary>
+            <param name="source">The stream of bytes from which the object will be reconstructed.</param>
+            <param name="type">The type to be deserialized.</param>
+            <param name="format">The optional value which indicates the format used during serialization.</param>
+            <param name="contentEncoding">The optional value which indicates the encoding used during serialization.</param>
+            <returns>The reconstructed object.</returns>
+        </member>
+        <member name="P:NanoMessageBus.Serialization.ISerializer.ContentEncoding">
+            <summary>
+            Gets the value which indicates the encoding mechanism used (gzip, bzip2, lzma, aes, etc.)
+            </summary>
+        </member>
+        <member name="P:NanoMessageBus.Serialization.ISerializer.ContentFormat">
+            <summary>
+            Gets the MIME-type suffix (json, xml, binary, etc.)
+            </summary>
+        </member>
+        <member name="T:NanoMessageBus.SystemTime">
+            <summary>
+            Provides the ability to override the current moment in time to facilitate testing.
+            Original idea by Ayende Rahien:
+            http://ayende.com/Blog/archive/2008/07/07/Dealing-with-time-in-tests.aspx
+            </summary>
+        </member>
+        <member name="F:NanoMessageBus.SystemTime.EpochTime">
+            <summary>
+            Represents "zero" for Unix Epoch Time.
+            </summary>
+        </member>
+        <member name="F:NanoMessageBus.SystemTime.TimeResolver">
+            <summary>
+            The callback to be used to resolve the current moment in time.
+            </summary>
+        </member>
+        <member name="M:NanoMessageBus.SystemTime.ToEpochTime(System.DateTime)">
+            <summary>
+            Gets the number of milliseconds that have elapsed between the instant and Unix Epoch Time (12:00 AM January 1, 1970).
+            </summary>
+            <param name="instant">The instant from which epoch time will be computed.</param>
+            <returns>The number of milliseconds that have elapsed since the instant provided.</returns>
+        </member>
+        <member name="M:NanoMessageBus.SystemTime.ToDateTime(System.Int64)">
+            <summary>
+            Gets the point in time represented by the instant specified in milliseconds since the epoch.
+            </summary>
+            <param name="epochTime">The point in time, according to Unix Epoch Time to be converted, expressed in milliseconds.</param>
+            <returns>The point in time expressed as a DateTime.</returns>
+        </member>
+        <member name="F:NanoMessageBus.SystemTime.SleepResolver">
+            <summary>
+            The callback to be used to instruct the current thread to sleep.
+            </summary>
+        </member>
+        <member name="M:NanoMessageBus.SystemTime.Sleep(System.TimeSpan)">
+            <summary>
+            Instructs the current thread to sleep for the specified amount of time.
+            </summary>
+            <param name="value">The amount of time for the current thread to sleep.</param>
+        </member>
+        <member name="P:NanoMessageBus.SystemTime.UtcNow">
+            <summary>
+            Gets the current moment in time.
+            </summary>
+            <remarks>
+            Method invocation is not thread safe if the resolver is being changed by multiple threads. The intended design
+            is for testing where it can be set, any tests run, and then the value cleared.
+            </remarks>
+        </member>
+    </members>
+</doc>

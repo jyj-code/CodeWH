@@ -1,0 +1,6 @@
+echo“＃CodeWH”>> README.md 
+git init 
+git add . 
+git commit -m“第一次提交” 
+git remote add origin git@github.com:jiangyanjun/CodeWH.git
+ git push -u原点大师

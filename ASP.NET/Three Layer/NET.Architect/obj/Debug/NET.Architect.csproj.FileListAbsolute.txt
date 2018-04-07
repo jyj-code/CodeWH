@@ -1,0 +1,8 @@
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\bin\Debug\NET.Architect.dll
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\bin\Debug\NET.Architect.pdb
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\bin\Debug\NanoMessageBus.dll
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\bin\Debug\NanoMessageBus.xml
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\obj\Debug\NET.Architect.csprojResolveAssemblyReference.cache
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\obj\Debug\NET.Architect.csproj.CoreCompileInputs.cache
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\obj\Debug\NET.Architect.dll
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.Architect\obj\Debug\NET.Architect.pdb

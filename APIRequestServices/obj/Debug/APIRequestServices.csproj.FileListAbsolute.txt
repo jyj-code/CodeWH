@@ -1,0 +1,8 @@
+D:\工作室\新项目\CodeWH\APIRequestServices\bin\Debug\APIRequestServices.dll
+D:\工作室\新项目\CodeWH\APIRequestServices\bin\Debug\APIRequestServices.pdb
+D:\工作室\新项目\CodeWH\APIRequestServices\bin\Debug\NET.Architect.dll
+D:\工作室\新项目\CodeWH\APIRequestServices\bin\Debug\NET.Architect.pdb
+D:\工作室\新项目\CodeWH\APIRequestServices\obj\Debug\APIRequestServices.csprojResolveAssemblyReference.cache
+D:\工作室\新项目\CodeWH\APIRequestServices\obj\Debug\APIRequestServices.csproj.CoreCompileInputs.cache
+D:\工作室\新项目\CodeWH\APIRequestServices\obj\Debug\APIRequestServices.dll
+D:\工作室\新项目\CodeWH\APIRequestServices\obj\Debug\APIRequestServices.pdb

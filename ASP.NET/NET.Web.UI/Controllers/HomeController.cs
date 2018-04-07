@@ -657,9 +657,6 @@ namespace NET.Web.UI.Controllers
 
         public ActionResult Phantom()
         {
-            //var path = AppDomain.CurrentDomain.BaseDirectory;
-            //string url = "http://www.itstrike.cn/Question/99517bea-4ae6-41c1-99b3-444f12a647b3.html";
-            //var html = CrawlerHelper.PhantomJs(url, ref path);
             return View();
         }
         public ActionResult Crawler(string url)

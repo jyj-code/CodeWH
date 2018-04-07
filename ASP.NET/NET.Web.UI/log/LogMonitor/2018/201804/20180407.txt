@@ -1,0 +1,352 @@
+
+ 
+记录时间：2018-04-07 10:16:14,250 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Index
+			开始时间：2018/4/7 10:16:14
+			结束时间：2018/4/7 10:16:14
+			总 时 间：0.0520439秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 10:16:16,757 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Index
+			开始时间：2018/4/7 10:16:14
+			结束时间：2018/4/7 10:16:16
+			总 时 间：2.5074535秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 10:16:17,682 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:ChatVerification
+			开始时间：2018/4/7 10:16:17
+			结束时间：2018/4/7 10:16:17
+			总 时 间：0.0040122秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36&Ip=112.10.94.220&Token=74a2198506024c8dacef456634e14e31&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"浙江","city":"杭州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 10:16:17,706 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:ChatVerification
+			开始时间：2018/4/7 10:16:17
+			结束时间：2018/4/7 10:16:17
+			总 时 间：0.0200004秒
+			Form表单数据：UserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36&Ip=112.10.94.220&Token=74a2198506024c8dacef456634e14e31&Data={"ret":1,"start":-1,"end":-1,"country":"中国","province":"浙江","city":"杭州","district":"","isp":"","type":"","desc":""}
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 12:22:56,761 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Phantom
+			开始时间：2018/4/7 12:22:56
+			结束时间：2018/4/7 12:22:56
+			总 时 间：0.0210534秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 12:23:00,331 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Phantom
+			开始时间：2018/4/7 12:22:56
+			结束时间：2018/4/7 12:23:00
+			总 时 间：3.5695716秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 12:25:20,976 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Phantom
+			开始时间：2018/4/7 12:25:20
+			结束时间：2018/4/7 12:25:20
+			总 时 间：4.77E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 12:25:27,415 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Phantom
+			开始时间：2018/4/7 12:25:20
+			结束时间：2018/4/7 12:25:27
+			总 时 间：6.4383319秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 12:26:57,872 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Phantom
+			开始时间：2018/4/7 12:26:57
+			结束时间：2018/4/7 12:26:57
+			总 时 间：7.94E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 12:27:04,032 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Phantom
+			开始时间：2018/4/7 12:26:57
+			结束时间：2018/4/7 12:27:04
+			总 时 间：6.160175秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 12:27:36,413 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Phantom
+			开始时间：2018/4/7 12:27:36
+			结束时间：2018/4/7 12:27:36
+			总 时 间：2.29E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 12:27:42,576 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Phantom
+			开始时间：2018/4/7 12:27:36
+			结束时间：2018/4/7 12:27:42
+			总 时 间：6.1631229秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 12:27:57,977 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Phantom
+			开始时间：2018/4/7 12:27:57
+			结束时间：2018/4/7 12:27:57
+			总 时 间：9.21E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 12:27:57,978 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Phantom
+			开始时间：2018/4/7 12:27:57
+			结束时间：2018/4/7 12:27:57
+			总 时 间：0.0009998秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 12:36:33,992 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Phantom
+			开始时间：2018/4/7 12:36:33
+			结束时间：2018/4/7 12:36:33
+			总 时 间：2.55E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 12:36:34,764 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Phantom
+			开始时间：2018/4/7 12:36:34
+			结束时间：2018/4/7 12:36:34
+			总 时 间：0.0010428秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 12:36:40,507 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Phantom
+			开始时间：2018/4/7 12:36:33
+			结束时间：2018/4/7 12:36:40
+			总 时 间：6.5153574秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 12:36:40,509 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Phantom
+			开始时间：2018/4/7 12:36:34
+			结束时间：2018/4/7 12:36:40
+			总 时 间：5.7428401秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 12:37:13,972 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Phantom
+			开始时间：2018/4/7 12:37:13
+			结束时间：2018/4/7 12:37:13
+			总 时 间：1.95E-05秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 12:37:20,709 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Phantom
+			开始时间：2018/4/7 12:37:13
+			结束时间：2018/4/7 12:37:20
+			总 时 间：6.7365074秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 12:39:23,900 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+			Action执行时间监控：
+			ControllerName：HomeController
+			ActionName:Phantom
+			开始时间：2018/4/7 12:39:23
+			结束时间：2018/4/7 12:39:23
+			总 时 间：4.1E-06秒
+			Form表单数据：
+			URL参数：
+					
+ 
+
+ 
+记录时间：2018-04-07 12:39:30,454 
+线程ID:[23] 
+日志级别：  INFO  
+跟踪描述：
+			View视图生成时间监控：
+			ControllerName：HomeController
+			ViewName:Phantom
+			开始时间：2018/4/7 12:39:23
+			结束时间：2018/4/7 12:39:30
+			总 时 间：6.5543827秒
+			Form表单数据：
+			URL参数：
+					
+ 

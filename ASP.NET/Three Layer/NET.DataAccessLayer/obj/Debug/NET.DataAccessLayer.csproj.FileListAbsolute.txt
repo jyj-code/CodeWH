@@ -1,0 +1,17 @@
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\bin\Debug\NET.DataAccessLayer.dll.config
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\bin\Debug\NET.DataAccessLayer.dll
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\bin\Debug\NET.DataAccessLayer.pdb
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\bin\Debug\EntityFramework.dll
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\bin\Debug\NET.Architect.dll
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\bin\Debug\System.Data.SQLite.dll
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\bin\Debug\System.Data.SQLite.EF6.dll
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\bin\Debug\System.Data.SQLite.Linq.dll
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\bin\Debug\NET.Architect.pdb
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\bin\Debug\EntityFramework.xml
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\bin\Debug\System.Data.SQLite.xml
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\obj\Debug\NET.DataAccessLayer.csprojResolveAssemblyReference.cache
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\obj\Debug\NET.DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\obj\Debug\NET.DataAccessLayer.dll
+D:\工作室\新项目\CodeWH\ASP.NET\Three Layer\NET.DataAccessLayer\obj\Debug\NET.DataAccessLayer.pdb

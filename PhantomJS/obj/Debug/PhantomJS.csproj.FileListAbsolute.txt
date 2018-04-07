@@ -1,0 +1,9 @@
+D:\工作室\新项目\CodeWH\PhantomJS\bin\Debug\phantomjs.exe
+D:\工作室\新项目\CodeWH\PhantomJS\bin\Debug\PhantomJS.dll
+D:\工作室\新项目\CodeWH\PhantomJS\bin\Debug\PhantomJS.pdb
+D:\工作室\新项目\CodeWH\PhantomJS\bin\Debug\WebDriver.dll
+D:\工作室\新项目\CodeWH\PhantomJS\bin\Debug\WebDriver.xml
+D:\工作室\新项目\CodeWH\PhantomJS\obj\Debug\PhantomJS.csprojResolveAssemblyReference.cache
+D:\工作室\新项目\CodeWH\PhantomJS\obj\Debug\PhantomJS.csproj.CoreCompileInputs.cache
+D:\工作室\新项目\CodeWH\PhantomJS\obj\Debug\PhantomJS.dll
+D:\工作室\新项目\CodeWH\PhantomJS\obj\Debug\PhantomJS.pdb
