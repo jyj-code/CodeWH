@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketClient", "SocketCient
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketServices", "SocketServices\SocketServices.csproj", "{7161B92C-F0E4-420D-AFE7-B76942A21DA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServices", "WebServices\WebServices.csproj", "{A10CC5D4-4514-488C-96FF-BF346B6A6882}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -293,6 +295,14 @@ Global
 		{7161B92C-F0E4-420D-AFE7-B76942A21DA8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7161B92C-F0E4-420D-AFE7-B76942A21DA8}.Release|x86.ActiveCfg = Release|Any CPU
 		{7161B92C-F0E4-420D-AFE7-B76942A21DA8}.Release|x86.Build.0 = Release|Any CPU
+		{A10CC5D4-4514-488C-96FF-BF346B6A6882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A10CC5D4-4514-488C-96FF-BF346B6A6882}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A10CC5D4-4514-488C-96FF-BF346B6A6882}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A10CC5D4-4514-488C-96FF-BF346B6A6882}.Debug|x86.Build.0 = Debug|Any CPU
+		{A10CC5D4-4514-488C-96FF-BF346B6A6882}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A10CC5D4-4514-488C-96FF-BF346B6A6882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A10CC5D4-4514-488C-96FF-BF346B6A6882}.Release|x86.ActiveCfg = Release|Any CPU
+		{A10CC5D4-4514-488C-96FF-BF346B6A6882}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

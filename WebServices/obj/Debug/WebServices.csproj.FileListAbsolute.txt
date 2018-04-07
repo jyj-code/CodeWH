@@ -1,0 +1,7 @@
+D:\工作室\新项目\CodeWH\WebServices\bin\WebServices.dll.config
+D:\工作室\新项目\CodeWH\WebServices\bin\WebServices.dll
+D:\工作室\新项目\CodeWH\WebServices\bin\WebServices.pdb
+D:\工作室\新项目\CodeWH\WebServices\obj\Debug\WebServices.csprojResolveAssemblyReference.cache
+D:\工作室\新项目\CodeWH\WebServices\obj\Debug\WebServices.csproj.CoreCompileInputs.cache
+D:\工作室\新项目\CodeWH\WebServices\obj\Debug\WebServices.dll
+D:\工作室\新项目\CodeWH\WebServices\obj\Debug\WebServices.pdb
